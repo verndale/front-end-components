@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+.vscode/
+dev/
+**/.DS_Store
+yarn-debug.log*
+yarn-error.log*
+*.sublime-workspace
+sublime-project.sublime-project

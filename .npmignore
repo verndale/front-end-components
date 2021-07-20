@@ -1,0 +1,15 @@
+/.idea/
+/node_modules/
+/.vscode/
+/docs/
+/src/
+*.sublime-workspace
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.npmignore
+.nvmrc
+.yarnrc
+yarn.lock
