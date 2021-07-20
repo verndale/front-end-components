@@ -1,0 +1,20 @@
+// sass-mq
+$mq-breakpoints: (
+  mobile: 360px,
+  tablet: 768px,
+  tablet-landscape: 1024px,
+  desktop: 1280px,
+  wide: 1600px
+);
+
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "Barlow Condensed", sans-serif;
+
+$max-width: 1840px;
+
+$module-spacing: (
+  "mobile": 60px,
+  "desktop": 150px
+);
+
+@import "../../node_modules/sass-mq/mq";

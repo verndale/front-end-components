@@ -1,0 +1,15 @@
+{{#ifCond type "==" "link"}}
+  <a href="#" class="btn btn--{{className}}{{#ifCond style "==" "outline"}} btn--outline{{/ifCond}}{{#ifCond size "==" "small"}} btn--small{{/ifCond}}{{#if disabled}} btn--disabled{{/if}}">
+    {{#if icon}}
+      {{>svg name=icon.name viewBox=icon.viewBox}}
+    {{/if}}
+    {{label}}
+  </a>
+{{else}}
+  <button type="{{type}}" class="btn btn--{{className}}{{#ifCond style "==" "outline"}} btn--outline{{/ifCond}}{{#ifCond size "==" "small"}} btn--small{{/ifCond}}"{{#if disabled}} disabled{{/if}}>
+    {{#if icon}}
+      {{>svg name=icon.name viewBox=icon.viewBox}}
+    {{/if}}
+    {{label}}
+  </button>
+{{/ifCond}}
