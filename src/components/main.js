@@ -1,4 +1,4 @@
-import Accordion from 'accordion/index';
+import Accordion from './accordion';
 
 export {
   Accordion
