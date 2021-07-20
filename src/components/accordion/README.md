@@ -1,4 +1,4 @@
-# Index
+# Accordion
 
 An accordion is a vertically stacked set of elements, such as labels or thumbnails, that allow the user to toggle the display of sections of content.
 Each labeling element can be expanded or collapsed to reveal or hide its associated content.
