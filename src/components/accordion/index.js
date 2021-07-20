@@ -1,11 +1,4 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _core = require("@verndale/core");
+import { Component } from '@verndale/core';
 
 /**
  * `Accordion`
@@ -20,20 +13,18 @@ var _core = require("@verndale/core");
  *   }
  * }
  */
-class Accordion extends _core.Component {
+class Index extends Component {
   constructor(el) {
     super(el);
   }
 
-  setupDefaults() {
+  setupDefaults(){
     console.log('defaults');
   }
 
-  addListeners() {
+  addListeners(){
     console.log('listeners');
   }
-
 }
 
-var _default = Accordion;
-exports.default = _default;
+export default Index;
