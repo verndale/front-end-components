@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import { log, colors, PluginError } from 'gulp-util';
+import mergeStream from 'merge-stream';
 import fractal from './fractal.config';
 import webpack from 'webpack';
 import webpackConfig from './webpack.config.babel';
@@ -50,6 +51,18 @@ Webpack
   });
 }
 
+function copy() {
+  const theme = gulp
+    .src('./src/components/_theme.scss')
+    .pipe(gulp.dest('./lib/components'));
+
+  const styles = gulp
+    .src('./src/components/**/_styles.scss')
+    .pipe(gulp.dest('./lib/components/'));
+
+  return mergeStream(theme, styles);
+}
+
 //watch
 function watch(cb) {
   const watchOptions = {
@@ -82,3 +95,4 @@ let tasks = gulp.series(
 
 //default task
 gulp.task('default', tasks);
+gulp.task('copy', copy);

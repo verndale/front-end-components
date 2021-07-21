@@ -3,6 +3,7 @@
 /.vscode/
 /docs/
 /src/
+/handlebars/
 *.sublime-workspace
 .babelrc
 .editorconfig
@@ -13,3 +14,6 @@
 .nvmrc
 .yarnrc
 yarn.lock
+fractal.config.js
+gulpfile.babel.js
+webpack.config.babel.js

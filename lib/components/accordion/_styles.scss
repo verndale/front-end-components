@@ -1,3 +1,5 @@
+@import "../theme";
+
 .accordion {
   margin-bottom: map-get($module-spacing, "mobile");
   margin-top: map-get($module-spacing, "mobile");
