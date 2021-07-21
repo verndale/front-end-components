@@ -169,7 +169,7 @@ img {
 body {
   color: var(--text-color);
   font-family: "Open Sans", sans-serif;
-  font-size: rem(18px);
+  font-size: 18px;
   line-height: 1.78; }
 
 .container {
@@ -417,7 +417,7 @@ h6 {
         .btn.btn--primary.btn--outline:hover svg, .btn.btn--primary.btn--outline:focus svg {
           fill: var(--white); }
     .btn.btn--primary:disabled, .btn.btn--primary.btn--disabled {
-      background-color: rgba(var(--primary), 0.2);
+      background-color: rgba(6, 132, 123, 0.2);
       color: var(--primary-light);
       pointer-events: none; }
   .btn.btn--secondary {

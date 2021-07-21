@@ -3,21 +3,25 @@ title: CSS
 status: draft
 ---
 
-These components are using SCSS.
+These components are using SCSS and processed with node-sass.
 
 ### Breakpoints
-Components are using `_mq.scss` mixins for breakpoints, the following settings are configured for breakpoints:
+Components are using `sass-mq` mixins for breakpoints. The following settings are configured for breakpoints:
 ```css
 $mq-breakpoints: (
-  mobile:  320px,
-  tablet:  740px,
-  desktop: 980px,
-  wide:    1300px
+  mobile:  360px,
+  tablet:  768px,
+  tablet-landscape: 1024px,
+  desktop: 1280px,
+  wide: 1600px
 );
 ```
-These can be changed in **`./components/styles/scss`**
+These overrides can be found in **`./components/_base.scss`**
 
-For more information on _mq.scss, check out the [documentation](https://github.com/sass-mq/sass-mq#media-queries-with-superpowers-)
+For more information on `sass-mq` check out the [documentation](https://www.npmjs.com/package/sass-mq#media-queries-with-superpowers)
+
+### Theming
+Theming instructions here
 
 ### Linting
 Components are linted using...

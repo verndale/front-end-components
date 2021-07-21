@@ -9,18 +9,21 @@
   <link media="all" rel="stylesheet" href="{{ path '/css/preview.css' }}">
 </head>
 <body>
-{{{ yield }}}
+  {{{ yield }}}
 
-<script>
-    var ajax = new XMLHttpRequest();
-    ajax.open('GET', '/images/svgsheet.svg', true);
-    ajax.send();
-    ajax.onload = function() {
-    var div = document.createElement('div');
-    div.style.display = 'none';
-    div.innerHTML = ajax.responseText;
-    document.body.insertBefore(div, document.body.childNodes[0]);
-  }
-</script>
+  <script>
+      var ajax = new XMLHttpRequest();
+      ajax.open('GET', '/images/svgsheet.svg', true);
+      ajax.send();
+      ajax.onload = function() {
+      var div = document.createElement('div');
+      div.style.display = 'none';
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+  </script>
+
+  <script src="{{ path '/js/vendors~main.bundle.js' }}"></script>
+  <script src="{{ path '/js/main.bundle.js' }}"></script>
 </body>
 </html>
