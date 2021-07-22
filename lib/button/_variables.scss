@@ -1,0 +1,23 @@
+// Primary button
+$btn-primary-background: map-get($theme-colors, "primary") !default;
+$btn-primary-focus-background: map-get($theme-colors, "primary-dark") !default;
+$btn-primary-text-color: #FFF !default;
+$btn-primary-outline-border: solid 1px map-get($theme-colors, "primary") !default;
+$btn-primary-outline-text-color: map-get($theme-colors, "primary") !default;
+$btn-primary-outline-focus-background: map-get($theme-colors, "primary-dark") !default;
+$btn-primary-outline-focus-border: solid 1px map-get($theme-colors, "primary-dark") !default;
+$btn-primary-outline-focus-text-color: #FFF !default;
+$btn-primary-disabled-background: rgba(6, 132, 123, 0.2) !default;
+$btn-primary-disabled-text-color: map-get($theme-colors, "primary-light") !default;
+
+// Secondary button
+$btn-secondary-background: #FFF !default;
+$btn-secondary-focus-background: map-get($theme-colors, "primary") !default;
+$btn-secondary-focus-text-color: #FFF !default;
+$btn-secondary-text-color: map-get($theme-colors, "primary") !default;
+$btn-secondary-outline-border: solid 1px #FFF !default;
+$btn-secondary-outline-text-color: #FFF !default;
+$btn-secondary-outline-focus-background: #FFF !default;
+$btn-secondary-outline-focus-text-color: map-get($theme-colors, "primary-dark") !default;
+$btn-secondary-disabled-border: solid 1px map-get($theme-colors, "primary-light") !default;
+$btn-secondary-disabled-text-color: map-get($theme-colors, "primary-light") !default;
