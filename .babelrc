@@ -17,9 +17,5 @@
   ],
   "plugins": [
     "@babel/plugin-syntax-dynamic-import"
-  ],
-  "ignore": [
-    "src/components/**/*.config.js",
-    "src/components/preview.js"
   ]
 }

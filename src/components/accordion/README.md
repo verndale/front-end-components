@@ -4,7 +4,7 @@ An accordion is a vertically stacked set of elements, such as labels or thumbnai
 Each labeling element can be expanded or collapsed to reveal or hide its associated content.
 Accordions are commonly used to reduce the need to scroll when presenting multiple sections of content on a single page.
 
-This component is WAI-ARIA compliant.
+This component is WAI-ARIA compliant and is AA compliant.
 
 ## Keyboard interactions
 When focus is on a header, the following key commands are available:
@@ -18,6 +18,9 @@ When focus is on a header, the following key commands are available:
 * `END`: Move focus to the last header.
 
 ***
+
+## Styling
+
 
 ## Instantiation
 This component is able to take in _data attributes_ from the root HTML element via `dataset`. This is ideal if you have multiple

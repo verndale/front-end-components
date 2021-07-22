@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("http://fonts.googleapis.com/css?family=Barlow Condensed");
+@import url("http://fonts.googleapis.com/css?family=Open Sans");
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -276,7 +276,7 @@ h6 {
     max-width: calc(66% - 51px); } }
 
 .accordion__item {
-  border: solid 1px var(--primary); }
+  border: solid 1px #06847b; }
   .accordion__item + .accordion__item {
     margin-top: 20px; }
     @media (min-width: 80em) {
@@ -303,13 +303,13 @@ h6 {
       height: 50px;
       padding: 0 25px; }
       .accordion__item-trigger:hover, .accordion__item-trigger:focus {
-        background-color: var(--primary); }
+        background-color: #06847b; }
         .accordion__item-trigger:hover h3, .accordion__item-trigger:focus h3 {
-          color: var(--white); }
+          color: #FFF; }
         .accordion__item-trigger:hover .accordion__item-icon-plus,
         .accordion__item-trigger:hover .accordion__item-icon-minus, .accordion__item-trigger:focus .accordion__item-icon-plus,
         .accordion__item-trigger:focus .accordion__item-icon-minus {
-          fill: var(--white); } }
+          fill: #FFF; } }
   .accordion__item-trigger h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -330,7 +330,7 @@ h6 {
 
 .accordion__item-icon-plus,
 .accordion__item-icon-minus {
-  fill: var(--primary);
+  fill: #06847b;
   height: 14px;
   left: 50%;
   position: absolute;
@@ -398,53 +398,53 @@ h6 {
     transition: fill 0.2s ease-in-out;
     width: 30px; }
   .btn.btn--primary {
-    background-color: var(--primary);
-    color: var(--white); }
+    background-color: #06847b;
+    color: #FFF; }
     .btn.btn--primary svg {
-      fill: var(--white); }
+      fill: #FFF; }
     .btn.btn--primary:hover, .btn.btn--primary:focus {
-      background-color: var(--primary-dark); }
+      background-color: #1e3f36; }
     .btn.btn--primary.btn--outline {
       background-color: transparent;
-      border: solid 1px var(--primary);
-      color: var(--primary); }
+      border: solid 1px #06847b;
+      color: #06847b; }
       .btn.btn--primary.btn--outline svg {
-        fill: var(--primary); }
+        fill: #06847b; }
       .btn.btn--primary.btn--outline:hover, .btn.btn--primary.btn--outline:focus {
-        background-color: var(--primary-dark);
-        border: solid 1px var(--primary-dark);
-        color: var(--white); }
+        background-color: #1e3f36;
+        border: solid 1px #1e3f36;
+        color: #FFF; }
         .btn.btn--primary.btn--outline:hover svg, .btn.btn--primary.btn--outline:focus svg {
-          fill: var(--white); }
+          fill: #FFF; }
     .btn.btn--primary:disabled, .btn.btn--primary.btn--disabled {
       background-color: rgba(6, 132, 123, 0.2);
-      color: var(--primary-light);
+      color: #6f8f89;
       pointer-events: none; }
   .btn.btn--secondary {
-    background-color: var(--white);
-    color: var(--primary); }
+    background-color: #FFF;
+    color: #06847b; }
     .btn.btn--secondary svg {
-      fill: var(--primary); }
+      fill: #06847b; }
     .btn.btn--secondary:hover, .btn.btn--secondary:focus {
-      background-color: var(--primary);
-      color: var(--white); }
+      background-color: #06847b;
+      color: #FFF; }
       .btn.btn--secondary:hover svg, .btn.btn--secondary:focus svg {
-        fill: var(--white); }
+        fill: #FFF; }
     .btn.btn--secondary.btn--outline {
       background-color: transparent;
-      border: solid 1px var(--white);
-      color: var(--white); }
+      border: solid 1px #FFF;
+      color: #FFF; }
       .btn.btn--secondary.btn--outline svg {
-        fill: var(--white); }
+        fill: #FFF; }
       .btn.btn--secondary.btn--outline:hover, .btn.btn--secondary.btn--outline:focus {
-        background-color: var(--white);
-        color: var(--primary-dark); }
+        background-color: #FFF;
+        color: #1e3f36; }
         .btn.btn--secondary.btn--outline:hover svg, .btn.btn--secondary.btn--outline:focus svg {
-          fill: var(--primary-dark); }
+          fill: #1e3f36; }
     .btn.btn--secondary:disabled, .btn.btn--secondary.btn--disabled {
       background-color: transparent;
-      border: solid 1px var(--primary-light);
-      color: var(--primary-light);
+      border: solid 1px #6f8f89;
+      color: #6f8f89;
       pointer-events: none; }
   .btn.btn--small {
     font-size: 14px;

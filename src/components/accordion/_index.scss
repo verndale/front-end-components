@@ -1,12 +1,14 @@
-@import "../theme";
+@import
+"../theme",
+"variables";
 
 .accordion {
-  margin-bottom: map-get($module-spacing, "mobile");
-  margin-top: map-get($module-spacing, "mobile");
+  margin-bottom: $accordion-mobile-margin-bottom;
+  margin-top: $accordion-mobile-margin-top;
 
   @include mq(desktop) {
-    margin-bottom: map-get($module-spacing, "desktop");
-    margin-top: map-get($module-spacing, "desktop");
+    margin-bottom: $accordion-desktop-margin-bottom;
+    margin-top: $accordion-desktop-margin-top;
   }
 }
 
@@ -25,7 +27,7 @@
 }
 
 .accordion__item {
-  border: solid 1px var(--primary);
+  border: $accordion-item-border;
 
   & + .accordion__item {
     margin-top: 20px;
@@ -58,21 +60,21 @@
 
     &:hover,
     &:focus {
-      background-color: var(--primary);
+      background-color: $accordion-item-focus-background;
 
       h3 {
-        color: var(--white);
+        color: $accordion-item-focus-text-color;
       }
 
       .accordion__item-icon-plus,
       .accordion__item-icon-minus {
-        fill: var(--white);
+        fill: $accordion-item-focus-text-color;
       }
     }
   }
 
   h3 {
-    font-family: $primary-font;
+    font-family: $accordion-item-font-family;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.78;
@@ -100,7 +102,7 @@
 
 .accordion__item-icon-plus,
 .accordion__item-icon-minus {
-  fill: var(--primary);
+  fill: $accordion-item-icon-fill;
   height: 14px;
   left: 50%;
   position: absolute;

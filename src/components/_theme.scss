@@ -7,13 +7,18 @@ $mq-breakpoints: (
   wide: 1600px
 ) !default;
 
+
 // default theme
-$theme: (
+$theme-colors: (
   primary: #06847b,
   primary-dark: #1e3f36,
   primary-light: #6f8f89,
-  primary-gray: #4a4a4a
+  primary-gray: #4a4a4a,
+  primary-light-gray: #e5e5e5,
+  warning: #fb9300,
+  critical: #f54748
 ) !default;
+
 
 // width and spacing
 $max-width: 1840px !default;
@@ -23,6 +28,12 @@ $module-spacing: (
   desktop: 150px
 ) !default;
 
+
 // fonts
 $primary-font: "Open Sans", sans-serif !default;
 $secondary-font: "Barlow Condensed", sans-serif !default;
+
+// google font mixin
+@mixin google-font($family) {
+  @import url("http://fonts.googleapis.com/css?family=#{$family}");
+}

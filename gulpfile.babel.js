@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import { log, colors, PluginError } from 'gulp-util';
 import mergeStream from 'merge-stream';
+import babel from 'gulp-babel';
 import fractal from './fractal.config';
 import webpack from 'webpack';
 import webpackConfig from './webpack.config.babel';
@@ -54,13 +55,30 @@ Webpack
 function copy() {
   const theme = gulp
     .src('./src/components/_theme.scss')
-    .pipe(gulp.dest('./lib/components'));
+    .pipe(gulp.dest('./lib'));
 
   const styles = gulp
-    .src('./src/components/**/_styles.scss')
-    .pipe(gulp.dest('./lib/components/'));
+    .src([
+      './src/components/**/**.scss',
+      '!./src/components/preview.scss'
+    ])
+    .pipe(gulp.dest('./lib/'));
 
   return mergeStream(theme, styles);
+}
+
+function babelfy() {
+  return gulp.src([
+    './src/components/**/*.js',
+    "!./src/components/**/*.config.js",
+    "!./src/components/preview.js"
+  ])
+    .pipe(babel(
+      {
+        configFile: './.babelrc'
+      }
+    ))
+    .pipe(gulp.dest('./lib'));
 }
 
 //watch
@@ -96,3 +114,4 @@ let tasks = gulp.series(
 //default task
 gulp.task('default', tasks);
 gulp.task('copy', copy);
+gulp.task('babel', babelfy);
