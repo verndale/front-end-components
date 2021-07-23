@@ -13,8 +13,8 @@
   --critical: #f54748;
 }
 
-@include google-font("Barlow Condensed");
-@include google-font("Open Sans");
+@include google-font("Barlow+Condensed:wght@700&display=swap");
+@include google-font("Open+Sans:wght@400;600&display=swap");
 
 h1,
 h2,
@@ -214,95 +214,6 @@ body {
   @include mq(wide) {
     padding: 0 120px;
   }
-}
-
-//Heading map
-h1 {
-  font-family: $secondary-font;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  margin: 0 0 10px;
-
-  @include mq(desktop) {
-    font-size: 48px;
-    line-height: normal;
-  }
-
-  @include mq(wide) {
-    font-size: 60px;
-  }
-}
-
-h2 {
-  font-family: $secondary-font;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.13;
-  margin: 0 0 10px;
-
-  @include mq(desktop) {
-    font-size: 40px;
-    line-height: 1.09;
-  }
-
-  @include mq(wide) {
-    font-size: 44px;
-  }
-}
-
-h3 {
-  font-family: $secondary-font;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.17;
-  margin: 0 0 10px;
-
-  @include mq(desktop) {
-    font-size: 33px;
-    line-height: 1.22;
-  }
-
-  @include mq(wide) {
-    font-size: 36px;
-  }
-}
-
-h4 {
-  font-family: $secondary-font;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.19;
-  margin: 0 0 10px;
-
-  @include mq(desktop) {
-    font-size: 19px;
-    line-height: 1.33;
-  }
-
-  @include mq(wide) {
-    font-size: 24px;
-  }
-}
-
-h5 {
-  font-family: $secondary-font;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.22;
-  margin: 0 0 10px;
-  text-transform: uppercase;
-}
-
-h6 {
-  font-family: $secondary-font;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.29;
-  margin: 0 0 10px;
-  text-transform: uppercase;
 }
 
 @import

@@ -1,5 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Barlow Condensed");
-@import url("http://fonts.googleapis.com/css?family=Open Sans");
+@import url("http://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap");
+@import url("http://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -183,80 +183,6 @@ body {
     .container {
       padding: 0 120px; } }
 
-h1 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    h1 {
-      font-size: 48px;
-      line-height: normal; } }
-  @media (min-width: 100em) {
-    h1 {
-      font-size: 60px; } }
-
-h2 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.13;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    h2 {
-      font-size: 40px;
-      line-height: 1.09; } }
-  @media (min-width: 100em) {
-    h2 {
-      font-size: 44px; } }
-
-h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.17;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    h3 {
-      font-size: 33px;
-      line-height: 1.22; } }
-  @media (min-width: 100em) {
-    h3 {
-      font-size: 36px; } }
-
-h4 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.19;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    h4 {
-      font-size: 19px;
-      line-height: 1.33; } }
-  @media (min-width: 100em) {
-    h4 {
-      font-size: 24px; } }
-
-h5 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.22;
-  margin: 0 0 10px;
-  text-transform: uppercase; }
-
-h6 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.29;
-  margin: 0 0 10px;
-  text-transform: uppercase; }
-
 .accordion {
   margin-bottom: 60px;
   margin-top: 60px; }
@@ -270,6 +196,20 @@ h6 {
   @media (min-width: 80em) {
     .accordion__header {
       margin-bottom: 60px; } }
+
+.accordion__title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    .accordion__title {
+      font-size: 40px;
+      line-height: 1.09; } }
+  @media (min-width: 100em) {
+    .accordion__title {
+      font-size: 44px; } }
 
 @media (min-width: 80em) {
   .accordion__description {
@@ -310,17 +250,32 @@ h6 {
         .accordion__item-trigger:hover .accordion__item-icon-minus, .accordion__item-trigger:focus .accordion__item-icon-plus,
         .accordion__item-trigger:focus .accordion__item-icon-minus {
           fill: #FFF; } }
-  .accordion__item-trigger h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.78;
-    margin: 0;
-    transition: color 0.2s ease-in-out; }
   .accordion__item-trigger[aria-expanded="true"] .accordion__item-icon-plus {
     display: none; }
   .accordion__item-trigger[aria-expanded="true"] .accordion__item-icon-minus {
     display: block; }
+
+.accordion__item-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.78;
+  margin: 0;
+  transition: color 0.2s ease-in-out; }
+
+.accordion__item-heading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    .accordion__item-heading {
+      font-size: 19px;
+      line-height: 1.33; } }
+  @media (min-width: 100em) {
+    .accordion__item-heading {
+      font-size: 24px; } }
 
 .accordion__item-icon {
   flex-shrink: 0;

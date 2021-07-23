@@ -35,5 +35,5 @@ $secondary-font: "Barlow Condensed", sans-serif !default;
 
 // google font mixin
 @mixin google-font($family) {
-  @import url("http://fonts.googleapis.com/css?family=#{$family}");
+  @import url("http://fonts.googleapis.com/css2?family=#{$family}");
 }
