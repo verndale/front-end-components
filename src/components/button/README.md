@@ -15,6 +15,8 @@ Import the style to your main style file in your project
 
 Copy and paste to your project any of the markup in the button variations - you can find the markup in the **HTML tab**.
 
+_________
+
 ## Styling
 The component will already have a default style/theme set, so it will work out of the box.
 The button has a set of variables that may be overriden, or you may choose to just override the actual styles in your project.

@@ -17,7 +17,7 @@ When focus is on a header, the following key commands are available:
 * `HOME`: Move focus to the first header.
 * `END`: Move focus to the last header.
 
-***
+_________
 
 ## Styling
 The component will already have a default style/theme set, so it will work out of the box.
@@ -38,6 +38,16 @@ $accordion-item-title-font-family
 $accordion-item-heading-font-family
 $accordion-item-icon-fill
 ```
+
+***You always need to set your overrides before the import of you component - for example:***
+```scss
+$accordion-mobile-margin-bottom: 20px;
+$accordion-mobile-margin-top: 40px;
+
+@import "../../node_modules/@verndale/front-end-components/lib/accotdion/styles";
+```
+
+_________
 
 ## Instantiation
 
