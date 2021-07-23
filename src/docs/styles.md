@@ -7,7 +7,7 @@ These components are using SCSS and processed with node-sass.
 
 ## Breakpoints
 Components are using `sass-mq` mixins for breakpoints **which you will need to include in your own project** as these components do not ship with `sass-mq`. The following settings are configured for breakpoints:
-
+<a name="breakpoint-defaults"></a>
 ```css
 $mq-breakpoints: (
   mobile:  360px,
@@ -24,7 +24,9 @@ In your project, install `sass-mq`
 yarn add sass-mq
 ```
 
-In your main styles file in your project, set the breakpoints and import `sass-mq`
+In your main styles file in your project, set the breakpoints to whatever you wish and import `sass-mq`
+
+***you may add to this map - those that are not included below will be set to their default value ([see above](#breakpoints)).***
 ```scss
 $mq-breakpoints: (
   mobile:  360px,
@@ -78,13 +80,11 @@ $theme-colors: (
 ```
 
 ### Theme fonts
-The components have a primary and secondary font already imported, using Google fonts.
-These can be overriden, and you can use the mixin to set another google font to your project if you choose.
-
-If you're not using Google fonts, you can simply skip the `@include` and define your primary and secondary fonts in the variable overrides.
+The components have a primary and secondary font already set.
+These can be overriden, and you can use the `@import url(...)` method to set another font or include the font in the `head` of your HTML to your project if you choose.
 ```scss
 // import and set font
-@include google-font("Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+@import url("http://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
 $primary-font: "Roboto", sans-serif;
 $secondary-font: ...;
 
