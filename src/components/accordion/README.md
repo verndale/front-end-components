@@ -20,8 +20,24 @@ When focus is on a header, the following key commands are available:
 ***
 
 ## Styling
+The component will already have a default style/theme set, so it will work out of the box.
+The button has a set of variables that may be overriden, or you may choose to just override the actual styles in your project.
+It is recommended to use the overrides if you can as it will be less code in your project.
 
+Below is the list of variables you can override. You may also find these in the **Assets tab** under `_variables.scss`
+```scss
+$accordion-mobile-margin-bottom
+$accordion-mobile-margin-top
+$accordion-desktop-margin-bottom
+$accordion-desktop-margin-top
+$accordion-item-border
+$accordion-item-focus-background
+$accordion-item-focus-text-color
+$accordion-item-font-family
+$accordion-item-title-font-family
+$accordion-item-heading-font-family
+$accordion-item-icon-fill
+```
 
 ## Instantiation
-This component is able to take in _data attributes_ from the root HTML element via `dataset`. This is ideal if you have multiple
-accordions on the page that need different functionality.
+
