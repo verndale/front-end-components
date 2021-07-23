@@ -32,8 +32,3 @@ $module-spacing: (
 // fonts
 $primary-font: "Open Sans", sans-serif !default;
 $secondary-font: "Barlow Condensed", sans-serif !default;
-
-// google font mixin
-@mixin google-font($family) {
-  @import url("http://fonts.googleapis.com/css2?family=#{$family}");
-}
