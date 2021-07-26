@@ -18,6 +18,11 @@
   "browserslist": [
     "last 2 versions"
   ],
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "none"
+  },
   "scripts": {
     "build": "rimraf ./docs ./lib && yarn lint && yarn docs && gulp babel && gulp copy",
     "docs": "documentation build src/components/**/*.js -f html -g true -o docs",
