@@ -18,16 +18,13 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "trailingComma": "none"
-  },
   "scripts": {
-    "build": "rimraf ./docs ./lib && yarn lint && yarn docs && gulp babel && gulp copy",
+    "build": "rimraf ./docs ./lib && yarn format-js && yarn check-format && yarn docs && gulp babel && gulp copy",
     "docs": "documentation build src/components/**/*.js -f html -g true -o docs",
     "lint": "eslint --fix --color --debug --ignore-path .eslintignore ./src/components/**/*.js",
     "sass": "node-sass src/components/preview.scss -o public/css",
+    "check-format": "prettier --check \"src/**/*.js\"",
+    "format-js": "prettier --write \"src/**/*.js\"",
     "start": "yarn svg && yarn sass && gulp",
     "svg": "svgo public/images/svg-sprites -o public/images && svg-sprite-generate -d public/images/svg-sprites -o public/images/svgsheet.svg"
   },
@@ -54,6 +51,7 @@
     "gulp-util": "3.0.8",
     "merge-stream": "2.0.0",
     "node-sass": "6.0.1",
+    "prettier": "2.3.2",
     "rimraf": "3.0.2",
     "svg-sprite-generator": "0.0.7",
     "svgo": "2.3.1",
