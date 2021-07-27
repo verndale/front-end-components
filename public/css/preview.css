@@ -480,13 +480,13 @@ body {
   .link.link--small {
     font-size: 14px; }
   .link.link--primary {
-    color: var(--primary); }
+    color: #06847b; }
     .link.link--primary .link__icon {
-      fill: var(--primary); }
+      fill: #06847b; }
   .link.link--secondary {
-    color: var(--white); }
+    color: #FFF; }
     .link.link--secondary .link__icon {
-      fill: var(--white); }
+      fill: #FFF; }
   .link .link__icon {
     height: 10px;
     margin-left: 12px;
