@@ -469,3 +469,29 @@ body {
   padding: 4px 0 20px;
   transition: height 0.3s;
   will-change: height; }
+
+.link {
+  align-items: center;
+  display: inline-flex;
+  font-size: 18px;
+  text-decoration: none; }
+  .link:hover, .link:focus {
+    text-decoration: underline; }
+  .link.link--small {
+    font-size: 14px; }
+  .link.link--primary {
+    color: var(--primary); }
+    .link.link--primary .link__icon {
+      fill: var(--primary); }
+  .link.link--secondary {
+    color: var(--white); }
+    .link.link--secondary .link__icon {
+      fill: var(--white); }
+  .link .link__icon {
+    height: 10px;
+    margin-left: 12px;
+    width: 6px; }
+  .link .link__icon--left {
+    margin-right: 12px; }
+  .link .link__icon--right {
+    margin-left: 12px; }
