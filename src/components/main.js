@@ -1,5 +1,3 @@
-import Accordion from './accordion/Accordion';
+import Accordion from './accordion/Accordion'
 
-export {
-  Accordion
-};
+export { Accordion }
