@@ -1,7 +1,7 @@
 language: node_js
 node_js: '15'
 cache: yarn
-script: "yarn build && release"
+script: "yarn build && yarn release"
 deploy:
   on:
     branch: main
