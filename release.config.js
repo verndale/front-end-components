@@ -9,7 +9,7 @@ module.exports = {
       {
         npmPublish: true
       }
-    ]
+    ],
     [
       '@semantic-release/changelog',
       {
