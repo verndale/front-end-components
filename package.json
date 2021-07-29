@@ -27,6 +27,12 @@
     "start": "yarn svg && yarn sass && gulp",
     "svg": "svgo public/images/svg-sprites -o public/images && svg-sprite-generate -d public/images/svg-sprites -o public/images/svgsheet.svg"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "@verndale/core": "1.1.3",
     "gsap": "3.7.1",
