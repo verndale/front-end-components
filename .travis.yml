@@ -1,13 +1,10 @@
 language: node_js
 node_js: '15'
 on:
-  branches:
-    only:
-      - main
+  branch: main
 cache: yarn
 script: "yarn build"
 deploy:
   provider: npm
   email: joe.fusco@verndale.com
   api_key: 03c9e56f-eeb6-47d9-9069-f2359d1f021f
-  tag: next
