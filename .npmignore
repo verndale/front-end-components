@@ -17,3 +17,6 @@ yarn.lock
 fractal.config.js
 gulpfile.babel.js
 webpack.config.babel.js
+changelog.config.js
+commitlint.config.js
+release.config.js
