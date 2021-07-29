@@ -50,4 +50,3 @@ $accordion-mobile-margin-top: 40px;
 _________
 
 ## Instantiation
-..some instructions here
