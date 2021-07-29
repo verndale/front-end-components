@@ -1,16 +1,9 @@
 language: node_js
 node_js: '15'
 cache: yarn
-script: "yarn build && echo $(GIT_CREDENTIALS) semantic-release"
-env:
-  - GIT_CREDENTIALS=$(GIT_CREDENTIALS)
-  - GIT_AUTHOR_EMAIL=$(GIT_AUTHOR_EMAIL)
-  - GIT_COMMITTER_EMAIL=$(GIT_AUTHOR_EMAIL)
-  - GIT_COMMITTER_NAME=$(GIT_AUTHOR_NAME)
-  - GIT_AUTHOR_NAME=$(GIT_AUTHOR_NAME)
+script: "yarn build && yarn semantic-release"
 deploy:
   on:
-    tags: true
     branch: main
   provider: npm
   email: joe.fusco@verndale.com
