@@ -2,7 +2,7 @@
   "name": "@verndale/front-end-components",
   "description": "Front end component library.",
   "license": "MIT",
-  "version": "1.0.19-test_build",
+  "version": "1.0.19-build",
   "main": "lib/main.js",
   "author": {
     "name": "Verndale",
@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "build": "rimraf ./docs ./lib && yarn lint && yarn docs && gulp babel && gulp copy",
+    "commit": "npx git-cz",
     "docs": "documentation build src/components/**/*.js -f html -g true -o docs",
     "lint": "eslint --fix --color --debug --ignore-path .eslintignore ./src/components/**/*.js",
     "sass": "node-sass src/components/preview.scss -o public/css",
