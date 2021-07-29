@@ -1,13 +1,10 @@
 language: node_js
 node_js: '15'
 cache: yarn
-before_install:
-  - git config --global user.name "jfusco"
-  - git config --global user.email "jfusco311@gmail.com"
-script: "yarn build && yarn semantic-release"
+script: "yarn build"
 deploy:
   on:
-    branch: main
+    branch: travis
   provider: npm
   email: joe.fusco@verndale.com
   api_key: 832a3b76-c5cf-487e-8619-be2c2c844032
