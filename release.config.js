@@ -3,8 +3,7 @@ module.exports = {
   branches: ['main'],
   plugins: [
     '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
+    '@semantic-release/release-notes-generator'
     [
       '@semantic-release/changelog',
       {
@@ -14,7 +13,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['lib/**', 'docs', 'package.json'],
+        assets: ['lib/**', 'package.json'],
         message: 'chore: ${nextRelease.version} FEE Build [skip ci]\n\n${nextRelease.notes}'
       }
     ]
