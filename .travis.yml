@@ -1,6 +1,9 @@
 language: node_js
 node_js: '15'
 cache: yarn
+before_install:
+  - git config --global user.name "jfusco"
+  - git config --global user.email "jfusco311@gmail.com"
 script: "yarn build && yarn semantic-release"
 deploy:
   on:
