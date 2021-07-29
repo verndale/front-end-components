@@ -1,8 +1,9 @@
 language: node_js
 node_js: '15'
-branches:
-  only:
-    - main
+on:
+  branches:
+    only:
+      - main
 cache: yarn
 script: "yarn build"
 deploy:
