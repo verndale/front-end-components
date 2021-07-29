@@ -1,9 +1,10 @@
 language: node_js
 node_js: '15'
 cache: yarn
-script: "yarn build && yarn semantic-release"
+script: "yarn build"
 deploy:
   on:
+    tags: true
     branch: main
   provider: npm
   email: joe.fusco@verndale.com
