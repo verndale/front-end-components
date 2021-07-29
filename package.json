@@ -13,9 +13,7 @@
     "url": "https://github.com/verndale/front-end-components.git"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "access": "public"
   },
   "browserslist": [
     "last 2 versions"
