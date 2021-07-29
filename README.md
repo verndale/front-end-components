@@ -4,4 +4,4 @@
 
 
 [build-image]: https://www.travis-ci.com/verndale/front-end-components.svg?branch=main
-[build-url]: https://www.travis-ci.com/github/verndale/front-end-components/builds
+[build-url]: https://travis-ci.com/github/verndale/front-end-components
