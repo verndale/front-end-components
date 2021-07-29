@@ -2,7 +2,7 @@
   "name": "@verndale/front-end-components",
   "description": "Front end component library.",
   "license": "MIT",
-  "version": "1.0.18-beta",
+  "version": "1.0.19-test_build",
   "main": "lib/main.js",
   "author": {
     "name": "Verndale",

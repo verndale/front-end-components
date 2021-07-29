@@ -5,7 +5,7 @@ script: "yarn build"
 deploy:
   on:
     tags: true
-    all_branches: true
+    branch: main
   provider: npm
   email: joe.fusco@verndale.com
   api_key: 03c9e56f-eeb6-47d9-9069-f2359d1f021f
