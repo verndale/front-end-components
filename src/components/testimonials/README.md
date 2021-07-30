@@ -13,24 +13,17 @@ It is recommended to use the overrides if you can as it will be less code in you
 Below is the list of variables you can override. You may also find these in the **Assets tab** under `_variables.scss`
 
 ```scss
-$accordion-mobile-margin-bottom
-$accordion-mobile-margin-top
-$accordion-desktop-margin-bottom
-$accordion-desktop-margin-top
-$accordion-item-border
-$accordion-item-focus-background
-$accordion-item-focus-text-color
-$accordion-item-font-family
-$accordion-item-title-font-family
-$accordion-item-heading-font-family
-$accordion-item-icon-fill
+$swiper-pagination-bullet
+$swiper-pagination-bullet-active
+$swiper-button-size
 ```
 
 **_You always need to set your overrides before the import of you component - for example:_**
 
 ```scss
-$accordion-mobile-margin-bottom: 20px;
-$accordion-mobile-margin-top: 40px;
+$swiper-pagination-bullet: #fffaaa
+$swiper-pagination-bullet-active: #ffffff
+$swiper-button-size: 60px;
 
 @import "../../node_modules/@verndale/front-end-components/lib/testimonials/styles";
 ```

@@ -1,7 +1,7 @@
-import { Component } from '@verndale/core';
-import Swiper, { Pagination, Navigation } from 'swiper';
+import { Component } from '@verndale/core'
+import Swiper, { Pagination, Navigation } from 'swiper'
 
-Swiper.use([Pagination, Navigation]);
+Swiper.use([Pagination, Navigation])
 
 class Module extends Component {
   setupDefaults() {
@@ -10,13 +10,12 @@ class Module extends Component {
       pagination: this.el.querySelector('.swiper-pagination'),
       next: this.el.querySelector('.swiper-button-next'),
       prev: this.el.querySelector('.swiper-button-prev')
-    };
-
-    this.initSlider();
+    }
+    console.log(this.dom)
+    this.initSlider()
   }
 
-  addListeners() {
-  }
+  addListeners() {}
 
   initSlider() {
     this.slider = new Swiper(this.dom.container, {
@@ -29,8 +28,8 @@ class Module extends Component {
         nextEl: this.dom.next,
         prevEl: this.dom.prev
       }
-    });
+    })
   }
 }
 
-export default Module;
+export default Module

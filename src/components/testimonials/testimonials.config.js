@@ -1,36 +1,30 @@
 module.exports = {
-  title: "Testimonial component",
-  status: "wip",
+  title: 'Testimonial component',
+  status: 'wip',
   context: {
-    title: "Accordion Heading",
-    description:
-      "Praesent dui elit, porttitor sed vulputate id, mollis sed nibh. Morbi molestie scelerisque diam, at efficitur erat auctor vitae. Proin vehicula volutpat consequat. Donec sit amet magna sed urna egestas feugiat in et nisi. Suspendisse risus dolor, maximus sit amet pharetra sed, convallis sed orci. Nulla sit amet nisi cursus, blandit ipsum vel, feugiat nisl.",
+    heading: 'Testimonial Heading',
+    copy:
+      'Ea enim magna sunt ad id ad minim ex qui ex aliqua sint ex. Sint sit ipsum reprehenderit enim id consectetur ex consequat aute aliquip. Nostrud non proident Lorem sint nulla mollit laboris cupidatat excepteur. Esse magna eiusmod mollit est laborum sit velit laboris exercitation do.',
     items: [
       {
-        expanded: true,
-        title: "Accordion Tab Title",
-        heading: "Accordion Tab Heading",
-        content:
-          "<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>",
+        photo: 'https://thispersondoesnotexist.com/image',
+        name: 'Firstname Lastname',
+        position: 'Position at Company',
+        quote:
+          'Duis dolor reprehenderit magna dolor ex. Reprehenderit ipsum qui elit aliquip tempor ullamco ad ipsum et enim qui veniam. Laborum commodo sint nulla id non incididunt voluptate irure. Pariatur aliqua mollit occaecat sint ex est magna dolore occaecat.'
       },
       {
-        title: "Accordion Tab With Image",
-        heading: "Accordion Tab Heading",
-        content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><img src="https://verndale-image-tools.herokuapp.com/id/EFvP9cHipMQ?w=900&h=450" alt="Image Description">',
+        name: 'Firstname Lastname',
+        position: 'Position at Company',
+        quote:
+          'Duis dolor reprehenderit magna dolor ex. Reprehenderit ipsum qui elit aliquip tempor ullamco ad ipsum et enim qui veniam. Laborum commodo sint nulla id non incididunt voluptate irure. Pariatur aliqua mollit occaecat sint ex est magna dolore occaecat.'
       },
       {
-        title: "Accordion Tab With Video",
-        heading: "Accordion Tab Heading",
-        content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><video controls="controls"><source src="/images/video.mp4" type="video/mp4"></video>',
-      },
-      {
-        title: "Accordion Tab With Buttons",
-        heading: "Accordion Tab Heading",
-        content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><div class="buttons-row"><a href="#" class="btn btn--primary"><svg viewBox="0 0 30 30"><use xlink:href="#file-pdf" /></svg>Document Name</a><a href="#" class="btn btn--primary"><svg viewBox="0 0 30 30"><use xlink:href="#file-pdf" /></svg>Document Name</a></div>',
-      },
-    ],
-  },
+        photo: 'https://thispersondoesnotexist.com/image',
+        name: 'Firstname Lastname',
+        quote:
+          'Duis dolor reprehenderit magna dolor ex. Reprehenderit ipsum qui elit aliquip tempor ullamco ad ipsum et enim qui veniam. Laborum commodo sint nulla id non incididunt voluptate irure. Pariatur aliqua mollit occaecat sint ex est magna dolore occaecat.'
+      }
+    ]
+  }
 };

@@ -1,4 +1,4 @@
-@import "../theme", "variables";
+@import '../theme', 'variables';
 
 .testimonials__slider {
   margin: 20px auto 0;
@@ -18,7 +18,7 @@
   margin-top: 20px;
 
   .swiper-pagination-bullet {
-    background-color: var(--light-gray);
+    background-color: $swiper-pagination-bullet;
     border-radius: 0;
     height: 4px;
     opacity: 1;
@@ -31,7 +31,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background-color: var(--gray);
+    background-color: $swiper-pagination-bullet-active;
     width: 15px;
   }
 
@@ -44,22 +44,21 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    --size: 30px;
     align-items: center;
     border-radius: 999px;
     display: flex;
-    height: var(--size);
+    height: $swiper-button-size;
     justify-content: center;
     margin-top: 0;
     position: static;
-    width: var(--size);
+    width: $swiper-button-size;
 
     &:hover {
-      background-color: var(--light-gray);
+      background-color: $swiper-pagination-bullet;
     }
 
     &::after {
-      color: var(--gray);
+      color: $swiper-pagination-bullet-active;
       font-size: 24px;
       transform: translate(1px, -3px);
     }
@@ -67,13 +66,13 @@
 
   .swiper-button-prev {
     &::after {
-      content: "‹";
+      content: '‹';
     }
   }
 
   .swiper-button-next {
     &::after {
-      content: "›";
+      content: '›';
     }
   }
 }

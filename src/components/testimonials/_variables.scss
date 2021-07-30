@@ -1,11 +1,9 @@
-$accordion-mobile-margin-bottom: map-get($module-spacing, "mobile") !default;
-$accordion-mobile-margin-top: map-get($module-spacing, "mobile") !default;
-$accordion-desktop-margin-bottom: map-get($module-spacing, "desktop") !default;
-$accordion-desktop-margin-top: map-get($module-spacing, "desktop") !default;
-$accordion-item-border: solid 1px map-get($theme-colors, "primary") !default;
-$accordion-item-focus-background: map-get($theme-colors, "primary") !default;
-$accordion-item-focus-text-color: #FFF !default;
-$accordion-item-font-family: $primary-font !default;
-$accordion-item-title-font-family: $secondary-font !default;
-$accordion-item-heading-font-family: $secondary-font !default;
-$accordion-item-icon-fill: map-get($theme-colors, "primary") !default;
+$swiper-pagination-bullet: map-get(
+  $theme-colors,
+  'primary-light-gray'
+) !default;
+$swiper-pagination-bullet-active: map-get(
+  $theme-colors,
+  'primary-gray'
+) !default;
+$swiper-button-size: 80px;
