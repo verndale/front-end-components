@@ -1,0 +1,79 @@
+@import "../theme", "variables";
+
+.testimonials__slider {
+  margin: 20px auto 0;
+  max-width: 600px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.testimonials__pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    background-color: var(--light-gray);
+    border-radius: 0;
+    height: 4px;
+    opacity: 1;
+    transition: width 300ms linear;
+    width: 12px;
+  }
+
+  .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--gray);
+    width: 15px;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    gap: 4px;
+    height: 4px;
+    position: static;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    --size: 30px;
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    height: var(--size);
+    justify-content: center;
+    margin-top: 0;
+    position: static;
+    width: var(--size);
+
+    &:hover {
+      background-color: var(--light-gray);
+    }
+
+    &::after {
+      color: var(--gray);
+      font-size: 24px;
+      transform: translate(1px, -3px);
+    }
+  }
+
+  .swiper-button-prev {
+    &::after {
+      content: "‹";
+    }
+  }
+
+  .swiper-button-next {
+    &::after {
+      content: "›";
+    }
+  }
+}
