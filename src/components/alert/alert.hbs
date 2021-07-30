@@ -1,0 +1,23 @@
+<div class="alert alert--{{type}}" data-module="alert" data-id="{{id}}" data-cookie-name="reusable">
+  <div class="container">
+    <div class="alert__header">
+      <h2 class="alert__heading">{{heading}}</h2>
+      {{#if copy}}
+      <button type="button" class="alert__toggle" aria-expanded="false">
+        <span class="alert__hide">{{hideButtonLabel}}</span>
+        <span class="alert__show">{{showButtonLabel}}</span>
+        {{>svg name="arrow-up" viewBox="0 0 320 320"}}
+      </button>
+      {{/if}}
+      <button type="button" class="alert__close">
+        {{closeButtonLabel}}
+        {{>svg name="close" viewBox="0 0 320 320"}}
+      </button>
+    </div>
+    {{#if copy}}
+    <div class="alert__content" tabindex="-1">
+      <div class="rtf">{{{copy}}}</div>
+    </div>
+    {{/if}}
+  </div>
+</div>
