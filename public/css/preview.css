@@ -411,19 +411,33 @@ body {
   border: 0;
   color: #06847b;
   display: inline-flex;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 14px;
   padding: 0;
   text-align: left;
   text-decoration: none; }
   .link-list:hover {
     text-decoration: underline; }
-    .link-list:hover .link-list__arrow {
-      transform: translateX(0.3125rem); }
 
 .link-list__arrow {
-  margin-left: 0.25rem;
   height: 15px;
   width: 15px;
   transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   fill: #06847b; }
+
+.link-list--right .link-list__arrow {
+  margin-left: 0.25rem; }
+
+.link-list--right:hover .link-list__arrow {
+  transform: translateX(0.3125rem); }
+
+.link-list--left span {
+  order: 2; }
+
+.link-list--left:hover .link-list__arrow {
+  transform: translateX(-0.3125rem); }
+
+.link-list--small {
+  font-size: 14px; }
+
+.link-list--large {
+  font-size: 16px; }
