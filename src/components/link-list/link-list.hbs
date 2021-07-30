@@ -1,0 +1,12 @@
+<ul>
+{{#json links}}
+  {{#each this}}
+    <li>
+      <a class="link-list" href="#" tabindex="0">
+      <span>{{label}}</span>
+      {{> svg name=icon viewBox="0 0 15 15" className="link-list__arrow"}}
+      </a>
+    </li>
+  {{/each}}
+{{/json}}
+</ul>
