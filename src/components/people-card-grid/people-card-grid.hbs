@@ -1,0 +1,27 @@
+<h2 class="people-card-grid__heading">
+  {{heading}}
+</h2>
+
+<div class="people-card-grid__people-content-grid" data-module="peopleCard">
+  {{#json personCards}}
+    {{#each this}}
+      <div
+        class="people-card-grid__person"
+        role="button"
+        tabindex="0"
+        data-name="{{name}}"
+        data-position="{{position}}"
+        data-bio="{{bio}}"
+      >
+        <div class="people-card-grid__image">
+          <img src="{{image}}" alt="{{name}}" />
+        </div>
+        <div class="people-card-grid__content">
+          <h3 class="people-card-grid__name">{{name}}</h3>
+          <div class="people-card-grid__position">{{position}}</div>
+          <span class="people-card-grid__link">{{linkLabel}}</span>
+        </div>
+      </div>
+    {{/each}}
+  {{/json}}
+</div>

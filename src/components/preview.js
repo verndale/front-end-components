@@ -4,6 +4,10 @@ const components = [
   {
     name: 'accordion',
     loader: () => import('./accordion/Accordion')
+  },
+  {
+    name: 'peopleCard',
+    loader: () => import('./people-card-grid/PeopleCard')
   }
 ];
 
