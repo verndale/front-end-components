@@ -1,0 +1,16 @@
+<div class="content-card {{#unless image}} content-card--no-image {{/unless}}">
+  <!-- Display this div if image exists-->
+  {{#if image}}
+    <div class="content-card__image">
+      <img src="{{image}}" alt="{{heading}}" />
+    </div>
+  {{/if}}
+  <div class="content-card__wrapper">
+    <h6 class="content-card__heading">{{heading}}</h6>
+    <div class="content-card__copy">{{copy}}</div>
+    <a href={{cta}} class="content-card__cta">
+      {{ctaLabel}}
+      {{>svg name=icon}}
+    </a>
+  </div>
+</div>
