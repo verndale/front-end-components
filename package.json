@@ -26,7 +26,7 @@
     "sass": "node-sass src/components/preview.scss -o public/css",
     "check-format": "prettier --check \"src/**/*.js\"",
     "format-js": "prettier --write \"src/**/*.js\"",
-    "start": "yarn svg && yarn sass && gulp",
+    "start": "yarn svg && gulp",
     "release": "semantic-release",
     "svg": "svgo public/images/svg-sprites -o public/images && svg-sprite-generate -d public/images/svg-sprites -o public/images/svgsheet.svg"
   },
@@ -54,6 +54,7 @@
     "js-cookie": "2.2.1",
     "husky": "^7.0.1",
     "sass-mq": "5.0.1",
+    "swiper": "6.7.0",
     "semantic-release": "17.4.4"
   },
   "devDependencies": {

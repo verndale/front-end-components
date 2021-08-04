@@ -8,6 +8,10 @@ const components = [
   {
     name: 'alert',
     loader: () => import('./alert/Alert')
+  },
+  {
+    name: 'testimonials',
+    loader: () => import('./testimonials/testimonials')
   }
 ]
 
