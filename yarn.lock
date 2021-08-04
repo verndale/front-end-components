@@ -5859,6 +5859,19 @@ gulp-cli@^2.2.0:
     v8flags "^3.2.0"
     yargs "^7.1.0"
 
+gulp-sass@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-5.0.0.tgz#c338fc021e450a51ae977fea9014eda331ce66b7"
+  integrity sha512-J0aH0/2N4+2szGCeut0ktGHK0Wg8L9uWivuigrl7xv+nhxozBQRAKLrhnDDaTa3FeUWYtgT8w4RlgdhRy5v16w==
+  dependencies:
+    chalk "^4.1.1"
+    lodash "^4.17.20"
+    plugin-error "^1.0.1"
+    replace-ext "^2.0.0"
+    strip-ansi "^6.0.0"
+    transfob "^1.0.0"
+    vinyl-sourcemaps-apply "^0.2.1"
+
 gulp-util@3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
@@ -7472,7 +7485,7 @@ lodash@^3.2.0, lodash@^3.3.1:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
 
-lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.5.1, lodash@~4.17.10:
+lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.5.1, lodash@~4.17.10:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -10054,6 +10067,11 @@ replace-ext@^1.0.0:
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.1.tgz#2d6d996d04a15855d967443631dd5f77825b016a"
   integrity sha512-yD5BHCe7quCgBph4rMQ+0KkIRKwWCrHDOX1p1Gp6HwjPM5kVoCdKGNhN7ydqqsX6lJEnQDKZ/tFMiEdQ1dvPEw==
 
+replace-ext@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-2.0.0.tgz#9471c213d22e1bcc26717cd6e50881d88f812b06"
+  integrity sha512-UszKE5KVK6JvyD92nzMn9cDapSk6w/CaFZ96CnmDMUqH9oowfxF/ZjRITD25H4DnOQClLA4/j7jLGXXLVKxAug==
+
 replace-homedir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/replace-homedir/-/replace-homedir-1.0.0.tgz#e87f6d513b928dde808260c12be7fec6ff6e798c"
@@ -11511,6 +11529,11 @@ tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
+transfob@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/transfob/-/transfob-1.0.0.tgz#c7fc27a5b5430ad486267ae666d923f74a0ab320"
+  integrity sha1-x/wnpbVDCtSGJnrmZtkj90oKsyA=
+
 traverse@~0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
@@ -12032,7 +12055,7 @@ vinyl-sourcemap@^1.1.0:
     remove-bom-buffer "^3.0.0"
     vinyl "^2.0.0"
 
-vinyl-sourcemaps-apply@^0.2.0:
+vinyl-sourcemaps-apply@^0.2.0, vinyl-sourcemaps-apply@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/vinyl-sourcemaps-apply/-/vinyl-sourcemaps-apply-0.2.1.tgz#ab6549d61d172c2b1b87be5c508d239c8ef87705"
   integrity sha1-q2VJ1h0XLCsbh75cUI0jnI74dwU=
