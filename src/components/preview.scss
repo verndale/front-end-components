@@ -216,5 +216,4 @@ body {
   }
 }
 
-@import 'accordion/styles', 'button/styles', 'alert/styles', 'link/styles',
-  'testimonials/styles', 'cards/testimonials/styles';
+@import "./**/**.scss";

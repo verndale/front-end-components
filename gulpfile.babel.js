@@ -1,12 +1,14 @@
-import gulp from 'gulp'
-import { log, colors, PluginError } from 'gulp-util'
-import mergeStream from 'merge-stream'
-import babel from 'gulp-babel'
-import fractal from './fractal.config'
-import webpack from 'webpack'
-import webpackConfig from './webpack.config.babel'
+import gulp from 'gulp';
+import { log, colors, PluginError } from 'gulp-util';
+import mergeStream from 'merge-stream';
+import babel from 'gulp-babel';
+import sassGlob from 'gulp-sass-glob';
+import fractal from './fractal.config';
+import webpack from 'webpack';
+import webpackConfig from './webpack.config.babel';
 
-const logger = fractal.cli.console
+const gulpScss = require('gulp-sass')(require('node-sass'))
+const logger = fractal.cli.console;
 
 //fractal
 function fractalStart(cb) {
@@ -55,6 +57,7 @@ Webpack
   })
 }
 
+//copy for lib build
 function copy() {
   const theme = gulp
     .src('./src/components/_theme.scss')
@@ -67,6 +70,7 @@ function copy() {
   return mergeStream(theme, styles)
 }
 
+//babel
 function babelfy() {
   return gulp
     .src([
@@ -82,6 +86,25 @@ function babelfy() {
     .pipe(gulp.dest('./lib'))
 }
 
+//compile css
+function scss(){
+  log(
+    colors.green.bold(`
+--------------------------------------------------------------
+Compiling SCSS
+--------------------------------------------------------------`)
+  );
+
+  return gulp.src('./src/components/**/**.scss')
+    .pipe(sassGlob())
+    .pipe(
+      gulpScss({
+        sourceComments: true
+      }).on('error', gulpScss.logError)
+    )
+    .pipe(gulp.dest('./public/css'));
+}
+
 //watch
 function watch(cb) {
   const watchOptions = {
@@ -92,7 +115,7 @@ function watch(cb) {
   log(
     colors.green.bold(`
 --------------------------------------------------------------
-Watch
+Watching...
 --------------------------------------------------------------`)
   )
 
@@ -103,13 +126,23 @@ Watch
     js
   )
 
-  cb()
+  //scss
+  gulp.watch([
+    './src/components/**/**.scss'
+  ], watchOptions, scss);
+
+  cb();
 }
 
-//tasks
-const tasks = gulp.series(js, fractalStart, watch)
 
-//default task
-gulp.task('default', tasks)
-gulp.task('copy', copy)
-gulp.task('babel', babelfy)
+//tasks
+let tasks = gulp.series(
+  scss,
+  js,
+  fractalStart,
+  watch
+);
+
+gulp.task('default', tasks);
+gulp.task('copy', copy);
+gulp.task('babel', babelfy);

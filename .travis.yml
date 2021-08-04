@@ -6,5 +6,5 @@ deploy:
   on:
     branch: main
   provider: npm
-  email: joe.fusco@verndale.com
-  api_key: 832a3b76-c5cf-487e-8619-be2c2c844032
+  email: jfusco311@gmail.com
+  api_key: 687900de-bbad-4611-a8b6-a6dc91c89a2a
