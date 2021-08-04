@@ -1,14 +1,14 @@
 module.exports = {
   title: 'Alert component',
   status: 'ready',
+  'default': 'notice',
   context: {
     heading: 'Notice Alert',
     type: 'notice',
     copy: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation Lorem dolor.</p>',
     hideButtonLabel: 'hide',
     showButtonLabel: 'show',
-    closeButtonLabel: 'close',
-    id: 'notice'
+    closeButtonLabel: 'close'
   },
   variants: [
     {

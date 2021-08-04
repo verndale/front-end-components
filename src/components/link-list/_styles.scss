@@ -1,0 +1,57 @@
+@import "../theme", "variables";
+
+.link-list {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: $primary-color;
+  display: inline-flex;
+  font-size: 14px;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-list__arrow {
+  height: 15px;
+  width: 15px;
+  transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  fill: $primary-color;
+}
+
+.link-list--right {
+  .link-list__arrow {
+    margin-left: 0.25rem;
+  }
+
+  &:hover {
+    .link-list__arrow {
+      transform: translateX(0.3125rem);
+    }
+  }
+}
+
+.link-list--left {
+  span {
+    order: 2;
+  }
+
+  &:hover {
+    .link-list__arrow {
+      transform: translateX(-0.3125rem);
+    }
+  }
+}
+
+.link-list--small {
+  font-size: 14px;
+}
+
+.link-list--large {
+  font-size: 16px;
+}
+

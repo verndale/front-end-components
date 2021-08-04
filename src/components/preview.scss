@@ -3,6 +3,8 @@
 
 @import 'theme';
 @import '../../node_modules/sass-mq/mq';
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/swiper/swiper';
 
 :root {
   --white: #ffffff;
@@ -214,4 +216,4 @@ body {
   }
 }
 
-@import 'accordion/styles', 'button/styles', 'alert/styles';
+@import "./**/**.scss";
