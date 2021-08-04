@@ -194,7 +194,6 @@ img {
   object-fit: cover;
 }
 
-
 body {
   font-family: $primary-font;
   font-size: 18px;
@@ -215,4 +214,4 @@ body {
   }
 }
 
-@import "./**/styles";
+@import "./**/**.scss";
