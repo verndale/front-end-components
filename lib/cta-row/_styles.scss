@@ -1,0 +1,84 @@
+@import '../../components/theme', 'variables';
+
+.cta-row {
+  margin: $module-spacing-mobile auto;
+
+  @include mq(desktop) {
+    margin: $module-spacing-desktop auto;
+  }
+}
+
+.cta-row__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  z-index: 0;
+
+  @include mq(tablet-landscape) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .cta-row--with-background & {
+    padding: 0 20px 20px;
+
+    @include mq(tablet-landscape) {
+      padding: 20px 20px 20px 59px;
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+
+    @include mq(tablet-landscape) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.cta-row__content {
+  flex-grow: 1;
+}
+
+.cta-row__image {
+  margin-bottom: 20px;
+  padding-bottom: 73.5%;
+  position: relative;
+  width: 100%;
+
+  @include mq(tablet-landscape) {
+    flex-shrink: 0;
+    height: 280px;
+    margin-bottom: 0;
+    margin-left: 52px;
+    padding: 0;
+    width: 380px;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.cta-row__background {
+  height: calc(100% - 60px);
+  left: 0;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: -1;
+
+  @include mq(tablet-landscape) {
+    height: 100%;
+    top: 0;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
