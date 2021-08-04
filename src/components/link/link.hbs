@@ -1,0 +1,9 @@
+<a href="#" class="link{{#if className}} link--{{className}}{{/if}}{{#ifCond size "==" "small"}} link--small{{/ifCond}}">
+  {{#ifCond icon "==" "left"}}
+    {{>svg name="chevron-left" className="link__icon link__icon--left" viewBox="0 0 6 10"}}
+  {{/ifCond}}
+  {{label}}
+  {{#ifCond icon "==" "right"}}
+    {{>svg name="chevron-right" className="link__icon link__icon--right" viewBox="0 0 6 10"}}
+  {{/ifCond}}
+</a>

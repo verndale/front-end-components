@@ -1,6 +1,6 @@
-import { gsap, Expo, CSSPlugin } from 'gsap';
+import { gsap, Expo, CSSPlugin } from 'gsap'
 
-gsap.registerPlugin(CSSPlugin);
+gsap.registerPlugin(CSSPlugin)
 
 /**
  * Opens an element
@@ -21,17 +21,17 @@ export const open = ({
   ease = 'easeOut',
   onComplete
 }) => {
-  gsap.set(element, { height: 'auto' });
+  gsap.set(element, { height: 'auto' })
   gsap.from(element, {
     height: 0,
     ease: Expo[ease],
     duration,
     onComplete: () => {
-      element.style.height = null;
-      onComplete && onComplete();
+      element.style.height = null
+      onComplete && onComplete()
     }
-  });
-};
+  })
+}
 
 /**
  * Closes an element
@@ -52,31 +52,31 @@ export const close = ({
   ease = 'easeOut',
   onComplete
 }) => {
-  gsap.set(element, { height: element.offsetHeight });
+  gsap.set(element, { height: element.offsetHeight })
   gsap.to(element, {
     height: 0,
     ease: Expo[ease],
     duration,
     onComplete: () => {
-      element.style.height = null;
-      onComplete && onComplete();
+      element.style.height = null
+      onComplete && onComplete()
     }
-  });
-};
+  })
+}
 
 /**
  * Debounce function
  * Delays the processing of the event
  */
 export const debounce = (callback, wait) => {
-  let timerId;
+  let timerId
   return (...args) => {
-    clearTimeout(timerId);
+    clearTimeout(timerId)
     timerId = setTimeout(() => {
-      callback(...args);
-    }, wait);
-  };
-};
+      callback(...args)
+    }, wait)
+  }
+}
 
 /**
  * Key code list object
@@ -94,4 +94,4 @@ export const keyCode = {
   UP: 38,
   RIGHT: 39,
   DOWN: 40
-};
+}

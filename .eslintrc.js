@@ -83,8 +83,6 @@ module.exports = {
     'no-var': 2,
     // require using arrow functions for callbacks
     'prefer-arrow-callback': 2,
-    // require parentheses around arrow function arguments as needed
-    'arrow-parens': [2, 'as-needed'],
     // enforce spacing before and after the arrow in arrow functions
     'arrow-spacing': [
       2,
@@ -107,7 +105,7 @@ module.exports = {
     // disallow tabs
     'no-tabs': 2,
     // check for indent with 2 spaces
-    indent: [2, 2],
+    indent: [2, 2, { SwitchCase: 1 }],
     // enforce consistent spacing before and after semicolons
     'semi-spacing': [
       2,
@@ -129,10 +127,10 @@ module.exports = {
             after: true
           },
           for: {
-            after: false
+            after: true
           },
           while: {
-            after: false
+            after: true
           },
           function: {
             after: true
@@ -223,4 +221,4 @@ module.exports = {
     _$: true,
     _$$: true
   }
-};
+}
