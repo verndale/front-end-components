@@ -215,7 +215,4 @@ body {
   }
 }
 
-@import
-"accordion/styles",
-"button/styles",
-"link-list/styles";
+@import "./**/styles";
