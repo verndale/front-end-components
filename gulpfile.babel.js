@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import { log, colors, PluginError } from 'gulp-util';
 import mergeStream from 'merge-stream';
 import babel from 'gulp-babel';
+import sassGlob from 'gulp-sass-glob';
 import fractal from './fractal.config';
 import webpack from 'webpack';
 import webpackConfig from './webpack.config.babel';
@@ -94,6 +95,7 @@ Compiling SCSS
   );
 
   return gulp.src('./src/components/**/**.scss')
+    .pipe(sassGlob())
     .pipe(
       gulpScss({
         sourceComments: true
