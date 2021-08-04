@@ -13,6 +13,7 @@
 .npmignore
 .nvmrc
 .yarnrc
+.travis.yml
 yarn.lock
 fractal.config.js
 gulpfile.babel.js
