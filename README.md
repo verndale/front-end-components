@@ -2,6 +2,8 @@
 
 [![Build Status][build-image]][build-url] [![semantic-release][sem-release-image]][sem-release-url]
 
+[![dependencies Status](https://status.david-dm.org/gh/verndale/front-end-components.svg)](https://david-dm.org/verndale/front-end-components) [![devDependencies Status](https://status.david-dm.org/gh/verndale/front-end-components.svg?type=dev)](https://david-dm.org/verndale/front-end-components?type=dev)
+
 
 [build-image]: https://www.travis-ci.com/verndale/front-end-components.svg?branch=main
 [build-url]: https://travis-ci.com/github/verndale/front-end-components
