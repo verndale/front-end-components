@@ -16,6 +16,7 @@ Below is the list of variables you can override. You may also find these in the 
 $swiper-pagination-bullet
 $swiper-pagination-bullet-active
 $swiper-button-size
+$testimonial-font-family
 ```
 
 **_You always need to set your overrides before the import of you component - for example:_**
