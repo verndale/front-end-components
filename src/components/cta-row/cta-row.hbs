@@ -1,0 +1,23 @@
+<div class="cta-row{{#if backgroundImage}} cta-row--with-background{{/if}} container">
+  <div class="cta-row__inner">
+    <div class="cta-row__content">
+      <h2 class="cta-row__title">{{title}}</h2>
+      {{#if description}}
+      <div class="cta-row__description">
+        {{{description}}}
+      </div>
+      {{/if}}
+      {{>@button label=ctaLabel type="link" className="primary"}}
+    </div>
+    {{#if image}}
+    {{#json image}}
+    {{>picture className="cta-row__image"}}
+    {{/json}}
+    {{/if}}
+    {{#if backgroundImage}}
+    {{#json backgroundImage}}
+    {{>picture className="cta-row__background"}}
+    {{/json}}
+    {{/if}}
+  </div>
+</div>
