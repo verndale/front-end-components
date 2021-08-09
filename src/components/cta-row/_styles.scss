@@ -8,6 +8,14 @@
   }
 }
 
+.cta-row__title {
+  font-family: $cta-row-title-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px;
+}
+
 .cta-row__inner {
   display: flex;
   flex-direction: column-reverse;

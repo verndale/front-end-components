@@ -1,7 +1,6 @@
 @import '../../theme', 'variables';
 
 .testimonials-card {
-  
   box-shadow: inset 0 0 0 1px currentColor;
   margin-top: $space-card-mobile;
   max-width: 600px;
@@ -11,6 +10,22 @@
   @include mq(desktop) {
     padding: 40px;
   }
+}
+
+.testimonials-card__name {
+  font-family: $card-font-family;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px;
+}
+
+.testimonials-card__position {
+  font-family: $card-font-family;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 10px;
 }
 
 .testimonials-card--with-image {
@@ -33,10 +48,7 @@
   top: 0;
 
   @include mq(desktop) {
-   
     height: $photo-size-desktop;
     width: $photo-size-desktop;
   }
 }
-
-

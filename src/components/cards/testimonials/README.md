@@ -33,6 +33,7 @@ $space-card-mobile
 $space-card-mobile-image
 $space-card-desktop
 $photo-size-desktop
+$card-font-family
 
 ```
 
