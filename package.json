@@ -2,7 +2,7 @@
   "name": "@verndale/front-end-components",
   "description": "Front end component library.",
   "license": "MIT",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "main": "lib/main.js",
   "author": {
     "name": "Verndale",
@@ -19,7 +19,7 @@
     "last 2 versions"
   ],
   "scripts": {
-    "build": "rimraf ./docs ./lib && yarn docs && gulp babel && gulp copy",
+    "build": "rimraf ./lib && yarn docs && gulp babel && gulp copy",
     "build-fractal": "rimraf ./build && fractal build",
     "commit": "npx git-cz",
     "docs": "documentation build src/components/**/*.js -f html -g true -o docs",
