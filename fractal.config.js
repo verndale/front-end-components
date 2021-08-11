@@ -40,6 +40,6 @@ const theme = mandelbrot({
 })
 
 fractal.web.theme(theme)
-fractal.web.set('builder.dest', `${__dirname}/dist/fractal`)
+fractal.web.set('builder.dest', `${__dirname}/build`)
 fractal.web.set('static.path', path.join(__dirname, 'public'))
 fractal.docs.set('path', path.join(__dirname, 'src/docs'))
