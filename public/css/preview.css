@@ -1751,18 +1751,34 @@ body {
     .testimonials-card {
       padding: 40px; } }
 
-/* line 16, src/components/cards/testimonials/_styles.scss */
+/* line 15, src/components/cards/testimonials/_styles.scss */
+.testimonials-card__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px; }
+
+/* line 23, src/components/cards/testimonials/_styles.scss */
+.testimonials-card__position {
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 10px; }
+
+/* line 31, src/components/cards/testimonials/_styles.scss */
 .testimonials-card--with-image {
-  margin-top: 30px;
-  padding-top: calc(30px + 20px);
+  margin-top: 40px;
+  padding-top: calc(40px + 20px);
   position: relative; }
   @media (min-width: 80em) {
-    /* line 16, src/components/cards/testimonials/_styles.scss */
+    /* line 31, src/components/cards/testimonials/_styles.scss */
     .testimonials-card--with-image {
       margin-top: 60px;
       padding-top: calc(60px + 20px); } }
 
-/* line 27, src/components/cards/testimonials/_styles.scss */
+/* line 42, src/components/cards/testimonials/_styles.scss */
 .testimonials-card__photo {
   border-radius: 999px;
   left: 50%;
@@ -1771,7 +1787,7 @@ body {
   transform: translate(-50%, -50%);
   top: 0; }
   @media (min-width: 80em) {
-    /* line 27, src/components/cards/testimonials/_styles.scss */
+    /* line 42, src/components/cards/testimonials/_styles.scss */
     .testimonials-card__photo {
       height: 120px;
       width: 120px; } }
@@ -1855,43 +1871,51 @@ body {
       margin: 150px auto; } }
 
 /* line 11, src/components/cta-row/_styles.scss */
+.cta-row__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+
+/* line 19, src/components/cta-row/_styles.scss */
 .cta-row__inner {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
   z-index: 0; }
   @media (min-width: 64em) {
-    /* line 11, src/components/cta-row/_styles.scss */
+    /* line 19, src/components/cta-row/_styles.scss */
     .cta-row__inner {
       align-items: center;
       flex-direction: row; } }
-  /* line 22, src/components/cta-row/_styles.scss */
+  /* line 30, src/components/cta-row/_styles.scss */
   .cta-row--with-background .cta-row__inner {
     padding: 0 20px 20px; }
     @media (min-width: 64em) {
-      /* line 22, src/components/cta-row/_styles.scss */
+      /* line 30, src/components/cta-row/_styles.scss */
       .cta-row--with-background .cta-row__inner {
         padding: 20px 20px 20px 59px; } }
-  /* line 30, src/components/cta-row/_styles.scss */
+  /* line 38, src/components/cta-row/_styles.scss */
   .cta-row__inner .btn {
     margin-top: 10px; }
     @media (min-width: 64em) {
-      /* line 30, src/components/cta-row/_styles.scss */
+      /* line 38, src/components/cta-row/_styles.scss */
       .cta-row__inner .btn {
         margin-top: 20px; } }
 
-/* line 39, src/components/cta-row/_styles.scss */
+/* line 47, src/components/cta-row/_styles.scss */
 .cta-row__content {
   flex-grow: 1; }
 
-/* line 43, src/components/cta-row/_styles.scss */
+/* line 51, src/components/cta-row/_styles.scss */
 .cta-row__image {
   margin-bottom: 20px;
   padding-bottom: 73.5%;
   position: relative;
   width: 100%; }
   @media (min-width: 64em) {
-    /* line 43, src/components/cta-row/_styles.scss */
+    /* line 51, src/components/cta-row/_styles.scss */
     .cta-row__image {
       flex-shrink: 0;
       height: 280px;
@@ -1899,14 +1923,14 @@ body {
       margin-left: 52px;
       padding: 0;
       width: 380px; } }
-  /* line 58, src/components/cta-row/_styles.scss */
+  /* line 66, src/components/cta-row/_styles.scss */
   .cta-row__image img {
     height: 100%;
     object-fit: cover;
     position: absolute;
     width: 100%; }
 
-/* line 66, src/components/cta-row/_styles.scss */
+/* line 74, src/components/cta-row/_styles.scss */
 .cta-row__background {
   height: calc(100% - 60px);
   left: 0;
@@ -1915,11 +1939,11 @@ body {
   width: 100%;
   z-index: -1; }
   @media (min-width: 64em) {
-    /* line 66, src/components/cta-row/_styles.scss */
+    /* line 74, src/components/cta-row/_styles.scss */
     .cta-row__background {
       height: 100%;
       top: 0; } }
-  /* line 79, src/components/cta-row/_styles.scss */
+  /* line 87, src/components/cta-row/_styles.scss */
   .cta-row__background img {
     height: 100%;
     object-fit: cover;
@@ -2344,13 +2368,21 @@ body {
     justify-content: center; }
 
 /* line 13, src/components/testimonials/_styles.scss */
+.testimonials__heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+
+/* line 21, src/components/testimonials/_styles.scss */
 .testimonials__pagination {
   align-items: center;
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-top: 20px; }
-  /* line 20, src/components/testimonials/_styles.scss */
+  /* line 28, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-pagination-bullet {
     background-color: #e5e5e5;
     border-radius: 0;
@@ -2358,20 +2390,20 @@ body {
     opacity: 1;
     transition: width 300ms linear;
     width: 12px; }
-  /* line 29, src/components/testimonials/_styles.scss */
+  /* line 37, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
     margin-left: 4px; }
-  /* line 33, src/components/testimonials/_styles.scss */
+  /* line 41, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-pagination-bullet-active {
     background-color: #4a4a4a;
     width: 15px; }
-  /* line 38, src/components/testimonials/_styles.scss */
+  /* line 46, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-pagination {
     display: flex;
     gap: 4px;
     height: 4px;
     position: static; }
-  /* line 45, src/components/testimonials/_styles.scss */
+  /* line 53, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-button-prev,
   .testimonials__pagination .swiper-button-next {
     align-items: center;
@@ -2382,19 +2414,19 @@ body {
     margin-top: 0;
     position: static;
     width: 80px; }
-    /* line 56, src/components/testimonials/_styles.scss */
+    /* line 64, src/components/testimonials/_styles.scss */
     .testimonials__pagination .swiper-button-prev:hover,
     .testimonials__pagination .swiper-button-next:hover {
       background-color: #e5e5e5; }
-    /* line 60, src/components/testimonials/_styles.scss */
+    /* line 68, src/components/testimonials/_styles.scss */
     .testimonials__pagination .swiper-button-prev::after,
     .testimonials__pagination .swiper-button-next::after {
       color: #4a4a4a;
       font-size: 24px;
       transform: translate(1px, -3px); }
-  /* line 68, src/components/testimonials/_styles.scss */
+  /* line 76, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-button-prev::after {
     content: '‹'; }
-  /* line 74, src/components/testimonials/_styles.scss */
+  /* line 82, src/components/testimonials/_styles.scss */
   .testimonials__pagination .swiper-button-next::after {
     content: '›'; }
