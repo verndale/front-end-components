@@ -2007,6 +2007,333 @@ body {
   .link .link__icon--right {
     margin-left: 12px; }
 
+/* line 3, src/components/people-card-grid/_styles.scss */
+.people-card-grid__heading {
+  color: #06847b;
+  margin-bottom: 1.875rem;
+  font-size: 2.75rem;
+  line-height: 1.09; }
+  @media (min-width: 48em) {
+    /* line 3, src/components/people-card-grid/_styles.scss */
+    .people-card-grid__heading {
+      margin-bottom: 3.75rem;
+      max-width: calc(66% - 3.1875rem); } }
+
+/* line 15, src/components/people-card-grid/_styles.scss */
+.people-card-grid__people-content-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 44px; }
+  @media (min-width: 48em) {
+    /* line 15, src/components/people-card-grid/_styles.scss */
+    .people-card-grid__people-content-grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 80em) {
+    /* line 15, src/components/people-card-grid/_styles.scss */
+    .people-card-grid__people-content-grid {
+      grid-template-columns: repeat(3, 1fr); } }
+
+/* line 29, src/components/people-card-grid/_styles.scss */
+.people-card-grid__person {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  text-decoration: none; }
+  /* line 38, src/components/people-card-grid/_styles.scss */
+  .people-card-grid__person:hover {
+    box-shadow: 0 0.9375rem 3.125rem 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); }
+    /* line 41, src/components/people-card-grid/_styles.scss */
+    .people-card-grid__person:hover .people-card-grid__link {
+      text-decoration: underline; }
+
+/* line 47, src/components/people-card-grid/_styles.scss */
+.people-card-grid__image {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px; }
+  @media (min-width: 80em) {
+    /* line 47, src/components/people-card-grid/_styles.scss */
+    .people-card-grid__image {
+      width: 150px;
+      height: 150px; } }
+  /* line 57, src/components/people-card-grid/_styles.scss */
+  .people-card-grid__image img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    flex-shrink: 0;
+    min-height: 5rem;
+    min-width: 5rem;
+    object-fit: cover; }
+    @media (min-width: 80em) {
+      /* line 57, src/components/people-card-grid/_styles.scss */
+      .people-card-grid__image img {
+        min-height: 9.375rem;
+        min-width: 9.375rem; } }
+
+/* line 73, src/components/people-card-grid/_styles.scss */
+.people-card-grid__name {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #06847b; }
+
+/* line 83, src/components/people-card-grid/_styles.scss */
+.people-card-grid__position {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  color: #06847b; }
+
+/* line 93, src/components/people-card-grid/_styles.scss */
+.people-card-grid__link {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f54748; }
+
+/* line 103, src/components/people-card-grid/_styles.scss */
+.people-card-grid-modal {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 5.5625rem;
+  overflow: auto; }
+
+/* line 115, src/components/people-card-grid/_styles.scss */
+.people-card-grid-modal__inner {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.875rem 1.875rem 1.5625rem;
+  position: relative; }
+  @media (min-width: 48em) {
+    /* line 115, src/components/people-card-grid/_styles.scss */
+    .people-card-grid-modal__inner {
+      padding: 7.1875rem 8.5625rem 7.9375rem; } }
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+/* line 132, src/components/people-card-grid/_styles.scss */
+.modal {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; }
+
+/* line 137, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  left: 0;
+  overflow: auto;
+  padding: 4.3125rem 1.25rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99999; }
+  @media (min-width: 48em) {
+    /* line 137, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__overlay {
+      padding: 5.5625rem; } }
+  @media (min-width: 80em) {
+    /* line 137, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__overlay {
+      padding-top: 8.75rem; } }
+
+/* line 157, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__container {
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1.875rem 1.875rem 1.5625rem; }
+  @media (min-width: 48em) {
+    /* line 157, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__container {
+      padding: 5.5625rem; } }
+  @media (min-width: 80em) {
+    /* line 157, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__container {
+      padding: 7.1875rem 8.5625rem 7.9375rem; } }
+
+/* line 172, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__header {
+  display: flex;
+  flex-direction: column; }
+
+/* line 177, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__title {
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #06847b;
+  box-sizing: border-box;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.13;
+  margin-bottom: 0.5rem; }
+  @media (min-width: 80em) {
+    /* line 177, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__title {
+      font-size: 1.25rem;
+      font-size: 2.75rem;
+      line-height: 1.25;
+      margin-bottom: 0.625rem; } }
+
+/* line 196, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__position {
+  font-size: 1.125rem;
+  color: #06847b;
+  margin: 0 0 0.375rem; }
+  @media (min-width: 80em) {
+    /* line 196, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__position {
+      margin-bottom: 2.25rem; } }
+
+/* line 206, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__bio {
+  font-size: 1.125rem;
+  line-height: 1.78;
+  color: #4a4a4a;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+  @media (min-width: 80em) {
+    /* line 206, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__bio {
+      -webkit-line-clamp: unset; } }
+
+/* line 221, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__bio--expanded {
+  -webkit-line-clamp: unset; }
+
+/* line 225, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__close {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 0.78125rem;
+  top: 0.78125rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 15px;
+  color: #06847b;
+  transition: background-color 0.2s ease-in-out; }
+  @media (min-width: 48em) {
+    /* line 225, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__close {
+      font-size: 20px;
+      right: 24px;
+      top: 1.875rem; } }
+  /* line 245, src/components/people-card-grid/_styles.scss */
+  .modal-people-grid__close:hover {
+    background-color: rgba(6, 132, 123, 0.6); }
+
+/* line 250, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__show-more {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.125rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: normal;
+  min-height: 3.75rem;
+  min-width: 16.25rem;
+  padding: 1.0625rem 1.875rem 1.125rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 1.25rem; }
+  @media (min-width: 80em) {
+    /* line 250, src/components/people-card-grid/_styles.scss */
+    .modal-people-grid__show-more {
+      display: none; } }
+
+/* line 276, src/components/people-card-grid/_styles.scss */
+.modal-people-grid__header .modal-people-grid__close:before {
+  content: '\2715'; }
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-10%); } }
+
+/* line 319, src/components/people-card-grid/_styles.scss */
+.micromodal-slide {
+  display: none; }
+
+/* line 323, src/components/people-card-grid/_styles.scss */
+.micromodal-slide.is-open {
+  display: block; }
+
+/* line 327, src/components/people-card-grid/_styles.scss */
+.micromodal-slide[aria-hidden='false'] .modal-people-grid__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+/* line 331, src/components/people-card-grid/_styles.scss */
+.micromodal-slide[aria-hidden='false'] .modal-people-grid__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+/* line 335, src/components/people-card-grid/_styles.scss */
+.micromodal-slide[aria-hidden='true'] .modal-people-grid__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+/* line 339, src/components/people-card-grid/_styles.scss */
+.micromodal-slide[aria-hidden='true'] .modal-people-grid__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+/* line 343, src/components/people-card-grid/_styles.scss */
+.micromodal-slide .modal-people-grid__container,
+.micromodal-slide .modal-people-grid__overlay {
+  will-change: transform; }
+
 /* line 3, src/components/testimonials/_styles.scss */
 .testimonials__slider {
   margin: 20px auto 0;

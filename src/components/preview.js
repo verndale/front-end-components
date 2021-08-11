@@ -6,12 +6,16 @@ const components = [
     loader: () => import('./accordion/Accordion')
   },
   {
-    name: 'alert',
-    loader: () => import('./alert/Alert')
+    name: 'peopleCard',
+    loader: () => import('./people-card-grid/PeopleCard')
   },
   {
     name: 'testimonials',
     loader: () => import('./testimonials/testimonials')
+  },
+  {
+    name: 'alert',
+    loader: () => import('./alert/Alert')
   }
 ]
 
