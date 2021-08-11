@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/verndale/front-end-components/compare/v1.2.1...v1.2.2) (2021-08-11)
+
+
+### Bug Fixes
+
+* ST-0 - Change version in package file ([a4cb5a7](https://github.com/verndale/front-end-components/commit/a4cb5a7bcca8d796ef73aa7bcd9e75c0cbfa1c2e))
+
 ## [1.2.1](https://github.com/verndale/front-end-components/compare/v1.2.0...v1.2.1) (2021-08-11)
 
 
