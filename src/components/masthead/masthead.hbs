@@ -1,0 +1,50 @@
+<div class="masthead masthead--{{mediaPosition}}-media">
+  <div class="masthead__inner container">
+    <div class="masthead__media">
+      {{#if video}}
+      {{#json video}}
+      {{#ifCond ../mediaPosition "==" "background"}}
+      {{>video background="true"}}
+      {{else}}
+      {{>video}}
+      {{/ifCond}}
+      {{/json}}
+      {{else}}
+      {{#if youtubeId}}
+      {{#ifCond mediaPosition "==" "background"}}
+      {{>youtube videoId=youtubeId background="true"}}
+      {{else}}
+      {{>youtube videoId=youtubeId}}
+      {{/ifCond}}
+      {{else}}
+      {{#if vimeoId}}
+      {{#ifCond mediaPosition "==" "background"}}
+      {{>vimeo videoId=vimeoId background="true"}}
+      {{else}}
+      {{>vimeo videoId=vimeoId}}
+      {{/ifCond}}
+      {{else}}
+      {{#if image}}
+      {{#json image}}
+      {{>picture}}
+      {{/json}}
+      {{/if}}
+      {{/if}}
+      {{/if}}
+      {{/if}}
+    </div>
+    <div class="masthead__content">
+      {{#if subheading}}<p class="masthead__subheading">{{subheading}}</p>{{/if}}
+      <h1 class="masthead__heading">{{heading}}</h1>
+      <div class="masthead__copy rtf">
+        {{{copy}}}
+      </div>
+      {{#ifCond ctaLabel "||" linkLabel}}
+      <div class="masthead__actions">
+        {{#if ctaLabel}}{{>@button label=ctaLabel type="link" className="primary"}}{{/if}}
+        {{#if linkLabel}}{{>@link label=linkLabel className="primary"}}{{/if}}
+      </div>
+      {{/ifCond}}
+    </div>
+  </div>
+</div>
