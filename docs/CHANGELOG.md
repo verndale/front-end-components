@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/verndale/front-end-components/compare/v1.2.2...v1.2.3) (2021-08-13)
+
+
+### Bug Fixes
+
+* Alert fixes ([dc6d618](https://github.com/verndale/front-end-components/commit/dc6d618882bfc32a8624f8682a416df2c981103a))
+
 ## [1.2.2](https://github.com/verndale/front-end-components/compare/v1.2.1...v1.2.2) (2021-08-11)
 
 
