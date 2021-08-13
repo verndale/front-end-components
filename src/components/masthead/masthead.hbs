@@ -4,24 +4,24 @@
       {{#if video}}
       {{#json video}}
       {{#ifCond ../mediaPosition "==" "background"}}
-      {{>video background="true"}}
+      {{>@video background="true"}}
       {{else}}
-      {{>video}}
+      {{>@video}}
       {{/ifCond}}
       {{/json}}
       {{else}}
       {{#if youtubeId}}
       {{#ifCond mediaPosition "==" "background"}}
-      {{>youtube videoId=youtubeId background="true"}}
+      {{>@youtube videoId=youtubeId background="true"}}
       {{else}}
-      {{>youtube videoId=youtubeId}}
+      {{>@youtube videoId=youtubeId}}
       {{/ifCond}}
       {{else}}
       {{#if vimeoId}}
       {{#ifCond mediaPosition "==" "background"}}
-      {{>vimeo videoId=vimeoId background="true"}}
+      {{>@vimeo videoId=vimeoId background="true"}}
       {{else}}
-      {{>vimeo videoId=vimeoId}}
+      {{>@vimeo videoId=vimeoId}}
       {{/ifCond}}
       {{else}}
       {{#if image}}

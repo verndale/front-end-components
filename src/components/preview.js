@@ -16,6 +16,18 @@ const components = [
   {
     name: 'alert',
     loader: () => import('./alert/Alert')
+  },
+  {
+    name: 'video',
+    loader: () => import('./video/video')
+  },
+  {
+    name: 'vimeo',
+    loader: () => import('./vimeo/vimeo')
+  },
+  {
+    name: 'youtube',
+    loader: () => import('./youtube/youtube')
   }
 ]
 
