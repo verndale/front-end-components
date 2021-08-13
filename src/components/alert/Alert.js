@@ -29,8 +29,21 @@ class Alert extends Component {
 
     this.id = this.el.dataset.id
     this.cookieName = this.el.dataset.cookieName
-
+    this.cookieNameToggle = `${this.id}_toggle`
     this.shouldDisplayAlert()
+    this.shouldToggle()
+  }
+
+  shouldToggle() {
+    this.alertToggle = Cookies.get(this.cookieNameToggle)
+    if (this.alertToggle) {
+      Cookies.set(this.cookieNameToggle, false)
+      this.dom.toggle.setAttribute('aria-expanded', 'true')
+    } else {
+      Cookies.set(this.cookieNameToggle, true)
+      this.dom.toggle.setAttribute('aria-expanded', 'false')
+    }
+    this.handleToggle()
   }
 
   shouldDisplayAlert() {
@@ -54,7 +67,9 @@ class Alert extends Component {
 
   addListeners() {
     this.dom.toggle.addEventListener('click', this.handleToggle.bind(this))
-    this.dom.close.addEventListener('click', this.handleClose.bind(this))
+    if (this.dom.close) {
+      this.dom.close.addEventListener('click', this.handleClose.bind(this))
+    }
   }
 
   handleToggle() {
@@ -68,6 +83,7 @@ class Alert extends Component {
       })
     } else {
       this.dom.toggle.setAttribute('aria-expanded', true)
+
       this.dom.content.style.display = 'block'
       open({
         element: this.dom.content,

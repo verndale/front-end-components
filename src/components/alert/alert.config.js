@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Alert component',
   status: 'ready',
-  'default': 'notice',
+  default: 'notice',
   context: {
     heading: 'Notice Alert',
     type: 'notice',
@@ -45,6 +45,18 @@ module.exports = {
         showButtonLabel: 'show',
         closeButtonLabel: 'close',
         id: 'warning'
+      }
+    },
+    {
+      name: 'notice_without_close_button',
+      context: {
+        heading: 'Notice Alert',
+        type: 'notice',
+        copy: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation Lorem dolor.</p>',
+        hideButtonLabel: 'hide',
+        showButtonLabel: 'show',
+        closeButtonLabel: '',
+        id: 'notice_without_close_button'
       }
     }
   ]

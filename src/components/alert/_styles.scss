@@ -3,6 +3,10 @@
 .alert {
   background-color: $alert-primary;
   color: $alert-primary-font;
+
+  & + .alert {
+    margin-top: 10px;
+  }
 }
 
 .alert--critical {
@@ -36,6 +40,12 @@
   height: 50px;
   padding: 0 20px;
   text-transform: uppercase;
+
+  &.dismiss {
+    svg {
+      margin-left: 0;
+    }
+  }
 
   svg {
     fill: var(--white);
