@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/verndale/front-end-components/compare/v1.2.3...v1.3.0) (2021-08-23)
+
+
+### Features
+
+* Masthead and variations ([bac82c0](https://github.com/verndale/front-end-components/commit/bac82c0522ee030eb75ec519789aa8df0d9d7c02))
+
 ## [1.2.3](https://github.com/verndale/front-end-components/compare/v1.2.2...v1.2.3) (2021-08-13)
 
 
