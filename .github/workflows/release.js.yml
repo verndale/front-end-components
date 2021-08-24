@@ -36,3 +36,4 @@ jobs:
         output_location: 'build'
         app_build_command: 'yarn build-fractal'
         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APP_DEPLOY_TOKEN }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
