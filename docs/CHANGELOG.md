@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/verndale/front-end-components/compare/v1.3.0...v1.3.1) (2021-08-24)
+
+
+### Bug Fixes
+
+* ST-0 - Migrate release to github actions ([e1eb206](https://github.com/verndale/front-end-components/commit/e1eb2063746b7a79c9a42ed5f1cedd09d5ab3d4f))
+
 # [1.3.0](https://github.com/verndale/front-end-components/compare/v1.2.3...v1.3.0) (2021-08-23)
 
 
