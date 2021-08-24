@@ -27,3 +27,9 @@ jobs:
         cache: 'yarn'
     - name: Install Dependencies
       run: yarn install --frozen-lockfile
+    - name: Run JS Lint
+      run: yarn lint
+    - name: Build Dist Assets
+      run: yarn build
+    - name: Build Fractal
+      run: yarn build-fractal
