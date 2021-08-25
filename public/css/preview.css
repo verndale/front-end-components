@@ -1808,30 +1808,95 @@ body {
   margin: 0 0 10px; }
 
 /* line 10, src/components/column-row/_styles.scss */
-.colum-row__container {
-  display: grid;
-  row-gap: 15px;
-  column-gap: 15px;
-  margin: 20px 0; }
+.column-row .swiper-wrapper {
+  margin: 20px 0;
+  display: flex; }
   @media (min-width: 48em) {
     /* line 10, src/components/column-row/_styles.scss */
-    .colum-row__container {
+    .column-row .swiper-wrapper {
+      display: grid;
+      row-gap: 15px;
+      column-gap: 15px;
       grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 64em) {
-    /* line 19, src/components/column-row/_styles.scss */
-    .colum-row__container--three {
+    /* line 21, src/components/column-row/_styles.scss */
+    .column-row .swiper-wrapper--three {
       grid-template-columns: repeat(3, 1fr); } }
   @media (min-width: 64em) {
-    /* line 24, src/components/column-row/_styles.scss */
-    .colum-row__container--four {
+    /* line 26, src/components/column-row/_styles.scss */
+    .column-row .swiper-wrapper--four {
       grid-template-columns: repeat(4, 1fr); } }
 
-/* line 31, src/components/column-row/_styles.scss */
-.column-row__cards-item {
+/* line 33, src/components/column-row/_styles.scss */
+.swiper-slide {
   width: 100%; }
-  /* line 33, src/components/column-row/_styles.scss */
-  .column-row__cards-item > div {
+  /* line 35, src/components/column-row/_styles.scss */
+  .swiper-slide > div {
     width: 100%; }
+
+/* line 44, src/components/column-row/_styles.scss */
+.column-row__copy {
+  margin-top: 15px; }
+
+/* line 48, src/components/column-row/_styles.scss */
+.column-row__pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px; }
+  /* line 55, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet {
+    background-color: #e5e5e5;
+    border-radius: 0;
+    height: 4px;
+    opacity: 1;
+    transition: width 300ms linear;
+    width: 12px; }
+  /* line 64, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 4px; }
+  /* line 68, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet-active {
+    background-color: #4a4a4a;
+    width: 15px; }
+  /* line 73, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination {
+    display: flex;
+    gap: 4px;
+    height: 4px;
+    position: static; }
+  /* line 80, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-prev,
+  .column-row__pagination .swiper-button-next {
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 0;
+    position: static;
+    width: 40px; }
+    /* line 91, src/components/column-row/_styles.scss */
+    .column-row__pagination .swiper-button-prev:hover,
+    .column-row__pagination .swiper-button-next:hover {
+      background-color: #e5e5e5; }
+    /* line 95, src/components/column-row/_styles.scss */
+    .column-row__pagination .swiper-button-prev::after,
+    .column-row__pagination .swiper-button-next::after {
+      color: #4a4a4a;
+      font-size: 24px;
+      transform: translate(1px, -3px); }
+  /* line 103, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-prev::after {
+    content: '‹'; }
+  /* line 109, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-next::after {
+    content: '›'; }
+  @media (min-width: 48em) {
+    /* line 48, src/components/column-row/_styles.scss */
+    .column-row__pagination {
+      display: none; } }
 
 /* line 3, src/components/content-card/_styles.scss */
 .content-card {
