@@ -1,3 +1,11 @@
 $column-row-title-font: $primary-font !default;
-$rows-number: 4;
 $gap: 15px;
+$swiper-pagination-bullet: map-get(
+  $theme-colors,
+  'primary-light-gray'
+) !default;
+$swiper-pagination-bullet-active: map-get(
+  $theme-colors,
+  'primary-gray'
+) !default;
+$swiper-button-size: 40px;
