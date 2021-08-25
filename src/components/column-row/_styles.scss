@@ -1,0 +1,36 @@
+@import '../theme', 'variables';
+.column-row__heading {
+  font-family: $column-row-title-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px;
+}
+
+.colum-row__container {
+  display: grid;
+  row-gap: $gap;
+  column-gap: $gap;
+  margin: 20px 0;
+  @include mq(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--three {
+    @include mq(tablet-landscape) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &--four {
+    @include mq(tablet-landscape) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.column-row__cards-item {
+  width: 100%;
+  & > div {
+    width: 100%;
+  }
+}
