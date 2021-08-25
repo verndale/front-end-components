@@ -11,11 +11,8 @@ class Module extends Component {
       next: this.el.querySelector('.swiper-button-next'),
       prev: this.el.querySelector('.swiper-button-prev')
     }
-    console.log(this.dom)
     this.initSlider()
   }
-
-  addListeners() {}
 
   initSlider() {
     this.slider = new Swiper(this.dom.container, {
