@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Alert component',
   status: 'ready',
+  // eslint-disable-next-line quote-props
   default: 'notice',
   context: {
     heading: 'Notice Alert',
