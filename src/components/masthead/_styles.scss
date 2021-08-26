@@ -2,6 +2,7 @@
 
 .masthead {
   position: relative;
+  background-color: $background-masthead-color;
 }
 
 .masthead__inner {
@@ -45,7 +46,7 @@
   flex-grow: 1;
 
   .masthead--background-media & {
-    background-color: var(--white);
+    background-color: $background-container-color;
     border: solid 1px $border-color;
     padding: 30px;
 
@@ -71,6 +72,7 @@
 }
 
 .masthead__subheading {
+  color: $primary-color;
   font-family: $secondary-font;
   font-size: 21px;
   font-weight: 700;

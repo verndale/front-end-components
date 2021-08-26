@@ -2033,56 +2033,57 @@ body {
 
 /* line 3, src/components/masthead/_styles.scss */
 .masthead {
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
 
-/* line 8, src/components/masthead/_styles.scss */
+/* line 9, src/components/masthead/_styles.scss */
 .masthead--background-media .masthead__inner {
   align-items: center;
   display: flex;
   padding-top: 173px; }
   @media (min-width: 80em) {
-    /* line 8, src/components/masthead/_styles.scss */
+    /* line 9, src/components/masthead/_styles.scss */
     .masthead--background-media .masthead__inner {
       min-height: 650px;
       padding-bottom: 95px;
       padding-top: 95px; } }
 
 @media (min-width: 80em) {
-  /* line 20, src/components/masthead/_styles.scss */
+  /* line 21, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__inner,
   .masthead--right-media .masthead__inner {
     display: flex; } }
 
-/* line 27, src/components/masthead/_styles.scss */
+/* line 28, src/components/masthead/_styles.scss */
 .masthead--right-media .masthead__inner {
   flex-direction: row-reverse; }
 
-/* line 32, src/components/masthead/_styles.scss */
+/* line 33, src/components/masthead/_styles.scss */
 .masthead__inner--position-left {
   justify-content: flex-start; }
 
-/* line 36, src/components/masthead/_styles.scss */
+/* line 37, src/components/masthead/_styles.scss */
 .masthead__inner--position-center {
   justify-content: center; }
 
-/* line 40, src/components/masthead/_styles.scss */
+/* line 41, src/components/masthead/_styles.scss */
 .masthead__inner--position-right {
   justify-content: flex-end; }
 
-/* line 44, src/components/masthead/_styles.scss */
+/* line 45, src/components/masthead/_styles.scss */
 .masthead__content {
   flex-grow: 1; }
-  /* line 47, src/components/masthead/_styles.scss */
+  /* line 48, src/components/masthead/_styles.scss */
   .masthead--background-media .masthead__content {
-    background-color: var(--white);
+    background-color: #fff;
     border: solid 1px #e5e5e5;
     padding: 30px; }
     @media (min-width: 80em) {
-      /* line 47, src/components/masthead/_styles.scss */
+      /* line 48, src/components/masthead/_styles.scss */
       .masthead--background-media .masthead__content {
         max-width: 750px;
         padding: 50px; } }
-  /* line 58, src/components/masthead/_styles.scss */
+  /* line 59, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__content,
   .masthead--right-media .masthead__content {
     display: flex;
@@ -2091,48 +2092,49 @@ body {
     padding-bottom: 20px;
     padding-top: 20px; }
     @media (min-width: 80em) {
-      /* line 58, src/components/masthead/_styles.scss */
+      /* line 59, src/components/masthead/_styles.scss */
       .masthead--left-media .masthead__content,
       .masthead--right-media .masthead__content {
         padding-bottom: 85px;
         padding-top: 85px; } }
 
-/* line 73, src/components/masthead/_styles.scss */
+/* line 74, src/components/masthead/_styles.scss */
 .masthead__subheading {
+  color: #06847b;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.19;
   margin: 0 0 5px; }
   @media (min-width: 80em) {
-    /* line 73, src/components/masthead/_styles.scss */
+    /* line 74, src/components/masthead/_styles.scss */
     .masthead__subheading {
       font-size: 24px;
       line-height: 1.33; } }
 
 @media (min-width: 80em) {
-  /* line 86, src/components/masthead/_styles.scss */
+  /* line 88, src/components/masthead/_styles.scss */
   .masthead__heading {
     margin-bottom: 20px; } }
 
-/* line 92, src/components/masthead/_styles.scss */
+/* line 94, src/components/masthead/_styles.scss */
 .masthead__actions {
   margin: 20px -10px -10px; }
   @media (min-width: 80em) {
-    /* line 92, src/components/masthead/_styles.scss */
+    /* line 94, src/components/masthead/_styles.scss */
     .masthead__actions {
       margin: 20px -20px -20px; } }
-  /* line 99, src/components/masthead/_styles.scss */
+  /* line 101, src/components/masthead/_styles.scss */
   .masthead__actions .btn,
   .masthead__actions .link {
     margin: 10px; }
     @media (min-width: 80em) {
-      /* line 99, src/components/masthead/_styles.scss */
+      /* line 101, src/components/masthead/_styles.scss */
       .masthead__actions .btn,
       .masthead__actions .link {
         margin: 20px; } }
 
-/* line 110, src/components/masthead/_styles.scss */
+/* line 112, src/components/masthead/_styles.scss */
 .masthead--background-media .masthead__media {
   height: 260px;
   left: 0;
@@ -2141,10 +2143,10 @@ body {
   width: 100%;
   z-index: -1; }
   @media (min-width: 80em) {
-    /* line 110, src/components/masthead/_styles.scss */
+    /* line 112, src/components/masthead/_styles.scss */
     .masthead--background-media .masthead__media {
       height: 100%; } }
-  /* line 122, src/components/masthead/_styles.scss */
+  /* line 124, src/components/masthead/_styles.scss */
   .masthead--background-media .masthead__media picture,
   .masthead--background-media .masthead__media img,
   .masthead--background-media .masthead__media .video {
@@ -2152,12 +2154,12 @@ body {
     padding: 0;
     width: 100%; }
 
-/* line 131, src/components/masthead/_styles.scss */
+/* line 133, src/components/masthead/_styles.scss */
 .masthead--left-media .masthead__media,
 .masthead--right-media .masthead__media {
   margin: 0 -20px; }
   @media (min-width: 80em) {
-    /* line 131, src/components/masthead/_styles.scss */
+    /* line 133, src/components/masthead/_styles.scss */
     .masthead--left-media .masthead__media,
     .masthead--right-media .masthead__media {
       align-items: center;
@@ -2165,7 +2167,7 @@ body {
       flex-shrink: 0;
       margin: 0;
       width: calc(50% - 40px); } }
-  /* line 143, src/components/masthead/_styles.scss */
+  /* line 145, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__media picture,
   .masthead--left-media .masthead__media img,
   .masthead--right-media .masthead__media picture,
@@ -2175,12 +2177,12 @@ body {
     width: 100%; }
 
 @media (min-width: 80em) {
-  /* line 151, src/components/masthead/_styles.scss */
+  /* line 153, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__media {
     margin-right: 40px; } }
 
 @media (min-width: 80em) {
-  /* line 157, src/components/masthead/_styles.scss */
+  /* line 159, src/components/masthead/_styles.scss */
   .masthead--right-media .masthead__media {
     margin-left: 40px; } }
 
@@ -2594,7 +2596,7 @@ body {
   width: 100%; }
   /* line 10, src/components/video/_styles.scss */
   .video:hover svg {
-    fill: var(--primary); }
+    fill: #06847b; }
   /* line 15, src/components/video/_styles.scss */
   .video video,
   .video iframe {
@@ -2655,7 +2657,7 @@ body {
   width: 100%; }
   /* line 10, src/components/vimeo/_styles.scss */
   .video:hover svg {
-    fill: var(--primary); }
+    fill: #06847b; }
   /* line 15, src/components/vimeo/_styles.scss */
   .video video,
   .video iframe {
@@ -2716,7 +2718,7 @@ body {
   width: 100%; }
   /* line 10, src/components/youtube/_styles.scss */
   .video:hover svg {
-    fill: var(--primary); }
+    fill: #06847b; }
   /* line 15, src/components/youtube/_styles.scss */
   .video video,
   .video iframe {
