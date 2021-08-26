@@ -2058,19 +2058,31 @@ body {
   flex-direction: row-reverse; }
 
 /* line 32, src/components/masthead/_styles.scss */
+.masthead__inner--position-left {
+  justify-content: flex-start; }
+
+/* line 36, src/components/masthead/_styles.scss */
+.masthead__inner--position-center {
+  justify-content: center; }
+
+/* line 40, src/components/masthead/_styles.scss */
+.masthead__inner--position-right {
+  justify-content: flex-end; }
+
+/* line 44, src/components/masthead/_styles.scss */
 .masthead__content {
   flex-grow: 1; }
-  /* line 35, src/components/masthead/_styles.scss */
+  /* line 47, src/components/masthead/_styles.scss */
   .masthead--background-media .masthead__content {
     background-color: var(--white);
-    border: solid 1px var(--light-gray);
+    border: solid 1px #e5e5e5;
     padding: 30px; }
     @media (min-width: 80em) {
-      /* line 35, src/components/masthead/_styles.scss */
+      /* line 47, src/components/masthead/_styles.scss */
       .masthead--background-media .masthead__content {
         max-width: 750px;
         padding: 50px; } }
-  /* line 46, src/components/masthead/_styles.scss */
+  /* line 58, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__content,
   .masthead--right-media .masthead__content {
     display: flex;
@@ -2079,13 +2091,13 @@ body {
     padding-bottom: 20px;
     padding-top: 20px; }
     @media (min-width: 80em) {
-      /* line 46, src/components/masthead/_styles.scss */
+      /* line 58, src/components/masthead/_styles.scss */
       .masthead--left-media .masthead__content,
       .masthead--right-media .masthead__content {
         padding-bottom: 85px;
         padding-top: 85px; } }
 
-/* line 61, src/components/masthead/_styles.scss */
+/* line 73, src/components/masthead/_styles.scss */
 .masthead__subheading {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 21px;
@@ -2093,34 +2105,34 @@ body {
   line-height: 1.19;
   margin: 0 0 5px; }
   @media (min-width: 80em) {
-    /* line 61, src/components/masthead/_styles.scss */
+    /* line 73, src/components/masthead/_styles.scss */
     .masthead__subheading {
       font-size: 24px;
       line-height: 1.33; } }
 
 @media (min-width: 80em) {
-  /* line 74, src/components/masthead/_styles.scss */
+  /* line 86, src/components/masthead/_styles.scss */
   .masthead__heading {
     margin-bottom: 20px; } }
 
-/* line 80, src/components/masthead/_styles.scss */
+/* line 92, src/components/masthead/_styles.scss */
 .masthead__actions {
   margin: 20px -10px -10px; }
   @media (min-width: 80em) {
-    /* line 80, src/components/masthead/_styles.scss */
+    /* line 92, src/components/masthead/_styles.scss */
     .masthead__actions {
       margin: 20px -20px -20px; } }
-  /* line 87, src/components/masthead/_styles.scss */
+  /* line 99, src/components/masthead/_styles.scss */
   .masthead__actions .btn,
   .masthead__actions .link {
     margin: 10px; }
     @media (min-width: 80em) {
-      /* line 87, src/components/masthead/_styles.scss */
+      /* line 99, src/components/masthead/_styles.scss */
       .masthead__actions .btn,
       .masthead__actions .link {
         margin: 20px; } }
 
-/* line 98, src/components/masthead/_styles.scss */
+/* line 110, src/components/masthead/_styles.scss */
 .masthead--background-media .masthead__media {
   height: 260px;
   left: 0;
@@ -2129,10 +2141,10 @@ body {
   width: 100%;
   z-index: -1; }
   @media (min-width: 80em) {
-    /* line 98, src/components/masthead/_styles.scss */
+    /* line 110, src/components/masthead/_styles.scss */
     .masthead--background-media .masthead__media {
       height: 100%; } }
-  /* line 110, src/components/masthead/_styles.scss */
+  /* line 122, src/components/masthead/_styles.scss */
   .masthead--background-media .masthead__media picture,
   .masthead--background-media .masthead__media img,
   .masthead--background-media .masthead__media .video {
@@ -2140,12 +2152,12 @@ body {
     padding: 0;
     width: 100%; }
 
-/* line 119, src/components/masthead/_styles.scss */
+/* line 131, src/components/masthead/_styles.scss */
 .masthead--left-media .masthead__media,
 .masthead--right-media .masthead__media {
   margin: 0 -20px; }
   @media (min-width: 80em) {
-    /* line 119, src/components/masthead/_styles.scss */
+    /* line 131, src/components/masthead/_styles.scss */
     .masthead--left-media .masthead__media,
     .masthead--right-media .masthead__media {
       align-items: center;
@@ -2153,7 +2165,7 @@ body {
       flex-shrink: 0;
       margin: 0;
       width: calc(50% - 40px); } }
-  /* line 131, src/components/masthead/_styles.scss */
+  /* line 143, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__media picture,
   .masthead--left-media .masthead__media img,
   .masthead--right-media .masthead__media picture,
@@ -2163,12 +2175,12 @@ body {
     width: 100%; }
 
 @media (min-width: 80em) {
-  /* line 139, src/components/masthead/_styles.scss */
+  /* line 151, src/components/masthead/_styles.scss */
   .masthead--left-media .masthead__media {
     margin-right: 40px; } }
 
 @media (min-width: 80em) {
-  /* line 145, src/components/masthead/_styles.scss */
+  /* line 157, src/components/masthead/_styles.scss */
   .masthead--right-media .masthead__media {
     margin-left: 40px; } }
 
@@ -2572,7 +2584,7 @@ body {
   .testimonials__pagination .swiper-button-next::after {
     content: '›'; }
 
-/* line 3, src/components/video/_styles.scss */
+/* line 1, src/components/video/_styles.scss */
 .video {
   cursor: pointer;
   height: 0;
@@ -2580,10 +2592,10 @@ body {
   padding-bottom: 56.25%;
   position: relative;
   width: 100%; }
-  /* line 12, src/components/video/_styles.scss */
+  /* line 10, src/components/video/_styles.scss */
   .video:hover svg {
     fill: var(--primary); }
-  /* line 17, src/components/video/_styles.scss */
+  /* line 15, src/components/video/_styles.scss */
   .video video,
   .video iframe {
     height: 100%;
@@ -2592,7 +2604,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%; }
-  /* line 27, src/components/video/_styles.scss */
+  /* line 25, src/components/video/_styles.scss */
   .video svg {
     bottom: 20px;
     fill: var(--white);
@@ -2603,15 +2615,15 @@ body {
     width: 30px;
     z-index: 1; }
     @media (min-width: 80em) {
-      /* line 27, src/components/video/_styles.scss */
+      /* line 25, src/components/video/_styles.scss */
       .video svg {
         bottom: 30px;
         right: 30px; } }
-  /* line 44, src/components/video/_styles.scss */
+  /* line 42, src/components/video/_styles.scss */
   .video.video--playing svg {
     display: none; }
 
-/* line 50, src/components/video/_styles.scss */
+/* line 48, src/components/video/_styles.scss */
 .video__background {
   left: 0;
   padding-bottom: 56.25%;
@@ -2619,11 +2631,133 @@ body {
   top: 50%;
   transform: translateY(-50%);
   width: 100%; }
-  /* line 58, src/components/video/_styles.scss */
+  /* line 56, src/components/video/_styles.scss */
   .video__background iframe {
     pointer-events: none; }
 
-/* line 64, src/components/video/_styles.scss */
+/* line 62, src/components/video/_styles.scss */
+.video__poster picture,
+.video__poster img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 1, src/components/vimeo/_styles.scss */
+.video {
+  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%; }
+  /* line 10, src/components/vimeo/_styles.scss */
+  .video:hover svg {
+    fill: var(--primary); }
+  /* line 15, src/components/vimeo/_styles.scss */
+  .video video,
+  .video iframe {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  /* line 25, src/components/vimeo/_styles.scss */
+  .video svg {
+    bottom: 20px;
+    fill: var(--white);
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    transition: fill 0.2s ease-in-out;
+    width: 30px;
+    z-index: 1; }
+    @media (min-width: 80em) {
+      /* line 25, src/components/vimeo/_styles.scss */
+      .video svg {
+        bottom: 30px;
+        right: 30px; } }
+  /* line 42, src/components/vimeo/_styles.scss */
+  .video.video--playing svg {
+    display: none; }
+
+/* line 48, src/components/vimeo/_styles.scss */
+.video__background {
+  left: 0;
+  padding-bottom: 56.25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  /* line 56, src/components/vimeo/_styles.scss */
+  .video__background iframe {
+    pointer-events: none; }
+
+/* line 62, src/components/vimeo/_styles.scss */
+.video__poster picture,
+.video__poster img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 1, src/components/youtube/_styles.scss */
+.video {
+  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%; }
+  /* line 10, src/components/youtube/_styles.scss */
+  .video:hover svg {
+    fill: var(--primary); }
+  /* line 15, src/components/youtube/_styles.scss */
+  .video video,
+  .video iframe {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  /* line 25, src/components/youtube/_styles.scss */
+  .video svg {
+    bottom: 20px;
+    fill: var(--white);
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    transition: fill 0.2s ease-in-out;
+    width: 30px;
+    z-index: 1; }
+    @media (min-width: 80em) {
+      /* line 25, src/components/youtube/_styles.scss */
+      .video svg {
+        bottom: 30px;
+        right: 30px; } }
+  /* line 42, src/components/youtube/_styles.scss */
+  .video.video--playing svg {
+    display: none; }
+
+/* line 48, src/components/youtube/_styles.scss */
+.video__background {
+  left: 0;
+  padding-bottom: 56.25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  /* line 56, src/components/youtube/_styles.scss */
+  .video__background iframe {
+    pointer-events: none; }
+
+/* line 62, src/components/youtube/_styles.scss */
 .video__poster picture,
 .video__poster img {
   height: 100%;

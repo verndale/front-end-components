@@ -19,9 +19,50 @@ module.exports = {
   },
   variants: [
     {
-      name: 'Background Image',
+      name: 'Background Image Left variation',
       context: {
         mediaPosition: 'background',
+        containerPosition: 'left',
+        subheading: 'Optional Subheading',
+        heading: 'Masthead Over Full Width Image',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        ctaLabel: 'Primary Call-to-Action',
+        linkLabel: 'Large Text Link',
+        image: {
+          srcset: {
+            767: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=768&h=414',
+            1279: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=1280&h=650'
+          },
+          src: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=760&h=650',
+          description: 'Image Description'
+        }
+      }
+    },
+    {
+      name: 'Background Image Center Variation',
+      context: {
+        mediaPosition: 'background',
+        containerPosition: 'center',
+        subheading: 'Optional Subheading',
+        heading: 'Masthead Over Full Width Image',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        ctaLabel: 'Primary Call-to-Action',
+        linkLabel: 'Large Text Link',
+        image: {
+          srcset: {
+            767: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=768&h=414',
+            1279: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=1280&h=650'
+          },
+          src: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=760&h=650',
+          description: 'Image Description'
+        }
+      }
+    },
+    {
+      name: 'Background Image Right variation',
+      context: {
+        mediaPosition: 'background',
+        containerPosition: 'right',
         subheading: 'Optional Subheading',
         heading: 'Masthead Over Full Width Image',
         copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
@@ -160,13 +201,39 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Over Full Width Image',
+      name: 'Masthead Over Full Width Image container left',
       context: {
         mediaPosition: 'background',
+        containerPosition: 'left',
         subheading: 'Optional Subheading',
         heading: 'Masthead Over Full Width Image',
-        copy:
-          '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        ctaLabel: 'Primary Call-to-Action',
+        linkLabel: 'Large Text Link',
+        youtubeId: 'DSLgAsrcpGQ'
+      }
+    },
+    {
+      name: 'Masthead Over Full Width Image container center',
+      context: {
+        mediaPosition: 'background',
+        containerPosition: 'center',
+        subheading: 'Optional Subheading',
+        heading: 'Masthead Over Full Width Image',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        ctaLabel: 'Primary Call-to-Action',
+        linkLabel: 'Large Text Link',
+        youtubeId: 'DSLgAsrcpGQ'
+      }
+    },
+    {
+      name: 'Masthead Over Full Width Image container right',
+      context: {
+        mediaPosition: 'background',
+        containerPosition: 'right',
+        subheading: 'Optional Subheading',
+        heading: 'Masthead Over Full Width Image',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
         ctaLabel: 'Primary Call-to-Action',
         linkLabel: 'Large Text Link',
         youtubeId: 'DSLgAsrcpGQ'
@@ -178,8 +245,7 @@ module.exports = {
         mediaPosition: 'left',
         subheading: 'Optional Subheading',
         heading: 'Masthead Width Left Aligned Video',
-        copy:
-          '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
         ctaLabel: 'Primary Call-to-Action',
         linkLabel: 'Large Text Link',
         youtubeId: 'DSLgAsrcpGQ'
@@ -191,8 +257,7 @@ module.exports = {
         mediaPosition: 'right',
         subheading: 'Optional Subheading',
         heading: 'Masthead Width Right Aligned Video',
-        copy:
-          '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
+        copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
         ctaLabel: 'Primary Call-to-Action',
         linkLabel: 'Large Text Link',
         youtubeId: 'DSLgAsrcpGQ'
