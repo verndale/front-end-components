@@ -28,6 +28,10 @@ const components = [
   {
     name: 'youtube',
     loader: () => import('./youtube/youtube')
+  },
+  {
+    name: 'column-row',
+    loader: () => import('./column-row/column-row')
   }
 ]
 

@@ -1799,6 +1799,105 @@ body {
       height: 120px;
       width: 120px; } }
 
+/* line 2, src/components/column-row/_styles.scss */
+.column-row__heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+
+/* line 10, src/components/column-row/_styles.scss */
+.column-row .swiper-wrapper {
+  margin: 20px 0;
+  display: flex; }
+  @media (min-width: 48em) {
+    /* line 10, src/components/column-row/_styles.scss */
+    .column-row .swiper-wrapper {
+      display: grid;
+      row-gap: 15px;
+      column-gap: 15px;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 64em) {
+    /* line 21, src/components/column-row/_styles.scss */
+    .column-row .swiper-wrapper--three {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 64em) {
+    /* line 26, src/components/column-row/_styles.scss */
+    .column-row .swiper-wrapper--four {
+      grid-template-columns: repeat(4, 1fr); } }
+
+/* line 33, src/components/column-row/_styles.scss */
+.swiper-slide {
+  width: 100%; }
+  /* line 35, src/components/column-row/_styles.scss */
+  .swiper-slide > div {
+    width: 100%; }
+
+/* line 44, src/components/column-row/_styles.scss */
+.column-row__copy {
+  margin-top: 15px; }
+
+/* line 48, src/components/column-row/_styles.scss */
+.column-row__pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px; }
+  /* line 55, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet {
+    background-color: #e5e5e5;
+    border-radius: 0;
+    height: 4px;
+    opacity: 1;
+    transition: width 300ms linear;
+    width: 12px; }
+  /* line 64, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 4px; }
+  /* line 68, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination-bullet-active {
+    background-color: #4a4a4a;
+    width: 15px; }
+  /* line 73, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-pagination {
+    display: flex;
+    gap: 4px;
+    height: 4px;
+    position: static; }
+  /* line 80, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-prev,
+  .column-row__pagination .swiper-button-next {
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 0;
+    position: static;
+    width: 40px; }
+    /* line 91, src/components/column-row/_styles.scss */
+    .column-row__pagination .swiper-button-prev:hover,
+    .column-row__pagination .swiper-button-next:hover {
+      background-color: #e5e5e5; }
+    /* line 95, src/components/column-row/_styles.scss */
+    .column-row__pagination .swiper-button-prev::after,
+    .column-row__pagination .swiper-button-next::after {
+      color: #4a4a4a;
+      font-size: 24px;
+      transform: translate(1px, -3px); }
+  /* line 103, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-prev::after {
+    content: '‹'; }
+  /* line 109, src/components/column-row/_styles.scss */
+  .column-row__pagination .swiper-button-next::after {
+    content: '›'; }
+  @media (min-width: 48em) {
+    /* line 48, src/components/column-row/_styles.scss */
+    .column-row__pagination {
+      display: none; } }
+
 /* line 3, src/components/content-card/_styles.scss */
 .content-card {
   height: 380px;
@@ -2631,6 +2730,128 @@ body {
     pointer-events: none; }
 
 /* line 64, src/components/video/_styles.scss */
+.video__poster picture,
+.video__poster img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 3, src/components/vimeo/_styles.scss */
+.video {
+  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%; }
+  /* line 12, src/components/vimeo/_styles.scss */
+  .video:hover svg {
+    fill: var(--primary); }
+  /* line 17, src/components/vimeo/_styles.scss */
+  .video video,
+  .video iframe {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  /* line 27, src/components/vimeo/_styles.scss */
+  .video svg {
+    bottom: 20px;
+    fill: var(--white);
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    transition: fill 0.2s ease-in-out;
+    width: 30px;
+    z-index: 1; }
+    @media (min-width: 80em) {
+      /* line 27, src/components/vimeo/_styles.scss */
+      .video svg {
+        bottom: 30px;
+        right: 30px; } }
+  /* line 44, src/components/vimeo/_styles.scss */
+  .video.video--playing svg {
+    display: none; }
+
+/* line 50, src/components/vimeo/_styles.scss */
+.video__background {
+  left: 0;
+  padding-bottom: 56.25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  /* line 58, src/components/vimeo/_styles.scss */
+  .video__background iframe {
+    pointer-events: none; }
+
+/* line 64, src/components/vimeo/_styles.scss */
+.video__poster picture,
+.video__poster img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 3, src/components/youtube/_styles.scss */
+.video {
+  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%; }
+  /* line 12, src/components/youtube/_styles.scss */
+  .video:hover svg {
+    fill: var(--primary); }
+  /* line 17, src/components/youtube/_styles.scss */
+  .video video,
+  .video iframe {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  /* line 27, src/components/youtube/_styles.scss */
+  .video svg {
+    bottom: 20px;
+    fill: var(--white);
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    transition: fill 0.2s ease-in-out;
+    width: 30px;
+    z-index: 1; }
+    @media (min-width: 80em) {
+      /* line 27, src/components/youtube/_styles.scss */
+      .video svg {
+        bottom: 30px;
+        right: 30px; } }
+  /* line 44, src/components/youtube/_styles.scss */
+  .video.video--playing svg {
+    display: none; }
+
+/* line 50, src/components/youtube/_styles.scss */
+.video__background {
+  left: 0;
+  padding-bottom: 56.25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  /* line 58, src/components/youtube/_styles.scss */
+  .video__background iframe {
+    pointer-events: none; }
+
+/* line 64, src/components/youtube/_styles.scss */
 .video__poster picture,
 .video__poster img {
   height: 100%;
