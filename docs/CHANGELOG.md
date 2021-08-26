@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/verndale/front-end-components/compare/v1.3.1...v1.4.0) (2021-08-26)
+
+
+### Features
+
+* 4 and 3 column rows ([5246583](https://github.com/verndale/front-end-components/commit/52465839f272bdd572815921d846c5fc97d18bc1))
+
 ## [1.3.1](https://github.com/verndale/front-end-components/compare/v1.3.0...v1.3.1) (2021-08-24)
 
 
