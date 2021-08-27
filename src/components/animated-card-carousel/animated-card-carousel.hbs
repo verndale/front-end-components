@@ -1,0 +1,25 @@
+<div class="animated-card-carousel" data-module="animatedCardCarousel" data-autoplay-timeout="{{autoplayTimeout}}">
+  <div class="container">
+    <h2 class="animated-card-carousel__header">{{header}}</h2>
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        {{#json slides}}
+          {{#each this}}
+            <div class="swiper-slide">
+              {{>@card-carousel
+                showMoreLabel=../../showMoreLabel
+                showLessLabel=../../showLessLabel
+              }}
+            </div>
+          {{/each}}
+        {{/json}}
+      </div>
+    </div>
+    <div class="animated-card-carousel__actions">
+      <div class="animated-card-carousel__pagination"></div>
+      <button type="button" class="animated-card-carousel__present link link--primary">{{goToLastLabel}}</button>
+    </div>
+  </div>
+</div>

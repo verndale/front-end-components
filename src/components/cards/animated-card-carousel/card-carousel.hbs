@@ -1,0 +1,23 @@
+<div class="carousel-card" data-module="cardCarousel" data-show-more-label="{{showMoreLabel}}"
+     data-show-less-label="{{showLessLabel}}">
+  {{#if image}}
+    <div class="carousel-card__image">
+      {{#json image}}
+        {{>picture}}
+      {{/json}}
+    </div>
+  {{/if}}
+
+  <div class="carousel-card__content">
+    {{#if subheader}}<p class="carousel-card__subheader">{{subheader}}</p>{{/if}}
+    <h3 class="carousel-card__header">{{header}}</h3>
+    <div class="carousel-card__description rtf">
+      {{{description}}}
+    </div>
+    {{#ifCond showMoreLabel "&&" showLessLabel}}
+      <div class="carousel-card__action">
+        {{>@button label=showMoreLabel type="button" className="primary" style="outline" size="small"}}
+      </div>
+    {{/ifCond}}
+  </div>
+</div>

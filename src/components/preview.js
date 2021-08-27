@@ -28,6 +28,14 @@ const components = [
   {
     name: 'youtube',
     loader: () => import('./youtube/youtube')
+  },
+  {
+    name: 'animatedCardCarousel',
+    loader: () => import('./animated-card-carousel/AnimatedCardCarousel')
+  },
+  {
+    name: 'cardCarousel',
+    loader: () => import('./cards/animated-card-carousel/CardCarousel')
   }
 ]
 

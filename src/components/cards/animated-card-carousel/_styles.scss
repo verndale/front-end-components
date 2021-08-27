@@ -1,0 +1,108 @@
+@import '../../theme', 'variables';
+.carousel-card {
+  background-color: $background-carousel-card-color;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+
+  @include mq(tablet-landscape) {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 20px 20px 48px;
+  }
+
+  @include mq(desktop) {
+    padding: 48px 48px 48px 90px;
+  }
+}
+
+.carousel-card__content {
+  @include mq(tablet-landscape) {
+    flex-grow: 1;
+  }
+}
+
+.carousel-card__subheader {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  margin: 0 0 19px;
+
+  &:before {
+    background-color: $primary-color;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-right: 10px;
+    width: 25px;
+  }
+}
+
+.carousel-card__header {
+  margin: 0 0 16px;
+
+  @include mq(tablet-landscape) {
+    margin-bottom: 14px;
+  }
+}
+
+.carousel-card__description {
+  overflow: hidden;
+
+  &:not(.carousel-card__description--expanded) {
+    @include mq($until: tablet-landscape) {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.carousel-card__image {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @include mq(tablet-landscape) {
+    margin-bottom: 0;
+    margin-left: 60px;
+    width: 50%;
+  }
+
+  @include mq(desktop) {
+    margin-left: 129px;
+  }
+
+  picture {
+    display: block;
+    height: 0;
+    padding-bottom: 80%;
+    position: relative;
+  }
+
+  img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.carousel-card__action {
+  margin-top: 20px;
+
+  @include mq(tablet-landscape) {
+    display: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
