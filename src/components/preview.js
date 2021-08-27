@@ -35,7 +35,7 @@ const components = [
   },
   {
     name: 'cardCarousel',
-    loader: () => import('./cards/animated-card-carousel/CardCarousel')
+    loader: () => import('./cards/animated-carousel-card/AnimatedCarouselCard')
   }
 ]
 

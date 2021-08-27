@@ -1,5 +1,5 @@
 @import '../../theme', 'variables';
-.carousel-card {
+.animated-carousel-card {
   background-color: $background-carousel-card-color;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -20,13 +20,13 @@
   }
 }
 
-.carousel-card__content {
+.animated-carousel-card__content {
   @include mq(tablet-landscape) {
     flex-grow: 1;
   }
 }
 
-.carousel-card__subheader {
+.animated-carousel-card__subheader {
   align-items: center;
   display: flex;
   font-weight: 600;
@@ -42,7 +42,7 @@
   }
 }
 
-.carousel-card__header {
+.animated-carousel-card__header {
   margin: 0 0 16px;
 
   @include mq(tablet-landscape) {
@@ -50,10 +50,10 @@
   }
 }
 
-.carousel-card__description {
+.animated-carousel-card__description {
   overflow: hidden;
 
-  &:not(.carousel-card__description--expanded) {
+  &:not(.animated-carousel-card__description--expanded) {
     @include mq($until: tablet-landscape) {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 5;
@@ -63,7 +63,7 @@
   }
 }
 
-.carousel-card__image {
+.animated-carousel-card__image {
   flex-shrink: 0;
   margin-bottom: 20px;
   width: 100%;
@@ -95,7 +95,7 @@
   }
 }
 
-.carousel-card__action {
+.animated-carousel-card__action {
   margin-top: 20px;
 
   @include mq(tablet-landscape) {

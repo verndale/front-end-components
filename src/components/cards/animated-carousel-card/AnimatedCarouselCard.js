@@ -6,9 +6,9 @@ class Module extends Component {
   setupDefaults() {
     this.dom = {
       btnExpandCollapse: this.el.querySelector(
-        '.carousel-card__action .btn'
+        '.animated-carousel-card__action .btn'
       ),
-      description: this.el.querySelector('.carousel-card__description')
+      description: this.el.querySelector('.animated-carousel-card__description')
     };
 
     this.breakpoint = window.matchMedia('(max-width: 1279px)');
@@ -47,7 +47,7 @@ class Module extends Component {
 
     if (
       this.dom.description.classList.contains(
-        'carousel-card__description--expanded'
+        'animated-carousel-card__description--expanded'
       )
     ) {
       this.collapse();
@@ -60,7 +60,7 @@ class Module extends Component {
     const { description, btnExpandCollapse } = this.dom;
 
     this.textHeight = description.offsetHeight;
-    description.classList.add('carousel-card__description--expanded');
+    description.classList.add('animated-carousel-card__description--expanded');
     gsap.set(description, { height: 'auto' });
     gsap.from(description, {
       height: this.textHeight,
@@ -83,7 +83,7 @@ class Module extends Component {
       duration: 0.4,
       onComplete: () => {
         description.classList.remove(
-          'carousel-card__description--expanded'
+          'animated-carousel-card__description--expanded'
         );
         description.style.height = null;
         btnExpandCollapse.textContent = this.showMoreLabel;

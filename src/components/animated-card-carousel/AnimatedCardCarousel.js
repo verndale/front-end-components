@@ -14,7 +14,7 @@ Swiper.use([Autoplay, Pagination, Parallax]);
  * class Foo {
  *   construction(){
  *
- *     const AnimatedCardCarousel = new AnimatedCardCarousel('.animated-card-carousel');
+ *     const AnimatedCardCarousel = new AnimatedCardCarousel('.animated-carousel-card');
  *   }
  * }
  */
