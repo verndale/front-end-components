@@ -1,0 +1,117 @@
+@import '../theme', 'variables';
+.column-row__heading {
+  font-family: $column-row-title-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px;
+}
+
+.column-row .swiper-wrapper {
+  margin: 20px 0;
+  display: flex;
+
+  @include mq(tablet) {
+    display: grid;
+    row-gap: $gap;
+    column-gap: $gap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--three {
+    @include mq(tablet-landscape) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &--four {
+    @include mq(tablet-landscape) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.swiper-slide {
+  width: 100%;
+  & > div {
+    width: 100%;
+  }
+  // @include mq(tablet) {
+  //   width: 24%;
+
+  // }
+}
+
+.column-row__copy {
+  margin-top: 15px;
+}
+
+.column-row__pagination {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    background-color: $swiper-pagination-bullet;
+    border-radius: 0;
+    height: 4px;
+    opacity: 1;
+    transition: width 300ms linear;
+    width: 12px;
+  }
+
+  .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $swiper-pagination-bullet-active;
+    width: 15px;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    gap: 4px;
+    height: 4px;
+    position: static;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    height: $swiper-button-size;
+    justify-content: center;
+    margin-top: 0;
+    position: static;
+    width: $swiper-button-size;
+
+    &:hover {
+      background-color: $swiper-pagination-bullet;
+    }
+
+    &::after {
+      color: $swiper-pagination-bullet-active;
+      font-size: 24px;
+      transform: translate(1px, -3px);
+    }
+  }
+
+  .swiper-button-prev {
+    &::after {
+      content: '‹';
+    }
+  }
+
+  .swiper-button-next {
+    &::after {
+      content: '›';
+    }
+  }
+
+  @include mq(tablet) {
+    display: none;
+  }
+}

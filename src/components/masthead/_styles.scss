@@ -2,6 +2,7 @@
 
 .masthead {
   position: relative;
+  background-color: $background-masthead-color;
 }
 
 .masthead__inner {
@@ -29,12 +30,24 @@
   }
 }
 
+.masthead__inner--position-left {
+  justify-content: flex-start;
+}
+
+.masthead__inner--position-center {
+  justify-content: center;
+}
+
+.masthead__inner--position-right {
+  justify-content: flex-end;
+}
+
 .masthead__content {
   flex-grow: 1;
 
   .masthead--background-media & {
-    background-color: var(--white);
-    border: solid 1px var(--light-gray);
+    background-color: $background-container-color;
+    border: solid 1px $border-color;
     padding: 30px;
 
     @include mq(desktop) {
@@ -59,6 +72,7 @@
 }
 
 .masthead__subheading {
+  color: $primary-color;
   font-family: $secondary-font;
   font-size: 21px;
   font-weight: 700;

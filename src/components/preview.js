@@ -36,6 +36,10 @@ const components = [
   {
     name: 'cardCarousel',
     loader: () => import('./cards/animated-carousel-card/AnimatedCarouselCard')
+  },
+  {
+    name: 'column-row',
+    loader: () => import('./column-row/column-row')
   }
 ]
 

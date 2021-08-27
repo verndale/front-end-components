@@ -7,7 +7,6 @@ $mq-breakpoints: (
   wide: 1600px
 ) !default;
 
-
 // default theme
 $theme-colors: (
   primary: #06847b,
@@ -20,7 +19,6 @@ $theme-colors: (
   critical: #f54748
 ) !default;
 
-
 // width and spacing
 $max-width: 1840px !default;
 
@@ -29,7 +27,6 @@ $module-spacing: (
   desktop: 150px
 ) !default;
 
-
 // fonts
-$primary-font: "Open Sans", sans-serif !default;
-$secondary-font: "Barlow Condensed", sans-serif !default;
+$primary-font: 'Open Sans', sans-serif !default;
+$secondary-font: 'Barlow Condensed', sans-serif !default;
