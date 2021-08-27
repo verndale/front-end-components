@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/verndale/front-end-components/compare/v1.4.0...v1.5.0) (2021-08-27)
+
+
+### Features
+
+* Add theme variables and version of mastheads ([e9c76cb](https://github.com/verndale/front-end-components/commit/e9c76cb62f912904f358f8378b3f186e439be632))
+* masthead styling variables ([e97854d](https://github.com/verndale/front-end-components/commit/e97854d1f6499fc36277263ceca7a28903244791))
+
 # [1.4.0](https://github.com/verndale/front-end-components/compare/v1.3.1...v1.4.0) (2021-08-26)
 
 
