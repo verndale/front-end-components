@@ -1,5 +1,3 @@
-@import '../theme', 'variables';
-
 .video {
   cursor: pointer;
   height: 0;
@@ -10,7 +8,7 @@
 
   &:hover {
     svg {
-      fill: var(--primary);
+      fill: $primary-color;
     }
   }
 
