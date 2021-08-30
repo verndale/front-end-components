@@ -30,6 +30,14 @@ const components = [
     loader: () => import('./youtube/youtube')
   },
   {
+    name: 'animatedCardCarousel',
+    loader: () => import('./animated-card-carousel/AnimatedCardCarousel')
+  },
+  {
+    name: 'cardCarousel',
+    loader: () => import('./cards/animated-carousel-card/AnimatedCarouselCard')
+  },
+  {
     name: 'column-row',
     loader: () => import('./column-row/column-row')
   }
