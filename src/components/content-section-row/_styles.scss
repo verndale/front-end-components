@@ -1,0 +1,20 @@
+@import '../theme', 'variables';
+
+.content-section-row__heading {
+  color: $primary-color;
+  display: block;
+  font-size: 2.75rem;
+  line-height: 1.09;
+  margin-bottom: 1.875rem;
+
+  @include mq(tablet) {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.content-section-row__rtf {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1rem;
+  padding: 0.22px 0 1.11rem;
+}
