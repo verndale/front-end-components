@@ -1,0 +1,4 @@
+$alert-primary: map-get($theme-colors, 'primary') !default;
+$alert-critical: map-get($theme-colors, 'critical') !default;
+$alert-warning: map-get($theme-colors, 'warning') !default;
+$alert-primary-font: #fff !default;

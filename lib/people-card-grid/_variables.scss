@@ -1,0 +1,3 @@
+$primary-color: map-get($theme-colors, "primary") !default;
+$modal-content-color: map-get($theme-colors, "primary-gray") !default;
+$link-color: map-get($theme-colors, "critical") !default;

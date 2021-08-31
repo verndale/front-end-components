@@ -1,0 +1,16 @@
+<div class="large-image-w-cta">
+  {{#json image}}
+  {{>picture className="large-image-w-cta__image"}}
+  {{/json}}
+  <div class="large-image-w-cta__content container">
+    {{#if heading}}<h2 class="large-image-w-cta__heading">{{heading}}</h2>{{/if}}
+    {{#if copy}}
+    <div class="large-image-w-cta__copy rtf">
+      {{{copy}}}
+    </div>
+    {{/if}}
+    {{#if ctaLabel}}
+    <a href="#" type="button" class="btn btn--primary">{{ctaLabel}}</a>
+    {{/if}}
+  </div>
+</div>

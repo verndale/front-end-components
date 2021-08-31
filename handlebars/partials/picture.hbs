@@ -1,0 +1,8 @@
+<picture{{#if className}} class="{{className}}"{{/if}}>
+  {{#json srcset}}
+  {{#each this}}
+  <source media="(max-width: {{@key}}px)" srcset="{{this}}">
+  {{/each}}
+  {{/json}}
+  <img src="{{src}}" alt="{{description}}" loading="lazy">
+</picture>

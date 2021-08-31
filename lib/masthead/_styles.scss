@@ -1,0 +1,164 @@
+@import '../theme', 'variables';
+
+.masthead {
+  position: relative;
+  background-color: $background-masthead-color;
+}
+
+.masthead__inner {
+  .masthead--background-media & {
+    align-items: center;
+    display: flex;
+    padding-top: 173px;
+
+    @include mq(desktop) {
+      min-height: 650px;
+      padding-bottom: 95px;
+      padding-top: 95px;
+    }
+  }
+
+  .masthead--left-media &,
+  .masthead--right-media & {
+    @include mq(desktop) {
+      display: flex;
+    }
+  }
+
+  .masthead--right-media & {
+    flex-direction: row-reverse;
+  }
+}
+
+.masthead__inner--position-left {
+  justify-content: flex-start;
+}
+
+.masthead__inner--position-center {
+  justify-content: center;
+}
+
+.masthead__inner--position-right {
+  justify-content: flex-end;
+}
+
+.masthead__content {
+  flex-grow: 1;
+
+  .masthead--background-media & {
+    background-color: $background-container-color;
+    border: solid 1px $border-color;
+    padding: 30px;
+
+    @include mq(desktop) {
+      max-width: 750px;
+      padding: 50px;
+    }
+  }
+
+  .masthead--left-media &,
+  .masthead--right-media & {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    @include mq(desktop) {
+      padding-bottom: 85px;
+      padding-top: 85px;
+    }
+  }
+}
+
+.masthead__subheading {
+  color: $primary-color;
+  font-family: $secondary-font;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 5px;
+
+  @include mq(desktop) {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+
+.masthead__heading {
+  @include mq(desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.masthead__actions {
+  margin: 20px -10px -10px;
+
+  @include mq(desktop) {
+    margin: 20px -20px -20px;
+  }
+
+  .btn,
+  .link {
+    margin: 10px;
+
+    @include mq(desktop) {
+      margin: 20px;
+    }
+  }
+}
+
+.masthead__media {
+  .masthead--background-media & {
+    height: 260px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    @include mq(desktop) {
+      height: 100%;
+    }
+
+    picture,
+    img,
+    .video {
+      height: 100%;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .masthead--left-media &,
+  .masthead--right-media & {
+    margin: 0 -20px;
+
+    @include mq(desktop) {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      margin: 0;
+      width: calc(50% - 40px);
+    }
+
+    picture,
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .masthead--left-media & {
+    @include mq(desktop) {
+      margin-right: 40px;
+    }
+  }
+
+  .masthead--right-media & {
+    @include mq(desktop) {
+      margin-left: 40px;
+    }
+  }
+}

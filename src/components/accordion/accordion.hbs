@@ -1,10 +1,10 @@
-{{#*inline "accordion-tab" }}
+{{#*inline "accordion-tab"}}
   <div class="accordion__item">
     <button class="accordion__item-trigger" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}">
       <h3 class="accordion__item-title">{{title}}</h3>
       <span class="accordion__item-icon">
-        {{> svg name="minus" viewBox="0 0 14 2" className="accordion__item-icon-minus"}}
-        {{> svg name="plus" viewBox="0 0 14 14" className="accordion__item-icon-plus"}}
+        {{>svg name="minus" viewBox="0 0 14 2" className="accordion__item-icon-minus"}}
+        {{>svg name="plus" viewBox="0 0 14 14" className="accordion__item-icon-plus"}}
     </span>
     </button>
 
@@ -17,7 +17,7 @@
       </div>
     </div>
   </div>
-{{/inline }}
+{{/inline}}
 
 <div class="accordion" data-module="accordion">
   <div class="accordion__header">

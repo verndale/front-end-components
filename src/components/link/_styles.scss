@@ -1,0 +1,47 @@
+@import '../theme', 'variables';
+
+.link {
+  align-items: center;
+  display: inline-flex;
+  font-size: 18px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &.link--small {
+    font-size: 14px;
+  }
+
+  &.link--primary {
+    color: $primary;
+
+    .link__icon {
+      fill: $primary;
+    }
+  }
+
+  &.link--secondary {
+    color: $secondary;
+
+    .link__icon {
+      fill: $secondary;
+    }
+  }
+
+  .link__icon {
+    height: 10px;
+    margin-left: 12px;
+    width: 6px;
+  }
+
+  .link__icon--left {
+    margin-right: 12px;
+  }
+
+  .link__icon--right {
+    margin-left: 12px;
+  }
+}
