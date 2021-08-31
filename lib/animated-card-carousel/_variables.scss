@@ -1,0 +1,9 @@
+$swiper-pagination-bullet: map-get(
+    $theme-colors,
+    'primary-light-gray'
+) !default;
+$primary-color: map-get($theme-colors, 'primary') !default;
+$swiper-pagination-bullet-active: map-get(
+    $theme-colors,
+    'primary-gray'
+) !default;
