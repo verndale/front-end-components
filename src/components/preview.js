@@ -32,10 +32,6 @@ const components = [
   {
     name: 'column-row',
     loader: () => import('./column-row/column-row')
-  },
-  {
-    name: 'content-section-row',
-    loader: () => import('./content-section-row/content-section-row')
   }
 ]
 
