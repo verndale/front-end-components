@@ -40,6 +40,10 @@ const components = [
   {
     name: 'column-row',
     loader: () => import('./column-row/column-row')
+  },
+  {
+    name: 'fullWidthVideo',
+    loader: () => import('./full-width-video-row/full-width-video-row')
   }
 ]
 

@@ -1,0 +1,27 @@
+<figure
+  data-module="fullWidthVideo"
+  data-play-button-label="Play video"
+  data-video-id="{{videoId}}""
+  data-video-title="{{heading}}""
+  class="full-width-video"
+>
+  <div class="full-width-video__wrapper">
+    <img
+      src="{{image}}""
+      alt="{{heading}}""
+      class="full-width-video__media"
+    />
+    <div class="full-width-video__overlay">
+      <h2 class="full-width-video__heading">
+        {{heading}}
+      </h2>
+    </div>
+  </div>
+  {{#if caption}}
+  <figcaption>
+    <p class="full-width-video__caption">
+      {{caption}}
+    </p>
+  </figcaption>
+  {{/if}}
+</figure>
