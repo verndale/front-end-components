@@ -1,0 +1,41 @@
+@import
+"../theme",
+"variables";
+
+.page-intro {
+  margin-bottom: map-get($module-spacing, "mobile");
+  margin-top: map-get($module-spacing, "mobile");
+
+  @include mq(desktop) {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: map-get($module-spacing, "desktop");
+    margin-top: map-get($module-spacing, "desktop");
+  }
+}
+
+.page-intro__heading {
+  color: $page-intro-headline-color;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 10px;
+
+  @include mq(desktop) {
+    flex-shrink: 0;
+    font-size: 48px;
+    line-height: 1.13;
+    width: calc(50% - 12px);
+  }
+}
+
+.page-intro__lead-in {
+  font-size: 18px;
+  line-height: 1.78;
+
+  @include mq(desktop) {
+    flex-shrink: 0;
+    width: calc(50% - 12px);
+  }
+}
