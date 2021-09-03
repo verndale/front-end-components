@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
 
-/***/ "./src/components/youtube/youtube.js":
-/*!*******************************************!*\
-  !*** ./src/components/youtube/youtube.js ***!
-  \*******************************************/
+/***/ "./src/components/testimonials/testimonials.js":
+/*!*****************************************************!*\
+  !*** ./src/components/testimonials/testimonials.js ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _verndale_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @verndale/core */ \"./node_modules/@verndale/core/lib/index.js\");\n/* harmony import */ var _verndale_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_verndale_core__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass Module extends _verndale_core__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  setupDefaults() {\n    this.dom = {\n      poster: this.el.querySelector('.video__poster'),\n      icon: this.el.querySelector('svg')\n    };\n    this.initialized = false;\n    this.videoId = this.el.dataset.videoId;\n  }\n\n  addListeners() {\n    this.el.addEventListener('click', this.initVideo.bind(this));\n  }\n\n  initVideo() {\n    if (!this.initialized) {\n      const iframe = document.createElement('iframe');\n      iframe.setAttribute('width', 640);\n      iframe.setAttribute('height', 360);\n      iframe.setAttribute('frameborder', 0);\n      iframe.setAttribute(\n        'src',\n        `http://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1`\n      );\n\n      iframe.onload = () => {\n        this.dom.poster.remove();\n        this.dom.icon.remove();\n      };\n\n      this.dom.poster.parentNode.appendChild(iframe);\n      this.initialized = true;\n    }\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Module);\n\n\n//# sourceURL=webpack:///./src/components/youtube/youtube.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _verndale_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @verndale/core */ \"./node_modules/@verndale/core/lib/index.js\");\n/* harmony import */ var _verndale_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_verndale_core__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\n\n\nswiper__WEBPACK_IMPORTED_MODULE_1__[\"default\"].use([swiper__WEBPACK_IMPORTED_MODULE_1__[\"Pagination\"], swiper__WEBPACK_IMPORTED_MODULE_1__[\"Navigation\"]])\n\nclass Module extends _verndale_core__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  setupDefaults() {\n    this.dom = {\n      container: this.el.querySelector('.swiper-container'),\n      pagination: this.el.querySelector('.swiper-pagination'),\n      next: this.el.querySelector('.swiper-button-next'),\n      prev: this.el.querySelector('.swiper-button-prev')\n    }\n    this.initSlider()\n  }\n\n  addListeners() {}\n\n  initSlider() {\n    this.slider = new swiper__WEBPACK_IMPORTED_MODULE_1__[\"default\"](this.dom.container, {\n      centeredSlides: true,\n      spaceBetween: 25,\n      pagination: {\n        el: this.dom.pagination\n      },\n      navigation: {\n        nextEl: this.dom.next,\n        prevEl: this.dom.prev\n      }\n    })\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Module);\n\n\n//# sourceURL=webpack:///./src/components/testimonials/testimonials.js?");
 
 /***/ })
 
