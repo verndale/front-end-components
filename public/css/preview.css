@@ -3109,6 +3109,98 @@ body {
 .micromodal-slide .modal-people-grid__overlay {
   will-change: transform; }
 
+@media (min-width: 80em) {
+  /* line 1, src/components/s-curve-card/_styles.scss */
+  .s-curve-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; } }
+
+/* line 9, src/components/s-curve-card/_styles.scss */
+.s-curve-card__media {
+  width: 100%; }
+  /* line 12, src/components/s-curve-card/_styles.scss */
+  .s-curve-card__media picture {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%; }
+    /* line 18, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__media picture img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  @media (min-width: 80em) {
+    /* line 9, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__media {
+      width: calc(50% - 10px); } }
+
+/* line 33, src/components/s-curve-card/_styles.scss */
+.s-curve-card__content {
+  padding: 24px 20px 28px; }
+  @media (min-width: 80em) {
+    /* line 33, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      width: calc(50% - 10px); } }
+
+/* line 45, src/components/s-curve-card/_styles.scss */
+.s-curve-card__headline {
+  color: #06847b;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 45, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__headline {
+      margin-bottom: 10px; } }
+
+/* line 59, src/components/s-curve-card/_styles.scss */
+.s-curve-card__subhead {
+  font-size: 21px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 59, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__subhead {
+      margin-bottom: 20px; } }
+
+/* line 72, src/components/s-curve-card/_styles.scss */
+.s-curve-card__actions {
+  margin-top: 20px; }
+  /* line 75, src/components/s-curve-card/_styles.scss */
+  .s-curve-card__actions .btn {
+    width: 100%; }
+    @media (min-width: 80em) {
+      /* line 75, src/components/s-curve-card/_styles.scss */
+      .s-curve-card__actions .btn {
+        width: auto; } }
+    /* line 82, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__actions .btn + .link {
+      margin-top: 26px; }
+      @media (min-width: 80em) {
+        /* line 82, src/components/s-curve-card/_styles.scss */
+        .s-curve-card__actions .btn + .link {
+          margin-left: 54px;
+          margin-top: 0; } }
+  @media (min-width: 80em) {
+    /* line 72, src/components/s-curve-card/_styles.scss */
+    .s-curve-card__actions {
+      align-items: center;
+      display: flex; } }
+
 /* line 3, src/components/testimonials/_styles.scss */
 .testimonials__slider {
   margin: 20px auto 0;

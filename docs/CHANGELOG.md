@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/verndale/front-end-components/compare/v1.5.0...v1.6.0) (2021-08-31)
+
+
+### Features
+
+* S curve card ([75849e4](https://github.com/verndale/front-end-components/commit/75849e4696303f3a85ee2b02af09a88e812271b5))
+
 # [1.5.0](https://github.com/verndale/front-end-components/compare/v1.4.0...v1.5.0) (2021-08-27)
 
 

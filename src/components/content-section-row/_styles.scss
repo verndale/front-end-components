@@ -1,0 +1,16 @@
+@import '../theme', 'variables';
+
+.content-section-row__heading {
+  color: $primary-color;
+  display: block;
+  font-size: 1.66rem;
+  line-height: 1.13;
+  margin-bottom: 0.56rem;
+}
+
+.content-section-row__rtf {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.77rem;
+  padding: 0.22px 0 1.11rem;
+}
