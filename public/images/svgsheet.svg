@@ -12,6 +12,8 @@
 </symbol>
 <symbol id="minus"><path d="M13.781 1.988V.04H.219v1.948z"/>
 </symbol>
+<symbol id="play-outline" viewBox="0 0 60 60"><path fill="currentColor" d="M21.75 16.5v27L44.25 30zM57 30c0 14.93-12.07 27-27 27S3 44.93 3 30 15.07 3 30 3s27 12.07 27 27zM0 30c0 16.55 13.45 30 30 30s30-13.45 30-30S46.55 0 30 0 0 13.45 0 30z"/>
+</symbol>
 <symbol id="play" viewBox="0 0 494.942 494.942"><path d="m35.353 0 424.236 247.471L35.353 494.942z"/>
 </symbol>
 <symbol id="plus"><path d="M7.967 14V7.988h5.814V6.04H7.967V0H6.005v6.04H.219v1.948h5.786V14z"/>
