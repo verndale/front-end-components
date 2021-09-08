@@ -1,0 +1,30 @@
+{{#*inline "related-article-card"}}
+  <article class="article-card">
+    <a class="article-card__link" href="#">
+      <h3 class="article-card__title" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;">
+        {{title}}
+      </h3>
+      {{#if date}}
+      <p class="article-card__date">
+        {{date}}
+      </p>
+      {{/if}}
+      {{#if summary}}
+      <p class="article-card__description">
+        {{summary}}
+      </p>
+      {{/if}}
+    </a>
+  </article>
+{{/inline}}
+
+<section class="related-articles" aria-labelledby="related-articles" data-module="relatedArticles">
+  <h2 id="related-articles" class="related-articles__title">{{heading}}</h2>
+  <div class="related-articles__cards">
+    {{#json items}}
+      {{#each this}}
+        {{> related-article-card}}
+      {{/each}}
+    {{/json}}
+  </div>
+</section>

@@ -20,13 +20,13 @@ module.exports = () => {
       rules: [
         {
           test: /\.js$/,
-          include: [path.resolve(__dirname, `src/components/**/*.js`)],
-          exclude: [
-            path.resolve(__dirname, 'src/components/preview.js'),
-            path.resolve(__dirname, 'src/components/**/*.config.js')
-          ],
+          include: [path.resolve(__dirname, 'src/components')],
+          // exclude: [
+          //   path.resolve(__dirname, 'src/components/preview.js'),
+          //   path.resolve(__dirname, 'src/components/**/*.config.js')
+          // ],
           use: {
-            loader: 'babel-loader',
+            loader: 'babel-loader'
           }
         }
       ]

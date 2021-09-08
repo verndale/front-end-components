@@ -1,0 +1,6 @@
+$masthead-background: map-get($theme-colors, 'primary-dark') !default;
+$masthead-color: #fff;
+$masthead-placeholder-color: map-get($theme-colors, 'primary-dark') !default;
+$masthead-search-color: map-get($theme-colors, 'primary-dark') !default;
+$content-background-color: rgba(map-get($theme-colors, 'primary-light'), 0.05) !default;
+$result-divider-color: #959da0;
