@@ -1,0 +1,14 @@
+// Colors
+$brd-primary-link-color: map-get($theme-colors, "primary") !default;
+$brd-primary-link-color-hover: map-get($theme-colors, "primary-dark") !default;
+$brd-current-page-color: #000 !default;
+$brd-separator-color: #CCC !default;
+
+// Spacing
+$brd-margin-top: 10px !default;
+$brd-margin-bottom: 20px !default;
+$brd-separator-spacing: 10px !default;
+
+// Fonts
+$brd-font-size: 12px !default;
+$brd-font-family: $primary-font !default;
