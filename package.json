@@ -43,6 +43,7 @@
     ]
   },
   "dependencies": {
+    "@babel/preset-react": "^7.14.5",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@semantic-release/changelog": "^5.0.1",
@@ -55,6 +56,10 @@
     "husky": "^7.0.1",
     "js-cookie": "2.2.1",
     "micromodal": "^0.4.6",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-lines-ellipsis": "^0.15.0",
     "sass-mq": "5.0.1",
     "semantic-release": "17.4.4",
     "swiper": "6.7.0"

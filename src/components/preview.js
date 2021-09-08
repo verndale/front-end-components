@@ -44,6 +44,17 @@ const components = [
   {
     name: 'fullWidthVideo',
     loader: () => import('./full-width-video-row/full-width-video-row')
+  },
+  {
+    name: 'search-results',
+    loader: () => import('./search-results/SearchResults'),
+    render(Component, nodeList) {
+      const React = require('react');
+      const { render } = require('react-dom');
+      nodeList.forEach(node =>
+        render(React.createElement(Component, node.dataset), node)
+      );
+    }
   }
 ]
 
