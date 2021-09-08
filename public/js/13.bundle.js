@@ -1,9 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ "./src/components/youtube/youtube.js":
-/*!*******************************************!*\
-  !*** ./src/components/youtube/youtube.js ***!
-  \*******************************************/
 /***/ "./src/components/vimeo/vimeo.js":
 /*!***************************************!*\
   !*** ./src/components/vimeo/vimeo.js ***!
