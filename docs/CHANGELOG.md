@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/verndale/front-end-components/compare/v1.6.0...v1.7.0) (2021-09-10)
+
+
+### Features
+
+* fix bundles ([2170c7d](https://github.com/verndale/front-end-components/commit/2170c7dd00ec047d2fa9c4dbd326f572f10ff34f))
+* S-curve ([e6681f1](https://github.com/verndale/front-end-components/commit/e6681f11d4aabbcb40cdec1a5c44766f22cf2348))
+
 # [1.6.0](https://github.com/verndale/front-end-components/compare/v1.5.0...v1.6.0) (2021-08-31)
 
 

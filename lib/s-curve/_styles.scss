@@ -1,0 +1,29 @@
+.s-curve {
+  margin-bottom: map-get($module-spacing, 'mobile');
+  margin-top: map-get($module-spacing, 'mobile');
+
+  @include mq($until: desktop) {
+    padding: 0;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: map-get($module-spacing, 'desktop');
+    margin-top: map-get($module-spacing, 'desktop');
+  }
+
+  .s-curve-card {
+    &:nth-child(even) {
+      @include mq(desktop) {
+        flex-direction: row;
+      }
+    }
+
+    & + .s-curve-card {
+      margin-top: 20px;
+
+      @include mq(desktop) {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import
+"../theme",
+"variables";
+
+.full-width-image {
+  margin-bottom: $accordion-mobile-margin-bottom;
+  margin-top: $accordion-mobile-margin-top;
+
+  @include mq(desktop) {
+    margin-bottom: $accordion-desktop-margin-bottom;
+    margin-top: $accordion-desktop-margin-top;
+  }
+}
+
+.full-width-image__header {
+  font-family: $full-width-image-header-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px;
+
+  @include mq(desktop) {
+    font-size: 40px;
+    line-height: 1.09;
+  }
+
+  @include mq(wide) {
+    font-size: 44px;
+  }
+}
+
+.full-width-image__wrapper {
+  @include mq($until: desktop) {
+    box-shadow: 0 0 15px rgba(#000, 0.1);
+  }
+}
+
+.full-width-image__figure {
+  margin: 0;
+  width: 100%;
+
+  @include mq(desktop) {
+    box-shadow: 0 0 15px rgba(#000, 0.1);
+  }
+}
+
+.full-width-image__image {
+  display: block;
+  width: 100%;
+}
+
+.full-width-image__caption {
+  line-height: 1.75;
+  padding: 16px 28px 22px;
+
+  @include mq(desktop) {
+    display: block;
+  }
+}
