@@ -2025,6 +2025,78 @@ body {
       height: 120px;
       width: 120px; } }
 
+/* line 3, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card {
+  width: 100%;
+  border: solid 1px #dddddd;
+  transition: all 0.5s; }
+  /* line 8, src/components/carousel-content-card/_styles.scss */
+  .carousel-content-card.carousel-content-card--no-image {
+    height: 220px; }
+  /* line 12, src/components/carousel-content-card/_styles.scss */
+  .carousel-content-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.15); }
+    /* line 16, src/components/carousel-content-card/_styles.scss */
+    .carousel-content-card:hover .carousel-content-card__cta {
+      text-decoration: underline; }
+      /* line 19, src/components/carousel-content-card/_styles.scss */
+      .carousel-content-card:hover .carousel-content-card__cta svg {
+        transform: translateX(5px); }
+    /* line 23, src/components/carousel-content-card/_styles.scss */
+    .carousel-content-card:hover .carousel-content-card__heading {
+      color: #06847b; }
+  @media (min-width: 48em) {
+    /* line 3, src/components/carousel-content-card/_styles.scss */
+    .carousel-content-card {
+      width: 25%; } }
+
+/* line 34, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card__wrapper {
+  margin: 19px 32px 30px 35px;
+  height: auto;
+  display: flex;
+  flex-direction: column; }
+
+/* line 41, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card__heading {
+  line-height: 1.78;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a; }
+
+/* line 48, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card__image {
+  width: 100%;
+  height: 159px; }
+  /* line 52, src/components/carousel-content-card/_styles.scss */
+  .carousel-content-card__image img {
+    width: 100%;
+    height: 100%; }
+
+/* line 58, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card__copy {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: normal;
+  flex: 1;
+  color: #4a4a4a; }
+
+/* line 67, src/components/carousel-content-card/_styles.scss */
+.carousel-content-card__cta {
+  font-size: 14px;
+  color: #06847b;
+  line-height: normal;
+  letter-spacing: normal;
+  text-decoration: none; }
+  /* line 74, src/components/carousel-content-card/_styles.scss */
+  .carousel-content-card__cta svg {
+    width: 15px;
+    height: 10px;
+    fill: #06847b;
+    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+
 /* line 2, src/components/column-row/_styles.scss */
 .column-row__heading {
   font-family: "Open Sans", sans-serif;

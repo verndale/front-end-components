@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="arrow-right"><path d="M20.508 0 32 11.5 20.508 23l-2.127-2.128 7.86-7.867H0v-3h26.243l-7.86-7.867z" fill="inherit" fill-rule="evenodd"/>
+</symbol>
 <symbol id="arrow-up"><path d="M142.51 98.01.1 220.599 15.28 237.1 160.1 114.623 304.92 237.1l15.18-16.502L177.69 98.011 160.1 82.9z"/>
 </symbol>
 <symbol id="chevron-left"><path d="M.661 5.55 4.492 10l1.296-1.099L2.43 5l3.358-3.901L4.492 0 .661 4.45.189 5z"/>
