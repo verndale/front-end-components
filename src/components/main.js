@@ -7,6 +7,7 @@ import Youtube from './youtube/youtube'
 import AnimatedCardCarousel from './animated-card-carousel/AnimatedCardCarousel'
 import CardCarousel from './cards/animated-carousel-card/AnimatedCarouselCard'
 import SearchResults from './search-results/SearchResults'
+import TabbedContent from './tabbed-content/tabbed-content'
 
 
-export { Accordion, PeopleCard, Alert, Video, Vimeo, Youtube, AnimatedCardCarousel, CardCarousel, SearchResults }
+export { Accordion, PeopleCard, Alert, Video, Vimeo, Youtube, AnimatedCardCarousel, CardCarousel, SearchResults, TabbedContent }
