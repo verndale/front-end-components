@@ -55,6 +55,10 @@ const components = [
         render(React.createElement(Component, node.dataset), node)
       );
     }
+  },
+  {
+    name: 'tabbed-content',
+    loader: () => import('./tabbed-content/tabbed-content')
   }
 ]
 
