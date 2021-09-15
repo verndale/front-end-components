@@ -1,0 +1,48 @@
+<div class="tabbed-content" data-module="tabbed-content" data-identifier="{{identifier}}">
+  <div class="tabbed-content__masthead">
+    <div class="container tabbed-content__masthead-inner">
+      <h2 class="tabbed-content__heading">{{heading}}</h2>
+      <div class="tabbed-content__tabs-wrapper">
+        <div class="tabbed-content__dropdown-wrapper">
+          <select class="tabbed-content__dropdown" aria-label="{{tabDropdownLabel}}">
+            {{#json tabs}}{{#each this}}
+            <option value={{id}}>{{../../tabDropdownPrefix}}: {{label}}</option>
+            {{/each}}{{/json}}
+          </select>
+        </div>
+        <div role="tablist" class="tabbed-content__tabs" aria-label="Contact us tabs">
+          {{#json tabs}}{{#each this}}
+          <button
+            class="tabbed-content__tab btn btn--primary btn--outline"
+            role="tab"
+            aria-selected="{{#if @index}}false{{else}}true{{/if}}"
+            aria-controls="{{id}}-panel"
+            data-index={{@index}}
+            id="{{id}}"
+            {{#if @index}}tabindex="-1"{{/if}}
+            data-identifier="{{../../identifier}}"
+          >
+            {{label}}
+          </button>
+          {{/each}}{{/json}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tabbed-content__panels">
+    {{#json tabs}}{{#each this}}
+    <div
+      class="tabbed-content__panel"
+      role="tabpanel"
+      id="{{id}}-panel"
+      aria-labelledby="{{id}}"
+      {{#if @index}}aria-hidden="true"{{/if}}
+      data-identifier="{{../../identifier}}"
+    >
+      <div class="container">
+        <h4 style="font-size: 40px;">Example module for <span style="font-weight: 700;">{{label}}</span></h4>
+      </div>
+    </div>
+    {{/each}}{{/json}}
+  </div>
+</div>

@@ -1,0 +1,40 @@
+@import
+"../theme",
+"variables";
+
+.breadcrumbs {
+  color: $brd-primary-link-color;
+  font-family: $brd-font-family;
+  font-size: $brd-font-size;
+
+  @include mq($until: tablet) {
+    display: none;
+  }
+
+  > p {
+    display: flex;
+    margin-bottom: $brd-margin-bottom;
+    margin-top: $brd-margin-top;
+  }
+}
+
+.breadcrumb__item {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover:not(:last-of-type) {
+    color: $brd-primary-link-color-hover;
+    text-decoration: underline;
+  }
+
+  &:last-of-type {
+    color: $brd-current-page-color;
+  }
+}
+
+.breadcrumb__separator {
+  color: $brd-separator-color;
+  display: inline-block;
+  margin-left: $brd-separator-spacing;
+  margin-right: $brd-separator-spacing;
+}

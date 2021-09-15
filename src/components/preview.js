@@ -60,6 +60,10 @@ const components = [
     name: 'contentCarousel',
     loader: () => import('./content-carousel/content-carousel')
   },
+  {
+    name: 'tabbed-content',
+    loader: () => import('./tabbed-content/tabbed-content')
+  }
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
