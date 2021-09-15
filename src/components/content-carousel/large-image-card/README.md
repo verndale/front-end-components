@@ -1,5 +1,5 @@
-# Content Card
-This component have 2 design with image and without image
+# Large Image Card
+This component have 2 design with and without card description
 
 ## Usage
 Add the front-end-copmonent library to your project
@@ -9,7 +9,7 @@ yarn add @verndale/front-end-components
 
 Import the style to your main style file in your project
 ```scss
-@import "../../node_modules/@verndale/front-end-components/lib/content-card/styles";
+@import "../../node_modules/@verndale/front-end-components/lib/content-carousel/content-card/styles";
 ```
 
 Copy and paste to your project any of the markup in the content card variations - you can find the markup in the **HTML tab**.
@@ -23,7 +23,8 @@ It is recommended to use the overrides if you can as it will be less code in you
 
 Below is the list of variables you can override. You may also find these in the **Assets tab** under `_variables.scss`
 ```scss
-$text-primary
-$cta-primary
-$border-primary
+$main-color
+$gray
+$white
+$black
 ```

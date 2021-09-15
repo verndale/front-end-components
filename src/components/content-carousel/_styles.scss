@@ -1,0 +1,198 @@
+@import "../theme",
+"./variables";
+.content-carousel {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    @include mq(desktop) {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    overflow: hidden;
+    padding-bottom: 5px;
+    .tns-ovh {
+        overflow: visible;
+    }
+    .focus-visible {
+        outline: 0;
+        .content-carousel__slide {
+            outline: solid 3px$main-color;
+        }
+        .content-carousel__slide-description {
+            &:before {
+                transform: translateX(0);
+            }
+        }
+        .content-carousel__button {
+            outline: solid 1px$main-color;
+            outline-offset: 2px;
+        }
+    }
+}
+
+.swiper-container {
+    overflow: visible;
+}
+
+.swiper-slide {
+    width: 100%;
+    &>div {
+        width: 100%;
+    }
+}
+
+.content-carousel__header {
+    &:after {
+        background-blend-mode: multiply;
+        background-color: $main-color;
+        background-image: url("/images/texture.png");
+        background-position: center;
+        background-size: cover;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            display: none;
+        }
+    }
+    // ie-11
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        background-color: $main-color;
+    }
+    padding: 28px 0 100px;
+    position: relative;
+    z-index: 1;
+    @include mq(tablet) {
+        padding: 53px 0 177px;
+    }
+}
+
+.content-carousel__definition {
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.43;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    @include mq(tablet) {
+        margin-bottom: 16px;
+    }
+}
+
+.content-carousel__title {
+    color: $white;
+    margin: 0;
+}
+
+.content-carousel__container {
+    margin-top: -62px;
+    position: relative;
+    z-index: 1;
+    @include mq(tablet) {
+        margin-top: -129px;
+    }
+}
+
+.content-carousel__slider {
+    user-select: none;
+    a {
+        transition: all 0.3s ease-in-out;
+        @include mq(desktop) {
+            &:hover {
+                .content-carousel__slide-description {
+                    &:before {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-carousel__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    @include mq(desktop) {
+        margin-top: 40px;
+    }
+}
+
+.content-carousel__button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: solid 1px $main-color;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    width: 40px;
+    @include mq(tablet) {
+        height: 50px;
+        width: 50px;
+    }
+    &+.content-carousel__button {
+        margin-left: 10px;
+        @include mq(desktop) {
+            margin-left: 20px;
+        }
+    }
+    &:disabled {
+        border-color: rgba($gray, 0.35);
+        pointer-events: none;
+        svg {
+            fill: rgba($gray, 0.35);
+        }
+    }
+    &:hover {
+        background-color: $main-color;
+        border-color: $main-color;
+        color: $white;
+        svg {
+            fill: $white;
+        }
+    }
+    &:first-child {
+        span {
+            transform: translateX(-1px);
+            @include mq(tablet) {
+                transform: translateX(-2px);
+            }
+        }
+    }
+    &:last-child {
+        span {
+            transform: translateX(1px);
+            @include mq(tablet) {
+                transform: translateX(2px);
+            }
+        }
+    }
+    span {
+        height: 16px;
+        width: 16px;
+        @include mq(tablet) {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    svg {
+        fill: $main-color;
+        height: 100%;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+        margin-bottom: 5px;
+        @include mq(tablet) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="large-image-card">
+    {{#if this.link}}
+    <a href="{{this.link}}">
+    {{/if}}
+        <img src="{{this.image}}" alt="{{this.imageDescription}}" class="img--cover lazyload">
+        <div class="large-image-card__content">
+            <h3 class="large-image-card__title">{{this.title}}</h3>
+            <p class="large-image-card__description">{{this.description}}</p>
+        </div>
+    {{#if this.link}}
+    </a>
+    {{/if}}
+</div>

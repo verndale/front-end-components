@@ -55,7 +55,11 @@ const components = [
         render(React.createElement(Component, node.dataset), node)
       );
     }
-  }
+  },
+  {
+    name: 'contentCarousel',
+    loader: () => import('./content-carousel/content-carousel')
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,91 @@
+@import "../../theme",
+"variables";
+.large-image-card {
+    min-height: 380px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba($black, 0) 52%, $black 100%);
+    position: relative;
+    border: solid 1px $border-primary;
+    transition: all 0.5s;
+    &.content-card--no-image {
+        height: 220px;
+    }
+
+    @include mq(tablet) {
+        width: 25%;
+    }
+
+    &:hover {
+        margin-top: -10px;
+        box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.15);
+        .content-card__cta {
+            text-decoration: underline;
+            svg {
+                transform: translateX(5px);
+            }
+        }
+
+        .large-image-card__description  {
+            text-decoration: none;
+            &:before {
+                transform: translateX(0);
+            }
+        }
+    }
+    img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.large-image-card__content {
+    bottom: 0;
+    left: 0;
+    padding: 20px 30px;
+    position: absolute;
+}
+
+.large-image-card__title {
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.43;
+    margin: 0 0 3px;
+    text-transform: uppercase;
+}
+
+.large-image-card__description {
+    color: $white;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        &:before {
+            transform: translateX(0);
+        }
+    }
+    color: $white;
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 0;
+
+    &:before {
+        background: #fff;
+        bottom: .125rem;
+        content: "";
+        height: .0625rem;
+        left: 0;
+        position: absolute;
+        transform: translateX(-110%);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+    }
+}
