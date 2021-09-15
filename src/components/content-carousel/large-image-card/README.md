@@ -1,5 +1,5 @@
 # Large Image Card
-This component have 2 design with and without card description
+This component have 4 design, card with description, card without description, card with link, and card without link 
 
 ## Usage
 Add the front-end-copmonent library to your project

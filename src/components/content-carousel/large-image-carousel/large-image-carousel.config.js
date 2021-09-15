@@ -4,25 +4,20 @@ module.exports = {
     context: {
         definition: "Lorem ipsum dolor sit amet",
         title: "Lorem ipsum dolor sit amet",
-        slides: [{
-                image: "https://via.placeholder.com/883x890",
-                imageDescription: "Image descriptionLorem ipsum dolor sit amet",
-                title: "Lorem ipsum dolor sit amet",
-                description: "Lorem ipsum dolor sit amet",
-                link: '/'
-            },
+        slides: [
             {
                 image: "https://via.placeholder.com/883x890",
                 imageDescription: "Image descriptionLorem ipsum dolor sit amet",
                 title: "Lorem ipsum dolor sit amet",
                 description: "Lorem ipsum dolor sit amet",
-                link: '/'
+                link: "/"
             },
             {
                 image: "https://via.placeholder.com/883x890",
                 imageDescription: "Image descriptionLorem ipsum dolor sit amet",
                 title: "Lorem ipsum dolor sit amet",
-                link: '/'
+                description: null,
+                link: "/"
             },
             {
                 image: "https://via.placeholder.com/883x890",
@@ -30,6 +25,12 @@ module.exports = {
                 title: "Lorem ipsum dolor sit amet",
                 description: "Lorem ipsum dolor sit amet",
                 link: null
+            },
+            {
+                image: "https://via.placeholder.com/883x890",
+                imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                title: "Lorem ipsum dolor sit amet",
+                description: null,
             }
         ],
         previousSlideLabel: "Previous Slide",
@@ -40,38 +41,34 @@ module.exports = {
             context: {
                 definition: "Lorem ipsum dolor sit amet",
                 title: "Lorem ipsum dolor sit amet",
-                slides: [{
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                slides: [
+                    {
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: "Lorem ipsum dolor sit amet",
+                        link: "/"
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: null,
+                        link: "/"
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: "Lorem ipsum dolor sit amet",
+                        link: null
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
-                    }
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: null,
+                    }   
                 ],
                 previousSlideLabel: "Previous Slide",
                 nextSlideLabel: "Next Slide"
@@ -81,37 +78,34 @@ module.exports = {
             name: 'without Subheader',
             context: {
                 title: "Lorem ipsum dolor sit amet",
-                slides: [{
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                slides: [
+                    {
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: "Lorem ipsum dolor sit amet",
+                        link: "/"
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: null,
+                        link: "/"
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: "Lorem ipsum dolor sit amet",
+                        link: null
                     },
                     {
-                        image: 'https://via.placeholder.com/282x159',
-                        heading: 'Default',
-                        copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
-                        ctaLabel: 'Action',
-                        cta: '#',
-                        icon: 'chevron-right'
+                        image: "https://via.placeholder.com/883x890",
+                        imageDescription: "Image descriptionLorem ipsum dolor sit amet",
+                        title: "Lorem ipsum dolor sit amet",
+                        description: null,
+                        link: null
                     }
                 ],
                 previousSlideLabel: "Previous Slide",
