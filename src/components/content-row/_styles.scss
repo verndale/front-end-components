@@ -1,12 +1,22 @@
-.s-curve-card {
+.content-row {
   @include mq(desktop) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+
+  &--media-align-left {
+    flex-direction: row;
+  }
+
+  &--single-column {
+    @include mq(desktop) {
+      flex-direction: column;
+    }
+  }
 }
 
-.s-curve-card__media {
+.content-row__media {
   width: 100%;
 
   picture {
@@ -30,7 +40,7 @@
   }
 }
 
-.s-curve-card__content {
+.content-row__content {
   padding: 24px 20px 28px;
 
   @include mq(desktop) {
@@ -40,9 +50,13 @@
     padding: 0;
     width: calc(50% - 10px);
   }
+
+  .content-row--single-column & {
+    margin-bottom: 20px;
+  }
 }
 
-.s-curve-card__headline {
+.content-row__headline {
   color: $primary-color;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -54,9 +68,15 @@
   @include mq(desktop) {
     margin-bottom: 10px;
   }
+
+  .content-row--single-column & {
+    @include mq(desktop) {
+      font-size: 50px;
+    }
+  }
 }
 
-.s-curve-card__subhead {
+.content-row__subhead {
   font-size: 21px;
   margin-bottom: 17px;
   text-transform: uppercase;
@@ -69,7 +89,7 @@
   }
 }
 
-.s-curve-card__actions {
+.content-row__actions {
   margin-top: 20px;
 
   .btn {

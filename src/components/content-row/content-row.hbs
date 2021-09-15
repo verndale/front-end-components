@@ -1,0 +1,61 @@
+{{#*inline "media"}}
+  <div class="content-row__media">
+    {{#if video}}
+      {{#json video}}{{>@video}}{{/json}}
+    {{else}}
+      {{#if youtubeId}}
+        {{>@youtube videoId=youtubeId}}
+      {{else}}
+      {{#if vimeoId}}
+        {{>@vimeo videoId=vimeoId}}
+      {{else}}
+      {{#if image}}
+        {{#json image}}{{>picture}}{{/json}}
+      {{/if}}
+    {{/if}}
+    {{/if}}
+    {{/if}}
+  </div>
+{{/inline}}
+
+{{#*inline "actions"}}
+{{#ifCond buttonLabel "||" linkLabel}}
+  <div class="content-row__actions">
+    {{#if buttonLabel}}
+    {{>@button type="link" label=buttonLabel className="primary"}}
+    {{/if}}
+    {{#if linkLabel}}
+    {{>@link label=linkLabel className="primary" icon="right"}}
+    {{/if}}
+  </div>
+{{/ifCond}}
+{{/inline}}
+
+<div class="content-row content-row--media-align-{{mediaAlign}} {{#if singleColumn}}content-row--single-column{{/if}}">
+
+  {{#if singleColumn}}
+  <div class="content-row__content">
+    <h2 class="content-row__headline">{{headline}}</h2>
+    {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    {{#if description}}
+    <div class="content-row__description rtf">
+      {{{description}}}
+    </div>
+    {{/if}}
+  </div>
+  {{> media}}
+  {{>actions}}
+  {{else}}
+  {{> media}}
+  <div class="content-row__content">
+    <h2 class="content-row__headline">{{headline}}</h2>
+    {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    {{#if description}}
+    <div class="content-row__description rtf">
+      {{{description}}}
+    </div>
+    {{/if}}
+    {{>actions}}
+  </div>
+  {{/if}}
+</div>

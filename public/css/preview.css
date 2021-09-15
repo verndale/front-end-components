@@ -1972,6 +1972,66 @@ body {
   .animated-carousel-card__action .btn {
     width: 100%; }
 
+/* line 3, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  position: relative;
+  min-height: 200px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none; }
+  @media (min-width: 48em) {
+    /* line 3, src/components/cards/background-image-content-card/_styles.scss */
+    .background-image-content-card {
+      min-height: 350px;
+      padding: 30px; } }
+  /* line 19, src/components/cards/background-image-content-card/_styles.scss */
+  .background-image-content-card:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 2;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #000); }
+
+/* line 31, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+  /* line 39, src/components/cards/background-image-content-card/_styles.scss */
+  .background-image-content-card__image img {
+    width: 100%;
+    height: 100%; }
+
+/* line 45, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__title {
+  position: relative;
+  z-index: 3;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600; }
+  /* line 52, src/components/cards/background-image-content-card/_styles.scss */
+  [href]:hover .background-image-content-card__title {
+    text-decoration: underline; }
+
+/* line 57, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__copy {
+  position: relative;
+  z-index: 3;
+  font-size: 14px; }
+  /* line 62, src/components/cards/background-image-content-card/_styles.scss */
+  [href]:hover .background-image-content-card__copy {
+    text-decoration: underline; }
+
 /* line 3, src/components/cards/testimonials-card/_styles.scss */
 .testimonials-card {
   box-shadow: inset 0 0 0 1px currentColor;
@@ -2265,6 +2325,114 @@ body {
     height: 10px;
     fill: #06847b;
     transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+
+@media (min-width: 80em) {
+  /* line 1, src/components/content-row/_styles.scss */
+  .content-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; } }
+
+/* line 8, src/components/content-row/_styles.scss */
+.content-row--media-align-left {
+  flex-direction: row; }
+
+@media (min-width: 80em) {
+  /* line 12, src/components/content-row/_styles.scss */
+  .content-row--single-column {
+    flex-direction: column; } }
+
+/* line 19, src/components/content-row/_styles.scss */
+.content-row__media {
+  width: 100%; }
+  /* line 22, src/components/content-row/_styles.scss */
+  .content-row__media picture {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%; }
+    /* line 28, src/components/content-row/_styles.scss */
+    .content-row__media picture img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  @media (min-width: 80em) {
+    /* line 19, src/components/content-row/_styles.scss */
+    .content-row__media {
+      width: calc(50% - 10px); } }
+
+/* line 43, src/components/content-row/_styles.scss */
+.content-row__content {
+  padding: 24px 20px 28px; }
+  @media (min-width: 80em) {
+    /* line 43, src/components/content-row/_styles.scss */
+    .content-row__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      width: calc(50% - 10px); } }
+  /* line 54, src/components/content-row/_styles.scss */
+  .content-row--single-column .content-row__content {
+    margin-bottom: 20px; }
+
+/* line 59, src/components/content-row/_styles.scss */
+.content-row__headline {
+  color: #06847b;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.13;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 59, src/components/content-row/_styles.scss */
+    .content-row__headline {
+      margin-bottom: 10px; } }
+  @media (min-width: 80em) {
+    /* line 72, src/components/content-row/_styles.scss */
+    .content-row--single-column .content-row__headline {
+      font-size: 50px; } }
+
+/* line 79, src/components/content-row/_styles.scss */
+.content-row__subhead {
+  font-size: 21px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 79, src/components/content-row/_styles.scss */
+    .content-row__subhead {
+      margin-bottom: 20px; } }
+
+/* line 92, src/components/content-row/_styles.scss */
+.content-row__actions {
+  margin-top: 20px; }
+  /* line 95, src/components/content-row/_styles.scss */
+  .content-row__actions .btn {
+    width: 100%; }
+    @media (min-width: 80em) {
+      /* line 95, src/components/content-row/_styles.scss */
+      .content-row__actions .btn {
+        width: auto; } }
+    /* line 102, src/components/content-row/_styles.scss */
+    .content-row__actions .btn + .link {
+      margin-top: 26px; }
+      @media (min-width: 80em) {
+        /* line 102, src/components/content-row/_styles.scss */
+        .content-row__actions .btn + .link {
+          margin-left: 54px;
+          margin-top: 0; } }
+  @media (min-width: 80em) {
+    /* line 92, src/components/content-row/_styles.scss */
+    .content-row__actions {
+      align-items: center;
+      display: flex; } }
 
 /* line 3, src/components/content-section-row/_styles.scss */
 .content-section-row__heading {
@@ -3445,98 +3613,6 @@ body {
   display: block;
   height: 100%;
   padding: 20px 30px 28px; }
-
-@media (min-width: 80em) {
-  /* line 1, src/components/s-curve-card/_styles.scss */
-  .s-curve-card {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between; } }
-
-/* line 9, src/components/s-curve-card/_styles.scss */
-.s-curve-card__media {
-  width: 100%; }
-  /* line 12, src/components/s-curve-card/_styles.scss */
-  .s-curve-card__media picture {
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%; }
-    /* line 18, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__media picture img {
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      width: 100%; }
-  @media (min-width: 80em) {
-    /* line 9, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__media {
-      width: calc(50% - 10px); } }
-
-/* line 33, src/components/s-curve-card/_styles.scss */
-.s-curve-card__content {
-  padding: 24px 20px 28px; }
-  @media (min-width: 80em) {
-    /* line 33, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0;
-      width: calc(50% - 10px); } }
-
-/* line 45, src/components/s-curve-card/_styles.scss */
-.s-curve-card__headline {
-  color: #06847b;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.13;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    /* line 45, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__headline {
-      margin-bottom: 10px; } }
-
-/* line 59, src/components/s-curve-card/_styles.scss */
-.s-curve-card__subhead {
-  font-size: 21px;
-  margin-bottom: 17px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.17;
-  margin: 0 0 10px; }
-  @media (min-width: 80em) {
-    /* line 59, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__subhead {
-      margin-bottom: 20px; } }
-
-/* line 72, src/components/s-curve-card/_styles.scss */
-.s-curve-card__actions {
-  margin-top: 20px; }
-  /* line 75, src/components/s-curve-card/_styles.scss */
-  .s-curve-card__actions .btn {
-    width: 100%; }
-    @media (min-width: 80em) {
-      /* line 75, src/components/s-curve-card/_styles.scss */
-      .s-curve-card__actions .btn {
-        width: auto; } }
-    /* line 82, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__actions .btn + .link {
-      margin-top: 26px; }
-      @media (min-width: 80em) {
-        /* line 82, src/components/s-curve-card/_styles.scss */
-        .s-curve-card__actions .btn + .link {
-          margin-left: 54px;
-          margin-top: 0; } }
-  @media (min-width: 80em) {
-    /* line 72, src/components/s-curve-card/_styles.scss */
-    .s-curve-card__actions {
-      align-items: center;
-      display: flex; } }
 
 /* line 1, src/components/s-curve/_styles.scss */
 .s-curve {
