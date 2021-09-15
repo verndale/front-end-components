@@ -1,6 +1,6 @@
 import { Component } from '@verndale/core'
 import { v4 as uuidv4 } from 'uuid'
-import { keyCode, open, close } from '../helpers'
+import { keyCode } from '../helpers'
 
 /**
  * `Accordion`
@@ -42,14 +42,18 @@ class Accordion extends Component {
   }
 
   initAccordion() {
-    this.dom.items.forEach((item, index) => {
+    this.dom.items.forEach((item) => {
       const guid = uuidv4()
 
       const trigger = item.querySelector('.accordion__item-trigger')
       const content = item.querySelector('.accordion__item-panel')
 
       if (trigger.getAttribute('aria-expanded') === 'true') {
-        content.style.height = 'auto'
+        const height = content.querySelector(
+          '.accordion__item-content'
+        ).offsetHeight
+
+        content.style.maxHeight = `${height}px`
         content.style.visibility = 'visible'
       }
 
@@ -114,14 +118,14 @@ class Accordion extends Component {
 
     trigger.setAttribute('aria-expanded', true)
     content.style.visibility = 'visible'
-    open({
-      element: content,
-      ease: 'easeInOut',
-      onComplete: () => {
-        content.setAttribute('aria-hidden', false)
-        content.style.height = 'auto'
-      }
-    })
+    content.setAttribute('aria-hidden', false)
+
+    const height = content.querySelector(
+      '.accordion__item-content'
+    ).offsetHeight
+
+    content.style.maxHeight = `${height}px`
+    content.style.visibility = 'visible'
   }
 
   closeItem(trigger) {
@@ -130,14 +134,8 @@ class Accordion extends Component {
     )
 
     trigger.setAttribute('aria-expanded', false)
-    close({
-      element: content,
-      ease: 'easeInOut',
-      onComplete: () => {
-        content.setAttribute('aria-hidden', true)
-        content.style.visibility = 'hidden'
-      }
-    })
+    content.style = null
+    content.setAttribute('aria-hidden', true)
   }
 }
 
