@@ -1,21 +1,7 @@
 import { Component } from '@verndale/core'
 import { v4 as uuidv4 } from 'uuid'
-import { keyCode, open, close } from '../helpers'
+import { keyCode } from '../helpers'
 
-/**
- * `Accordion`
- *
- *
- * @example
- * import { Accordion } from '@verndale/front-end-components';
- *
- * class Foo {
- *   construction(){
- *
- *     cont Accordion = new Accordion('.accordion');
- *   }
- * }
- */
 class Accordion extends Component {
   constructor(el) {
     super(el)
@@ -27,7 +13,8 @@ class Accordion extends Component {
     this.dom = {
       container: this.el.querySelector('.accordion__items'),
       items: this.el.querySelectorAll('.accordion__item'),
-      triggers: [...this.el.querySelectorAll('.accordion__item-trigger')]
+      triggers: [...this.el.querySelectorAll('.accordion__item-trigger')],
+      panels: [...this.el.querySelectorAll('.accordion__item-panel')]
     }
   }
 
@@ -39,6 +26,8 @@ class Accordion extends Component {
     this.dom.triggers.forEach((trigger) =>
       trigger.addEventListener('click', this.handleClick.bind(this))
     )
+
+    this.dom.panels.forEach(el => el.addEventListener('transitionend', this.handleTransitionEnd.bind(this)))
   }
 
   initAccordion() {
@@ -114,14 +103,7 @@ class Accordion extends Component {
 
     trigger.setAttribute('aria-expanded', true)
     content.style.visibility = 'visible'
-    open({
-      element: content,
-      ease: 'easeInOut',
-      onComplete: () => {
-        content.setAttribute('aria-hidden', false)
-        content.style.height = 'auto'
-      }
-    })
+    this.open(content);
   }
 
   closeItem(trigger) {
@@ -130,14 +112,26 @@ class Accordion extends Component {
     )
 
     trigger.setAttribute('aria-expanded', false)
-    close({
-      element: content,
-      ease: 'easeInOut',
-      onComplete: () => {
-        content.setAttribute('aria-hidden', true)
-        content.style.visibility = 'hidden'
-      }
-    })
+    this.close(content);
+  }
+
+  open(el) {
+    el.setAttribute('aria-hidden', false)
+    el.style.height = `${el.scrollHeight}px`;
+  }
+
+  close(el) {
+    el.style.height = `${el.scrollHeight}px`;
+    el.setAttribute('aria-hidden', true)
+    el.style.height = 0
+  }
+
+  handleTransitionEnd(e) {
+    const el = e.target;
+    const height = el.style.height;
+    if (height !== '0' || height !== 0) {
+      el.style.height = 'auto';
+    }
   }
 }
 

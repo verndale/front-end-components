@@ -1527,24 +1527,25 @@ body {
 .accordion__item-panel {
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
-  /* line 158, src/components/accordion/_styles.scss */
+  visibility: hidden;
+  transition: height 0.25s ease; }
+  /* line 159, src/components/accordion/_styles.scss */
   .accordion__item-panel video,
   .accordion__item-panel picture,
   .accordion__item-panel img,
   .accordion__item-panel iframe {
     width: 100%; }
 
-/* line 166, src/components/accordion/_styles.scss */
+/* line 167, src/components/accordion/_styles.scss */
 .accordion__item-content {
   font-size: 18px;
   line-height: 1.78;
   padding: 2px 20px 20px; }
   @media (min-width: 80em) {
-    /* line 166, src/components/accordion/_styles.scss */
+    /* line 167, src/components/accordion/_styles.scss */
     .accordion__item-content {
       padding: 28px 100px 45px; } }
-  /* line 176, src/components/accordion/_styles.scss */
+  /* line 177, src/components/accordion/_styles.scss */
   .accordion__item-content * + video,
   .accordion__item-content * + picture,
   .accordion__item-content * + img,
@@ -1552,18 +1553,18 @@ body {
   .accordion__item-content * + .buttons-row {
     margin-top: 20px; }
     @media (min-width: 80em) {
-      /* line 176, src/components/accordion/_styles.scss */
+      /* line 177, src/components/accordion/_styles.scss */
       .accordion__item-content * + video,
       .accordion__item-content * + picture,
       .accordion__item-content * + img,
       .accordion__item-content * + iframe,
       .accordion__item-content * + .buttons-row {
         margin-top: 60px; } }
-  /* line 189, src/components/accordion/_styles.scss */
+  /* line 190, src/components/accordion/_styles.scss */
   .accordion__item-content .buttons-row {
     margin-left: -10px;
     margin-right: -10px; }
-    /* line 193, src/components/accordion/_styles.scss */
+    /* line 194, src/components/accordion/_styles.scss */
     .accordion__item-content .buttons-row .btn {
       margin: 10px; }
 
@@ -1971,6 +1972,66 @@ body {
   /* line 105, src/components/cards/animated-carousel-card/_styles.scss */
   .animated-carousel-card__action .btn {
     width: 100%; }
+
+/* line 3, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  position: relative;
+  min-height: 200px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none; }
+  @media (min-width: 48em) {
+    /* line 3, src/components/cards/background-image-content-card/_styles.scss */
+    .background-image-content-card {
+      min-height: 350px;
+      padding: 30px; } }
+  /* line 19, src/components/cards/background-image-content-card/_styles.scss */
+  .background-image-content-card:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 2;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #000); }
+
+/* line 31, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+  /* line 39, src/components/cards/background-image-content-card/_styles.scss */
+  .background-image-content-card__image img {
+    width: 100%;
+    height: 100%; }
+
+/* line 45, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__title {
+  position: relative;
+  z-index: 3;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600; }
+  /* line 52, src/components/cards/background-image-content-card/_styles.scss */
+  [href]:hover .background-image-content-card__title {
+    text-decoration: underline; }
+
+/* line 57, src/components/cards/background-image-content-card/_styles.scss */
+.background-image-content-card__copy {
+  position: relative;
+  z-index: 3;
+  font-size: 14px; }
+  /* line 62, src/components/cards/background-image-content-card/_styles.scss */
+  [href]:hover .background-image-content-card__copy {
+    text-decoration: underline; }
 
 /* line 3, src/components/cards/testimonials-card/_styles.scss */
 .testimonials-card {
