@@ -59,13 +59,13 @@ class Module extends Component {
   }
 
   changeSlide() {
-    if(this.swiper.activeIndex == 0){
+    if(this.swiper.activeIndex === 0){
       this.dom.prev.disabled = true;
     } else {
       this.dom.prev.disabled = false;
     }
 
-    if(typeof this.lastSlide == 'number' && this.swiper.activeIndex > this.lastSlide) {
+    if(typeof this.lastSlide === 'number' && this.swiper.activeIndex > this.lastSlide) {
       this.dom.next.disabled = true;
     } else {
       this.dom.next.disabled = false;
