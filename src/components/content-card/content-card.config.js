@@ -11,7 +11,7 @@ module.exports = {
   },
   variants: [
     {
-      name: 'Card with Image',
+      name: 'C-CRD-1: Content Card with Image',
       context: {
         image: 'https://via.placeholder.com/282x159',
         heading: 'Default',
@@ -22,7 +22,7 @@ module.exports = {
       }
     },
     {
-      name: 'Card without Image',
+      name: 'C-CRD-4: Content Card',
       context: {
         image: '',
         heading: 'Default',
