@@ -2,7 +2,7 @@ module.exports = {
   title: 'Masthead component',
   status: 'ready',
   context: {
-    mediaPosition: 'right',
+    mediaPosition: 'Default',
     subheading: 'Optional Subheading',
     heading: 'Masthead Width Right Aligned Image',
     copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
@@ -19,7 +19,7 @@ module.exports = {
   },
   variants: [
     {
-      name: 'Background Image Left variation',
+      name: 'C-BNR-4: Masthead with Background Image Left variation',
       context: {
         mediaPosition: 'background',
         containerPosition: 'left',
@@ -39,7 +39,7 @@ module.exports = {
       }
     },
     {
-      name: 'Background Image Center Variation',
+      name: 'C-BNR-4: Masthead with Background Image Center Variation',
       context: {
         mediaPosition: 'background',
         containerPosition: 'center',
@@ -59,7 +59,7 @@ module.exports = {
       }
     },
     {
-      name: 'Background Image Right variation',
+      name: 'C-BNR-4: Masthead with Background Image Right variation',
       context: {
         mediaPosition: 'background',
         containerPosition: 'right',
@@ -79,7 +79,7 @@ module.exports = {
       }
     },
     {
-      name: 'Left aligned Image',
+      name: 'C-BNR-12: Masthead with Placeholder left aligned Image',
       context: {
         mediaPosition: 'left',
         subheading: 'Optional Subheading',
@@ -98,7 +98,7 @@ module.exports = {
       }
     },
     {
-      name: 'Right aligned Image',
+      name: 'C-BNR-12: Masthead with Placeholder Right aligned Image',
       context: {
         mediaPosition: 'right',
         subheading: 'Optional Subheading',
@@ -117,7 +117,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Over Full Width Video',
+      name: 'C-BNR-4: Masthead with Background Full Width Video',
       context: {
         mediaPosition: 'background',
         subheading: 'Optional Subheading',
@@ -133,7 +133,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Left Aligned Video',
+      name: 'C-BNR-12: Masthead with Placeholders Left Aligned Video',
       context: {
         mediaPosition: 'left',
         subheading: 'Optional Subheading',
@@ -149,7 +149,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Right Aligned Video',
+      name: 'C-BNR-12: Masthead with Placeholders Right Aligned Video',
       context: {
         mediaPosition: 'right',
         subheading: 'Optional Subheading',
@@ -165,7 +165,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Full Vimeo Video',
+      name: 'C-BNR-4: Masthead with Background Vimeo Video',
       context: {
         mediaPosition: 'background',
         subheading: 'Optional Subheading',
@@ -177,7 +177,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width left Vimeo Video',
+      name: 'C-BNR-12: Masthead with Placeholders left Vimeo Video',
       context: {
         mediaPosition: 'left',
         subheading: 'Optional Subheading',
@@ -189,7 +189,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Right Vimeo Video',
+      name: 'C-BNR-12: Masthead with Placeholders Right Vimeo Video',
       context: {
         mediaPosition: 'right',
         subheading: 'Optional Subheading',
@@ -201,7 +201,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Over Full Width Image container left',
+      name: 'C-BNR-4: Masthead with Background Image container left',
       context: {
         mediaPosition: 'background',
         containerPosition: 'left',
@@ -214,7 +214,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Over Full Width Image container center',
+      name: 'C-BNR-4: Masthead with Background Image container center',
       context: {
         mediaPosition: 'background',
         containerPosition: 'center',
@@ -227,7 +227,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Over Full Width Image container right',
+      name: 'C-BNR-4: Masthead with Background Image container right',
       context: {
         mediaPosition: 'background',
         containerPosition: 'right',
@@ -240,7 +240,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Left Youtube Video',
+      name: 'C-BNR-12: Masthead with Placeholders Left Youtube Video',
       context: {
         mediaPosition: 'left',
         subheading: 'Optional Subheading',
@@ -252,7 +252,7 @@ module.exports = {
       }
     },
     {
-      name: 'Masthead Width Right Youtube Video',
+      name: 'C-BNR-12: Masthead with Placeholders Right Youtube Video',
       context: {
         mediaPosition: 'right',
         subheading: 'Optional Subheading',

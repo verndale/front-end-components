@@ -1,0 +1,8 @@
+$masthead-background: map-get($theme-colors, 'primary-dark') !default;
+$masthead-color: #fff;
+$tab-inactive-color: $masthead-color;
+$tab-inactive-border-color: #07b0e3;
+$tab-inactive-background-color: transparent;
+$tab-active-background-color: $tab-inactive-border-color;
+$tab-active-color: $masthead-background;
+$tab-panel-background: rgba(map-get($theme-colors, 'primary'), 0.1);
