@@ -3,15 +3,15 @@ import create from '@verndale/core'
 const components = [
   {
     name: 'accordion',
-    loader: () => import('./accordion/Accordion')
+    loader: () => import('./C-FMT-1-accordions-module/Accordion')
   },
   {
     name: 'peopleCard',
-    loader: () => import('./people-card-grid/PeopleCard')
+    loader: () => import('./C-GRD-6-people-card-grid/PeopleCard')
   },
   {
     name: 'testimonials',
-    loader: () => import('./testimonials/testimonials')
+    loader: () => import('./C-CSL-5-testimonials-carousel/testimonials')
   },
   {
     name: 'alert',
@@ -31,7 +31,7 @@ const components = [
   },
   {
     name: 'animatedCardCarousel',
-    loader: () => import('./animated-card-carousel/AnimatedCardCarousel')
+    loader: () => import('./C-CSL-6-animated-card-carousel/AnimatedCardCarousel')
   },
   {
     name: 'cardCarousel',
@@ -43,11 +43,11 @@ const components = [
   },
   {
     name: 'fullWidthVideo',
-    loader: () => import('./full-width-video-row/full-width-video-row')
+    loader: () => import('./C-FMT-11-full-width-video-row/full-width-video-row')
   },
   {
     name: 'search-results',
-    loader: () => import('./search-results/SearchResults'),
+    loader: () => import('./P-LP-1-search-results/SearchResults'),
     render(Component, nodeList) {
       const React = require('react');
       const { render } = require('react-dom');
@@ -58,7 +58,7 @@ const components = [
   },
   {
     name: 'tabbed-content',
-    loader: () => import('./tabbed-content/tabbed-content')
+    loader: () => import('./C-FMT-10-tabbed-content/tabbed-content')
   }
 ]
 

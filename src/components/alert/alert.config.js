@@ -2,7 +2,7 @@ module.exports = {
   title: 'Alert component',
   status: 'ready',
   // eslint-disable-next-line quote-props
-  default: 'notice',
+  default: 'Default',
   context: {
     heading: 'Notice Alert',
     type: 'notice',
@@ -13,7 +13,7 @@ module.exports = {
   },
   variants: [
     {
-      name: 'critical',
+      name: 'C-BNR-8: Critical Header Alert',
       context: {
         heading: 'Critical Alert',
         type: 'critical',
@@ -25,7 +25,7 @@ module.exports = {
       }
     },
     {
-      name: 'notice',
+      name: 'C-BNR-5: Notice Header Alert',
       context: {
         heading: 'Notice Alert',
         type: 'notice',
@@ -37,7 +37,7 @@ module.exports = {
       }
     },
     {
-      name: 'warning',
+      name: 'C-BNR-6: Warning Header Alert',
       context: {
         heading: 'Warning Alert',
         type: 'warning',
@@ -49,7 +49,7 @@ module.exports = {
       }
     },
     {
-      name: 'notice_without_close_button',
+      name: 'C-BNR-5: Notice Header Alert without close button',
       context: {
         heading: 'Notice Alert',
         type: 'notice',
