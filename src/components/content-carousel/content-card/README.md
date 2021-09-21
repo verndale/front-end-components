@@ -9,7 +9,7 @@ yarn add @verndale/front-end-components
 
 Import the style to your main style file in your project
 ```scss
-@import "../../node_modules/@verndale/front-end-components/lib/content-card/styles";
+@import "../../node_modules/@verndale/front-end-components/libcontent-carousel/content-card/styles";
 ```
 
 Copy and paste to your project any of the markup in the content card variations - you can find the markup in the **HTML tab**.

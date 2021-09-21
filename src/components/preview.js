@@ -57,6 +57,10 @@ const components = [
     }
   },
   {
+    name: 'contentCarousel',
+    loader: () => import('./content-carousel/content-carousel')
+  },
+  {
     name: 'tabbed-content',
     loader: () => import('./C-FMT-10-tabbed-content/tabbed-content')
   }
