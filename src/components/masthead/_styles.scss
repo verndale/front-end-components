@@ -44,6 +44,7 @@
 
 .masthead__content {
   flex-grow: 1;
+  z-index: 1;
 
   .masthead--background-media & {
     background-color: $background-container-color;
@@ -115,7 +116,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 
     @include mq(desktop) {
       height: 100%;
