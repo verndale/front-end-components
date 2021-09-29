@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/verndale/front-end-components/compare/v1.8.0...v1.9.0) (2021-09-29)
+
+
+### Features
+
+* Fix image mastheads ([ed2eab3](https://github.com/verndale/front-end-components/commit/ed2eab35bee01aaaef7b559c1d116f3fb19b6622))
+
 # [1.8.0](https://github.com/verndale/front-end-components/compare/v1.7.0...v1.8.0) (2021-09-21)
 
 
