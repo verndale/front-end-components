@@ -1,3 +1,18 @@
+# [1.9.0](https://github.com/verndale/front-end-components/compare/v1.8.0...v1.9.0) (2021-09-29)
+
+
+### Features
+
+* Fix image mastheads ([ed2eab3](https://github.com/verndale/front-end-components/commit/ed2eab35bee01aaaef7b559c1d116f3fb19b6622))
+
+# [1.8.0](https://github.com/verndale/front-end-components/compare/v1.7.0...v1.8.0) (2021-09-21)
+
+
+### Features
+
+* Change files names ([0615c31](https://github.com/verndale/front-end-components/commit/0615c3176261793ef855327b9fa1c610013147aa))
+* Fix scss variables ([196d69c](https://github.com/verndale/front-end-components/commit/196d69c0beb273338441f02f8f82abc056f1afde))
+
 # [1.7.0](https://github.com/verndale/front-end-components/compare/v1.6.0...v1.7.0) (2021-09-10)
 
 
