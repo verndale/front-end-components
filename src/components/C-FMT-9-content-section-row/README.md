@@ -1,4 +1,4 @@
-# people-card-grid
+# content-section-row
 This component allows content authors to manage miscellaneous rich text content.
 
 ## Usage
