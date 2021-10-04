@@ -1,9 +1,10 @@
-@import "../theme", "variables";
+@import '../theme', 'variables';
 
 .carousel-content-card {
   width: 100%;
   border: solid 1px $border-primary;
   transition: all 0.5s;
+  position: relative;
 
   &.carousel-content-card--no-image {
     height: 220px;
@@ -13,17 +14,16 @@
     transform: translateY(-10px);
     box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.15);
 
-    .carousel-content-card__cta {
+    .carousel-content-card__cta-label {
       text-decoration: underline;
 
       svg {
         transform: translateX(5px);
-      }      
+      }
     }
     .carousel-content-card__heading {
       color: $cta-primary;
     }
-
   }
 
   @include mq(tablet) {
@@ -65,6 +65,11 @@
 }
 
 .carousel-content-card__cta {
+  position: absolute;
+  inset: 0;
+}
+
+.carousel-content-card__cta-label {
   font-size: 14px;
   color: $cta-primary;
   line-height: normal;
