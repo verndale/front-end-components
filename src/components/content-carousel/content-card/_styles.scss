@@ -1,7 +1,7 @@
 @import "../../theme", "variables";
 
 .content-card {
-  min-height: 380px;
+  min-height: 400px;
   width: 100%;
   border: solid 1px $border-primary;
   transition: all 0.5s;
@@ -30,7 +30,6 @@
 
 .content-card__wrapper {
   margin: 19px 32px 30px 35px;
-  height: 172px;
   display: flex;
   flex-direction: column;
 }
@@ -59,6 +58,23 @@
   letter-spacing: normal;
   flex: 1;
   color: $text-primary;
+}
+
+.content-card__actions {
+  margin-top: 20px;
+
+  .btn {
+    width: auto;
+
+    & + .link {
+      margin-top: 26px;
+
+      @include mq(desktop) {
+        margin-left: 54px;
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .content-card__cta {
