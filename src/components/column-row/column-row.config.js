@@ -1,6 +1,6 @@
 module.exports = {
   title: 'columns row',
-  status: 'wip',
+  status: 'ready',
   // eslint-disable-next-line quote-props
   default: 'Default',
   context: {
