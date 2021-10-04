@@ -8,7 +8,6 @@ import useSearchResults from './useSearchResults'
 
 export default function SearchResults(props) {
   const { labels, ...config } = useSearchResults(props);
-  console.log(config.term);
   const copy = config.term
     ? labels.summary.replace('{query}', config.term).replace('{count}', config.totalItems)
     : labels.copy;
