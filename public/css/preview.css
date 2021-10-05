@@ -1563,6 +1563,50 @@ body {
     min-width: 100px;
     padding: 5px 20px; }
 
+/* line 3, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+.simple-masterhead {
+  position: relative; }
+  /* line 6, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+  .simple-masterhead.simple-masterhead-center-aligned .simple-masterhead__heading, .simple-masterhead.simple-masterhead-center-aligned .simple-masterhead__subheading, .simple-masterhead.simple-masterhead-center-aligned .simple-masterhead__copy {
+    text-align: center; }
+
+/* line 12, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+.simple-masterhead__heading {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #4a4a4a;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.19; }
+  @media (min-width: 80em) {
+    /* line 12, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+    .simple-masterhead__heading {
+      font-size: 48px;
+      line-height: 1.33; } }
+
+/* line 25, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+.simple-masterhead__subheading {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #4a4a4a;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19; }
+  @media (min-width: 80em) {
+    /* line 25, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+    .simple-masterhead__subheading {
+      font-size: 24px;
+      line-height: 1.33; } }
+
+/* line 38, src/components/C-BNR-13:-Simple-Masthead/_styles.scss */
+.simple-masterhead__copy {
+  margin: 10px 0 0;
+  font-family: "Open Sans", sans-serif;
+  color: #dddddd;
+  margin: 5px 0 15px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: normal;
+  flex: 1; }
+
 /* line 3, src/components/C-CRD-2-link-list-card/_styles.scss */
 .link-list {
   align-items: center;
