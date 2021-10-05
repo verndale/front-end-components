@@ -3735,7 +3735,7 @@ body {
   transition: all 0.5s; }
   /* line 9, src/components/content-carousel/content-card/_styles.scss */
   .content-card.content-card--no-image {
-    height: 220px; }
+    min-height: 220px; }
   /* line 13, src/components/content-carousel/content-card/_styles.scss */
   .content-card:hover {
     transform: translateY(-10px);

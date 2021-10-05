@@ -1,4 +1,4 @@
-@import "../../theme", "variables";
+@import '../../theme', 'variables';
 
 .content-card {
   min-height: 380px;
@@ -7,7 +7,7 @@
   transition: all 0.5s;
 
   &.content-card--no-image {
-    height: 220px;
+    min-height: 220px;
   }
 
   &:hover {
