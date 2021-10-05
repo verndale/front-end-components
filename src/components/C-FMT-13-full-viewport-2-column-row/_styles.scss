@@ -1,0 +1,48 @@
+@import '../theme', 'variables';
+
+.two-column-row {
+  margin-top: 100px;
+}
+
+.two-column-row__content {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-column-row__intro-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.43;
+  margin: 0 0 0.5rem;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  order: -1;
+}
+
+.two-column-row__heading {
+  color: $title-color;
+  font-size: 3rem;
+  line-height: 1.13;
+}
+
+.two-column-row__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  @include mq(tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+}
+
+.two-column-row__card {
+  > div,
+  article {
+    @include mq(tablet) {
+      width: 100%;
+    }
+  }
+}

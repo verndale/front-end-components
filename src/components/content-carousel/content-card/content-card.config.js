@@ -2,7 +2,7 @@ module.exports = {
   title: 'Button component',
   status: 'ready',
   context: {
-    image: 'https://via.placeholder.com/282x159',
+    image: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=282&h=159',
     heading: 'Default',
     copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
     ctaLabel: 'Action',
@@ -13,7 +13,7 @@ module.exports = {
     {
       name: 'C-CRD-1: Content Card with Image',
       context: {
-        image: 'https://via.placeholder.com/282x159',
+        image: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=282&h=159',
         heading: 'Default',
         copy: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.',
         ctaLabel: 'Action',

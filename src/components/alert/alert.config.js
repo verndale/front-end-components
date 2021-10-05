@@ -59,6 +59,18 @@ module.exports = {
         closeButtonLabel: '',
         id: 'notice_without_close_button'
       }
+    },
+    {
+      name: 'C-BNR-5: Notice Header Alert without copy',
+      context: {
+        heading: 'Notice Alert',
+        type: 'notice',
+        copy: '',
+        hideButtonLabel: 'hide',
+        showButtonLabel: 'show',
+        closeButtonLabel: 'close',
+        id: 'notice_without_copy'
+      }
     }
   ]
 }

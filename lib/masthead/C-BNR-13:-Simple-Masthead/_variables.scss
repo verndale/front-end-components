@@ -1,0 +1,6 @@
+$simple-masterhead-copy-font-family: $primary-font !default;
+$simple-masterhead-heading-font-family: $secondary-font !default;
+$simple-masterhead-subheading-font-family: $secondary-font !default;
+$simple-masterhead-copy-color: map-get($theme-colors, "secondary-light-gray") !default;
+$simple-masterhead-heading-color: map-get($theme-colors, 'primary-gray') !default;
+$simple-masterhead-subheading-color:map-get($theme-colors, 'primary-gray') !default;

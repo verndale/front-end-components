@@ -8,9 +8,10 @@
   <div class="content-card__wrapper">
     <h6 class="content-card__heading">{{heading}}</h6>
     <div class="content-card__copy">{{copy}}</div>
-    <a href={{cta}} class="content-card__cta">
-      {{ctaLabel}}
-      {{>svg name=icon}}
-    </a>
+    <div class="content-card__actions">
+      <a href={{cta}} class="btn btn--primary btn--small">
+        {{ctaLabel}}
+      </a>
+    </div>
   </div>
 </div>

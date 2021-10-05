@@ -1,13 +1,15 @@
-@import
-"../theme",
-"../button/styles",
-"variables";
+@import '../theme', '../button/styles', 'variables';
 
 .tabbed-content__masthead {
   padding-top: 40px;
   padding-bottom: 50px;
   background-blend-mode: overlay, normal;
-  background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) 100%), linear-gradient(to bottom, $masthead-background, $masthead-background);
+  background-image: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(to bottom, $masthead-background, $masthead-background);
 
   @include mq(tablet) {
     padding-top: 150px;
@@ -43,7 +45,7 @@
     background-repeat: no-repeat;
     background-color: $masthead-color;
     position: absolute;
-    content: "";
+    content: '';
     top: 1px;
     bottom: 1px;
     right: 1px;
@@ -69,7 +71,11 @@
 }
 
 .tabbed-content__tabs {
-  display: flex;
+  display: none;
+
+  @include mq(tablet) {
+    display: flex;
+  }
 }
 
 .tabbed-content__tab.tabbed-content__tab.tabbed-content__tab {
@@ -84,7 +90,7 @@
 
   &:hover,
   &:focus,
-  &[aria-selected="true"] {
+  &[aria-selected='true'] {
     z-index: 100;
     color: $tab-active-color;
     background-color: $tab-active-background-color;

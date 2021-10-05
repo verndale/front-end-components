@@ -29,9 +29,11 @@ class Alert extends Component {
 
     this.id = this.el.dataset.id
     this.cookieName = this.el.dataset.cookieName
-    this.cookieNameToggle = `${this.id}_toggle`
     this.shouldDisplayAlert()
-    this.shouldToggle()
+    if (this.dom.content !== null) {
+      this.cookieNameToggle = `${this.id}_toggle`
+      this.shouldToggle()
+    }
   }
 
   shouldToggle() {
@@ -66,7 +68,9 @@ class Alert extends Component {
   }
 
   addListeners() {
-    this.dom.toggle.addEventListener('click', this.handleToggle.bind(this))
+    if (this.dom.content) {
+      this.dom.toggle.addEventListener('click', this.handleToggle.bind(this))
+    }
     if (this.dom.close) {
       this.dom.close.addEventListener('click', this.handleClose.bind(this))
     }
