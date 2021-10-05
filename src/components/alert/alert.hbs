@@ -12,13 +12,12 @@
       {{#ifCond closeButtonLabel "!==" ""}}
       <button type="button" class="alert__close">
         {{closeButtonLabel}}
-        
         {{>svg name="close" viewBox="0 0 320 320"  }}
       </button>
       {{/ifCond}}
     </div>
     {{#if copy}}
-    <div class="alert__content" tabindex="-1">
+    <div class="alert__content">
       <div class="rtf">{{{copy}}}</div>
     </div>
     {{/if}}
