@@ -21,5 +21,8 @@
     <div class="testimonials-card__quote rtf">
       {{quote}}
     </div>
+    {{#if linkLabel}}
+      {{>@link label=linkLabel className="primary" icon="right"}}
+    {{/if}}
   </article>
 </div>
