@@ -12,7 +12,7 @@ eval("var v1 = __webpack_require__(/*! ./v1 */ \"./node_modules/uuid/v1.js\");\n
 /***/ }),
 
 /***/ "./node_modules/uuid/lib/bytesToUuid.js":
-/*!**********************************************!*\
+/*!**********************************************!*\ 
   !*** ./node_modules/uuid/lib/bytesToUuid.js ***!
   \**********************************************/
 /*! no static exports found */
