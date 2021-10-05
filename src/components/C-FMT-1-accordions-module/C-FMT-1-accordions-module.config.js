@@ -1,6 +1,6 @@
 module.exports = {
   title: 'C-FMT-1: Accordions Module',
-  status: 'wip',
+  status: 'ready',
   context: {
     title: 'Accordion Heading',
     description:
