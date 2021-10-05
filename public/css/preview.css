@@ -1908,7 +1908,7 @@ body {
   height: auto;
   justify-content: space-between;
   min-height: 60px;
-  padding: 9px 25px;
+  padding: 9px 20px;
   text-align: left;
   transition: background-color 0.2s ease-in-out;
   width: 100%; }

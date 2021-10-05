@@ -10,6 +10,9 @@
 
     <div role="region" class="accordion__item-panel">
       <div class="accordion__item-content">
+        {{#if heading}}
+        <h4 class="accordion__item-heading">{{heading}}</h4>
+        {{/if}}
         <div class="rtf accordion__item-description">
           {{{content}}}
         </div>
