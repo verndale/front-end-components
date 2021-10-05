@@ -1,6 +1,6 @@
 module.exports = {
   title: 'C-FMT-1: Accordions Module',
-  status: 'wip',
+  status: 'ready',
   context: {
     title: 'Accordion Heading',
     description:
@@ -10,7 +10,8 @@ module.exports = {
         expanded: true,
         title: 'Accordion Tab Title',
         content:
-          '<h4>Accordion Tab Heading</h4><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>'
+          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>',
+        heading: 'Putting you at the center of it all'
       },
       {
         title: 'Accordion Tab With Image',

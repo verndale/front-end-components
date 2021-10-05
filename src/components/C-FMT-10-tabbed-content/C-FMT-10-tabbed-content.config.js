@@ -1,6 +1,6 @@
 module.exports = {
   title: 'C-FMT-10: Tabbed Content',
-  status: 'wip',
+  status: 'ready',
   context: {
     heading: 'Contact Us',
     tabDropdownPrefix: 'Select',

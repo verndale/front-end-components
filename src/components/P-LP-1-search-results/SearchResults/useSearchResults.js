@@ -2,14 +2,14 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 
 export default function useSearchResults(props) {
   const { searchQueryKey, sortQueryKey } = props;
-  const { current: defaultSerchParams } = useRef(new URLSearchParams(window.location.search));
+  const { current: defaultSearchParams } = useRef(new URLSearchParams(window.location.search));
   const { current: labels } = useRef(JSON.parse(props.labels));
   const { current: keys } = useRef(JSON.parse(props.resultsKeys));
   const { current: sortOptions } = useRef(JSON.parse(props.sortOptions));
   const { current: itemsPerPage } = useRef(parseInt(props.resultsPerPage, 10));
   const [loading, setLoading] = useState(false);
-  const [term, setTerm] = useState(defaultSerchParams.get(searchQueryKey));
-  const [sort, setSort] = useState(defaultSerchParams.get(sortQueryKey) || sortOptions[0].value);
+  const [term, setTerm] = useState(defaultSearchParams.get(searchQueryKey));
+  const [sort, setSort] = useState(defaultSearchParams.get(sortQueryKey) || sortOptions[0].value);
   const [items, setItems] = useState([]);
   const [suggestion, setSuggestion] = useState('');
   const [totalItems, setTotalItems] = useState(0);

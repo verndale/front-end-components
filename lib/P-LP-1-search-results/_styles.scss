@@ -2,7 +2,12 @@
 
 .search-results-masthead {
   background-blend-mode: overlay, normal;
-  background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) 100%), linear-gradient(to bottom, $masthead-background, $masthead-background);
+  background-image: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(to bottom, $masthead-background, $masthead-background);
   padding-bottom: 61px;
   padding-top: 40px;
 
@@ -99,7 +104,8 @@
     right: 100px;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: map-get($theme-colors, 'primary');
   }
 }
@@ -109,14 +115,19 @@
   top: 50%;
   transform: translateY(-50%);
   color: map-get($theme-colors, 'critical');
-  right: 50px;
+  right: 20px;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: map-get($theme-colors, 'primary');
+  }
+
+  @include mq(tablet) {
+    right: 50px;
   }
 }
 
@@ -171,7 +182,7 @@
     background-repeat: no-repeat;
     background-color: $masthead-color;
     position: absolute;
-    content: "";
+    content: '';
     top: 1px;
     bottom: 1px;
     right: 1px;
