@@ -1,8 +1,8 @@
 module.exports = {
   title: 'N-DYN-1: Breadcrumbs',
-  status: 'wip',
+  status: 'ready',
   context: {
-    separator: "//",
+    separator: '//',
     crumbs: [
       {
         title: 'First Page'
