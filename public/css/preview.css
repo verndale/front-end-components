@@ -3524,58 +3524,58 @@ body {
     .column-row__pagination {
       display: none; } }
 
-/* line 3, src/components/content-carousel/_styles.scss */
+/* line 2, src/components/content-carousel/_styles.scss */
 .content-carousel {
   margin-bottom: 60px;
   margin-top: 60px;
   overflow: hidden;
   padding-bottom: 5px; }
   @media (min-width: 80em) {
-    /* line 3, src/components/content-carousel/_styles.scss */
+    /* line 2, src/components/content-carousel/_styles.scss */
     .content-carousel {
       margin-bottom: 100px;
       margin-top: 100px; } }
-  /* line 12, src/components/content-carousel/_styles.scss */
+  /* line 11, src/components/content-carousel/_styles.scss */
   .content-carousel .tns-ovh {
     overflow: visible; }
-  /* line 15, src/components/content-carousel/_styles.scss */
+  /* line 14, src/components/content-carousel/_styles.scss */
   .content-carousel .focus-visible {
     outline: 0; }
-    /* line 17, src/components/content-carousel/_styles.scss */
+    /* line 16, src/components/content-carousel/_styles.scss */
     .content-carousel .focus-visible .content-carousel__slide {
       outline: solid 3px #06847b; }
-    /* line 21, src/components/content-carousel/_styles.scss */
+    /* line 20, src/components/content-carousel/_styles.scss */
     .content-carousel .focus-visible .content-carousel__slide-description:before {
       transform: translateX(0); }
-    /* line 25, src/components/content-carousel/_styles.scss */
+    /* line 24, src/components/content-carousel/_styles.scss */
     .content-carousel .focus-visible .content-carousel__button {
       outline: solid 1px #06847b;
       outline-offset: 2px; }
 
-/* line 32, src/components/content-carousel/_styles.scss */
+/* line 31, src/components/content-carousel/_styles.scss */
 .swiper-container {
   overflow: visible; }
 
-/* line 36, src/components/content-carousel/_styles.scss */
+/* line 35, src/components/content-carousel/_styles.scss */
 .swiper-slide {
   width: 100%; }
-  /* line 38, src/components/content-carousel/_styles.scss */
+  /* line 37, src/components/content-carousel/_styles.scss */
   .swiper-slide > div {
     width: 100%; }
 
-/* line 43, src/components/content-carousel/_styles.scss */
+/* line 42, src/components/content-carousel/_styles.scss */
 .content-carousel__header {
   padding: 28px 0 100px;
   position: relative;
   z-index: 1; }
-  /* line 44, src/components/content-carousel/_styles.scss */
+  /* line 43, src/components/content-carousel/_styles.scss */
   .content-carousel__header:after {
     background-blend-mode: multiply;
     background-color: #06847b;
     background-image: url("/images/texture.png");
     background-position: center;
     background-size: cover;
-    content: "";
+    content: '';
     height: 100%;
     left: 0;
     position: absolute;
@@ -3583,19 +3583,19 @@ body {
     width: 100%;
     z-index: -1; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      /* line 44, src/components/content-carousel/_styles.scss */
+      /* line 43, src/components/content-carousel/_styles.scss */
       .content-carousel__header:after {
         display: none; } }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    /* line 43, src/components/content-carousel/_styles.scss */
+    /* line 42, src/components/content-carousel/_styles.scss */
     .content-carousel__header {
       background-color: #06847b; } }
   @media (min-width: 48em) {
-    /* line 43, src/components/content-carousel/_styles.scss */
+    /* line 42, src/components/content-carousel/_styles.scss */
     .content-carousel__header {
       padding: 53px 0 177px; } }
 
-/* line 74, src/components/content-carousel/_styles.scss */
+/* line 72, src/components/content-carousel/_styles.scss */
 .content-carousel__definition {
   color: #fff;
   font-size: 14px;
@@ -3605,49 +3605,53 @@ body {
   margin: 0 0 5px;
   text-transform: uppercase; }
   @media (min-width: 48em) {
-    /* line 74, src/components/content-carousel/_styles.scss */
+    /* line 72, src/components/content-carousel/_styles.scss */
     .content-carousel__definition {
       margin-bottom: 16px; } }
 
-/* line 87, src/components/content-carousel/_styles.scss */
+/* line 85, src/components/content-carousel/_styles.scss */
 .content-carousel__title {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.13;
   color: #fff;
   margin: 0; }
+  @media (min-width: 48em) {
+    /* line 85, src/components/content-carousel/_styles.scss */
+    .content-carousel__title {
+      font-size: 3rem; } }
 
-/* line 94, src/components/content-carousel/_styles.scss */
+/* line 96, src/components/content-carousel/_styles.scss */
 .content-carousel__container {
   margin-top: -62px;
   position: relative;
   z-index: 1; }
   @media (min-width: 48em) {
-    /* line 94, src/components/content-carousel/_styles.scss */
+    /* line 96, src/components/content-carousel/_styles.scss */
     .content-carousel__container {
       margin-top: -129px; } }
 
-/* line 103, src/components/content-carousel/_styles.scss */
+/* line 105, src/components/content-carousel/_styles.scss */
 .content-carousel__slider {
   user-select: none; }
-  /* line 105, src/components/content-carousel/_styles.scss */
+  /* line 107, src/components/content-carousel/_styles.scss */
   .content-carousel__slider a {
     transition: all 0.3s ease-in-out; }
     @media (min-width: 80em) {
-      /* line 110, src/components/content-carousel/_styles.scss */
+      /* line 112, src/components/content-carousel/_styles.scss */
       .content-carousel__slider a:hover .content-carousel__slide-description:before {
         transform: translateX(0); } }
 
-/* line 119, src/components/content-carousel/_styles.scss */
+/* line 121, src/components/content-carousel/_styles.scss */
 .content-carousel__buttons {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px; }
   @media (min-width: 80em) {
-    /* line 119, src/components/content-carousel/_styles.scss */
+    /* line 121, src/components/content-carousel/_styles.scss */
     .content-carousel__buttons {
       margin-top: 40px; } }
 
-/* line 128, src/components/content-carousel/_styles.scss */
+/* line 130, src/components/content-carousel/_styles.scss */
 .content-carousel__button {
   align-items: center;
   appearance: none;
@@ -3662,56 +3666,56 @@ body {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
   width: 40px; }
   @media (min-width: 48em) {
-    /* line 128, src/components/content-carousel/_styles.scss */
+    /* line 130, src/components/content-carousel/_styles.scss */
     .content-carousel__button {
       height: 50px;
       width: 50px; } }
-  /* line 145, src/components/content-carousel/_styles.scss */
+  /* line 147, src/components/content-carousel/_styles.scss */
   .content-carousel__button + .content-carousel__button {
     margin-left: 10px; }
     @media (min-width: 80em) {
-      /* line 145, src/components/content-carousel/_styles.scss */
+      /* line 147, src/components/content-carousel/_styles.scss */
       .content-carousel__button + .content-carousel__button {
         margin-left: 20px; } }
-  /* line 151, src/components/content-carousel/_styles.scss */
+  /* line 153, src/components/content-carousel/_styles.scss */
   .content-carousel__button:disabled {
     border-color: rgba(128, 128, 128, 0.35);
     pointer-events: none; }
-    /* line 154, src/components/content-carousel/_styles.scss */
+    /* line 156, src/components/content-carousel/_styles.scss */
     .content-carousel__button:disabled svg {
       fill: rgba(128, 128, 128, 0.35); }
-  /* line 158, src/components/content-carousel/_styles.scss */
+  /* line 160, src/components/content-carousel/_styles.scss */
   .content-carousel__button:hover {
     background-color: #06847b;
     border-color: #06847b;
     color: #fff; }
-    /* line 162, src/components/content-carousel/_styles.scss */
+    /* line 164, src/components/content-carousel/_styles.scss */
     .content-carousel__button:hover svg {
       fill: #fff; }
-  /* line 167, src/components/content-carousel/_styles.scss */
+  /* line 169, src/components/content-carousel/_styles.scss */
   .content-carousel__button:first-child span {
     transform: translateX(-1px); }
     @media (min-width: 48em) {
-      /* line 167, src/components/content-carousel/_styles.scss */
+      /* line 169, src/components/content-carousel/_styles.scss */
       .content-carousel__button:first-child span {
         transform: translateX(-2px); } }
-  /* line 175, src/components/content-carousel/_styles.scss */
+  /* line 177, src/components/content-carousel/_styles.scss */
   .content-carousel__button:last-child span {
     transform: translateX(1px); }
     @media (min-width: 48em) {
-      /* line 175, src/components/content-carousel/_styles.scss */
+      /* line 177, src/components/content-carousel/_styles.scss */
       .content-carousel__button:last-child span {
         transform: translateX(2px); } }
-  /* line 182, src/components/content-carousel/_styles.scss */
+  /* line 184, src/components/content-carousel/_styles.scss */
   .content-carousel__button span {
     height: 16px;
     width: 16px; }
     @media (min-width: 48em) {
-      /* line 182, src/components/content-carousel/_styles.scss */
+      /* line 184, src/components/content-carousel/_styles.scss */
       .content-carousel__button span {
         height: 20px;
         width: 20px; } }
-  /* line 190, src/components/content-carousel/_styles.scss */
+  /* line 192, src/components/content-carousel/_styles.scss */
   .content-carousel__button svg {
     fill: #06847b;
     height: 100%;
@@ -3719,7 +3723,7 @@ body {
     width: 100%;
     margin-bottom: 5px; }
     @media (min-width: 48em) {
-      /* line 190, src/components/content-carousel/_styles.scss */
+      /* line 192, src/components/content-carousel/_styles.scss */
       .content-carousel__button svg {
         margin-bottom: 0; } }
 
