@@ -1,6 +1,6 @@
 module.exports = {
   title: 'P-LP-1: Search Results',
-  status: 'wip',
+  status: 'ready',
   context: {
     endpoint: 'https://www.haemonetics.com/search?json=true',
     searchQueryKey: 'query',
