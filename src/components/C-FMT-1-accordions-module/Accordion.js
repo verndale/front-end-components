@@ -2,6 +2,20 @@ import { Component } from '@verndale/core'
 import { v4 as uuidv4 } from 'uuid'
 import { keyCode } from '../helpers'
 
+/**
+ * `Accordion`
+ *
+ *
+ * @example
+ * import { Accordion } from '@verndale/front-end-components';
+ *
+ * class Foo {
+ *   construction(){
+ *
+ *     cont Accordion = new Accordion('.accordion');
+ *   }
+ * }
+ */
 class Accordion extends Component {
   constructor(el) {
     super(el)
@@ -31,14 +45,18 @@ class Accordion extends Component {
   }
 
   initAccordion() {
-    this.dom.items.forEach((item, index) => {
+    this.dom.items.forEach((item) => {
       const guid = uuidv4()
 
       const trigger = item.querySelector('.accordion__item-trigger')
       const content = item.querySelector('.accordion__item-panel')
 
       if (trigger.getAttribute('aria-expanded') === 'true') {
-        content.style.height = 'auto'
+        const height = content.querySelector(
+          '.accordion__item-content'
+        ).offsetHeight
+
+        content.style.maxHeight = `${height}px`
         content.style.visibility = 'visible'
       }
 
@@ -103,6 +121,14 @@ class Accordion extends Component {
 
     trigger.setAttribute('aria-expanded', true)
     content.style.visibility = 'visible'
+    content.setAttribute('aria-hidden', false)
+
+    const height = content.querySelector(
+      '.accordion__item-content'
+    ).offsetHeight
+
+    content.style.maxHeight = `${height}px`
+    content.style.visibility = 'visible'
     this.open(content);
   }
 
@@ -112,6 +138,8 @@ class Accordion extends Component {
     )
 
     trigger.setAttribute('aria-expanded', false)
+    content.style = null
+    content.setAttribute('aria-hidden', true)
     this.close(content);
   }
 

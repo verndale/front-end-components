@@ -4113,162 +4113,6 @@ body {
   .link .link__icon--right {
     margin-left: 12px; }
 
-/* line 3, src/components/masthead/_styles.scss */
-.masthead {
-  position: relative;
-  background-color: #fff; }
-
-/* line 9, src/components/masthead/_styles.scss */
-.masthead--background-media .masthead__inner {
-  align-items: center;
-  display: flex;
-  padding-top: 173px; }
-  @media (min-width: 80em) {
-    /* line 9, src/components/masthead/_styles.scss */
-    .masthead--background-media .masthead__inner {
-      min-height: 650px;
-      padding-bottom: 95px;
-      padding-top: 95px; } }
-
-@media (min-width: 80em) {
-  /* line 21, src/components/masthead/_styles.scss */
-  .masthead--left-media .masthead__inner,
-  .masthead--right-media .masthead__inner {
-    display: flex; } }
-
-/* line 28, src/components/masthead/_styles.scss */
-.masthead--right-media .masthead__inner {
-  flex-direction: row-reverse; }
-
-/* line 33, src/components/masthead/_styles.scss */
-.masthead__inner--position-left {
-  justify-content: flex-start; }
-
-/* line 37, src/components/masthead/_styles.scss */
-.masthead__inner--position-center {
-  justify-content: center; }
-
-/* line 41, src/components/masthead/_styles.scss */
-.masthead__inner--position-right {
-  justify-content: flex-end; }
-
-/* line 45, src/components/masthead/_styles.scss */
-.masthead__content {
-  flex-grow: 1;
-  z-index: 1; }
-  /* line 49, src/components/masthead/_styles.scss */
-  .masthead--background-media .masthead__content {
-    background-color: #fff;
-    border: solid 1px #e5e5e5;
-    padding: 30px; }
-    @media (min-width: 80em) {
-      /* line 49, src/components/masthead/_styles.scss */
-      .masthead--background-media .masthead__content {
-        max-width: 750px;
-        padding: 50px; } }
-  /* line 60, src/components/masthead/_styles.scss */
-  .masthead--left-media .masthead__content,
-  .masthead--right-media .masthead__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px; }
-    @media (min-width: 80em) {
-      /* line 60, src/components/masthead/_styles.scss */
-      .masthead--left-media .masthead__content,
-      .masthead--right-media .masthead__content {
-        padding-bottom: 85px;
-        padding-top: 85px; } }
-
-/* line 75, src/components/masthead/_styles.scss */
-.masthead__subheading {
-  color: #06847b;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.19;
-  margin: 0 0 5px; }
-  @media (min-width: 80em) {
-    /* line 75, src/components/masthead/_styles.scss */
-    .masthead__subheading {
-      font-size: 24px;
-      line-height: 1.33; } }
-
-@media (min-width: 80em) {
-  /* line 89, src/components/masthead/_styles.scss */
-  .masthead__heading {
-    margin-bottom: 20px; } }
-
-/* line 95, src/components/masthead/_styles.scss */
-.masthead__actions {
-  margin: 20px -10px -10px; }
-  @media (min-width: 80em) {
-    /* line 95, src/components/masthead/_styles.scss */
-    .masthead__actions {
-      margin: 20px -20px -20px; } }
-  /* line 102, src/components/masthead/_styles.scss */
-  .masthead__actions .btn,
-  .masthead__actions .link {
-    margin: 10px; }
-    @media (min-width: 80em) {
-      /* line 102, src/components/masthead/_styles.scss */
-      .masthead__actions .btn,
-      .masthead__actions .link {
-        margin: 20px; } }
-
-/* line 113, src/components/masthead/_styles.scss */
-.masthead--background-media .masthead__media {
-  height: 260px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 0; }
-  @media (min-width: 80em) {
-    /* line 113, src/components/masthead/_styles.scss */
-    .masthead--background-media .masthead__media {
-      height: 100%; } }
-  /* line 125, src/components/masthead/_styles.scss */
-  .masthead--background-media .masthead__media picture,
-  .masthead--background-media .masthead__media img,
-  .masthead--background-media .masthead__media .video {
-    height: 100%;
-    padding: 0;
-    width: 100%; }
-
-/* line 134, src/components/masthead/_styles.scss */
-.masthead--left-media .masthead__media,
-.masthead--right-media .masthead__media {
-  margin: 0 -20px; }
-  @media (min-width: 80em) {
-    /* line 134, src/components/masthead/_styles.scss */
-    .masthead--left-media .masthead__media,
-    .masthead--right-media .masthead__media {
-      align-items: center;
-      display: flex;
-      flex-shrink: 0;
-      margin: 0;
-      width: calc(50% - 40px); } }
-  /* line 146, src/components/masthead/_styles.scss */
-  .masthead--left-media .masthead__media picture,
-  .masthead--left-media .masthead__media img,
-  .masthead--right-media .masthead__media picture,
-  .masthead--right-media .masthead__media img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%; }
-
-@media (min-width: 80em) {
-  /* line 154, src/components/masthead/_styles.scss */
-  .masthead--left-media .masthead__media {
-    margin-right: 40px; } }
-
-@media (min-width: 80em) {
-  /* line 160, src/components/masthead/_styles.scss */
-  .masthead--right-media .masthead__media {
-    margin-left: 40px; } }
-
 /* line 3, src/components/masthead/C-BNR-12:-Masthead-with-Placeholder/_styles.scss */
 .masthead {
   position: relative;
@@ -4468,6 +4312,162 @@ body {
   line-height: 1.71;
   letter-spacing: normal;
   flex: 1; }
+
+/* line 3, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead {
+  position: relative;
+  background-color: #fff; }
+
+/* line 9, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead--background-media .masthead__inner {
+  align-items: center;
+  display: flex;
+  padding-top: 173px; }
+  @media (min-width: 80em) {
+    /* line 9, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+    .masthead--background-media .masthead__inner {
+      min-height: 650px;
+      padding-bottom: 95px;
+      padding-top: 95px; } }
+
+@media (min-width: 80em) {
+  /* line 21, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--left-media .masthead__inner,
+  .masthead--right-media .masthead__inner {
+    display: flex; } }
+
+/* line 28, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead--right-media .masthead__inner {
+  flex-direction: row-reverse; }
+
+/* line 33, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__inner--position-left {
+  justify-content: flex-start; }
+
+/* line 37, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__inner--position-center {
+  justify-content: center; }
+
+/* line 41, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__inner--position-right {
+  justify-content: flex-end; }
+
+/* line 45, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__content {
+  flex-grow: 1;
+  z-index: 1; }
+  /* line 49, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--background-media .masthead__content {
+    background-color: #fff;
+    border: solid 1px #e5e5e5;
+    padding: 30px; }
+    @media (min-width: 80em) {
+      /* line 49, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+      .masthead--background-media .masthead__content {
+        max-width: 750px;
+        padding: 50px; } }
+  /* line 60, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--left-media .masthead__content,
+  .masthead--right-media .masthead__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+    @media (min-width: 80em) {
+      /* line 60, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+      .masthead--left-media .masthead__content,
+      .masthead--right-media .masthead__content {
+        padding-bottom: 85px;
+        padding-top: 85px; } }
+
+/* line 75, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__subheading {
+  color: #06847b;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin: 0 0 5px; }
+  @media (min-width: 80em) {
+    /* line 75, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+    .masthead__subheading {
+      font-size: 24px;
+      line-height: 1.33; } }
+
+@media (min-width: 80em) {
+  /* line 89, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead__heading {
+    margin-bottom: 20px; } }
+
+/* line 95, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead__actions {
+  margin: 20px -10px -10px; }
+  @media (min-width: 80em) {
+    /* line 95, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+    .masthead__actions {
+      margin: 20px -20px -20px; } }
+  /* line 102, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead__actions .btn,
+  .masthead__actions .link {
+    margin: 10px; }
+    @media (min-width: 80em) {
+      /* line 102, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+      .masthead__actions .btn,
+      .masthead__actions .link {
+        margin: 20px; } }
+
+/* line 113, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead--background-media .masthead__media {
+  height: 260px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0; }
+  @media (min-width: 80em) {
+    /* line 113, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+    .masthead--background-media .masthead__media {
+      height: 100%; } }
+  /* line 125, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--background-media .masthead__media picture,
+  .masthead--background-media .masthead__media img,
+  .masthead--background-media .masthead__media .video {
+    height: 100%;
+    padding: 0;
+    width: 100%; }
+
+/* line 134, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+.masthead--left-media .masthead__media,
+.masthead--right-media .masthead__media {
+  margin: 0 -20px; }
+  @media (min-width: 80em) {
+    /* line 134, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+    .masthead--left-media .masthead__media,
+    .masthead--right-media .masthead__media {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      margin: 0;
+      width: calc(50% - 40px); } }
+  /* line 146, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--left-media .masthead__media picture,
+  .masthead--left-media .masthead__media img,
+  .masthead--right-media .masthead__media picture,
+  .masthead--right-media .masthead__media img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+
+@media (min-width: 80em) {
+  /* line 154, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--left-media .masthead__media {
+    margin-right: 40px; } }
+
+@media (min-width: 80em) {
+  /* line 160, src/components/masthead/C-BNR-4: Masthead with Background Image/_styles.scss */
+  .masthead--right-media .masthead__media {
+    margin-left: 40px; } }
 
 /* line 5, src/components/N-DYN-1-breadcrumbs/_styles.scss */
 .breadcrumbs {
