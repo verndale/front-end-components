@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/verndale/front-end-components/compare/v1.10.2...v1.10.3) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2430 - justofy center ([3378d0d](https://github.com/verndale/front-end-components/commit/3378d0d01e314b48dca3c84557a66005b59031f2))
+
 ## [1.10.2](https://github.com/verndale/front-end-components/compare/v1.10.1...v1.10.2) (2021-10-06)
 
 
