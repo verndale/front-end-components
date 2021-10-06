@@ -62,7 +62,8 @@
     "react-lines-ellipsis": "^0.15.0",
     "sass-mq": "5.0.1",
     "semantic-release": "17.4.4",
-    "swiper": "6.7.0"
+    "swiper": "6.7.0",
+    "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
     "@babel/cli": "7.14.8",

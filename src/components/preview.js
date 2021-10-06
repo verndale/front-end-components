@@ -63,6 +63,10 @@ const components = [
   {
     name: 'tabbed-content',
     loader: () => import('./C-FMT-10-tabbed-content/tabbed-content')
+  },
+  {
+    name: 'flexibleImageCarousel',
+    loader: () => import('./C-CSL-2-3-column-image-gallery/flexibleImageCarousel')
   }
 ]
 

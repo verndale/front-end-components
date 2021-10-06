@@ -1,0 +1,211 @@
+@import '../theme', 'variables';
+
+.flexible-image-carousel {
+  margin-bottom: 3.75rem;
+  margin-top: 3.75rem;
+  padding: 0 0 0 1.25rem;
+
+  .flexible-image-carousel__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.25rem;
+    padding-right: 0;
+  }
+
+  .flexible-image-carousel__button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: solid 0.0625rem $primary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    width: 2.5rem;
+
+    span {
+      height: 1.25rem;
+      width: 1.25rem;
+
+      svg {
+        height: 20px;
+        fill: $primary-color;
+      }
+    }
+
+    &:disabled {
+      border-color: $disabled-color;
+      pointer-events: none;
+
+      svg {
+        fill: $disabled-color;
+      }
+    }
+
+    &:first-child {
+      margin-right: 0.625rem;
+    }
+
+    @include mq(desktop) {
+      height: 3.125rem;
+      width: 3.125rem;
+    }
+  }
+
+  .flexible-image-carousel__slider {
+    display: flex;
+    margin-top: 1rem;
+
+    @include mq(desktop) {
+      margin-top: 3.125rem;
+    }
+
+    .flexible-image-carousel__slide {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .generic-card:first-of-type {
+        padding-bottom: 3.875rem;
+      }
+
+      .generic-card.generic-card--tall:not(.respect-ratio) {
+        height: 100%;
+        padding-bottom: 0;
+      }
+
+      &:not(:first-child) {
+        margin-left: -5px;
+      }
+
+      @include mq(desktop) {
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .tns-inner {
+    margin: 0 !important;
+  }
+}
+
+.section-headline {
+  .section-headline__subtitle {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.43;
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+
+    @include mq(desktop) {
+      margin-bottom: 0.625rem;
+    }
+  }
+
+  .section-headline__title {
+    color: $primary-color;
+    margin: 0;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.38;
+  }
+}
+
+.generic-card {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+
+  .generic-card__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .generic-card__image {
+    flex: 1;
+    padding: 0;
+    border-radius: 0.125rem;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+
+    img {
+      position: static;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-origin: center;
+      transition: all 0.4s linear;
+      width: 100%;
+      font-family: 'object-fit: cover; object-position: center;';
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .generic-card__inner__content {
+    height: 5.3125rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .generic-card__title {
+    color: $card-title-color;
+    font-size: 1.3125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0.625rem 0 0;
+    text-transform: initial;
+  }
+
+  .generic-card__subtitle {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    color: $primary-color;
+    font-size: 0.875rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.71;
+    margin: 0;
+    width: auto;
+
+    &::before {
+      background: $primary-color;
+      bottom: 0.125rem;
+      content: '';
+      height: 0.0625rem;
+      left: 0;
+      position: absolute;
+      transform: translateX(-110%);
+      transform-origin: left;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    .generic-card__image img {
+      transform: scale(1.1);
+    }
+
+    .generic-card__subtitle:before {
+      transform: translateX(0);
+    }
+  }
+}
