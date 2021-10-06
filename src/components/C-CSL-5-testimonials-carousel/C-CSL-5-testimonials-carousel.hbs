@@ -1,0 +1,28 @@
+<section class="testimonials" data-module="testimonials">
+  <div class="container">
+    <h2 class="testimonials__heading">
+      {{heading}}
+    </h2>
+    {{#if copy}}
+    <div class="testimonials__copy rtf">
+      {{copy}}
+    </div>
+    {{/if}}
+    <div class="testimonials__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+        {{#json items}}
+          {{#each this}}
+            {{>@c-crd-6-testimonial-card}}
+          {{/each}}
+        {{/json}}
+        </div>
+        <div class="testimonials__pagination">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

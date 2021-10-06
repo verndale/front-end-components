@@ -1,3 +1,63 @@
+## [1.10.3](https://github.com/verndale/front-end-components/compare/v1.10.2...v1.10.3) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2430 - justofy center ([3378d0d](https://github.com/verndale/front-end-components/commit/3378d0d01e314b48dca3c84557a66005b59031f2))
+
+## [1.10.2](https://github.com/verndale/front-end-components/compare/v1.10.1...v1.10.2) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2430 - center align grid items ([33f0cb6](https://github.com/verndale/front-end-components/commit/33f0cb60af2887c09511657b0e53a72cfbcc5681))
+
+## [1.10.1](https://github.com/verndale/front-end-components/compare/v1.10.0...v1.10.1) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2405 - Add overflow to parent ([f360e8a](https://github.com/verndale/front-end-components/commit/f360e8ab889c53d7c561c268febe04a1d15441f8))
+
+# [1.10.0](https://github.com/verndale/front-end-components/compare/v1.9.0...v1.10.0) (2021-10-05)
+
+
+### Bug Fixes
+
+* ST-2359 - Fix optional alert copy ([823465a](https://github.com/verndale/front-end-components/commit/823465a07886a57e66d601a06c63f64774c524d0))
+* ST-2388 - Change status ([b27f011](https://github.com/verndale/front-end-components/commit/b27f01188478e0f25739301ebd234c512f4c7605))
+* ST-2388 - Fix intro text field ([d78d8e1](https://github.com/verndale/front-end-components/commit/d78d8e11d46c7293584bbd5462684c5546bf2442))
+* ST-2400 - Rename files with documentation ([b8be222](https://github.com/verndale/front-end-components/commit/b8be222fc1393f1f2b12b7ddd76d92c3e7fdddbf))
+* ST-2412 - Fix file name ([f938a9b](https://github.com/verndale/front-end-components/commit/f938a9b1238700d21f646d8fc1ce21f990cb5bf0))
+* ST-2416 - Fix content card no image and change semantic ([3785033](https://github.com/verndale/front-end-components/commit/378503367c948c79125eafd83ed2973c04df223f))
+* ST-2421 - Fix hover state and link ([28fffe9](https://github.com/verndale/front-end-components/commit/28fffe9fbdc8942cfd05e5cb89bbfbb88321b4c2))
+* ST-2454 - Add optional heading ([1b32f5b](https://github.com/verndale/front-end-components/commit/1b32f5b2d6bf358e9ef57dc0dd7ae79f08edc10a))
+* ST-2458 - Fix search styles ([1104f6f](https://github.com/verndale/front-end-components/commit/1104f6f137fd73b7ccd8b2ecdfaacf1654b1528e))
+* ST-2486 - Change status ([5607f90](https://github.com/verndale/front-end-components/commit/5607f9058daec429b0ed61c2e5dd6da14f24c00a))
+* ST-2486 - Fix mobile dropdown ([aa9abcf](https://github.com/verndale/front-end-components/commit/aa9abcf24eac77a33a3cfa98d6839bc00b64e5e2))
+* ST-2522 - Add pagination config ([df8535c](https://github.com/verndale/front-end-components/commit/df8535cd20e3705693f834b174404fd8fd640f4a))
+
+
+### Features
+
+* Full viewport 2 column row ([e9c5662](https://github.com/verndale/front-end-components/commit/e9c566225aadff31a4da6d74487621e626947885))
+* ST-2532 - Fix styles ([a1b4ada](https://github.com/verndale/front-end-components/commit/a1b4adabac23fc007e6a5e39c295d3f09dbaa986))
+
+# [1.9.0](https://github.com/verndale/front-end-components/compare/v1.8.0...v1.9.0) (2021-09-29)
+
+
+### Features
+
+* Fix image mastheads ([ed2eab3](https://github.com/verndale/front-end-components/commit/ed2eab35bee01aaaef7b559c1d116f3fb19b6622))
+
+# [1.8.0](https://github.com/verndale/front-end-components/compare/v1.7.0...v1.8.0) (2021-09-21)
+
+
+### Features
+
+* Change files names ([0615c31](https://github.com/verndale/front-end-components/commit/0615c3176261793ef855327b9fa1c610013147aa))
+* Fix scss variables ([196d69c](https://github.com/verndale/front-end-components/commit/196d69c0beb273338441f02f8f82abc056f1afde))
+
 # [1.7.0](https://github.com/verndale/front-end-components/compare/v1.6.0...v1.7.0) (2021-09-10)
 
 

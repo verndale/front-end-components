@@ -1,0 +1,48 @@
+@import '../../theme', 'variables';
+
+.simple-masterhead {
+  position: relative;
+  &.simple-masterhead-center-aligned {
+    .simple-masterhead__heading, .simple-masterhead__subheading, .simple-masterhead__copy {
+      text-align: center;
+    }
+  }
+}
+
+.simple-masterhead__heading {
+  font-family: $simple-masterhead-heading-font-family;
+  color: $simple-masterhead-heading-color;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.19;
+
+  @include mq(desktop) {
+    font-size: 48px;
+    line-height: 1.33;
+  }
+}
+
+.simple-masterhead__subheading {
+  font-family: $simple-masterhead-subheading-font-family;
+  color: $simple-masterhead-subheading-color;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.19;
+
+  @include mq(desktop) {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+
+.simple-masterhead__copy {
+  margin: 10px 0 0;
+  font-family: $simple-masterhead-copy-font-family;
+  color: $simple-masterhead-copy-color;
+  margin: 5px 0 15px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: normal;
+  flex: 1;
+}
+

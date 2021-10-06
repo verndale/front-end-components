@@ -1,0 +1,21 @@
+<div class="carousel-content-card {{#unless image}} carousel-content-card--no-image {{/unless}}">
+  <!-- Display this div if image exists-->
+  <div class="carousel-content-card__image">
+    <img src="{{image}}" alt="{{heading}}" />
+  </div>
+  <div class="carousel-content-card__wrapper">
+    <h6 class="carousel-content-card__heading">{{heading}}</h6>
+    {{#if copy}}
+    <div class="carousel-content-card__copy">
+      <div class="rtf">
+        {{{copy}}}
+      </div>
+    </div>
+    {{/if}}
+    <span class="carousel-content-card__cta-label">
+      {{ctaLabel}}
+      {{>svg name="arrow-right" viewBox="0 0 32 23" className="arror-right"}}
+    </span>
+  </div>
+  <a href={{cta}} class="carousel-content-card__cta"></a>
+</div>

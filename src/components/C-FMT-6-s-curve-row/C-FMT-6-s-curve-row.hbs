@@ -1,0 +1,42 @@
+<div class="s-curve-card">
+  <div class="s-curve-card__media">
+    {{#if video}}
+    {{#json video}}
+    {{>@video}}
+    {{/json}}
+    {{else}}
+    {{#if youtubeId}}
+    {{>@youtube videoId=youtubeId}}
+    {{else}}
+    {{#if vimeoId}}
+    {{>@vimeo videoId=vimeoId}}
+    {{else}}
+    {{#if image}}
+    {{#json image}}
+    {{>picture}}
+    {{/json}}
+    {{/if}}
+    {{/if}}
+    {{/if}}
+    {{/if}}
+  </div>
+  <div class="s-curve-card__content">
+    {{#if subhead}}<h3 class="s-curve-card__subhead">{{subhead}}</h3>{{/if}}
+    <h2 class="s-curve-card__headline">{{headline}}</h2>
+    {{#if description}}
+    <div class="s-curve-card__description rtf">
+      {{{description}}}
+    </div>
+    {{/if}}
+    {{#ifCond buttonLabel "||" linkLabel}}
+    <div class="s-curve-card__actions">
+      {{#if buttonLabel}}
+      {{>@button type="link" label=buttonLabel className="primary"}}
+      {{/if}}
+      {{#if linkLabel}}
+      {{>@link label=linkLabel className="primary" icon="right"}}
+      {{/if}}
+    </div>
+    {{/ifCond}}
+  </div>
+</div>

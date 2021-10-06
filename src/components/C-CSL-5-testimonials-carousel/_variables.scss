@@ -1,0 +1,11 @@
+$swiper-pagination-bullet: map-get(
+  $theme-colors,
+  'primary-light-gray'
+) !default;
+$swiper-pagination-bullet-active: map-get(
+  $theme-colors,
+  'primary-gray'
+) !default;
+$swiper-button-size: 80px;
+$testimonial-font-family: $primary-font !default;
+$card-font-family: $primary-font !default;

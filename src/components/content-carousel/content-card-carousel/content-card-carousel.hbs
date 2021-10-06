@@ -1,0 +1,40 @@
+<div class="content-carousel"
+    data-module="contentCarousel">
+    <div class="content-carousel__header">
+        <div class="container">
+            {{#if definition}}
+            <p class="content-carousel__definition">{{definition}}</p>
+            {{/if}}
+            <h2 class="content-carousel__title">{{title}}</h2>
+        </div>
+    </div>
+    <div class="content-carousel__container">
+            <div class="container">
+                <div class="content-carousel__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {{#json slides}}
+                            {{#each this}}
+                            <div class="swiper-slide">
+                                {{>@content-card}}
+                            </div>
+                            {{/each}}
+                            {{/json}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="content-carousel__buttons container">
+    <button type="button" aria-label="{{previousSlideLabel}}" class="content-carousel__button content-carousel__button-prev">
+      <span>
+        {{>svg name="chevron-left" className="link__icon link__icon--left" viewBox="0 0 6 12"}}
+      </span>
+    </button>
+    <button type="button" aria-label="{{nextSlideLabel}}" class="content-carousel__button content-carousel__button-next">
+      <span>
+        {{>svg name="chevron-right" className="link__icon link__icon--right" viewBox="0 0 6 12"}}
+      </span>
+    </button>
+  </div>
+</div>

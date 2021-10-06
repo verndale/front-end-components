@@ -1,8 +1,8 @@
 module.exports = {
   title: 'columns row',
-  status: 'wip',
+  status: 'ready',
   // eslint-disable-next-line quote-props
-  default: '4_columns_row',
+  default: 'Default',
   context: {
     heading: '4 columns row',
     copy_intro:
@@ -26,7 +26,7 @@ module.exports = {
   },
   variants: [
     {
-      name: '4_columns_row',
+      name: 'C-FMT-15: 4 Column Row',
       context: {
         heading: '4 columns row',
         type: 'four',
@@ -51,7 +51,7 @@ module.exports = {
       }
     },
     {
-      name: '3_columns_row',
+      name: 'C-FMT-14: 3 Column Row',
       context: {
         heading: '3 columns row',
         type: 'three',
