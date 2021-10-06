@@ -35,6 +35,7 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   text-decoration: none;
+  justify-content: center;
 
   @include mq(tablet) {
     width: calc(50% - 22px);
