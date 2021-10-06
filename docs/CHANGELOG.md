@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/verndale/front-end-components/compare/v1.10.0...v1.10.1) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2405 - Add overflow to parent ([f360e8a](https://github.com/verndale/front-end-components/commit/f360e8ab889c53d7c561c268febe04a1d15441f8))
+
 # [1.10.0](https://github.com/verndale/front-end-components/compare/v1.9.0...v1.10.0) (2021-10-05)
 
 
