@@ -1,5 +1,9 @@
 @import '../theme', 'variables';
 
+.testimonials {
+  overflow: hidden;
+}
+
 .testimonials__slider {
   margin: 20px auto 0;
   max-width: 600px;
