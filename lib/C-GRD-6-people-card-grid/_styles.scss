@@ -13,9 +13,10 @@
 }
 
 .people-card-grid__people-content-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 44px;
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @include mq(tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -34,6 +35,14 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   text-decoration: none;
+
+  @include mq(tablet) {
+    width: calc(50% - 22px);
+  }
+
+  @include mq(desktop) {
+    width: calc(33.33% - 29.33px);
+  }
 
   &:hover {
     box-shadow: 0 0.9375rem 3.125rem 0 rgba(0, 0, 0, 0.2);

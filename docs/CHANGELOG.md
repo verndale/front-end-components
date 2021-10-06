@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/verndale/front-end-components/compare/v1.10.1...v1.10.2) (2021-10-06)
+
+
+### Bug Fixes
+
+* ST-2430 - center align grid items ([33f0cb6](https://github.com/verndale/front-end-components/commit/33f0cb60af2887c09511657b0e53a72cfbcc5681))
+
 ## [1.10.1](https://github.com/verndale/front-end-components/compare/v1.10.0...v1.10.1) (2021-10-06)
 
 
