@@ -1,4 +1,6 @@
-@import '../theme', 'variables';
+@import
+"../theme",
+"variables";
 
 .accordion {
   margin-bottom: $accordion-mobile-margin-bottom;
@@ -88,17 +90,13 @@
     }
   }
 
-  &[aria-expanded='true'] {
+  &[aria-expanded="true"] {
     .accordion__item-icon-plus {
       display: none;
     }
 
     .accordion__item-icon-minus {
       display: block;
-    }
-
-    & + .accordion__item-panel {
-      transition: max-height 0.3s ease-in-out;
     }
   }
 }
@@ -153,10 +151,10 @@
 }
 
 .accordion__item-panel {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   visibility: hidden;
-  transition: max-height 0.3s ease-in-out, visibility 0s linear 0.3s;
+  transition: height 0.25s ease;
 
   video,
   picture,

@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/verndale/front-end-components/compare/v1.10.3...v1.11.0) (2021-10-13)
+
+
+### Features
+
+* ST-2393 - 3 Column Image Gallery ([7d82e42](https://github.com/verndale/front-end-components/commit/7d82e426f2d7eb8d7f51621882656ad543fd35d3))
+* ST-2393 - Add yarn lock ([5da803c](https://github.com/verndale/front-end-components/commit/5da803c168477ab46c3fd192a8b1a8e673d856b7))
+
 ## [1.10.3](https://github.com/verndale/front-end-components/compare/v1.10.2...v1.10.3) (2021-10-06)
 
 
