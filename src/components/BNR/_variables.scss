@@ -1,0 +1,9 @@
+$masthead-border-color: map-get($theme-colors, 'primary-light-gray') !default;
+$masthead-background-container-color: #fff !default;
+$masthead-background-color: #fff !default;
+$masthead-heading-font-family: $secondary-font !default;
+$masthead-subheading-font-family: $secondary-font !default;
+$masthead-copy-font-family: $secondary-font !default;
+$masthead-copy-color: map-get($theme-colors, 'primary-gray') !default;
+$masthead-heading-color: map-get($theme-colors, 'primary') !default;
+$masthead-subheading-color: map-get($theme-colors, 'primary-dark') !default;

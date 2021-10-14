@@ -1,8 +1,8 @@
-@import '../../theme', 'variables';
+@import '../theme', 'variables';
 
 .masthead {
   position: relative;
-  background-color: $background-masthead-color;
+  background-color: $masthead-background-color;
 }
 
 .masthead__inner {
@@ -11,7 +11,7 @@
     display: flex;
     padding-top: 173px;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       min-height: 650px;
       padding-bottom: 95px;
       padding-top: 95px;
@@ -20,7 +20,7 @@
 
   .masthead--left-media &,
   .masthead--right-media & {
-    @include mq(desktop) {
+    @include mq(tablet) {
       display: flex;
     }
   }
@@ -42,16 +42,22 @@
   justify-content: flex-end;
 }
 
+.masthead__inner--text-position-center {
+  text-align: center;
+}
+
 .masthead__content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   z-index: 1;
 
   .masthead--background-media & {
-    background-color: $background-container-color;
-    border: solid 1px $border-color;
+    background-color: $masthead-background-container-color;
+    border: solid 1px $masthead-border-color;
     padding: 30px;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       max-width: 750px;
       padding: 50px;
     }
@@ -65,7 +71,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       padding-bottom: 85px;
       padding-top: 85px;
     }
@@ -73,29 +79,48 @@
 }
 
 .masthead__subheading {
-  color: $primary-color;
-  font-family: $secondary-font;
+  color: $masthead-subheading-color;
+  font-family: $masthead-subheading-font-family;
   font-size: 21px;
-  font-weight: 700;
   line-height: 1.19;
   margin: 0 0 5px;
+  order: -1;
 
-  @include mq(desktop) {
+  @include mq(tablet) {
     font-size: 24px;
     line-height: 1.33;
   }
 }
 
 .masthead__heading {
-  @include mq(desktop) {
+  font-family: $masthead-heading-font-family;
+  color: $masthead-heading-color;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.19;
+
+  @include mq(tablet) {
     margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.33;
   }
+}
+
+.masthead__copy {
+  margin: 10px 0 0;
+  font-family: $masthead-copy-font-family;
+  color: $masthead-copy-color;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: normal;
+  flex: 1;
 }
 
 .masthead__actions {
   margin: 20px -10px -10px;
 
-  @include mq(desktop) {
+  @include mq(tablet) {
     margin: 20px -20px -20px;
   }
 
@@ -103,7 +128,7 @@
   .link {
     margin: 10px;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       margin: 20px;
     }
   }
@@ -118,7 +143,7 @@
     width: 100%;
     z-index: 0;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       height: 100%;
     }
 
@@ -135,7 +160,7 @@
   .masthead--right-media & {
     margin: 0 -20px;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       align-items: center;
       display: flex;
       flex-shrink: 0;
@@ -152,14 +177,18 @@
   }
 
   .masthead--left-media & {
-    @include mq(desktop) {
+    @include mq(tablet) {
       margin-right: 40px;
     }
   }
 
   .masthead--right-media & {
-    @include mq(desktop) {
+    @include mq(tablet) {
       margin-left: 40px;
     }
   }
+}
+
+.masthead--simple {
+  padding: 30px 0;
 }
