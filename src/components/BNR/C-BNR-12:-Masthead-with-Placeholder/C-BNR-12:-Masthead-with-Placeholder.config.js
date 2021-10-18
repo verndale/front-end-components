@@ -13,7 +13,9 @@ const context = {
     src: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=760&h=650',
     description: 'Image Description'
   },
-  media: true
+  media: true,
+  autoplay: false,
+  background: true
 }
 
 module.exports = {
@@ -37,11 +39,9 @@ module.exports = {
       context: {
         ...context,
         mediaPosition: 'left',
-        video: {
-          url: '/images/video.mp4',
-          poster:
-            'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
-        }
+        videoPlayer: 'video',
+        videoId: '/images/video.mp4',
+        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
       }
     },
     {
@@ -49,11 +49,9 @@ module.exports = {
       context: {
         ...context,
         mediaPosition: 'right',
-        video: {
-          url: '/images/video.mp4',
-          poster:
-            'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
-        }
+        videoPlayer: 'video',
+        videoId: '/images/video.mp4',
+        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
       }
     },
     {
@@ -61,31 +59,45 @@ module.exports = {
       context: {
         ...context,
         mediaPosition: 'left',
-        vimeoId: '430133542'
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
       }
     },
     {
-      name: 'C-BNR-12: Masthead with Placeholders Right Vimeo Video',
+      name: 'C-BNR-12: Masthead with Placeholders Vimeo Video',
       context: {
         ...context,
         mediaPosition: 'right',
-        vimeoId: '430133542'
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
       }
     },
     {
-      name: 'C-BNR-12: Masthead with Placeholders Left Youtube Video',
-      context: {
-        ...context,
-        mediaPosition: 'left',
-        youtubeId: 'DSLgAsrcpGQ'
-      }
-    },
-    {
-      name: 'C-BNR-12: Masthead with Placeholders Right Youtube Video',
+      name: 'C-BNR-12: Masthead with Youtube Video',
       context: {
         ...context,
         mediaPosition: 'right',
-        youtubeId: 'DSLgAsrcpGQ'
+        videoId: 'DSLgAsrcpGQ',
+        videoPlayer: 'youtube',
+      }
+    },
+    {
+      name: 'C-BNR-12: Masthead with Vimeo Video',
+      context: {
+        ...context,
+        mediaPosition: 'right',
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
+      }
+    },
+    {
+      name: 'C-BNR-12: Masthead with Local Video',
+      context: {
+        ...context,
+        mediaPosition: 'right',
+        videoPlayer: 'video',
+        videoId: '/images/video.mp4',
+        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
       }
     }
   ]

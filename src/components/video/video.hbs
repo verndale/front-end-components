@@ -1,8 +1,8 @@
-<div class="video"{{#unless background}} data-module="video"{{/unless}}>
-  <video poster="{{poster}}"{{#if background}} autoplay muted{{/if}}>
-    <source src="{{url}}" type="video/mp4">
-  </video>
-  {{#unless background}}
+<div class="video" {{#if background}} data-module="video" data-video-player="{{videoPlayer}}" data-video-id="{{videoId}}" data-video-auto-play="{{autoplay}}"{{/if}} {{#if poster}}data-video-poster="{{poster}}"{{/if}}>
+  <div class="video__background">
+  </div>
+  {{#json image}}
+  {{>picture className="video__poster"}}
+  {{/json}}
   {{>svg name="play" viewBox="0 0 495 495"}}
-  {{/unless}}
 </div>

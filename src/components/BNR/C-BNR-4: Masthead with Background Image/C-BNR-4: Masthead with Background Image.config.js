@@ -13,7 +13,8 @@ const context =  {
     src: 'https://verndale-image-tools.herokuapp.com/id/Ixp4YhCKZkI?w=760&h=650',
     description: 'Image Description'
   },
-  media: true
+  media: true,
+  autoplay: true
 };
 
 module.exports = {
@@ -50,28 +51,33 @@ module.exports = {
           url: '/images/video.mp4',
           poster:
             'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
-        }
+        },
+        background: true
       }
     },
     {
       name: 'C-BNR-4: Masthead with Background Vimeo Video',
       context: {
         ...context,
-        vimeoId: '430133542'
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
+        background: true
       }
     },
     {
       name: 'C-BNR-4: Masthead with Background Youtube Video',
       context: {
         ...context,
-        youtubeId: 'DSLgAsrcpGQ'
+        videoId: 'DSLgAsrcpGQ',
+        videoPlayer: 'youtube',
+        background: true
       }
     },
     {
       name: 'C-BNR-4: Masthead with Background Image container left',
       context: {
         ...context,
-        youtubeId: 'DSLgAsrcpGQ'
+        background: null
       }
     },
     {
@@ -79,15 +85,36 @@ module.exports = {
       context: {
         ...context,
         containerPosition: 'center',
-        youtubeId: 'DSLgAsrcpGQ'
+        background: null
       }
     },
     {
-      name: 'C-BNR-4: Masthead with Background Image container right',
+      name: 'C-BNR-4: Masthead with Background Youtube video',
       context: {
         ...context,
         containerPosition: 'right',
-        youtubeId: 'DSLgAsrcpGQ'
+        videoId: 'DSLgAsrcpGQ',
+        videoPlayer: 'youtube',
+        background: true
+      }
+    },
+    {
+      name: 'C-BNR-4: Masthead with Background Vimeo Video',
+      context: {
+        ...context,
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
+        background: true
+      }
+    },
+    {
+      name: 'C-BNR-4: Masthead with Background Video',
+      context: {
+        ...context,
+        videoPlayer: 'video',
+        background: true,
+        videoId: '/images/video.mp4',
+        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
       }
     }
   ]
