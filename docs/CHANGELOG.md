@@ -1,3 +1,16 @@
+# [1.12.0](https://github.com/verndale/front-end-components/compare/v1.11.0...v1.12.0) (2021-10-20)
+
+
+### Bug Fixes
+
+* ST-1961 - autoplay video ([4e5e2ff](https://github.com/verndale/front-end-components/commit/4e5e2ff03120cef4e4cdf0c5489e5b905a644635))
+
+
+### Features
+
+* ST-1961 - Fix video, youtube, vimeo videos ([a27c31e](https://github.com/verndale/front-end-components/commit/a27c31e7a51815fb6bf20052cfb2ff9eb4166462))
+* ST-1961 - Masthead refactor ([ba083ed](https://github.com/verndale/front-end-components/commit/ba083ed41f380cbf140266861f8aaec3553dcc16))
+
 # [1.11.0](https://github.com/verndale/front-end-components/compare/v1.10.3...v1.11.0) (2021-10-13)
 
 
