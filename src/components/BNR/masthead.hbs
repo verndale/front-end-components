@@ -1,0 +1,29 @@
+
+<div class="masthead {{#if mediaPosition}}masthead--{{mediaPosition}}-media {{/if}} {{#unless media}}masthead--simple{{/unless}}">
+  <div class="masthead__inner container {{#if containerPosition}} masthead__inner--position-{{containerPosition}} {{/if}} {{#if center}} masthead__inner--text-position-center {{/if}}">
+  {{#if media}}
+    <div class="masthead__media">
+      {{#if videoPlayer}}
+      {{>@video videoPlayer=videoPlayer videoId=videoId background=background poster=poster}}
+      {{else}}
+      {{#json image}}
+      {{>picture}}
+      {{/json}}
+      {{/if}}
+    </div>
+  {{/if}}
+    <div class="masthead__content">
+      <h1 class="masthead__heading">{{heading}}</h1>
+      {{#if subheading}}<h2 class="masthead__subheading">{{subheading}}</h2>{{/if}}
+      <div class="masthead__copy rtf">
+        {{{copy}}}
+      </div>
+      {{#ifCond ctaLabel "||" linkLabel}}
+      <div class="masthead__actions">
+        {{#if ctaLabel}}{{>@button label=ctaLabel type="link" className="primary"}}{{/if}}
+        {{#if linkLabel}}{{>@link label=linkLabel className="primary"}}{{/if}}
+      </div>
+      {{/ifCond}}
+    </div>
+  </div>
+</div>

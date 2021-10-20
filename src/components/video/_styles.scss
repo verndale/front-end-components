@@ -52,7 +52,9 @@
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+}
 
+.full-background-video {
   iframe {
     pointer-events: none;
   }

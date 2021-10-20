@@ -22,14 +22,6 @@ const components = [
     loader: () => import('./video/video')
   },
   {
-    name: 'vimeo',
-    loader: () => import('./vimeo/vimeo')
-  },
-  {
-    name: 'youtube',
-    loader: () => import('./youtube/youtube')
-  },
-  {
     name: 'animatedCardCarousel',
     loader: () => import('./C-CSL-6-animated-card-carousel/AnimatedCardCarousel')
   },
