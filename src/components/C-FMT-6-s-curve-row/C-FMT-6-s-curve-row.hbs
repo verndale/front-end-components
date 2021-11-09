@@ -1,23 +1,11 @@
 <div class="s-curve-card">
   <div class="s-curve-card__media">
-    {{#if video}}
-    {{#json video}}
-    {{>@video}}
-    {{/json}}
+    {{#if videoPlayer}}
+    {{>@video videoPlayer=videoPlayer videoId=videoId background=background poster=poster}}
     {{else}}
-    {{#if youtubeId}}
-    {{>@youtube videoId=youtubeId}}
-    {{else}}
-    {{#if vimeoId}}
-    {{>@vimeo videoId=vimeoId}}
-    {{else}}
-    {{#if image}}
     {{#json image}}
     {{>picture}}
     {{/json}}
-    {{/if}}
-    {{/if}}
-    {{/if}}
     {{/if}}
   </div>
   <div class="s-curve-card__content">

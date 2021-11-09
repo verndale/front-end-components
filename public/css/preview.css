@@ -3239,15 +3239,11 @@ body {
     .s-curve {
       margin-bottom: 150px;
       margin-top: 150px; } }
-  @media (min-width: 80em) {
-    /* line 15, src/components/C-FMT-5-s-curve-container/_styles.scss */
-    .s-curve .s-curve-card:nth-child(even) {
-      flex-direction: row; } }
-  /* line 21, src/components/C-FMT-5-s-curve-container/_styles.scss */
+  /* line 15, src/components/C-FMT-5-s-curve-container/_styles.scss */
   .s-curve .s-curve-card + .s-curve-card {
     margin-top: 20px; }
     @media (min-width: 80em) {
-      /* line 21, src/components/C-FMT-5-s-curve-container/_styles.scss */
+      /* line 15, src/components/C-FMT-5-s-curve-container/_styles.scss */
       .s-curve .s-curve-card + .s-curve-card {
         margin-top: 40px; } }
 
