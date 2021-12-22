@@ -109,9 +109,10 @@ class Module extends Component {
     iframe.setAttribute('webkitallowfullscreen', 'webkitallowfullscreen');
     iframe.setAttribute('mozallowfullscreen', 'mozallowfullscreen');
     iframe.setAttribute('allowfullscreen', 'allowfullscreen');
+    iframe.setAttribute('allow', 'autoplay');
     iframe.setAttribute(
       'src',
-      `https://player.vimeo.com/video/${this.videoId}?title=false&autoplay=true`
+      `https://player.vimeo.com/video/${this.videoId}?title=false&autoplay=true&muted=1`
     );
     return iframe;
   }

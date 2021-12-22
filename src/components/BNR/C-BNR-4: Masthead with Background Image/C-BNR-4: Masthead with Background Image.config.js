@@ -1,7 +1,7 @@
-const context =  {
+const context = {
   mediaPosition: 'background',
   subheading: 'Optional Subheading',
-  heading: 'Masthead Width Right Aligned Image',
+  heading: 'Masthead With Background Image Aligned Left Variation',
   copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
   ctaLabel: 'Primary Call-to-Action',
   linkLabel: 'Large Text Link',
@@ -15,7 +15,7 @@ const context =  {
   },
   media: true,
   autoplay: true
-};
+}
 
 module.exports = {
   title: 'Masthead component',
@@ -33,26 +33,27 @@ module.exports = {
       name: 'C-BNR-4: Masthead with Background Image Center Variation',
       context: {
         ...context,
-        containerPosition: 'center'
+        containerPosition: 'center',
+        heading: 'Masthead With Background Image Aligned Center Variation'
       }
     },
     {
       name: 'C-BNR-4: Masthead with Background Image Right variation',
       context: {
         ...context,
-        containerPosition: 'right'
+        containerPosition: 'right',
+        heading: 'Masthead With Background Image Aligned Right Variation'
       }
     },
     {
-      name: 'C-BNR-4: Masthead with Background Full Width Video',
+      name: 'C-BNR-4: Masthead with Background Full With Video',
       context: {
         ...context,
-        video: {
-          url: '/images/video.mp4',
-          poster:
-            'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
-        },
-        background: true
+        background: true,
+        autoplay: true,
+        videoPlayer: 'video',
+        videoId: '/images/video.mp4',
+        heading: 'Masthead With Background Local Video Aligned Left Variation'
       }
     },
     {
@@ -61,7 +62,9 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        background: true
+        background: true,
+        autoplay: true,
+        heading: 'Masthead With Background Vimeo Video Aligned Left Variation'
       }
     },
     {
@@ -70,14 +73,16 @@ module.exports = {
         ...context,
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube',
-        background: true
+        background: true,
+        heading: 'Masthead With Background Youtube Video Aligned Left Variation'
       }
     },
     {
       name: 'C-BNR-4: Masthead with Background Image container left',
       context: {
         ...context,
-        background: null
+        background: null,
+        heading: 'Masthead With Background Image Aligned Left Variation'
       }
     },
     {
@@ -85,7 +90,8 @@ module.exports = {
       context: {
         ...context,
         containerPosition: 'center',
-        background: null
+        background: null,
+        heading: 'Masthead With Background Image Aligned Center Variation'
       }
     },
     {
@@ -95,7 +101,8 @@ module.exports = {
         containerPosition: 'right',
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube',
-        background: true
+        background: true,
+        heading: 'Masthead With Background Youtube Video Aligned Left Variation'
       }
     },
     {
@@ -104,7 +111,9 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        background: true
+        background: true,
+        autoplay: true,
+        heading: 'Masthead With Background Vimeo Video Aligned Left Variation'
       }
     },
     {
@@ -114,7 +123,9 @@ module.exports = {
         videoPlayer: 'video',
         background: true,
         videoId: '/images/video.mp4',
-        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
+        poster:
+          'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444',
+        heading: 'Masthead With Background Local Video Aligned Left Variation'
       }
     }
   ]
