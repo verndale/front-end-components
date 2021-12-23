@@ -1,3 +1,11 @@
+## [1.12.1](https://github.com/verndale/front-end-components/compare/v1.12.0...v1.12.1) (2021-12-23)
+
+
+### Bug Fixes
+
+* ST-2337 - Fix content row, accordion ([2d76db8](https://github.com/verndale/front-end-components/commit/2d76db877b10053ce3b262c7972accde995d1bdf))
+* ST-2337 - Fix video, masthead and s curve texts ([ad8a766](https://github.com/verndale/front-end-components/commit/ad8a766c8244e2ecdc109c20f6d73a24f2132103))
+
 # [1.12.0](https://github.com/verndale/front-end-components/compare/v1.11.0...v1.12.0) (2021-10-20)
 
 

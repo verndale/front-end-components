@@ -12,6 +12,12 @@
   }
 
   .s-curve-card {
+    &:nth-child(even) {
+      @include mq(desktop) {
+        flex-direction: row;
+      }
+    }
+
     & + .s-curve-card {
       margin-top: 20px;
 

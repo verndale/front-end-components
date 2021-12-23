@@ -1,6 +1,4 @@
-@import
-"../theme",
-"variables";
+@import '../theme', 'variables';
 
 .accordion {
   margin-bottom: $accordion-mobile-margin-bottom;
@@ -90,7 +88,7 @@
     }
   }
 
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     .accordion__item-icon-plus {
       display: none;
     }
@@ -108,23 +106,6 @@
   line-height: 1.78;
   margin: 0;
   transition: color 0.2s ease-in-out;
-}
-
-.accordion__item-heading {
-  font-family: $accordion-item-heading-font-family;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.19;
-  margin: 0 0 10px;
-
-  @include mq(desktop) {
-    font-size: 19px;
-    line-height: 1.33;
-  }
-
-  @include mq(wide) {
-    font-size: 24px;
-  }
 }
 
 .accordion__item-icon {
@@ -193,6 +174,25 @@
 
     .btn {
       margin: 10px;
+    }
+  }
+}
+
+.accordion__item-description {
+  h4 {
+    font-family: $accordion-item-heading-font-family;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.19;
+    margin: 0 0 10px;
+
+    @include mq(desktop) {
+      font-size: 19px;
+      line-height: 1.33;
+    }
+
+    @include mq(wide) {
+      font-size: 24px;
     }
   }
 }
