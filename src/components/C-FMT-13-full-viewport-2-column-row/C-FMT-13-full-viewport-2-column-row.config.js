@@ -1,6 +1,6 @@
 module.exports = {
   title: 'C-FMT-13: Full Viewport 2 Column Row',
-  status: 'wip',
+  status: 'ready',
   context: {
     name: 'Default',
     heading: 'Other Brands You’ll Enjoy',

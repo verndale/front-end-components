@@ -56,7 +56,7 @@ class Accordion extends Component {
           '.accordion__item-content'
         ).offsetHeight
 
-        content.style.maxHeight = `${height}px`
+        content.style.height = `${height}px`
         content.style.visibility = 'visible'
       }
 

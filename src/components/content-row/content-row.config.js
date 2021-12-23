@@ -8,7 +8,7 @@ const context = {
     src: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=790&h=444',
     description: 'Image Description'
   },
-  headline: 'S-Curve With Small Image',
+  headline: 'Content Row With Small Image',
   subhead: 'Optional Subheading',
   description:
     '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
@@ -17,11 +17,11 @@ const context = {
 }
 
 module.exports = {
-  title: 'C-FMT-6: S-Curve Row',
+  title: 'C-FMT-6: Content Row',
   status: 'ready',
   // eslint-disable-next-line quote-props
   default: 'default',
-  context: { ...context },
+  context,
   variants: [
     {
       name: 'With Youtube Video',
@@ -29,8 +29,7 @@ module.exports = {
         ...context,
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube',
-        autoplay: false,
-        headline: 'S-Curve With Youtube Video'
+        headline: 'Content Row With Youtube Video'
       }
     },
     {
@@ -39,8 +38,7 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        autoplay: false,
-        headline: 'S-Curve With Vimeo Video'
+        headline: 'Content Row With Vimeo Video'
       }
     },
     {
@@ -49,9 +47,18 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        autoplay: false,
-        headline: 'S-Curve With Left Aligned Vimeo Video',
+        headline: 'Content Row With Left Aligned Vimeo Video',
         mediaAlign: 'left'
+      }
+    },
+    {
+      name: 'Media align right',
+      context: {
+        ...context,
+        videoId: '430133542',
+        videoPlayer: 'vimeo',
+        headline: 'Content Row With Right Aligned Vimeo Video',
+        mediaAlign: 'right'
       }
     },
     {
@@ -61,8 +68,7 @@ module.exports = {
         singleColumn: true,
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube',
-        autoplay: false,
-        headline: 'S-Curve Single Column Youtube Video'
+        headline: 'Content Row Single Column Youtube Video'
       }
     }
   ]

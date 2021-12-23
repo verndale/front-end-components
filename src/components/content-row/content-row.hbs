@@ -2,6 +2,10 @@
   <div class="content-row__media">
     {{#if videoPlayer}}
     {{>@video videoPlayer=videoPlayer videoId=videoId background=image poster=poster}}
+    {{else}}
+    {{#if image}}
+      {{#json image}}{{>picture}}{{/json}}
+    {{/if}}
     {{/if}}
   </div>
 {{/inline}}

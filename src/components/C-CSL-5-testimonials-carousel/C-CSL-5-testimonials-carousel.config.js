@@ -1,10 +1,9 @@
 module.exports = {
   title: 'C-CSL-5: Testimonials Carousel',
-  status: 'wip',
+  status: 'ready',
   context: {
     heading: 'Testimonial Heading',
-    copy:
-      'Ea enim magna sunt ad id ad minim ex qui ex aliqua sint ex. Sint sit ipsum reprehenderit enim id consectetur ex consequat aute aliquip. Nostrud non proident Lorem sint nulla mollit laboris cupidatat excepteur. Esse magna eiusmod mollit est laborum sit velit laboris exercitation do.',
+    copy: 'Ea enim magna sunt ad id ad minim ex qui ex aliqua sint ex. Sint sit ipsum reprehenderit enim id consectetur ex consequat aute aliquip. Nostrud non proident Lorem sint nulla mollit laboris cupidatat excepteur. Esse magna eiusmod mollit est laborum sit velit laboris exercitation do.',
     items: [
       {
         photo: 'https://thispersondoesnotexist.com/image',
@@ -28,4 +27,4 @@ module.exports = {
       }
     ]
   }
-};
+}
