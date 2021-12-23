@@ -1,6 +1,6 @@
 module.exports = {
   title: 'C-GRD-2: Related Content Row',
-  status: 'wip',
+  status: 'ready',
   context: {
     heading: 'Related Articles',
     items: [
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         title: 'Card Title 4',
-        date: 'Month DD, YYYY',
+        date: 'Month DD, YYYY'
       }
     ]
   }

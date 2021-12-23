@@ -1,18 +1,10 @@
 {{#*inline "media"}}
   <div class="content-row__media">
-    {{#if video}}
-      {{#json video}}{{>@video}}{{/json}}
+    {{#if videoPlayer}}
+    {{>@video videoPlayer=videoPlayer videoId=videoId background=image poster=poster}}
     {{else}}
-      {{#if youtubeId}}
-        {{>@youtube videoId=youtubeId}}
-      {{else}}
-      {{#if vimeoId}}
-        {{>@vimeo videoId=vimeoId}}
-      {{else}}
-      {{#if image}}
-        {{#json image}}{{>picture}}{{/json}}
-      {{/if}}
-    {{/if}}
+    {{#if image}}
+      {{#json image}}{{>picture}}{{/json}}
     {{/if}}
     {{/if}}
   </div>

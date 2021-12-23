@@ -1,7 +1,7 @@
 const context = {
   mediaPosition: 'left',
   subheading: 'Optional Subheading',
-  heading: 'Masthead Width Right Aligned Image',
+  heading: 'Masthead With Left Aligned Image',
   copy: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
   ctaLabel: 'Primary Call-to-Action',
   linkLabel: 'Large Text Link',
@@ -31,7 +31,8 @@ module.exports = {
       name: 'C-BNR-12: Masthead with Placeholder Right aligned Image',
       context: {
         ...context,
-        mediaPosition: 'right'
+        mediaPosition: 'right',
+        heading: 'Masthead With Right Aligned Image'
       }
     },
     {
@@ -41,7 +42,9 @@ module.exports = {
         mediaPosition: 'left',
         videoPlayer: 'video',
         videoId: '/images/video.mp4',
-        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
+        poster:
+          'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444',
+        heading: 'Masthead With Left Aligned Local Video'
       }
     },
     {
@@ -51,7 +54,9 @@ module.exports = {
         mediaPosition: 'right',
         videoPlayer: 'video',
         videoId: '/images/video.mp4',
-        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
+        poster:
+          'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444',
+        heading: 'Masthead With Right Aligned Local Video'
       }
     },
     {
@@ -61,6 +66,7 @@ module.exports = {
         mediaPosition: 'left',
         videoId: '430133542',
         videoPlayer: 'vimeo',
+        heading: 'Masthead With Left Aligned Vimeo Video'
       }
     },
     {
@@ -70,6 +76,7 @@ module.exports = {
         mediaPosition: 'right',
         videoId: '430133542',
         videoPlayer: 'vimeo',
+        heading: 'Masthead With Right Aligned Vimeo Video'
       }
     },
     {
@@ -79,6 +86,7 @@ module.exports = {
         mediaPosition: 'right',
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube',
+        heading: 'Masthead With Right Aligned Youtube Video'
       }
     },
     {
@@ -88,6 +96,8 @@ module.exports = {
         mediaPosition: 'right',
         videoId: '430133542',
         videoPlayer: 'vimeo',
+        heading: 'Masthead With Right Aligned Vimeo Video',
+        autoplay: false
       }
     },
     {
@@ -97,7 +107,9 @@ module.exports = {
         mediaPosition: 'right',
         videoPlayer: 'video',
         videoId: '/images/video.mp4',
-        poster:'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444'
+        poster:
+          'https://verndale-image-tools.herokuapp.com/random/mountains?seed=2&w=790&h=444',
+        heading: 'Masthead With Right Aligned Local Video'
       }
     }
   ]

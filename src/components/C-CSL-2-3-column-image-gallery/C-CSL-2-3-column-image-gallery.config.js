@@ -1,8 +1,8 @@
 module.exports = {
   title: 'C-CSL-2: 3 Column Image Gallery',
-  status: 'wip',
+  status: 'ready',
   context: {
-    separator: "//",
+    separator: '//',
     crumbs: [
       {
         title: 'First Page'
