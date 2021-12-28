@@ -1,11 +1,19 @@
-<section class="content-section-row container"></section>
+<section class='content-section-row container'>
   {{#if heading}}
-  <h2 class='content-section-row__heading'>
-    {{heading}}
-  </h2>
+    <h2 class='content-section-row__heading'>
+      {{heading}}
+    </h2>
   {{/if}}
+  {{#if subheading}}<h3
+      class='content-row__subheading'
+    >{{subheading}}</h3>{{/if}}
   <div class='content-section-row__rtf'>
     {{{rtf}}}
   </div>
-</div>
 
+  {{#if buttons}}
+    <div class='content-row__actions'>
+      {{{buttons}}}
+    </div>
+  {{/if}}
+</section>
