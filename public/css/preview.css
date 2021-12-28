@@ -2562,6 +2562,10 @@ body {
     .accordion__item-description h4 {
       font-size: 24px; } }
 
+/* line 201, src/components/C-FMT-1-accordions-module/_styles.scss */
+.accordion__video iframe {
+  margin-top: 10px; }
+
 /* line 3, src/components/C-FMT-1-Large-image-w-CTA-row/_styles.scss */
 .large-image-w-cta {
   margin-bottom: 60px;

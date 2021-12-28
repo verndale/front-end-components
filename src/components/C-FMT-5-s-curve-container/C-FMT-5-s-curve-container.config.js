@@ -22,6 +22,7 @@ module.exports = {
   status: 'ready',
   // eslint-disable-next-line quote-props
   default: 'default',
+  hidden: true,
   context: {
     cards: [
       {

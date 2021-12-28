@@ -16,6 +16,16 @@
         <div class="rtf accordion__item-description">
           {{{content}}}
         </div>
+        {{#if videoPlayer}}
+          <div class="accordion__video">
+            {{>@video videoPlayer=videoPlayer videoId=videoId background=background poster=poster}}
+          </div>
+        {{/if}}
+        {{#if buttons}}
+        <div class="buttons-row">
+          {{{buttons}}}
+        </div>
+        {{/if}}
       </div>
     </div>
   </div>
