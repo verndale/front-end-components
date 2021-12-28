@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/verndale/front-end-components/compare/v1.12.3...v1.12.4) (2021-12-28)
+
+
+### Bug Fixes
+
+* C-FMT-9 - Fix content section row styles ([999e7c4](https://github.com/verndale/front-end-components/commit/999e7c4f89190e529467fd0906528f8dca3f277b))
+
 ## [1.12.3](https://github.com/verndale/front-end-components/compare/v1.12.2...v1.12.3) (2021-12-28)
 
 

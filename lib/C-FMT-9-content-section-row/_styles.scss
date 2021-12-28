@@ -2,10 +2,29 @@
 
 .content-section-row__heading {
   color: $primary-color;
-  display: block;
-  font-size: 1.66rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 1.13;
-  margin-bottom: 0.56rem;
+  margin: 0 0 10px;
+
+  @include mq(desktop) {
+    margin-bottom: 10px;
+  }
+}
+
+.content-row__subheading {
+  font-size: 21px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px;
+
+  @include mq(desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .content-section-row__rtf {
@@ -13,4 +32,15 @@
   font-size: 1rem;
   line-height: 1.77rem;
   padding: 0.22px 0 1.11rem;
+}
+
+.content-section-row {
+  .content-row__actions {
+    margin-top: 0;
+
+    a:first-child {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
 }
