@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/verndale/front-end-components/compare/v1.12.2...v1.12.3) (2021-12-28)
+
+
+### Bug Fixes
+
+* C-FMT-1 - Fix video content, hide s-curve ([350378a](https://github.com/verndale/front-end-components/commit/350378af49e48ca9b4567c9df99a227c2adc2ddc))
+
 ## [1.12.2](https://github.com/verndale/front-end-components/compare/v1.12.1...v1.12.2) (2021-12-28)
 
 
