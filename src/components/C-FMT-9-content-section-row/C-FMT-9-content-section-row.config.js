@@ -3,21 +3,18 @@ module.exports = {
   status: 'ready',
   context: {
     heading: 'Lorem ipsum dolor sit amet',
+    subheading: 'Magna occaecat dolore',
     rtf: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation `Lorem `dolor.</p>',
+    buttons:
+      '<a href="#" class="btn btn--primary">Document Name</a>'
   },
   variants: [
-    {
-      name: 'Full',
-      context: {
-        heading: 'Lorem ipsum dolor sit amet',
-        rtf: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation `Lorem `dolor.</p>',
-      }
-    },
     {
       name: 'RTF Only',
       context: {
         rtf: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation `Lorem `dolor.</p>',
+        subheading: null
       }
-    },
-  ],
-};
+    }
+  ]
+}

@@ -3350,17 +3350,44 @@ body {
 /* line 3, src/components/C-FMT-9-content-section-row/_styles.scss */
 .content-section-row__heading {
   color: #06847b;
-  display: block;
-  font-size: 1.66rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 1.13;
-  margin-bottom: 0.56rem; }
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 3, src/components/C-FMT-9-content-section-row/_styles.scss */
+    .content-section-row__heading {
+      margin-bottom: 10px; } }
 
-/* line 11, src/components/C-FMT-9-content-section-row/_styles.scss */
+/* line 17, src/components/C-FMT-9-content-section-row/_styles.scss */
+.content-row__subheading {
+  font-size: 21px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  margin: 0 0 10px; }
+  @media (min-width: 80em) {
+    /* line 17, src/components/C-FMT-9-content-section-row/_styles.scss */
+    .content-row__subheading {
+      margin-bottom: 20px; } }
+
+/* line 30, src/components/C-FMT-9-content-section-row/_styles.scss */
 .content-section-row__rtf {
   display: block;
   font-size: 1rem;
   line-height: 1.77rem;
   padding: 0.22px 0 1.11rem; }
+
+/* line 38, src/components/C-FMT-9-content-section-row/_styles.scss */
+.content-section-row .content-row__actions {
+  margin-top: 0; }
+  /* line 41, src/components/C-FMT-9-content-section-row/_styles.scss */
+  .content-section-row .content-row__actions a:first-child {
+    margin-right: 15px;
+    margin-bottom: 15px; }
 
 /* line 3, src/components/C-GRD-2-related-content-row/_styles.scss */
 .related-articles {
