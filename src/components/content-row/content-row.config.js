@@ -8,12 +8,12 @@ const context = {
     src: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=790&h=444',
     description: 'Image Description'
   },
-  headline: 'Content Row With Small Image',
-  subhead: 'Optional Subheading',
+  headline: 'vitae tempus quam pellentesque',
+  subhead: 'rhoncus est pellentesque elit ullamcorper',
   description:
     '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
-  buttonLabel: 'Primary Call-to-Action',
-  linkLabel: 'Large Text Link'
+  buttonLabel: 'vitae tempus',
+  linkLabel: 'vitae tempus'
 }
 
 module.exports = {
@@ -28,8 +28,7 @@ module.exports = {
       context: {
         ...context,
         videoId: 'DSLgAsrcpGQ',
-        videoPlayer: 'youtube',
-        headline: 'Content Row With Youtube Video'
+        videoPlayer: 'youtube'
       }
     },
     {
@@ -37,8 +36,7 @@ module.exports = {
       context: {
         ...context,
         videoId: '430133542',
-        videoPlayer: 'vimeo',
-        headline: 'Content Row With Vimeo Video'
+        videoPlayer: 'vimeo'
       }
     },
     {
@@ -47,7 +45,6 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        headline: 'Content Row With Left Aligned Vimeo Video',
         mediaAlign: 'left'
       }
     },
@@ -57,7 +54,6 @@ module.exports = {
         ...context,
         videoId: '430133542',
         videoPlayer: 'vimeo',
-        headline: 'Content Row With Right Aligned Vimeo Video',
         mediaAlign: 'right'
       }
     },
@@ -67,8 +63,7 @@ module.exports = {
         ...context,
         singleColumn: true,
         videoId: 'DSLgAsrcpGQ',
-        videoPlayer: 'youtube',
-        headline: 'Content Row Single Column Youtube Video'
+        videoPlayer: 'youtube'
       }
     }
   ]
