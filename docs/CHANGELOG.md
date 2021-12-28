@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/verndale/front-end-components/compare/v1.12.1...v1.12.2) (2021-12-28)
+
+
+### Bug Fixes
+
+* ST-2337 - Fix content row lorem ipsum ([476d32b](https://github.com/verndale/front-end-components/commit/476d32be86841bcc56a37bcf23874e1ca6c0f5cd))
+
 ## [1.12.1](https://github.com/verndale/front-end-components/compare/v1.12.0...v1.12.1) (2021-12-23)
 
 
