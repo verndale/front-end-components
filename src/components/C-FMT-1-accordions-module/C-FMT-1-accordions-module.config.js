@@ -20,27 +20,52 @@ module.exports = {
       {
         title: 'Accordion Tab With Video',
         content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><video controls="controls"><source src="/images/video.mp4" type="video/mp4"></video>'
+          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>',
+        videoId: 'DSLgAsrcpGQ',
+        videoPlayer: 'youtube',
+        background: true,
+        image: {
+          srcset: {
+            767: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=767&h=430',
+            1279: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=1280&h=717'
+          },
+          src: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=790&h=444',
+          description: 'Image Description'
+        },
+        autoplay: false
       },
       {
         title: 'Accordion Tab With Buttons',
         content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><div class="buttons-row"><a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a></div>'
+          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>',
+        buttons:
+          '<a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a>'
       },
       {
         title: 'Accordion Tab With Image and Paragraph',
         content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><img src="https://verndale-image-tools.herokuapp.com/id/EFvP9cHipMQ?w=900&h=450" alt="Image Description"><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><div class="buttons-row"><a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a></div>'
+          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><img src="https://verndale-image-tools.herokuapp.com/id/EFvP9cHipMQ?w=900&h=450" alt="Image Description"><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>',
+        buttons:
+          '<a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a>'
       },
       {
-        title: 'Accordion Tab With Video and Paragraph',
+        title: 'Accordion Tab With Video, Paragraph and buttons',
         content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><video controls="controls"><source src="/images/video.mp4" type="video/mp4"></video><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><div class="buttons-row"><a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a></div>'
-      },
-      {
-        title: 'Accordion Tab With Video, Image and Paragraph',
-        content:
-          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><video controls="controls"><source src="/images/video.mp4" type="video/mp4"></video><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><img src="https://verndale-image-tools.herokuapp.com/id/EFvP9cHipMQ?w=900&h=450" alt="Image Description"><div class="buttons-row"><a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a></div>'
+          '<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p><img src="https://verndale-image-tools.herokuapp.com/id/EFvP9cHipMQ?w=900&h=450" alt="Image Description"><p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>',
+        buttons:
+          '<a href="#" class="btn btn--primary">Document Name</a><a href="#" class="btn btn--primary">Document Name</a>',
+        videoId: 'DSLgAsrcpGQ',
+        videoPlayer: 'youtube',
+        background: true,
+        image: {
+          srcset: {
+            767: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=767&h=430',
+            1279: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=1280&h=717'
+          },
+          src: 'https://verndale-image-tools.herokuapp.com/random/mountains?seed=1&w=790&h=444',
+          description: 'Image Description'
+        },
+        autoplay: false
       }
     ]
   }

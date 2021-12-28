@@ -23,6 +23,7 @@ module.exports = {
   // eslint-disable-next-line quote-props
   default: 'default',
   context,
+  hidden: true,
   variants: [
     {
       name: 'With Youtube Video',
