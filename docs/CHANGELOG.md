@@ -1,3 +1,10 @@
+## [1.12.6](https://github.com/verndale/front-end-components/compare/v1.12.5...v1.12.6) (2022-01-03)
+
+
+### Bug Fixes
+
+* ST-2555 - Add testimonials ([c0caa17](https://github.com/verndale/front-end-components/commit/c0caa17922c52029b08106f67a255fcc3dfb9151))
+
 ## [1.12.5](https://github.com/verndale/front-end-components/compare/v1.12.4...v1.12.5) (2022-01-03)
 
 
