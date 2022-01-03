@@ -1,3 +1,10 @@
+## [1.12.5](https://github.com/verndale/front-end-components/compare/v1.12.4...v1.12.5) (2022-01-03)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix picture tags, carousel, video ([a8807b4](https://github.com/verndale/front-end-components/commit/a8807b463fc65c4aae14b6cceb78fc1739431d87))
+
 ## [1.12.4](https://github.com/verndale/front-end-components/compare/v1.12.3...v1.12.4) (2021-12-28)
 
 
