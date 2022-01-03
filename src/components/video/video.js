@@ -17,12 +17,17 @@ class Module extends Component {
     this.youtubePlayer = 'youtube';
     this.localVideo = 'video';
     this.vimeoScript = 'https://player.vimeo.com/api/player.js';
+
+
   }
 
   addListeners() {
+    document.addEventListener('playVideo', this.getCurrentPlayer.bind(this), false);
+
     if (!this.el.dataset.videoAutoPlay !== true) {
       this.el.addEventListener('click', this.getCurrentPlayer.bind(this));
     }
+
 
     if (this.el.dataset.videoAutoPlay === 'true') {
       this.removeCover();
@@ -96,7 +101,7 @@ class Module extends Component {
     iframe.setAttribute('frameborder', 0);
     iframe.setAttribute(
       'src',
-      `http://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1${controls && '&controls=0&mute=1'}`
+      `http://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1&mute=1${controls ? '&controls=0' : ''}`
     );
     return iframe;
   }

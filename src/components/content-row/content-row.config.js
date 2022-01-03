@@ -13,7 +13,8 @@ const context = {
   description:
     '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>',
   buttonLabel: 'vitae tempus',
-  linkLabel: 'vitae tempus'
+  linkLabel: 'vitae tempus',
+  media: true
 }
 
 module.exports = {
@@ -64,6 +65,14 @@ module.exports = {
         singleColumn: true,
         videoId: 'DSLgAsrcpGQ',
         videoPlayer: 'youtube'
+      }
+    },
+    {
+      name: 'Full Width',
+      context: {
+        ...context,
+        fullWidth: true,
+        media: false
       }
     }
   ]

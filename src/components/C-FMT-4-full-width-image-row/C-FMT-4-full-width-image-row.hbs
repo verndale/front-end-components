@@ -1,11 +1,7 @@
-<section class="full-width-image">
-  <h2 class="full-width-image__header">{{heading}}</h2>
-
+<section class="full-width-image" aria-labelledby="fullWidthImageHeader">
+  <h2 class="full-width-image__header" id="fullWidthImageHeader">{{heading}}</h2>
   <figure class="full-width-image__figure">
-    <div class="full-width-image__wrapper">
-      <img alt="Alt Text" class="full-width-image__image" src="{{image}}"/>
-    </div>
-
+    {{>picture srcset=image.srcset src=image.src description=image.description className='full-width-image__image'}}
     <figcaption class="full-width-image__caption">{{caption}}</figcaption>
   </figure>
 </section>

@@ -17,8 +17,6 @@ class Module extends Component {
       $dropdown: this.el.querySelector('.tabbed-content__dropdown')
     };
 
-    console.log(identifier, this.dom)
-
     this.isVertical = this.el.dataset.isVertical === 'true';
   }
 

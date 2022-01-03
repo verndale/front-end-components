@@ -1,6 +1,4 @@
-@import
-"../theme",
-"variables";
+@import '../theme', 'variables';
 
 .full-width-image {
   margin-bottom: $accordion-mobile-margin-bottom;
@@ -29,16 +27,7 @@
   }
 }
 
-.full-width-image__wrapper {
-  @include mq($until: desktop) {
-    box-shadow: 0 0 15px rgba(#000, 0.1);
-  }
-}
-
 .full-width-image__figure {
-  margin: 0;
-  width: 100%;
-
   @include mq(desktop) {
     box-shadow: 0 0 15px rgba(#000, 0.1);
   }

@@ -1,27 +1,21 @@
-<figure
-  data-module="fullWidthVideo"
-  data-play-button-label="Play video"
-  data-video-id="{{videoId}}""
-  data-video-title="{{heading}}""
-  class="full-width-video"
+<section class="full-width-video"
+aria-labelledby="fullWidthVideoHeading"
+data-module="fullWidthVideo"
 >
-  <div class="full-width-video__wrapper">
-    <img
-      src="{{image}}""
-      alt="{{heading}}""
-      class="full-width-video__media"
-    />
+  <figure class="full-width-video__wrapper">
+    {{>@video videoPlayer=videoPlayer videoId=videoId background=background poster=poster}}
     <div class="full-width-video__overlay">
-      <h2 class="full-width-video__heading">
-        {{heading}}
-      </h2>
-    </div>
-  </div>
+        <button class="full-width-video__play-button">
+          {{>svg name="play-outline" ariaLabel="Play video"}}
+        </button>
+        <h2 class="full-width-video__heading" id="fullWidthVideoHeading">
+          {{heading}}
+        </h2>
+      </div>
+  </figure>
   {{#if caption}}
-  <figcaption>
     <p class="full-width-video__caption">
       {{caption}}
     </p>
-  </figcaption>
   {{/if}}
-</figure>
+</section>

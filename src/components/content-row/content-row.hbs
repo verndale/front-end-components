@@ -1,47 +1,58 @@
 {{#*inline "media"}}
-  <div class="content-row__media">
+  <figure class="content-row__media">
     {{#if videoPlayer}}
-    {{>@video videoPlayer=videoPlayer videoId=videoId background=image poster=poster}}
+    {{>@video videoPlayer=videoPlayer videoId=videoId background=image poster=poster autoplay="false"}}
     {{else}}
     {{#if image}}
       {{#json image}}{{>picture}}{{/json}}
     {{/if}}
     {{/if}}
-  </div>
+  </figure>
 {{/inline}}
 
 {{#*inline "actions"}}
 {{#ifCond buttonLabel "||" linkLabel}}
-  <div class="content-row__actions">
+  <aside class="content-row__actions">
     {{#if buttonLabel}}
     {{>@button type="link" label=buttonLabel className="primary"}}
     {{/if}}
     {{#if linkLabel}}
     {{>@link label=linkLabel className="primary" icon="right"}}
     {{/if}}
-  </div>
+  </aside>
 {{/ifCond}}
 {{/inline}}
 
-<div class="content-row content-row--media-align-{{mediaAlign}} {{#if singleColumn}}content-row--single-column{{/if}}">
-
+<section class="content-row {{#unless fullWidth}}content-row--media-align-{{mediaAlign}}{{/unless}}
+{{#if singleColumn}}content-row--single-column{{/if}}
+{{#if fullWidth}}content-row--full-width{{/if}}"
+aria-labelledby="contentRowHeadline"
+>
   {{#if singleColumn}}
   <div class="content-row__content">
-    <h2 class="content-row__headline">{{headline}}</h2>
-    {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    <header>
+      <h2 class="content-row__headline" id="contentRowHeadline">{{headline}}</h2>
+      {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    </header>
     {{#if description}}
     <div class="content-row__description rtf">
       {{{description}}}
     </div>
     {{/if}}
   </div>
-  {{> media}}
+  {{#if media}}
+  {{>media}}
+  {{/if}}
   {{>actions}}
   {{else}}
-  {{> media}}
+  {{#if media}}
+  {{>media}}
+  {{/if}}
   <div class="content-row__content">
-    <h2 class="content-row__headline">{{headline}}</h2>
-    {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    <header>
+      <h2 class="content-row__headline">{{headline}}</h2>
+      {{#if subhead}}<h3 class="content-row__subhead">{{subhead}}</h3>{{/if}}
+    </header>
     {{#if description}}
     <div class="content-row__description rtf">
       {{{description}}}
@@ -50,4 +61,4 @@
     {{>actions}}
   </div>
   {{/if}}
-</div>
+</section>

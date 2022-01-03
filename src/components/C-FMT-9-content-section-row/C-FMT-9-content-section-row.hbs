@@ -1,6 +1,8 @@
-<section class='content-section-row container'>
+<section class='content-section-row container'
+{{#if heading}} aria-labelledby="contentSectionRowHeading"{{/if}}
+>
   {{#if heading}}
-    <h2 class='content-section-row__heading'>
+    <h2 class='content-section-row__heading' id="contentSectionRowHeading">
       {{heading}}
     </h2>
   {{/if}}
