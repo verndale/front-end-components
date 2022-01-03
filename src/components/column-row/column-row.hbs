@@ -1,45 +1,33 @@
-<div class='column-row' data-module='column-row' data-breakpoint=767>
-  <h2 class='column-row__heading'>{{heading}}</h2>
-  <div class='column-row__copy rtf'>{{copy_intro}}</div>
-
-
+<section class='column-row' data-module='column-row' data-breakpoint=767 aria-labelledby="columnRowHeading">
+  <header>
+    <h2 class='column-row__heading' id="columnRowHeading">{{heading}}</h2>
+    <div class='column-row__copy rtf'>{{copy_intro}}</div>
+  </header>
   <div class='swiper-container'>
-
     <!-- additional required wrapper -->
     <div class='swiper-wrapper swiper-wrapper--{{type}}'>
-
       <!-- slides -->
-    
       {{#json items}}
         {{#each this}}
-        <div class='swiper-slide'>
-       
+        <aside class='swiper-slide'>
+
           {{>@content-card
-              image= 'https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
               heading= 'Default'
               copy= 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.'
               ctaLabel= 'Action'
               cta= '#'
               icon= 'chevron-right'
           }}
-       
-        </div>
+        </aside>
         {{/each}}
       {{/json}}
-      
-
- 
-
     </div>
-
     <!-- pagination -->
     <div class='column-row__pagination'>
       <div class='swiper-button-prev'></div>
       <div class='swiper-pagination'></div>
       <div class='swiper-button-next'></div>
     </div>
-
   </div>
-
   <div class='column-row__copy rtf'>{{copy_outro}}</div>
-</div>
+</section>

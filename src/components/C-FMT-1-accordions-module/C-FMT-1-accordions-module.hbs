@@ -1,5 +1,5 @@
 {{#*inline "accordion-tab"}}
-  <div class="accordion__item">
+  <article class="accordion__item">
     <button class="accordion__item-trigger" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}">
       <h3 class="accordion__item-title">{{title}}</h3>
       <span class="accordion__item-icon">
@@ -22,20 +22,20 @@
           </div>
         {{/if}}
         {{#if buttons}}
-        <div class="buttons-row">
+        <aside class="buttons-row">
           {{{buttons}}}
-        </div>
+        </aside>
         {{/if}}
       </div>
     </div>
-  </div>
+  </article>
 {{/inline}}
 
-<div class="accordion" data-module="accordion">
-  <div class="accordion__header">
-    {{#if title}}<h2 class="accordion__title">{{title}}</h2>{{/if}}
+<section class="accordion" data-module="accordion" aria-labelledby="accordionTitle">
+  <header class="accordion__header">
+    {{#if title}}<h2 class="accordion__title" id="accordionTitle">{{title}}</h2>{{/if}}
     {{#if description}}<p class="accordion__description">{{{description}}}</p>{{/if}}
-  </div>
+  </header>
 
   <div class="accordion__items">
     {{#json items}}
@@ -44,4 +44,4 @@
       {{/each}}
     {{/json}}
   </div>
-</div>
+</section>

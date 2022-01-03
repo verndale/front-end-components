@@ -114,3 +114,9 @@
     display: flex;
   }
 }
+
+.content-row--full-width {
+  .content-row__content {
+    width: 100%;
+  }
+}
