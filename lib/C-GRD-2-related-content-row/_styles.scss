@@ -19,6 +19,7 @@
   font-weight: 500;
   line-height: 1.2;
   margin: 0 0 40px;
+  color: $article-card-headline;
 
   @include mq(desktop) {
     font-size: 48px;

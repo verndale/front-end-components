@@ -1,3 +1,10 @@
+## [1.12.10](https://github.com/verndale/front-end-components/compare/v1.12.9...v1.12.10) (2022-01-04)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix styles and sass variables ([8efecc0](https://github.com/verndale/front-end-components/commit/8efecc0785a023f82944f63ce43c78ab76025470))
+
 ## [1.12.9](https://github.com/verndale/front-end-components/compare/v1.12.8...v1.12.9) (2022-01-04)
 
 
