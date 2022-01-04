@@ -6,6 +6,7 @@ class Module extends Component {
     this.dom = {
       next: this.el.querySelector('.content-carousel__button-next'),
       prev: this.el.querySelector('.content-carousel__button-prev'),
+      swiperContainer: this.el.querySelector('.swiper-container')
     };
 
     this.initSlider();
@@ -18,7 +19,7 @@ class Module extends Component {
 
   initSlider() {
     this.lastSlide = null;
-    this.swiper = new Swiper('.swiper-container', {
+    this.swiper = new Swiper(this.dom.swiperContainer, {
       slidesPerView: 1,
       spaceBetween: 3,
       speed: 400,
@@ -27,10 +28,9 @@ class Module extends Component {
       preloadImages: false,
       lazy: true,
       allowTouchMove: false,
-    
       breakpoints: {
         576: {
-          slidesPerView: 2,
+          slidesPerView: 2
         },
         1280: {
           slidesPerView: 3
@@ -45,8 +45,8 @@ class Module extends Component {
     this.swiper.on('slideChange', this.changeSlide.bind(this));
     this.swiper.on('reachEnd', this.reachEnd.bind(this));
     this.swiper.on('resize', this.resize.bind(this));
-    
-    
+
+
 
   }
 
