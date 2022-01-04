@@ -1,64 +1,65 @@
-<h2 class='people-card-grid__heading'>
-  {{heading}}
-</h2>
+<section class="people-card-grid" aria-labelledby="peopleCardGridHeading">
+  <h2 class='people-card-grid__heading' id="peopleCardGridHeading">
+    {{heading}}
+  </h2>
+  <div class='people-card-grid__people-content-grid' data-module='peopleCard'>
+    {{#json personCards}}
+      {{#each this}}
+      <!-- if modal exist add the data attributes and add the class people-card-grid__person--modal-->
+          <a
+            class='people-card-grid__person {{#unless link}} people-card-grid__person--modal {{/unless}}'
+            role='button'
+            tabindex='0'
+            {{#if link }}
+            href='{{link}}'
+            target='_blank'
+            {{else}}
+            href='#'
+            data-name='{{name}}'
+            data-position='{{position}}'
+            data-bio='{{bio}}'
+            data-micromodal-trigger='modal-people-card-grid'
+            {{/if}}
+          >
+            <!-- Display people-card-grid__image if image exists  -->
+            <div class='people-card-grid__image'>
+              <img src='{{image}}' alt='{{name}}' />
+            </div>
 
-<div class='people-card-grid__people-content-grid' data-module='peopleCard'>
-  {{#json personCards}}
-    {{#each this}}
-    <!-- if modal exist add the data attributes and add the class people-card-grid__person--modal-->
-        <a
-          class='people-card-grid__person {{#unless link}} people-card-grid__person--modal {{/unless}}'
-          role='button'
-          tabindex='0'
-          {{#if link }}
-          href='{{link}}'
-          target='_blank'
-          {{else}}
-          href='#'
-          data-name='{{name}}'
-          data-position='{{position}}'
-          data-bio='{{bio}}'
-          data-micromodal-trigger='modal-people-card-grid'
-          {{/if}}
-        >
-          <!-- Display people-card-grid__image if image exists  -->
-          <div class='people-card-grid__image'>
-            <img src='{{image}}' alt='{{name}}' />
-          </div>
+            <div class='people-card-grid__content'>
+              <h3 class='people-card-grid__name'>{{name}}</h3>
+              <div class='people-card-grid__position'>{{position}}</div>
+              <span class='people-card-grid__link'>{{linkLabel}}</span>
+            </div>
+          </a>
+      {{/each}}
+    {{/json}}
+  </div>
 
-          <div class='people-card-grid__content'>
-            <h3 class='people-card-grid__name'>{{name}}</h3>
-            <div class='people-card-grid__position'>{{position}}</div>
-            <span class='people-card-grid__link'>{{linkLabel}}</span>
-          </div>
-        </a>
-    {{/each}}
-  {{/json}}
-</div>
-
-<!-- Add modal if exist -->
-<div class='modal micromodal-slide' id='modal-people-card-grid' aria-hidden='true'>
-  <div class='modal-people-grid__overlay' tabindex='-1' data-micromodal-close>
-    <div
-      class='modal-people-grid__container'
-      role='dialog'
-      aria-modal='true'
-      aria-labelledby='modal-people-card-grid-name'
-    >
-      <header class='modal-people-grid__header'>
-        <h2 class='modal-people-grid__title' id='modal-people-card-grid-name'>
-          Micromodal
-        </h2>
-        <div class="modal-people-grid__position" id='modal-people-card-grid-position'></div>
-        <button
-          class='modal-people-grid__close'
-          aria-label='Close modal'
-          data-micromodal-close
-        ></button>
-      </header>
-      <main class='modal-people-grid__bio' id='modal-people-card-grid-bio'>
-      </main>
-      <button type="button" class="btn btn--primary modal-people-grid__show-more">Show More</button>
+  <!-- Add modal if exist -->
+  <div class='modal micromodal-slide' id='modal-people-card-grid' aria-hidden='true'>
+    <div class='modal-people-grid__overlay' tabindex='-1' data-micromodal-close>
+      <div
+        class='modal-people-grid__container'
+        role='dialog'
+        aria-modal='true'
+        aria-labelledby='modal-people-card-grid-name'
+      >
+        <header class='modal-people-grid__header'>
+          <h2 class='modal-people-grid__title' id='modal-people-card-grid-name'>
+            Micromodal
+          </h2>
+          <div class="modal-people-grid__position" id='modal-people-card-grid-position'></div>
+          <button
+            class='modal-people-grid__close'
+            aria-label='Close modal'
+            data-micromodal-close
+          ></button>
+        </header>
+        <main class='modal-people-grid__bio' id='modal-people-card-grid-bio'>
+        </main>
+        <button type="button" class="btn btn--primary modal-people-grid__show-more">Show More</button>
+      </div>
     </div>
   </div>
-</div>
+</section>

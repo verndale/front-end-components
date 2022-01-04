@@ -8,6 +8,12 @@ import SearchResults from './P-LP-1-search-results/SearchResults'
 import TabbedContent from './C-FMT-10-tabbed-content/tabbed-content'
 import FlexibleImageCarousel from './C-CSL-2-3-column-image-gallery/flexibleImageCarousel'
 import Testimonials from './C-CSL-5-testimonials-carousel/testimonials'
+import FullWidthVideoRow from './C-FMT-11-full-width-video-row/full-width-video-row'
+import RelatedArticles from './C-GRD-2-related-content-row/related-articles'
+import AnimatedCarouselCard from './cards/animated-carousel-card/AnimatedCarouselCard'
+import ColumnRow from './column-row/column-row'
+import ContentCarousel from './content-carousel/content-carousel'
+import Pager from './N-DYN-2-pagination/Pager'
 
 export {
   Accordion,
@@ -19,5 +25,11 @@ export {
   SearchResults,
   TabbedContent,
   FlexibleImageCarousel,
-  Testimonials
+  Testimonials,
+  FullWidthVideoRow,
+  RelatedArticles,
+  AnimatedCarouselCard,
+  ColumnRow,
+  ContentCarousel,
+  Pager
 }

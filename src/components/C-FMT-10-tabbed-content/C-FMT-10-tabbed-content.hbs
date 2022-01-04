@@ -1,7 +1,7 @@
-<div class="tabbed-content" data-module="tabbed-content" data-identifier="{{identifier}}">
+<section class="tabbed-content" data-module="tabbed-content" data-identifier="{{identifier}}" aria-labelledby="tabbedContentHeading">
   <div class="tabbed-content__masthead">
     <div class="container tabbed-content__masthead-inner">
-      <h2 class="tabbed-content__heading">{{heading}}</h2>
+      <h2 class="tabbed-content__heading" id="tabbedContentHeading">{{heading}}</h2>
       <div class="tabbed-content__tabs-wrapper">
         <div class="tabbed-content__dropdown-wrapper">
           <select class="tabbed-content__dropdown" aria-label="{{tabDropdownLabel}}">
@@ -45,4 +45,4 @@
     </div>
     {{/each}}{{/json}}
   </div>
-</div>
+</section>

@@ -7,7 +7,6 @@
         {{>svg name="plus" viewBox="0 0 14 14" className="accordion__item-icon-plus"}}
     </span>
     </button>
-
     <div role="region" class="accordion__item-panel">
       <div class="accordion__item-content">
         {{#if heading}}
@@ -36,7 +35,6 @@
     {{#if title}}<h2 class="accordion__title" id="accordionTitle">{{title}}</h2>{{/if}}
     {{#if description}}<p class="accordion__description">{{{description}}}</p>{{/if}}
   </header>
-
   <div class="accordion__items">
     {{#json items}}
       {{#each this}}
