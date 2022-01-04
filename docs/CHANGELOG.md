@@ -1,3 +1,10 @@
+## [1.12.7](https://github.com/verndale/front-end-components/compare/v1.12.6...v1.12.7) (2022-01-04)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix js and section elements ([0d37f1d](https://github.com/verndale/front-end-components/commit/0d37f1d15dcc5cd1ad02945f285ac493d282c5de))
+
 ## [1.12.6](https://github.com/verndale/front-end-components/compare/v1.12.5...v1.12.6) (2022-01-03)
 
 
