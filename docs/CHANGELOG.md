@@ -1,3 +1,10 @@
+## [1.12.9](https://github.com/verndale/front-end-components/compare/v1.12.8...v1.12.9) (2022-01-04)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix color ([9befcdd](https://github.com/verndale/front-end-components/commit/9befcdd059c79d8bf932abd1b66afe69608a5390))
+
 ## [1.12.8](https://github.com/verndale/front-end-components/compare/v1.12.7...v1.12.8) (2022-01-04)
 
 
