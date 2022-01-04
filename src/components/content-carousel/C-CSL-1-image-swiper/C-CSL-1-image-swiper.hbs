@@ -1,4 +1,4 @@
-<div class="content-carousel" data-module="contentCarousel">
+<section class="content-carousel" data-module="contentCarousel">
     <div class="content-carousel__header">
         <div class="container">
             {{#if definition}}
@@ -15,7 +15,7 @@
                         {{#json slides}}
                         {{#each this}}
                         <div class="swiper-slide">
-                            {{>@large-image-card}}    
+                            {{>@large-image-card}}
                         </div>
                         {{/each}}
                         {{/json}}
@@ -38,4 +38,4 @@
             </span>
         </button>
     </div>
-</div>
+</section>

@@ -1,7 +1,7 @@
-<div class="cta-row{{#if backgroundImage}} cta-row--with-background{{/if}}{{#if image}} cta-row--with-image{{/if}} container">
+<section class="cta-row{{#if backgroundImage}} cta-row--with-background{{/if}}{{#if image}} cta-row--with-image{{/if}} container" aria-labelledby="ctaRowTitle">
   <div class="cta-row__inner">
     <div class="cta-row__content">
-      <h2 class="cta-row__title">{{title}}</h2>
+      <h2 class="cta-row__title" id="ctaRowTitle">{{title}}</h2>
       {{#if description}}
       <div class="cta-row__description rtf">
         {{{description}}}
@@ -20,4 +20,4 @@
     {{/json}}
     {{/if}}
   </div>
-</div>
+</section>
