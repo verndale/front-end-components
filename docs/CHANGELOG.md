@@ -1,3 +1,10 @@
+## [1.12.8](https://github.com/verndale/front-end-components/compare/v1.12.7...v1.12.8) (2022-01-04)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix content carousel js ([6375cd6](https://github.com/verndale/front-end-components/commit/6375cd6176d9d8aee810e8e099790c9796710c1a))
+
 ## [1.12.7](https://github.com/verndale/front-end-components/compare/v1.12.6...v1.12.7) (2022-01-04)
 
 
