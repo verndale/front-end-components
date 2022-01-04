@@ -1,7 +1,9 @@
-<div class="carousel-content-card {{#unless image}} carousel-content-card--no-image {{/unless}}">
+<article class="carousel-content-card {{#unless image}} carousel-content-card--no-image {{/unless}}">
   <!-- Display this div if image exists-->
   <div class="carousel-content-card__image">
-    <img src="{{image}}" alt="{{heading}}" />
+    {{#json image}}
+      {{>picture}}
+    {{/json}}
   </div>
   <div class="carousel-content-card__wrapper">
     <h6 class="carousel-content-card__heading">{{heading}}</h6>
@@ -18,4 +20,4 @@
     </span>
   </div>
   <a href={{cta}} class="carousel-content-card__cta"></a>
-</div>
+</article>

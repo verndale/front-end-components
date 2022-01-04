@@ -16,6 +16,7 @@
   font-weight: 700;
   line-height: 1.13;
   margin: 0 0 10px;
+  color: $full-width-image-header-font-color;
 
   @include mq(desktop) {
     font-size: 40px;
