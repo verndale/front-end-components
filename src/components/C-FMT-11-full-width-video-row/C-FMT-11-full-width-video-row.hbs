@@ -19,3 +19,25 @@ data-module="fullWidthVideo"
     </p>
   {{/if}}
 </section>
+
+<section class="full-width-video"
+aria-labelledby="fullWidthVideoHeading"
+data-module="fullWidthVideo"
+>
+  <figure class="full-width-video__wrapper">
+    {{>@video videoPlayer=videoPlayer videoId=videoId background=background poster=poster}}
+    <div class="full-width-video__overlay">
+        <button class="full-width-video__play-button">
+          {{>svg name="play-outline" ariaLabel="Play video"}}
+        </button>
+        <h2 class="full-width-video__heading" id="fullWidthVideoHeading">
+          {{heading}}
+        </h2>
+      </div>
+  </figure>
+  {{#if caption}}
+    <p class="full-width-video__caption">
+      {{caption}}
+    </p>
+  {{/if}}
+</section>

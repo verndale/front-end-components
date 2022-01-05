@@ -22,12 +22,10 @@ class Module extends Component {
   }
 
   addListeners() {
-    document.addEventListener('playVideo', this.getCurrentPlayer.bind(this), false);
 
     if (!this.el.dataset.videoAutoPlay !== true) {
       this.el.addEventListener('click', this.getCurrentPlayer.bind(this));
     }
-
 
     if (this.el.dataset.videoAutoPlay === 'true') {
       this.removeCover();
