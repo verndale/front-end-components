@@ -99,7 +99,7 @@ class Module extends Component {
     iframe.setAttribute('frameborder', 0);
     iframe.setAttribute(
       'src',
-      `http://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1&mute=1${controls ? '&controls=0' : ''}`
+      `https://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1&mute=1${controls ? '&controls=0' : ''}`
     );
     return iframe;
   }
