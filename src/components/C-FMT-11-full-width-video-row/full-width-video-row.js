@@ -7,8 +7,6 @@ class FullWidthVideo extends Component {
       $overlay: this.el.querySelector('.full-width-video__overlay'),
       $wrapper: this.el.querySelector('.full-width-video__wrapper')
     }
-
-    console.log(this.el)
   }
 
   addListeners() {
