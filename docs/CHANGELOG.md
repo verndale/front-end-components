@@ -1,3 +1,10 @@
+## [1.12.11](https://github.com/verndale/front-end-components/compare/v1.12.10...v1.12.11) (2022-01-05)
+
+
+### Bug Fixes
+
+* ST-2555 - Fix full width video ([f5e835d](https://github.com/verndale/front-end-components/commit/f5e835de34ea137ed4a50770c3375c5dc5204bb1))
+
 ## [1.12.10](https://github.com/verndale/front-end-components/compare/v1.12.9...v1.12.10) (2022-01-04)
 
 
