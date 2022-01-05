@@ -1,3 +1,10 @@
+## [1.12.12](https://github.com/verndale/front-end-components/compare/v1.12.11...v1.12.12) (2022-01-05)
+
+
+### Bug Fixes
+
+* Fix https youtube videos ([a73f69c](https://github.com/verndale/front-end-components/commit/a73f69c1f9a3396cfcb4f1790826d5f049539619))
+
 ## [1.12.11](https://github.com/verndale/front-end-components/compare/v1.12.10...v1.12.11) (2022-01-05)
 
 
