@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/verndale/front-end-components/compare/v1.13.0...v1.13.1) (2022-01-21)
+
+
+### Bug Fixes
+
+* masthead experience editor ([f2232fc](https://github.com/verndale/front-end-components/commit/f2232fc1f1cc98ae2f6da8c3fe34584437f9a9b8))
+
 # [1.13.0](https://github.com/verndale/front-end-components/compare/v1.12.12...v1.13.0) (2022-01-21)
 
 
