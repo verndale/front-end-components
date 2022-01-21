@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/verndale/front-end-components/compare/v1.12.12...v1.13.0) (2022-01-21)
+
+
+### Features
+
+* fix masthead ([13d70dd](https://github.com/verndale/front-end-components/commit/13d70ddbbdc3498934d157e73b0ff1b762b25a61))
+
 ## [1.12.12](https://github.com/verndale/front-end-components/compare/v1.12.11...v1.12.12) (2022-01-05)
 
 
