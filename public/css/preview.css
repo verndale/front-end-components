@@ -1769,18 +1769,17 @@ body {
   /* line 150, src/components/BNR/_styles.scss */
   .masthead--background-media .masthead__media picture,
   .masthead--background-media .masthead__media img,
-  .masthead--background-media .masthead__media div,
   .masthead--background-media .masthead__media .video {
     height: 100%;
     padding: 0;
     width: 100%; }
 
-/* line 160, src/components/BNR/_styles.scss */
+/* line 159, src/components/BNR/_styles.scss */
 .masthead--left-media .masthead__media,
 .masthead--right-media .masthead__media {
   margin: 0 -20px; }
   @media (min-width: 48em) {
-    /* line 160, src/components/BNR/_styles.scss */
+    /* line 159, src/components/BNR/_styles.scss */
     .masthead--left-media .masthead__media,
     .masthead--right-media .masthead__media {
       align-items: center;
@@ -1788,7 +1787,7 @@ body {
       flex-shrink: 0;
       margin: 0;
       width: calc(50% - 40px); } }
-  /* line 172, src/components/BNR/_styles.scss */
+  /* line 171, src/components/BNR/_styles.scss */
   .masthead--left-media .masthead__media picture,
   .masthead--left-media .masthead__media img,
   .masthead--right-media .masthead__media picture,
@@ -1798,16 +1797,21 @@ body {
     width: 100%; }
 
 @media (min-width: 48em) {
-  /* line 180, src/components/BNR/_styles.scss */
+  /* line 179, src/components/BNR/_styles.scss */
   .masthead--left-media .masthead__media {
     margin-right: 40px; } }
 
 @media (min-width: 48em) {
-  /* line 186, src/components/BNR/_styles.scss */
+  /* line 185, src/components/BNR/_styles.scss */
   .masthead--right-media .masthead__media {
     margin-left: 40px; } }
 
-/* line 193, src/components/BNR/_styles.scss */
+/* line 191, src/components/BNR/_styles.scss */
+.masthead__media div {
+  width: 100%;
+  height: 100%; }
+
+/* line 197, src/components/BNR/_styles.scss */
 .masthead--simple {
   padding: 30px 0; }
 
