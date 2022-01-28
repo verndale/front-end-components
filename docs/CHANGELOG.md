@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/verndale/front-end-components/compare/v1.13.1...v1.13.2) (2022-01-28)
+
+
+### Bug Fixes
+
+* conntent card width ([844e012](https://github.com/verndale/front-end-components/commit/844e0127869d0940e0ed4b225ff232658a132457))
+
 ## [1.13.1](https://github.com/verndale/front-end-components/compare/v1.13.0...v1.13.1) (2022-01-21)
 
 
