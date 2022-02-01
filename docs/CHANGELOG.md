@@ -1,3 +1,10 @@
+## [1.13.3](https://github.com/verndale/front-end-components/compare/v1.13.2...v1.13.3) (2022-02-01)
+
+
+### Bug Fixes
+
+* breadcrumbs ADA markup ([280f93f](https://github.com/verndale/front-end-components/commit/280f93fc386b25cbfa9c622cd1e7684898b2241b))
+
 ## [1.13.2](https://github.com/verndale/front-end-components/compare/v1.13.1...v1.13.2) (2022-01-28)
 
 
