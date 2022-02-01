@@ -1,18 +1,19 @@
 {{#*inline "crumb"}}
-  <a class="breadcrumb__item" href="#">{{title}}</a>
+  <a href="#">{{title}}</a>
 {{/inline}}
 
-<nav aria-label="Breadcrumbs" class="breadcrumbs">
-  <p>
+<nav aria-label="Breadcrumbs" class="breadcrumbs" style="--separator: '//';">
+  <ol>
     {{#json crumbs}}
       {{#each this}}
+         <li>
         {{#unless @last}}
           {{> crumb}}
-          <span aria-hidden="true" class="breadcrumb__separator"> {{../../separator}} </span>
         {{else}}
-          <a class="breadcrumb__item" aria-current="page" >{{title}}</a>
+          <a aria-current="page" >{{title}}</a>
         {{/unless}}
+        </li>
       {{/each}}
     {{/json}}
-  </p>
+  </ol>
 </nav>
