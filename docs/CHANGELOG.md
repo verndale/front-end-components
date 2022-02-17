@@ -1,3 +1,11 @@
+## [1.13.4](https://github.com/verndale/front-end-components/compare/v1.13.3...v1.13.4) (2022-02-17)
+
+
+### Bug Fixes
+
+* testimonials carousel slider wrapper fix ([0a17ec6](https://github.com/verndale/front-end-components/commit/0a17ec66a9454ceba571182df8e9d683affb8004))
+* testimonials carousel wrapper ([1629f0e](https://github.com/verndale/front-end-components/commit/1629f0e10e28c02b46d0b497edcda04adfe472f3))
+
 ## [1.13.3](https://github.com/verndale/front-end-components/compare/v1.13.2...v1.13.3) (2022-02-01)
 
 
