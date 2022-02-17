@@ -12,6 +12,12 @@
     display: flex;
     justify-content: center;
   }
+
+  .swiper-wrapper {
+    @include mq(desktop) {
+      height: 600px;
+    }
+  }
 }
 
 .testimonials__heading {
