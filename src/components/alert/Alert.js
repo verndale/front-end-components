@@ -29,11 +29,16 @@ class Alert extends Component {
 
     this.id = this.el.dataset.id
     this.cookieName = this.el.dataset.cookieName
+    this.canDismiss = this.el.dataset.canDismiss
+    this.expanded = this.el.dataset.expanded
     this.shouldDisplayAlert()
     if (this.dom.content !== null) {
       this.cookieNameToggle = `${this.id}_toggle`
       this.shouldToggle()
     }
+
+    this.setDismissibleButton()
+    this.setExpandedAlert()
   }
 
   shouldToggle() {
@@ -48,6 +53,15 @@ class Alert extends Component {
     this.handleToggle()
   }
 
+  addListeners() {
+    if (this.dom.content) {
+      this.dom.toggle.addEventListener('click', this.handleToggle.bind(this))
+    }
+    if (this.dom.close) {
+      this.dom.close.addEventListener('click', this.handleClose.bind(this))
+    }
+  }
+
   shouldDisplayAlert() {
     this.alerts = Cookies.get(this.cookieName)
 
@@ -60,43 +74,58 @@ class Alert extends Component {
     } else {
       this.alerts = []
     }
-
     open({
       element: this.el,
       onComplete: () => (this.el.style.height = 'auto')
     })
   }
 
-  addListeners() {
-    if (this.dom.content) {
-      this.dom.toggle.addEventListener('click', this.handleToggle.bind(this))
+  setDismissibleButton() {
+    if (this.canDismiss !== 'true') {
+      this.dom.close.style.display = 'none'
+      return
     }
-    if (this.dom.close) {
-      this.dom.close.addEventListener('click', this.handleClose.bind(this))
+    this.dom.close.style.display = 'block'
+  }
+
+  setExpandedAlert() {
+    if (this.expanded === 'true') {
+      this.handleToggle()
+      open({
+        element: this.el,
+        onComplete: () => (this.dom.content.style.display = 'block')
+      })
     }
   }
 
   handleToggle() {
     if (this.dom.toggle.getAttribute('aria-expanded') === 'true') {
       this.dom.toggle.setAttribute('aria-expanded', false)
-      close({
-        element: this.dom.content,
-        onComplete: () => {
-          this.dom.content.style.display = 'none'
-        }
-      })
+      this.collapseAlert()
     } else {
       this.dom.toggle.setAttribute('aria-expanded', true)
-
-      this.dom.content.style.display = 'block'
-      open({
-        element: this.dom.content,
-        onComplete: () => {
-          this.dom.content.focus()
-          this.dom.content.style.height = 'auto'
-        }
-      })
+      this.expandAlert()
     }
+  }
+
+  expandAlert() {
+    this.dom.content.style.display = 'block'
+    open({
+      element: this.dom.content,
+      onComplete: () => {
+        this.dom.content.focus()
+        this.dom.content.style.height = 'auto'
+      }
+    })
+  }
+
+  collapseAlert() {
+    close({
+      element: this.dom.content,
+      onComplete: () => {
+        this.dom.content.style.display = 'none'
+      }
+    })
   }
 
   handleClose() {
