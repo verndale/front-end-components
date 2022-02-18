@@ -14,8 +14,11 @@
   }
 
   .swiper-wrapper {
-    @include mq(desktop) {
-      height: 410px;
+    .scEmptyPlaceholder {
+      @include mq(desktop) {
+        height: 410px;
+        width: 100%;
+      }
     }
   }
 }

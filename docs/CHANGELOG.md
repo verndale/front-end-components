@@ -1,3 +1,10 @@
+## [1.13.5](https://github.com/verndale/front-end-components/compare/v1.13.4...v1.13.5) (2022-02-18)
+
+
+### Bug Fixes
+
+* scEmptyPlaceholder ([e4f2980](https://github.com/verndale/front-end-components/commit/e4f29806a9389beac678d153a187760bcf59583b))
+
 ## [1.13.4](https://github.com/verndale/front-end-components/compare/v1.13.3...v1.13.4) (2022-02-17)
 
 
