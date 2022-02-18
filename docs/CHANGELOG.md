@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/verndale/front-end-components/compare/v1.13.5...v1.14.0) (2022-02-18)
+
+
+### Features
+
+* create alerts endpoint ([62a72f5](https://github.com/verndale/front-end-components/commit/62a72f561e4b465cac21ffbf136cfd92df5548c7))
+
 ## [1.13.5](https://github.com/verndale/front-end-components/compare/v1.13.4...v1.13.5) (2022-02-18)
 
 
