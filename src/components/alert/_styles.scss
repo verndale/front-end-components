@@ -7,14 +7,14 @@
   & + .alert {
     margin-top: 10px;
   }
-}
 
-.alert--critical {
-  background-color: $alert-critical;
-}
+  &[data-type='critical'] {
+    background-color: $alert-critical;
+  }
 
-.alert--warning {
-  background-color: $alert-warning;
+  &[data-type='warning'] {
+    background-color: $alert-warning;
+  }
 }
 
 .alert__header {
@@ -93,4 +93,9 @@
   padding: 4px 0 20px;
   transition: height 0.3s;
   will-change: height;
+}
+
+
+.alerts {
+  margin: 10px 0;
 }

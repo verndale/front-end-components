@@ -1,6 +1,7 @@
 import Accordion from './C-FMT-1-accordions-module/Accordion'
 import PeopleCard from './C-GRD-6-people-card-grid/PeopleCard'
 import Alert from './alert/Alert'
+import Alerts from './alert/Alerts'
 import Video from './video/video'
 import AnimatedCardCarousel from './C-CSL-6-animated-card-carousel/AnimatedCardCarousel'
 import CardCarousel from './cards/animated-carousel-card/AnimatedCarouselCard'
@@ -19,6 +20,7 @@ export {
   Accordion,
   PeopleCard,
   Alert,
+  Alerts,
   Video,
   AnimatedCardCarousel,
   CardCarousel,

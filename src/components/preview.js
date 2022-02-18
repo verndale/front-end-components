@@ -14,6 +14,10 @@ const components = [
     loader: () => import('./C-CSL-5-testimonials-carousel/testimonials')
   },
   {
+    name: 'alerts',
+    loader: () => import('./alert/Alerts')
+  },
+  {
     name: 'alert',
     loader: () => import('./alert/Alert')
   },
@@ -23,7 +27,8 @@ const components = [
   },
   {
     name: 'animatedCardCarousel',
-    loader: () => import('./C-CSL-6-animated-card-carousel/AnimatedCardCarousel')
+    loader: () =>
+      import('./C-CSL-6-animated-card-carousel/AnimatedCardCarousel')
   },
   {
     name: 'cardCarousel',
@@ -41,11 +46,11 @@ const components = [
     name: 'search-results',
     loader: () => import('./P-LP-1-search-results/SearchResults'),
     render(Component, nodeList) {
-      const React = require('react');
-      const { render } = require('react-dom');
-      nodeList.forEach(node =>
+      const React = require('react')
+      const { render } = require('react-dom')
+      nodeList.forEach((node) =>
         render(React.createElement(Component, node.dataset), node)
-      );
+      )
     }
   },
   {
@@ -58,7 +63,8 @@ const components = [
   },
   {
     name: 'flexibleImageCarousel',
-    loader: () => import('./C-CSL-2-3-column-image-gallery/flexibleImageCarousel')
+    loader: () =>
+      import('./C-CSL-2-3-column-image-gallery/flexibleImageCarousel')
   }
 ]
 
