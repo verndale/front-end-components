@@ -1,7 +1,7 @@
 module.exports = {
   title: 'C-FMT-11: Full Width Video Row',
   status: 'ready',
-  default: 'Full',
+  'default': 'Full',
   context: {
     heading: ' Take the virtual tour',
     videoId: 'DSLgAsrcpGQ',
