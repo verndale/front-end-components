@@ -1,0 +1,3 @@
+$primary-color: map-get($theme-colors, 'primary') !default;
+$white: var(--white);
+$secondary-color: map-get($theme-colors, 'primary-dark') !default;

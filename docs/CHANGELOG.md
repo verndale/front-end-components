@@ -1,3 +1,12 @@
+# [1.15.0](https://github.com/verndale/front-end-components/compare/v1.14.0...v1.15.0) (2022-03-08)
+
+
+### Features
+
+* header ([0ee75f8](https://github.com/verndale/front-end-components/commit/0ee75f8d55fb2a20ca2782da97f18aa2610fa6d9))
+* Mega menu ([ed2d1bf](https://github.com/verndale/front-end-components/commit/ed2d1bfc3bb5583c4a65ff6848f46e75bf85a26c))
+* mega menu and fat footer ([884b6db](https://github.com/verndale/front-end-components/commit/884b6dbeae3f5bc6d7471ae1c1a7e8aacd82cc8a))
+
 # [1.14.0](https://github.com/verndale/front-end-components/compare/v1.13.5...v1.14.0) (2022-02-18)
 
 
