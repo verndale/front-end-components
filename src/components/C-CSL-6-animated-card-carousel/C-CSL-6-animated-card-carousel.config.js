@@ -1,7 +1,7 @@
 module.exports = {
   title: 'C-CSL-6: Animated Card Carousel',
   status: 'ready',
-  default: 'notice',
+  'default': 'notice',
   context: {
     header: 'Animated Card Carousel',
     goToLastLabel: 'View present day',
