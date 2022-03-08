@@ -15,6 +15,7 @@ import AnimatedCarouselCard from './cards/animated-carousel-card/AnimatedCarouse
 import ColumnRow from './column-row/column-row'
 import ContentCarousel from './content-carousel/content-carousel'
 import Pager from './N-DYN-2-pagination/Pager'
+import Header from './header/header'
 
 export {
   Accordion,
@@ -33,5 +34,6 @@ export {
   AnimatedCarouselCard,
   ColumnRow,
   ContentCarousel,
-  Pager
+  Pager,
+  Header
 }

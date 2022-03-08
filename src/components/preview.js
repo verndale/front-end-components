@@ -65,9 +65,26 @@ const components = [
     name: 'flexibleImageCarousel',
     loader: () =>
       import('./C-CSL-2-3-column-image-gallery/flexibleImageCarousel')
+  },
+  {
+    name: 'header',
+    loader: () => import('./header/header')
   }
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
   create(components)
+  setViewportHeight()
 })
+
+export function setViewportHeight() {
+  function handleResize() {
+    document.documentElement.style.setProperty(
+      '--vh',
+      `${window.innerHeight}px`
+    )
+  }
+
+  handleResize()
+  window.addEventListener('resize', handleResize)
+}

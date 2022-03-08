@@ -1,0 +1,7 @@
+$primary-color: map-get($theme-colors, 'primary') !default;
+$primary-dark: map-get($theme-colors, 'primary-dark') !default;
+$header-block-size: 60px;
+$transition: all 350ms ease-in-out;
+$font-nav-sm: 500 1rem/1.38 'DM Sans', system-ui;
+$font-copy-small: normal 0.875rem/1.57 'DM Sans', system-ui;
+$gray: #c2c2c2;
