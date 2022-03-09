@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/verndale/front-end-components/compare/v1.15.0...v1.15.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* background header ([f495cd1](https://github.com/verndale/front-end-components/commit/f495cd1e662359bc271fa09f75e59eec325e1116))
+
 # [1.15.0](https://github.com/verndale/front-end-components/compare/v1.14.0...v1.15.0) (2022-03-08)
 
 
