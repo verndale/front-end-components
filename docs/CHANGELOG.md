@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/verndale/front-end-components/compare/v1.15.1...v1.16.0) (2022-03-16)
+
+
+### Features
+
+* add video background option and fix scEmptyPlaceholder ([cf999e4](https://github.com/verndale/front-end-components/commit/cf999e4785771557c574d40086c64c78468bac89))
+
 ## [1.15.1](https://github.com/verndale/front-end-components/compare/v1.15.0...v1.15.1) (2022-03-09)
 
 
