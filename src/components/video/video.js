@@ -1,4 +1,4 @@
-import { Component } from '@verndale/core';
+import { Component } from '@verndale/core'
 
 class Module extends Component {
   setupDefaults() {
@@ -6,185 +6,202 @@ class Module extends Component {
       poster: this.el.querySelector('.video__poster'),
       backgroundVideo: this.el.querySelector('.video__background'),
       icon: this.el.querySelector('svg'),
-      videoPoster: this.el.parentNode.querySelector('picture:not(.video__poster)'),
+      videoPoster: this.el.parentNode.querySelector(
+        'picture:not(.video__poster)'
+      ),
       video: this.el.querySelector('video')
-    };
+    }
 
-    this.initialized = false;
-    this.videoId = this.el.dataset.videoId;
-    this.videoPlayer = this.el.dataset.videoPlayer;
-    this.vimeoPlayer = 'vimeo';
-    this.youtubePlayer = 'youtube';
-    this.localVideo = 'video';
-    this.vimeoScript = 'https://player.vimeo.com/api/player.js';
-
-
+    this.initialized = false
+    this.videoId = this.el.dataset.videoId
+    this.videoPlayer = this.el.dataset.videoPlayer
+    this.videoBackgroundImage = this.el.dataset.videoBackgroundImage
+    this.vimeoPlayer = 'vimeo'
+    this.youtubePlayer = 'youtube'
+    this.localVideo = 'video'
+    this.vimeoScript = 'https://player.vimeo.com/api/player.js'
   }
 
   addListeners() {
+    if (this.videoBackgroundImage === 'false') {
+      this.removeCover()
+      this.getCurrentPlayer(false)
+      return
+    }
 
     if (!this.el.dataset.videoAutoPlay !== true) {
-      this.el.addEventListener('click', this.getCurrentPlayer.bind(this));
+      this.el.addEventListener('click', this.getCurrentPlayer.bind(this, true))
     }
 
     if (this.el.dataset.videoAutoPlay === 'true') {
-      this.removeCover();
+      this.removeCover()
       this.el.classList.add('full-background-video')
       if (this.vimeoPlayer === this.el.dataset.videoPlayer) {
-        return this.dom.backgroundVideo.appendChild(this.getVimeoIframe());
-
+        return this.dom.backgroundVideo.appendChild(this.getVimeoIframe(true))
       }
-      if (this.youtubePlayer === this.el.dataset.videoPlayer){
-        return this.dom.backgroundVideo.appendChild(this.getYoutubeIframe(true));
+      if (this.youtubePlayer === this.el.dataset.videoPlayer) {
+        return this.dom.backgroundVideo.appendChild(
+          this.getYoutubeIframe(true, 1)
+        )
       }
-      if (this.localVideo === this.el.dataset.videoPlayer){
-        this.dom.backgroundVideo.appendChild(this.getLocalVideo());
+      if (this.localVideo === this.el.dataset.videoPlayer) {
+        this.dom.backgroundVideo.appendChild(this.getLocalVideo(true))
         return
       }
-      return;
+      return
     }
   }
 
-  getCurrentPlayer() {
-    if (this.initialized) return;
+  getCurrentPlayer(autoplay) {
+    if (this.initialized) return
     if (this.vimeoPlayer === this.el.dataset.videoPlayer) {
-      return this.handleInitVideos(this.el.dataset.videoPlayer, this.getVimeoIframe());
+      return this.handleInitVideos(
+        this.el.dataset.videoPlayer,
+        this.getVimeoIframe(autoplay)
+      )
     }
 
     if (this.youtubePlayer === this.el.dataset.videoPlayer) {
-      return this.handleInitVideos(this.el.dataset.videoPlayer, this.getYoutubeIframe());
+      return this.handleInitVideos(
+        this.el.dataset.videoPlayer,
+        this.getYoutubeIframe(false, autoplay)
+      )
     }
 
     if (this.localVideo === this.el.dataset.videoPlayer) {
-      this.handleInitVideos(this.el.dataset.videoPlayer, this.getLocalVideo());
-      this.addVideoListeners();
+      this.handleInitVideos(
+        this.el.dataset.videoPlayer,
+        this.getLocalVideo(autoplay)
+      )
+      this.addVideoListeners()
     }
 
     return null
   }
 
   addVideoListeners() {
-    this.video = this.el.querySelector('video');
+    this.video = this.el.querySelector('video')
     if (!this.initialized) {
-      this.definePlayingObject();
-      return;
+      this.definePlayingObject()
+      return
     }
 
-    this.video.addEventListener('click', this.handleVideoClick.bind(this));
-    this.video.addEventListener('play', this.handleVideoPlay.bind(this));
-    this.video.addEventListener('pause', this.handleVideoPause.bind(this));
-    this.video.addEventListener('ended', this.handleVideoEnd.bind(this));
-    return;
+    this.video.addEventListener('click', this.handleVideoClick.bind(this))
+    this.video.addEventListener('play', this.handleVideoPlay.bind(this))
+    this.video.addEventListener('pause', this.handleVideoPause.bind(this))
+    this.video.addEventListener('ended', this.handleVideoEnd.bind(this))
+    return
   }
 
   definePlayingObject() {
     Object.defineProperty(this.video, 'playing', {
       // eslint-disable-next-line object-shorthand
-      get: function() {
+      get: function () {
         return !!(
           this.currentTime > 0 &&
           !this.paused &&
           !this.ended &&
           this.readyState > 2
-        );
+        )
       }
-    });
+    })
   }
 
-  getYoutubeIframe(controls = false) {
-    const iframe = document.createElement('iframe');
+  getYoutubeIframe(controls = false, autoplay) {
+    const iframe = document.createElement('iframe')
 
-    iframe.setAttribute('width', 640);
-    iframe.setAttribute('height', 360);
-    iframe.setAttribute('frameborder', 0);
+    iframe.setAttribute('width', 640)
+    iframe.setAttribute('height', 360)
+    iframe.setAttribute('frameborder', 0)
     iframe.setAttribute(
       'src',
-      `https://www.youtube.com/embed/${this.videoId}?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=1&mute=1${controls ? '&controls=0' : ''}`
-    );
-    return iframe;
+      `https://www.youtube.com/embed/${
+        this.videoId
+      }?modestbranding=1&rel=0&showinfo=0&autohide=1&autoplay=${autoplay}&mute=1${
+        controls ? '&controls=0' : ''
+      }`
+    )
+    return iframe
   }
 
-  getVimeoIframe() {
-    const iframe = document.createElement('iframe');
-    iframe.setAttribute('width', 640);
-    iframe.setAttribute('height', 360);
-    iframe.setAttribute('frameborder', 0);
-    iframe.setAttribute('webkitallowfullscreen', 'webkitallowfullscreen');
-    iframe.setAttribute('mozallowfullscreen', 'mozallowfullscreen');
-    iframe.setAttribute('allowfullscreen', 'allowfullscreen');
-    iframe.setAttribute('allow', 'autoplay');
+  getVimeoIframe(autoplay) {
+    const iframe = document.createElement('iframe')
+    iframe.setAttribute('width', 640)
+    iframe.setAttribute('height', 360)
+    iframe.setAttribute('frameborder', 0)
+    iframe.setAttribute('webkitallowfullscreen', 'webkitallowfullscreen')
+    iframe.setAttribute('mozallowfullscreen', 'mozallowfullscreen')
+    iframe.setAttribute('allowfullscreen', 'allowfullscreen')
+    iframe.setAttribute('allow', 'autoplay')
     iframe.setAttribute(
       'src',
-      `https://player.vimeo.com/video/${this.videoId}?title=false&autoplay=true&muted=1`
-    );
-    return iframe;
+      `https://player.vimeo.com/video/${this.videoId}?title=false&autoplay=${autoplay}&muted=1`
+    )
+    return iframe
   }
 
-  getLocalVideo() {
+  getLocalVideo(autoplay) {
     const video = document.createElement('video')
-    const source = document.createElement('source');
+    const source = document.createElement('source')
 
-    source.src = this.el.dataset.videoId;
-    video.autoplay = true;
+    source.src = this.el.dataset.videoId
+    video.autoplay = autoplay
     video.poster = this.el.dataset.videoPoster
     video.appendChild(source)
-    return video;
+    return video
   }
 
   removeCover() {
-    this.dom.poster.remove();
-    this.dom.icon.remove();
+    if (this.dom.poster) this.dom.poster.remove()
+    if (this.dom.icon) this.dom.icon.remove()
   }
 
   addVimeoScript() {
-    const script = document.createElement('script');
-    script.setAttribute('src', this.vimeoScript);
-    document.body.prepend(script);
+    const script = document.createElement('script')
+    script.setAttribute('src', this.vimeoScript)
+    document.body.prepend(script)
   }
 
   handleInitVideos(videoType, iframe) {
-
     if (videoType === this.vimeoPlayer) {
-      this.addVimeoScript();
+      this.addVimeoScript()
     }
 
     if (videoType === this.localVideo) {
-      this.removeCover();
+      this.removeCover()
     }
 
     if (!this.initialized) {
       iframe.onload = () => {
-        this.removeCover();
-      };
-      this.dom.backgroundVideo.appendChild(iframe);
-      this.initialized = true;
+        this.removeCover()
+      }
+      this.dom.backgroundVideo.appendChild(iframe)
+      this.initialized = true
     }
-
   }
-
 
   handleVideoClick() {
     if (!this.video.playing) {
-      this.video.play();
+      this.video.play()
     }
   }
 
   handleVideoPlay() {
-    this.video.classList.add('video--playing');
-    this.video.setAttribute('controls', 'controls');
+    this.video.classList.add('video--playing')
+    this.video.setAttribute('controls', 'controls')
   }
 
   handleVideoPause() {
-    this.video.classList.remove('video--playing');
-    this.video.removeAttribute('controls');
+    this.video.classList.remove('video--playing')
+    this.video.removeAttribute('controls')
   }
 
   handleVideoEnd() {
-    this.video.classList.remove('video--playing');
-    this.video.removeAttribute('controls');
-    this.video.currentTime = 0;
-    this.video.load();
+    this.video.classList.remove('video--playing')
+    this.video.removeAttribute('controls')
+    this.video.currentTime = 0
+    this.video.load()
   }
 }
 
-export default Module;
+export default Module
