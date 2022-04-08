@@ -9,7 +9,8 @@ module.exports = {
     copy: '<p>Fugiat irure reprehenderit elit magna occaecat dolore ut laborum tempor consequat minim exercitation Lorem dolor.</p>',
     hideButtonLabel: 'hide',
     showButtonLabel: 'show',
-    closeButtonLabel: 'close'
+    closeButtonLabel: 'close',
+    id: '123456'
   },
   variants: [
     {
@@ -21,7 +22,7 @@ module.exports = {
         hideButtonLabel: 'hide',
         showButtonLabel: 'show',
         closeButtonLabel: 'close',
-        id: 'critical'
+        id: '123'
       }
     },
     {
@@ -33,7 +34,7 @@ module.exports = {
         hideButtonLabel: 'hide',
         showButtonLabel: 'show',
         closeButtonLabel: 'close',
-        id: 'notice'
+        id: '12345'
       }
     },
     {
@@ -45,7 +46,7 @@ module.exports = {
         hideButtonLabel: 'hide',
         showButtonLabel: 'show',
         closeButtonLabel: 'close',
-        id: 'warning'
+        id: '123456'
       }
     },
     {

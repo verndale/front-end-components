@@ -1,5 +1,6 @@
 import { Component } from '@verndale/core'
 import Alert from './Alert'
+import Cookies from 'js-cookie'
 
 class Alerts extends Component {
   setupDefaults() {
@@ -16,6 +17,13 @@ class Alerts extends Component {
     }
 
     alerts
+      .filter((alert) => {
+        const closedAlerts = Cookies.get(this.el.dataset.cookieName)
+        if (closedAlerts) {
+          return !JSON.parse(closedAlerts).includes(alert.ID.Guid)
+        }
+        return true
+      })
       .map((alert) => this.createAlertTemplate(alert))
       .forEach((element) => {
         this.el.appendChild(element)
@@ -30,11 +38,11 @@ class Alerts extends Component {
       LoadExpanded,
       Message,
       ValidFrom,
-      ValidTo
+      ValidTo,
+      ID
     } = alert
-
     const alertContainer = document.createElement('div')
-    alertContainer.dataset.id = AlertType.DataId
+    alertContainer.dataset.id = ID.Guid
     alertContainer.dataset.type = AlertType.DataId
     alertContainer.dataset.canDismiss = CanBeDismissed
     alertContainer.dataset.expanded = LoadExpanded
