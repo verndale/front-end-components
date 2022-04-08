@@ -84,16 +84,6 @@ class Header extends Component {
     this.searchInputWidth()
     this.displaySubmenus()
     this.lastScrollTop = 0
-
-    const href = window.location.href
-    const splitHref = href.substring(href.indexOf('.com') + 4, href.length)
-
-    const loadActivePage = this.el.querySelector(`[href="${splitHref}"`).closest('.header__item');
-    this.dom.$activePage?.classList.remove('header__item--active');
-    if (loadActivePage) {
-      loadActivePage.classList.add('header__item--active');
-      this.dom.$activePage = loadActivePage;
-    }
   }
 
   addListeners() {

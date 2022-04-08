@@ -6,7 +6,7 @@
   --white-transparency: rgb(255 255 255 / 0.8);
 
   animation: displayAnim 500ms ease-in-out 150ms both;
-  background-color: var(--white);
+  background-color: $white;
   block-size: var(--header-block-size);
   border-bottom: 1px solid $gray;
   inset-block-start: 0;
@@ -81,7 +81,7 @@
 }
 
 .header__mobile-btn--nav {
-  background-color: var(--white);
+  background-color: $white;
 
   svg {
     &:first-child {
@@ -141,6 +141,7 @@
     align-items: center;
     display: flex;
     gap: var(--header-nav-gap);
+    margin-left: auto;
   }
 
   & > ul {
@@ -242,7 +243,7 @@
     &:hover,
     &:focus-visible {
       background-color: $primary-color;
-      color: var(--white);
+      color: $white;
     }
   }
 
@@ -251,14 +252,14 @@
 
     &:hover,
     &:focus-visible {
-      color: var(--white);
+      color: $white;
     }
   }
 }
 
 .header__inner-nav {
-  background-color: var(--white);
-  border: 1px solid var(--white);
+  background-color: $white;
+  border: 1px solid $white;
   inline-size: 238px;
   inset-block-start: calc(100% + 22px);
   inset-inline-start: 50%;
@@ -288,7 +289,7 @@
   }
 
   &::after {
-    background-color: var(--white);
+    background-color: $white;
     block-size: 8px;
     inline-size: 12px;
     transform: translate(-50%, calc(-100% + 0.1px));
@@ -420,7 +421,7 @@
   & > a,
   & > button {
     align-items: center;
-    background-color: var(--white);
+    background-color: $white;
     block-size: 60px;
     border-bottom: 1px solid var(--color-gray-200);
     color: inherit;
@@ -456,6 +457,8 @@
   @include mq(desktop) {
     position: relative;
     z-index: 1;
+    margin-inline-start: 15px;
+    margin-right: auto;
   }
 }
 
@@ -537,8 +540,8 @@
 }
 
 .header__search-results {
-  background-color: var(--white);
-  border: 1px solid var(--white);
+  background-color: $white;
+  border: 1px solid $white;
   inline-size: 100%;
   inset-block-start: 8px;
   inset-inline-start: 50%;
@@ -579,7 +582,7 @@
   }
 
   &::after {
-    background-color: var(--white);
+    background-color: $white;
     block-size: 4.8px;
     inline-size: 7.2px;
     transform: translate(-50%, calc(-100% + 0.1px));
@@ -651,7 +654,7 @@
     &:hover,
     &:focus-visible {
       background-color: $primary-color;
-      color: var(--white);
+      color: $white;
     }
 
     &:not(:hover):not(:focus-visible) span:last-child {
@@ -681,7 +684,7 @@
     &:hover,
     &:focus-visible {
       background-color: $primary-color;
-      color: var(--white);
+      color: $white;
     }
   }
 }
