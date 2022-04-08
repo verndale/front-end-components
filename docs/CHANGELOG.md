@@ -1,3 +1,10 @@
+## [1.16.2](https://github.com/verndale/front-end-components/compare/v1.16.1...v1.16.2) (2022-04-08)
+
+
+### Bug Fixes
+
+* closed alerts ([44e836d](https://github.com/verndale/front-end-components/commit/44e836d3e876e9853683cf1af6572f44204c33e5))
+
 ## [1.16.1](https://github.com/verndale/front-end-components/compare/v1.16.0...v1.16.1) (2022-04-08)
 
 
