@@ -95,7 +95,11 @@ class Alert extends Component {
         element: this.el,
         onComplete: () => (this.dom.content.style.display = 'block')
       })
+      return
     }
+
+    this.dom.toggle.setAttribute('aria-expanded', false)
+    this.collapseAlert()
   }
 
   handleToggle() {
