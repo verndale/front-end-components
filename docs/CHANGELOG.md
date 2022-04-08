@@ -1,3 +1,11 @@
+## [1.16.1](https://github.com/verndale/front-end-components/compare/v1.16.0...v1.16.1) (2022-04-08)
+
+
+### Bug Fixes
+
+* header error ([a78f9a0](https://github.com/verndale/front-end-components/commit/a78f9a047ea2327ccbc8e975684397d5f19d7bf3))
+* header search ([877171f](https://github.com/verndale/front-end-components/commit/877171fe348cc35d50654f76ea097575969f39ee))
+
 # [1.16.0](https://github.com/verndale/front-end-components/compare/v1.15.1...v1.16.0) (2022-03-16)
 
 
