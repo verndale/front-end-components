@@ -141,10 +141,10 @@ class Header extends Component {
       this.dom.$searchInput.addEventListener('blur', (e) =>
         this.handleSearchInputBlur(e)
       )
+      this.el.addEventListener('focus', (e) => this.handleListFocus(e), true)
+      document.addEventListener('click', (e) => this.handleOutsideClick(e))
+      window.addEventListener('resize', this.handleResize.bind(this))
     }
-    this.el.addEventListener('focus', (e) => this.handleListFocus(e), true)
-    document.addEventListener('click', (e) => this.handleOutsideClick(e))
-    window.addEventListener('resize', this.handleResize.bind(this))
     // window.addEventListener('scroll', this.handleScroll.bind(this))
   }
 
