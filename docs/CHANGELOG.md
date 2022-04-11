@@ -1,3 +1,10 @@
+## [1.16.6](https://github.com/verndale/front-end-components/compare/v1.16.5...v1.16.6) (2022-04-11)
+
+
+### Bug Fixes
+
+* fix search event listeners ([a906a26](https://github.com/verndale/front-end-components/commit/a906a2607a8552ff3aefe6c4338dd2e1efefc289))
+
 ## [1.16.5](https://github.com/verndale/front-end-components/compare/v1.16.4...v1.16.5) (2022-04-11)
 
 
