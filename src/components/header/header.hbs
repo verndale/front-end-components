@@ -1,493 +1,161 @@
-<header
-  class="header"
-  data-module="header"
->
-  <div class="header__content-wrapper">
-    <button class="header__mobile-btn header__mobile-btn--nav" aria-expanded="false" aria-label="close menu">
-      {{>svg name="menu" viewBox="0 0 120 120"}}
-      {{>svg name="close-thin" viewBox="0 0 120 120"}}
-    </button>
-    <a href="/" class="header__logo">
-      {{!-- ADD HEIGHT WIDTH --}}
-      <img src="https://verndale-image-tools.herokuapp.com/id/Qo_2hhoqC3k?w=303&h=36" width="303" height="36" alt="Acadian Asset" />
-    </a>
-    <nav class="header__primary-nav" aria-label="Primary Nav">
-      <ul>
-        <li class="header__item">
-          <button aria-haspopup="true" aria-expanded="false">
-            About Us
-          </button>
-          <ul class="header__inner-nav" style="display:none">
-            <li class="header__item header__item--active">
-              <a href="#">
-                Leadership
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our History
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our Culture
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Careers
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                News
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header__item">
-          <button aria-haspopup="true" aria-expanded="false">
-            Our Edge
-          </button>
-          <ul class="header__inner-nav" style="display:none">
-            <li class="header__item">
-              <a href="#">
-                Leadership
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our History
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our Culture
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Careers
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                News
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header__item">
-          <button aria-haspopup="true" aria-expanded="false">
-            Strategies
-          </button>
-          <ul class="header__inner-nav" style="display:none">
-            <li class="header__item">
-              <a href="#">
-                Leadership
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our History
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Our Culture
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Careers
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                News
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header__item">
-          <button aria-haspopup="true" aria-expanded="false">
-            Insights
-          </button>
-          <div class="header__inner-nav header__inner-nav--two" style="display:none">
-            <div class="header__nav-column">
-              <span class="header__nav-title">Title</span>
-              <ul>
-              <li class="header__item">
-                <a href="#">
-                  Leadership
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Our History
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Our Culture
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Careers
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  News
-                </a>
-              </li>
-              </ul>
-            </div>
-            <div class="header__nav-column">
-              <span class="header__nav-title">Title</span>
-              <ul>
-              <li class="header__item">
-                <a href="#">
-                  Leadership
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Our History
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Our Culture
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  Careers
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  News
-                </a>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__search"
-    data-endpoint="http://localhost:5000/search-suggestions"
-    data-search-page-url="/html/search.html">
-      <div class="header__search-field" aria-haspopup="true" role="button" aria-expanded="false">
-        <div id="search-announce" class="sr-only" aria-live="assertive"></div>
-        <button aria-label="Open Search" class="header__search-btn">
-          {{>svg name="search" viewBox="0 0 120 120"}}
-        </button>
-        <label class="sr-only" for="header-search">Search in page, press escape to close</label>
-        <input
-          autocomplete="off"
-          class="header__search-input"
-          placeholder="Search"
-          id="header-search"
-          role="combobox"
-          type="text"
-        />
-        <button aria-label="Clear Search Input" class="header__clear-input-btn" hidden>
-          {{>svg name="close-bold" viewBox="0 0 120 120"}}
-        </button>
-      </div>
-      <div class="header__search-results-backdrop">
-        <div class="header__search-results">
-          <span class="header__search-results-heading" id="search-suggested-results-heading">Suggested Results</span>
-          <ul role="listbox" hidden></ul>
-          <a class="header__search-view-all" data-additional-query-string="Content=all">
-            View All Results
-          </a>
-        </div>
-      </div>
-    </div>
-    <nav class="header__utility-nav" aria-label="Utility Nav">
-      <ul>
-        <li class="header__item">
-          <button aria-haspopup="true" aria-expanded="false">
-            Investor Resources
-          </button>
-          <ul class="header__inner-nav" style="display:none">
-            <li class="header__item">
-              <a href="#">
-                Advisor's Inner Circle Mutual Fund
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#">
-                Australia Funds
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header__item">
-          <a href="#">
-            Careers
-          </a>
-        </li>
-        <li class="header__item">
-          <a href="#">
-            Contact Us
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <nav class="header__mobile-nav" aria-label="Mobile Nav">
-    <ul>
-      <li class="header__mobile-item">
-        <button aria-haspopup="true" aria-expanded="false">
-          About Acadian
-        </button>
-        <ul class="header__mobile-inner-nav">
-          <li class="header__mobile-item header__mobile-item--back">
-            <button>
-              Back
-            </button>
-          </li>
-          <li class="header__mobile-item header__mobile-item--main-link">
-            <a href="#">
-              About Acadian
-            </a>
-          </li>
-          <li class="header__mobile-item header__mobile-item--active">
-            <a href="#">
-              Leadership
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our History
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our Culture
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Careers
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              News
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="header__mobile-item">
-        <button aria-haspopup="true" aria-expanded="false">
-          Our Edge
-        </button>
-        <ul class="header__mobile-inner-nav">
-          <li class="header__mobile-item header__mobile-item--back">
-            <button>
-              Back
-            </button>
-          </li>
-          <li class="header__mobile-item header__mobile-item--main-link">
-            <a href="#">
-              Our Edge
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Leadership
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our History
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our Culture
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Careers
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              News
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="header__mobile-item">
-        <button aria-haspopup="true" aria-expanded="false">
-          Capabilities
-        </button>
-        <ul class="header__mobile-inner-nav">
-          <li class="header__mobile-item header__mobile-item--back">
-            <button>
-              Back
-            </button>
-          </li>
-          <li class="header__mobile-item header__mobile-item--main-link">
-            <a href="#">
-              Capabilities
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Leadership
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our History
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Our Culture
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Careers
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              News
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="header__mobile-item">
-        <button aria-haspopup="true" aria-expanded="false">
-          Insights
-        </button>
-        <div class="header__mobile-inner-nav">
-          <span class="header__mobile-item header__mobile-item--back">
-              <button>
-                Back
-              </button>
-          </span>
-          <div class="header__nav-column">
-            <span class="header__nav-title">Title</span>
-            <ul>
-              <li class="header__mobile-item header__mobile-item--main-link">
-                <a href="#">
-                  Insights
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Leadership
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Our History
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Our Culture
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Careers
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  News
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="header__nav-column">
-            <span class="header__nav-title">Title</span>
-            <ul>
-              <li class="header__mobile-item header__mobile-item--main-link">
-                <a href="#">
-                  Insights
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Leadership
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Our History
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Our Culture
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  Careers
-                </a>
-              </li>
-              <li class="header__mobile-item">
-                <a href="#">
-                  News
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="header__mobile-item">
-        <button aria-haspopup="true" aria-expanded="false">
-          Investor Resources
-        </button>
-        <ul class="header__mobile-inner-nav">
-          <li class="header__mobile-item header__mobile-item--back">
-            <button>
-              Back
-            </button>
-          </li>
-          <li class="header__mobile-item header__mobile-item--main-link">
-            <a href="#">
-              Investor Resources
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Advisor's Inner Circle Mutual Fund
-            </a>
-          </li>
-          <li class="header__mobile-item">
-            <a href="#">
-              Australia Funds
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="header__mobile-item">
-        <a href="#">
-          Careers
-        </a>
-      </li>
-      <li class="header__mobile-item">
-        <a href="#">
-          Contact Us
-        </a>
-      </li>
-    </ul>
-  </nav>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<meta content="IE=edge" http-equiv=X-UA-Compatible>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width, user-scalable=no" />
+	<title>About</title>
+	<link rel="canonical" href="https://reuselibrary.verndale-local.com/about" />
+
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel=stylesheet href="/areas/reuselibrary/content/styles.css">
+
+</head>
+<body>
+	<section class=alerts data-module=alerts data-endpoint="https://private-8bd5d4-reuselibraryalerts.apiary-mock.com/alerts" data-cookie-name="reusable"></section>
+
+<header class="header" data-module="header" >
+	<div class="header__content-wrapper">
+		<button class="header__mobile-btn header__mobile-btn--nav" aria-expanded="false" aria-label="close menu">
+			<svg viewBox="0 0 120 120">
+				<use xlink:href="#menu" />
+			</svg>
+			<svg viewBox="0 0 120 120">
+				<use xlink:href="#close-thin" />
+			</svg>
+		</button>
+		<a href="/" class="header__logo">
+			<img src="https://verndale-image-tools.herokuapp.com/id/Qo_2hhoqC3k?w=303&h=36" width="303" height="36" alt="Logo Alt Text" />
+		</a>
+		<nav class="header__primary-nav" aria-label="Primary Nav">
+	<ul>
+					<li class="header__item">
+						<button aria-haspopup="true" aria-expanded="false">
+							Mastheads
+						</button>
+							<ul class="header__inner-nav" style="display: none">
+											<li class="header__item">
+												<a href="/feature-masthead/simple-masthead" target="">
+													Simple Masthead
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-masthead/masthead-with-image-left" target="">
+													Masthead with Media
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-masthead/masthead-with-background-image-left" target="">
+													Masthead with Background
+												</a>
+											</li>
+							</ul>
+
+					</li>
+					<li class="header__item">
+						<button aria-haspopup="true" aria-expanded="false">
+							Primary Content
+						</button>
+							<ul class="header__inner-nav" style="display: none">
+											<li class="header__item">
+												<a href="/feature-primary-content/content-row" target="">
+													Content Row
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-primary-content/content-row-with-media-left" target="">
+													Content Row with Media
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-primary-content/image-row" target="">
+													Image Row
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-primary-content/video-row" target="">
+													Video Row
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-primary-content/accordion" target="">
+													Accordions
+												</a>
+											</li>
+							</ul>
+
+					</li>
+					<li class="header__item">
+						<button aria-haspopup="true" aria-expanded="false">
+							Related Content
+						</button>
+							<ul class="header__inner-nav" style="display: none">
+											<li class="header__item">
+												<a href="/feature-related-content/call-to-action-row-with-background-and-image" target="">
+													Call to Action Rows
+												</a>
+											</li>
+							</ul>
+
+					</li>
+					<li class="header__item">
+						<button aria-haspopup="true" aria-expanded="false">
+							Novelty Content
+						</button>
+							<ul class="header__inner-nav" style="display: none">
+											<li class="header__item">
+												<a href="/feature-testimonials" target="">
+													Testimonial Carousel
+												</a>
+											</li>
+											<li class="header__item">
+												<a href="/feature-timeline" target="">
+													Timeline Carousel
+												</a>
+											</li>
+							</ul>
+
+					</li>
+	</ul>
+</nav>
+
+
+		<nav class=header__utility-nav aria-label="Utility Nav"><ul><li class=header__item><a href=/about target="">About Reuse Library</a><li class=header__item><a href=/licensing target="">Licensing</a></ul></nav>
+		<nav class=header__mobile-nav aria-label="Mobile Nav"><ul><li class=header__mobile-item><button aria-haspopup=true aria-expanded=false> Mastheads </button><ul class=header__mobile-inner-nav><li class="header__mobile-item header__mobile-item--back"><button> Back </button><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-masthead/simple-masthead target=""> Simple Masthead </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-masthead/masthead-with-image-left target=""> Masthead with Media </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-masthead/masthead-with-background-image-left target=""> Masthead with Background </a></ul><li class=header__mobile-item><button aria-haspopup=true aria-expanded=false> Primary Content </button><ul class=header__mobile-inner-nav><li class="header__mobile-item header__mobile-item--back"><button> Back </button><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-primary-content/content-row target=""> Content Row </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-primary-content/content-row-with-media-left target=""> Content Row with Media </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-primary-content/image-row target=""> Image Row </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-primary-content/video-row target=""> Video Row </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-primary-content/accordion target=""> Accordions </a></ul><li class=header__mobile-item><button aria-haspopup=true aria-expanded=false> Related Content </button><ul class=header__mobile-inner-nav><li class="header__mobile-item header__mobile-item--back"><button> Back </button><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-related-content/call-to-action-row-with-background-and-image target=""> Call to Action Rows </a></ul><li class=header__mobile-item><button aria-haspopup=true aria-expanded=false> Novelty Content </button><ul class=header__mobile-inner-nav><li class="header__mobile-item header__mobile-item--back"><button> Back </button><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-testimonials target=""> Testimonial Carousel </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/feature-timeline target=""> Timeline Carousel </a></ul><li class="header__mobile-item header__mobile-item--main-link"><a href=/about target=""> About Reuse Library </a><li class="header__mobile-item header__mobile-item--main-link"><a href=/licensing target=""> Licensing </a></ul></nav>
+	</div>
 </header>
+<main role="main">
+		<div class="container">
+			<nav aria-label=Breadcrumbs class=breadcrumbs style="--separator:'//'"><ol><li><a href="/">Home</a><li><a aria-current=page>About</a></ol></nav><div class="masthead masthead--simple"><div class="masthead__inner container"><div class=masthead__content><h1 class=masthead__heading>About</h1><h2 class=masthead__subheading>Vestibulum sit amet est at erat elementum mattis</h2><div class="masthead__copy rtf"><p>Sed vitae odio sit amet nibh eleifend vestibulum in id elit. Fusce eu odio ut nisi consectetur vestibulum. Suspendisse rutrum, ante vel mattis euismod, velit risus posuere libero, posuere pharetra velit ex nec dolor. Proin lobortis felis quis volutpat vulputate.</div><div class=masthead__actions></div></div></div></div>
+
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer__links">
+			<div class="container footer__container">
+				<nav class=footer__nav aria-label="Footer Navigation"> <a href=/about target="" class="link-reuse link link--on-dark"> About </a> <a href=https://www.verndale.com/careers target=_blank class="link-reuse link link--on-dark"> Careers </a> <a href=https://www.verndale.com/contact-us target=_blank class="link-reuse link link--on-dark"> Contact Us </a> </nav><h5 class=footer__text--uppercase>Connect with us</h5><nav class=footer__social-links aria-label="Reuse Social Links"> <a href=https://facebook.com class=social-link aria-label=Facebook target=_blank rel="noopener noreferrer"> <img src="/-/media/images/navigation/icon-facebook.png?h=21&amp;w=21&amp;hash=03D5CE381A532DB510CFC65109ED32BA" class=social-link__icon alt=Facebook> </a> <a href=https://youtube.com class=social-link aria-label=YouTube target=_blank rel="noopener noreferrer"> <img src="/-/media/images/navigation/icon-youtube.png?h=21&amp;w=21&amp;hash=3FBF04A532450B18BAD8A20CD4E5F4FE" class=social-link__icon alt=YouTube> </a> <a href=https://twitter.com class=social-link aria-label=Twitter target=_blank rel="noopener noreferrer"> <img src="/-/media/images/navigation/icon-twitter.png?h=21&amp;w=21&amp;hash=592BF2D1A0E1751ED4ADE43E9F8B458B" class=social-link__icon alt=Twitter> </a> <a href=https://instagram.com class=social-link aria-label=Instagram target=_blank rel="noopener noreferrer"> <img src="/-/media/images/navigation/icon-instagram.png?h=21&amp;w=21&amp;hash=669DA1CADD065FDE104F4ACCF51F303B" class=social-link__icon alt=Instagram> </a> </nav><div class=footer__info><nav class=footer__info-links> <a href=/privacy-policy target="" class="link-reuse link link--on-dark"> Privacy Policy </a> <a href=/terms-of-use target="" class="link-reuse link link--on-dark"> Terms of Use </a> </nav><div><span class=footer__info-copyright>© Copyright 2021 Reuse</span> <span>| 1000 Rochelle Blvd., Irving, TX | 75062 | 1-800-922-8800</span></div></div>
+			</div>
+		</div>
+	</footer>
+	<!-- JavaScript -->
+	<script>
+		window.resourceBasePath = "/areas/reuselibrary/scripts/";
+
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "/areas/reuselibrary/content/images/svgsheet.svg", true);
+		ajax.send();
+		ajax.onload = function () {
+			var div = document.createElement("div");
+			div.style.display = 'none';
+			div.innerHTML = ajax.responseText;
+			document.body.insertBefore(div, document.body.childNodes[0]);
+		}
+	</script>
+	<script src="/areas/reuselibrary/scripts/vendors~main.bundle.js"></script>
+	<script src="/areas/reuselibrary/scripts/main.bundle.js"></script>
+</body>
+</html>

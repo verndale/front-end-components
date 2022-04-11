@@ -141,7 +141,6 @@
     align-items: center;
     display: flex;
     gap: var(--header-nav-gap);
-    margin-left: auto;
   }
 
   & > ul {
@@ -458,7 +457,6 @@
     position: relative;
     z-index: 1;
     margin-inline-start: 15px;
-    margin-right: auto;
   }
 }
 
