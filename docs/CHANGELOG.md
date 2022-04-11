@@ -1,3 +1,10 @@
+## [1.16.5](https://github.com/verndale/front-end-components/compare/v1.16.4...v1.16.5) (2022-04-11)
+
+
+### Bug Fixes
+
+* fix header search and alerts ([34f7b92](https://github.com/verndale/front-end-components/commit/34f7b92f84f1054b37fab7ba701d4d9ffdffb0a7))
+
 ## [1.16.4](https://github.com/verndale/front-end-components/compare/v1.16.3...v1.16.4) (2022-04-11)
 
 
