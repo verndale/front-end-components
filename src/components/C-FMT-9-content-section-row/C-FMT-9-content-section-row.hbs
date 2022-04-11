@@ -1,20 +1,20 @@
-<section class='content-section-row container'
+<section class="content-section-row container"
 {{#if heading}} aria-labelledby="contentSectionRowHeading"{{/if}}
 >
   {{#if heading}}
-    <h2 class='content-section-row__heading' id="contentSectionRowHeading">
+    <h2 class="content-section-row__heading" id="contentSectionRowHeading">
       {{heading}}
     </h2>
   {{/if}}
   {{#if subheading}}<h3
-      class='content-row__subheading'
+      class="content-row__subheading"
     >{{subheading}}</h3>{{/if}}
-  <div class='content-section-row__rtf'>
+  <div class="content-section-row__rtf">
     {{{rtf}}}
   </div>
 
   {{#if buttons}}
-    <div class='content-row__actions'>
+    <div class="content-row__actions">
       {{{buttons}}}
     </div>
   {{/if}}
