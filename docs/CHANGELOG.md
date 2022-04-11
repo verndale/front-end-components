@@ -1,3 +1,11 @@
+## [1.16.4](https://github.com/verndale/front-end-components/compare/v1.16.3...v1.16.4) (2022-04-11)
+
+
+### Bug Fixes
+
+* single qoutes and change data attributes in header ([422042e](https://github.com/verndale/front-end-components/commit/422042ec749a409919982768bffa256aa4dc948d))
+* single qoutes and change data attributes in header ([511b17b](https://github.com/verndale/front-end-components/commit/511b17b0ef3670ae474259e86c02ed2c927bbabb))
+
 ## [1.16.3](https://github.com/verndale/front-end-components/compare/v1.16.2...v1.16.3) (2022-04-08)
 
 
