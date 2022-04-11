@@ -68,8 +68,9 @@ class Header extends Component {
       $headerItemNav: this.el.querySelectorAll('.header__inner-nav')
     }
 
-    this.endpoint = this.el.dataset.endpoint
-    this.searchPageUrl = this.el.dataset.searchPageUrl
+    this.endpoint = this.dom.$search.dataset.endpoint
+    this.searchPageUrl = this.dom.$search.dataset.searchPageUrl
+
     this.mainFocusTrap = createFocusTrap(this.el, {
       onActivate() {
         disableBodyScroll(self.el, {
