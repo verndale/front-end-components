@@ -68,8 +68,10 @@ class Header extends Component {
       $headerItemNav: this.el.querySelectorAll('.header__inner-nav')
     }
 
-    this.endpoint = this.dom.$search.dataset.endpoint
-    this.searchPageUrl = this.dom.$search.dataset.searchPageUrl
+    if (this.dom.$search) {
+      this.endpoint = this.dom.$search.dataset.endpoint
+      this.searchPageUrl = this.dom.$search.dataset.searchPageUrl
+    }
 
     this.mainFocusTrap = createFocusTrap(this.el, {
       onActivate() {
@@ -82,7 +84,9 @@ class Header extends Component {
       }
     })
 
-    this.searchInputWidth()
+    if (this.dom.$searchBtn) {
+      this.searchInputWidth()
+    }
     this.displaySubmenus()
     this.lastScrollTop = 0
   }
@@ -111,34 +115,37 @@ class Header extends Component {
     this.dom.$itemlinks.forEach(($link) =>
       $link.addEventListener('click', (e) => this.handleItemActive(e))
     )
-    this.dom.$searchBtn.addEventListener('click', () =>
+
+    this.dom.$searchBtn?.addEventListener('click', () =>
       this.handleSearchBtnClick()
     )
-    this.dom.$searchField.addEventListener('transitionend', (e) =>
-      this.handleSearchFieldTransitionEnd(e)
-    )
-    this.dom.$clearInputBtn.addEventListener('click', (e) =>
-      this.handleClearInputBtn(e)
-    )
-    this.dom.$search.addEventListener('focusout', (e) =>
-      this.handleSearchFocusout(e)
-    )
-    this.dom.$searchInput.addEventListener('keydown', (e) =>
-      this.handleSearchInputKeydown(e)
-    )
-    this.dom.$resultsList.addEventListener('keydown', (e) =>
-      this.handleResultsListKeydown(e)
-    )
-    this.dom.$searchInput.addEventListener('input', (e) =>
-      this.handleSearchInputChange(e)
-    )
-    this.dom.$searchInput.addEventListener('blur', (e) =>
-      this.handleSearchInputBlur(e)
-    )
+    if (this.dom.$searchField) {
+      this.dom.$searchField.addEventListener('transitionend', (e) =>
+        this.handleSearchFieldTransitionEnd(e)
+      )
+      this.dom.$clearInputBtn.addEventListener('click', (e) =>
+        this.handleClearInputBtn(e)
+      )
+      this.dom.$search.addEventListener('focusout', (e) =>
+        this.handleSearchFocusout(e)
+      )
+      this.dom.$searchInput.addEventListener('keydown', (e) =>
+        this.handleSearchInputKeydown(e)
+      )
+      this.dom.$resultsList.addEventListener('keydown', (e) =>
+        this.handleResultsListKeydown(e)
+      )
+      this.dom.$searchInput.addEventListener('input', (e) =>
+        this.handleSearchInputChange(e)
+      )
+      this.dom.$searchInput.addEventListener('blur', (e) =>
+        this.handleSearchInputBlur(e)
+      )
+    }
     this.el.addEventListener('focus', (e) => this.handleListFocus(e), true)
     document.addEventListener('click', (e) => this.handleOutsideClick(e))
     window.addEventListener('resize', this.handleResize.bind(this))
-    window.addEventListener('scroll', this.handleScroll.bind(this))
+    // window.addEventListener('scroll', this.handleScroll.bind(this))
   }
 
   displaySubmenus() {
@@ -443,7 +450,9 @@ class Header extends Component {
   }
 
   handleResize() {
-    this.searchInputWidth()
+    if (this.dom.$searchBtn) {
+      this.searchInputWidth()
+    }
   }
 
   handleScroll() {

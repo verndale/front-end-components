@@ -4,11 +4,27 @@ import Cookies from 'js-cookie'
 
 class Alerts extends Component {
   setupDefaults() {
-    this.dom = {}
+    this.dom = {
+      header: document.querySelector('header')
+    }
+
+    if (this.dom.header) {
+      this.setHeight()
+    }
     this.getAlerts()
   }
 
-  addListeners() {}
+  addListeners() {
+    if (this.dom.header) {
+      window.addEventListener('resize', this.setHeight.bind(this))
+    }
+  }
+
+  setHeight() {
+    this.el.style.paddingTop = `${
+      document.querySelector('header').offsetHeight
+    }px`
+  }
 
   displaySectionAlerts(alerts) {
     if (alerts.length < 1) {
