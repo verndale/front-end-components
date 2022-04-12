@@ -150,6 +150,8 @@
 }
 
 .header__primary-nav {
+  display: none;
+
   @include mq(desktop) {
     align-items: center;
     display: flex;
