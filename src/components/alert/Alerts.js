@@ -8,22 +8,7 @@ class Alerts extends Component {
       header: document.querySelector('header')
     }
 
-    if (this.dom.header) {
-      this.setHeight()
-    }
     this.getAlerts()
-  }
-
-  addListeners() {
-    if (this.dom.header) {
-      window.addEventListener('resize', this.setHeight.bind(this))
-    }
-  }
-
-  setHeight() {
-    this.el.style.paddingTop = `${
-      document.querySelector('header').offsetHeight
-    }px`
   }
 
   displaySectionAlerts(alerts) {
