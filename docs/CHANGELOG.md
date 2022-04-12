@@ -1,3 +1,11 @@
+## [1.16.7](https://github.com/verndale/front-end-components/compare/v1.16.6...v1.16.7) (2022-04-12)
+
+
+### Bug Fixes
+
+* change header style ([5156ccc](https://github.com/verndale/front-end-components/commit/5156ccc78a74c8fef91c9319ab65ea39b28602e4))
+* header change to static ([3e79485](https://github.com/verndale/front-end-components/commit/3e794859b218e892c0f6d1643e0dbf3aeefa7b13))
+
 ## [1.16.6](https://github.com/verndale/front-end-components/compare/v1.16.5...v1.16.6) (2022-04-11)
 
 
