@@ -1,12 +1,14 @@
 {{#*inline "accordion-tab"}}
-  <article class="accordion__item">
+  <div class="accordion__item">
+    <h3 class="accordion__item-title">
     <button class="accordion__item-trigger" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}">
-      <h3 class="accordion__item-title">{{title}}</h3>
+      {{title}}
       <span class="accordion__item-icon">
         {{>svg name="minus" viewBox="0 0 14 2" className="accordion__item-icon-minus"}}
         {{>svg name="plus" viewBox="0 0 14 14" className="accordion__item-icon-plus"}}
     </span>
     </button>
+    </h3>
     <div role="region" class="accordion__item-panel">
       <div class="accordion__item-content">
         {{#if heading}}
@@ -27,7 +29,7 @@
         {{/if}}
       </div>
     </div>
-  </article>
+  </div>
 {{/inline}}
 
 <section class="accordion" data-module="accordion" aria-labelledby="accordionTitle">

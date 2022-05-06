@@ -72,14 +72,13 @@
   @include mq(desktop) {
     height: 50px;
     padding: 0 25px;
+  }
 
+  @media (any-hover: hover) {
     &:hover,
     &:focus {
       background-color: $accordion-item-focus-background;
-
-      h3 {
-        color: $accordion-item-focus-text-color;
-      }
+      color: $accordion-item-focus-text-color;
 
       .accordion__item-icon-plus,
       .accordion__item-icon-minus {
