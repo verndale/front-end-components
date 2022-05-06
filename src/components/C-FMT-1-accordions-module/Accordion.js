@@ -1,6 +1,7 @@
-import { Component } from '@verndale/core'
-import { v4 as uuidv4 } from 'uuid'
-import { keyCode } from '../helpers'
+import { Component } from '@verndale/core';
+import { v4 as uuidv4 } from 'uuid';
+import { keyCode } from '../helpers';
+import { rovingIndex } from '@verndale/roving-ux'; // npm es6/common modules
 
 /**
  * `Accordion`
@@ -18,9 +19,9 @@ import { keyCode } from '../helpers'
  */
 class Accordion extends Component {
   constructor(el) {
-    super(el)
+    super(el);
 
-    this.initAccordion()
+    this.initAccordion();
   }
 
   setupDefaults() {
@@ -30,86 +31,88 @@ class Accordion extends Component {
       triggers: [...this.el.querySelectorAll('.accordion__item-trigger')],
       panels: [...this.el.querySelectorAll('.accordion__item-panel')]
     }
+    const self = this;
+    rovingIndex({
+      element: self.el, // required: the container to get roving index ux
+      target: '.accordion__item-trigger' // optional: a query selector for which children should be focusable
+    });
   }
 
   addListeners() {
     this.dom.container.addEventListener(
       'keydown',
       this.handleKeyDown.bind(this)
-    )
+    );
     this.dom.triggers.forEach((trigger) =>
       trigger.addEventListener('click', this.handleClick.bind(this))
-    )
+    );
 
-    this.dom.panels.forEach(el => el.addEventListener('transitionend', this.handleTransitionEnd.bind(this)))
+    this.dom.panels.forEach((el) =>
+      el.addEventListener('transitionend', this.handleTransitionEnd.bind(this))
+    );
   }
 
   initAccordion() {
     this.dom.items.forEach((item) => {
-      const guid = uuidv4()
+      const guid = uuidv4();
 
-      const trigger = item.querySelector('.accordion__item-trigger')
-      const content = item.querySelector('.accordion__item-panel')
+      const trigger = item.querySelector('.accordion__item-trigger');
+      const content = item.querySelector('.accordion__item-panel');
 
       if (trigger.getAttribute('aria-expanded') === 'true') {
         const height = content.querySelector(
           '.accordion__item-content'
-        ).offsetHeight
+        ).offsetHeight;
 
-        content.style.height = `${height}px`
-        content.style.visibility = 'visible'
+        content.style.height = `${height}px`;
+        content.style.visibility = 'visible';
       }
 
-      trigger.setAttribute('aria-controls', `tabcontent-${guid}`)
-      trigger.setAttribute('id', `tab-${guid}`)
-      content.setAttribute('aria-labelledby', `tab-${guid}`)
-      content.setAttribute('id', `tabcontent-${guid}`)
-
-      content.setAttribute(
-        'aria-hidden',
-        trigger.getAttribute('aria-expanded') !== 'true'
-      )
+      trigger.setAttribute('aria-controls', `tabcontent-${guid}`);
+      trigger.setAttribute('id', `tab-${guid}`);
+      content.setAttribute('aria-labelledby', `tab-${guid}`);
+      content.setAttribute('id', `tabcontent-${guid}`);
     })
   }
 
   handleClick(e) {
-    const button = e.currentTarget
+    const button = e.currentTarget;
 
     if (button.getAttribute('aria-expanded') === 'true') {
-      this.closeItem(button)
+      this.closeItem(button);
     } else {
-      this.openItem(button)
+      this.openItem(button);
     }
   }
 
   handleKeyDown(e) {
-    const target = e.target
-    const key = e.which || e.keyCode
+    const target = e.target;
+    const key = e.which || e.keyCode;
 
     const ctrlModifier =
-      e.ctrlKey && (key === keyCode.PAGEUP || key === keyCode.PAGEDOWN)
+      e.ctrlKey && (key === keyCode.PAGEUP || key === keyCode.PAGEDOWN);
 
     if (target.classList.contains('accordion__item-trigger')) {
       if (key === keyCode.UP || key === keyCode.DOWN || ctrlModifier) {
-        const index = this.dom.triggers.indexOf(target)
+        const index = this.dom.triggers.indexOf(target);
         const direction =
-          key === keyCode.PAGEDOWN || key === keyCode.DOWN ? 1 : -1
-        const length = this.dom.triggers.length
-        const newIndex = (index + length + direction) % length
+          key === keyCode.PAGEDOWN || key === keyCode.DOWN ? 1 : -1;
+        const length = this.dom.triggers.length;
+        const newIndex = (index + length + direction) % length;
 
-        this.dom.triggers[newIndex].focus()
+        this.dom.triggers[newIndex].focus();
 
         e.preventDefault()
       } else if (key === keyCode.END || key === keyCode.HOME) {
         switch (key) {
           case keyCode.HOME:
-            this.dom.triggers[0].focus()
-            break
+            this.dom.triggers[0].focus();
+            break;
           case keyCode.END:
-            this.dom.triggers[this.dom.triggers.length - 1].focus()
-            break
+            this.dom.triggers[this.dom.triggers.length - 1].focus();
+            break;
         }
-        e.preventDefault()
+        e.preventDefault();
       }
     }
   }
@@ -117,41 +120,36 @@ class Accordion extends Component {
   openItem(trigger) {
     const content = document.getElementById(
       trigger.getAttribute('aria-controls')
-    )
+    );
 
-    trigger.setAttribute('aria-expanded', true)
-    content.style.visibility = 'visible'
-    content.setAttribute('aria-hidden', false)
-
+    trigger.setAttribute('aria-expanded', true);
+    content.style.visibility = 'visible';
     const height = content.querySelector(
       '.accordion__item-content'
-    ).offsetHeight
+    ).offsetHeight;
 
-    content.style.maxHeight = `${height}px`
-    content.style.visibility = 'visible'
+    content.style.maxHeight = `${height}px`;
+    content.style.visibility = 'visible';
     this.open(content);
   }
 
   closeItem(trigger) {
     const content = document.getElementById(
       trigger.getAttribute('aria-controls')
-    )
+    );
 
-    trigger.setAttribute('aria-expanded', false)
-    content.style = null
-    content.setAttribute('aria-hidden', true)
+    trigger.setAttribute('aria-expanded', false);
+    content.style = null;
     this.close(content);
   }
 
   open(el) {
-    el.setAttribute('aria-hidden', false)
     el.style.height = `${el.scrollHeight}px`;
   }
 
   close(el) {
     el.style.height = `${el.scrollHeight}px`;
-    el.setAttribute('aria-hidden', true)
-    el.style.height = 0
+    el.style.height = 0;
   }
 
   handleTransitionEnd(e) {

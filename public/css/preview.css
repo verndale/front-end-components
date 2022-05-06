@@ -2470,26 +2470,25 @@ body {
     /* line 56, src/components/C-FMT-1-accordions-module/_styles.scss */
     .accordion__item-trigger {
       height: 50px;
-      padding: 0 25px; }
-      /* line 76, src/components/C-FMT-1-accordions-module/_styles.scss */
-      .accordion__item-trigger:hover, .accordion__item-trigger:focus {
-        background-color: #06847b; }
-        /* line 80, src/components/C-FMT-1-accordions-module/_styles.scss */
-        .accordion__item-trigger:hover h3, .accordion__item-trigger:focus h3 {
-          color: #FFF; }
-        /* line 84, src/components/C-FMT-1-accordions-module/_styles.scss */
-        .accordion__item-trigger:hover .accordion__item-icon-plus,
-        .accordion__item-trigger:hover .accordion__item-icon-minus, .accordion__item-trigger:focus .accordion__item-icon-plus,
-        .accordion__item-trigger:focus .accordion__item-icon-minus {
-          fill: #FFF; } }
-  /* line 92, src/components/C-FMT-1-accordions-module/_styles.scss */
+      padding: 0 25px; } }
+  @media (any-hover: hover) {
+    /* line 78, src/components/C-FMT-1-accordions-module/_styles.scss */
+    .accordion__item-trigger:hover, .accordion__item-trigger:focus {
+      background-color: #06847b;
+      color: #FFF; }
+      /* line 83, src/components/C-FMT-1-accordions-module/_styles.scss */
+      .accordion__item-trigger:hover .accordion__item-icon-plus,
+      .accordion__item-trigger:hover .accordion__item-icon-minus, .accordion__item-trigger:focus .accordion__item-icon-plus,
+      .accordion__item-trigger:focus .accordion__item-icon-minus {
+        fill: #FFF; } }
+  /* line 91, src/components/C-FMT-1-accordions-module/_styles.scss */
   .accordion__item-trigger[aria-expanded='true'] .accordion__item-icon-plus {
     display: none; }
-  /* line 96, src/components/C-FMT-1-accordions-module/_styles.scss */
+  /* line 95, src/components/C-FMT-1-accordions-module/_styles.scss */
   .accordion__item-trigger[aria-expanded='true'] .accordion__item-icon-minus {
     display: block; }
 
-/* line 102, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 101, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-title {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -2498,14 +2497,14 @@ body {
   margin: 0;
   transition: color 0.2s ease-in-out; }
 
-/* line 111, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 110, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-icon {
   flex-shrink: 0;
   height: 14px;
   position: relative;
   width: 14px; }
 
-/* line 118, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 117, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-icon-plus,
 .accordion__item-icon-minus {
   fill: #06847b;
@@ -2517,33 +2516,33 @@ body {
   transition: fill 0.2s ease-in-out;
   width: 14px; }
 
-/* line 130, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 129, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-icon-minus {
   display: none; }
 
-/* line 134, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 133, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-panel {
   height: 0;
   overflow: hidden;
   visibility: hidden;
   transition: height 0.25s ease; }
-  /* line 140, src/components/C-FMT-1-accordions-module/_styles.scss */
+  /* line 139, src/components/C-FMT-1-accordions-module/_styles.scss */
   .accordion__item-panel video,
   .accordion__item-panel picture,
   .accordion__item-panel img,
   .accordion__item-panel iframe {
     width: 100%; }
 
-/* line 148, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 147, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-content {
   font-size: 18px;
   line-height: 1.78;
   padding: 2px 20px 20px; }
   @media (min-width: 80em) {
-    /* line 148, src/components/C-FMT-1-accordions-module/_styles.scss */
+    /* line 147, src/components/C-FMT-1-accordions-module/_styles.scss */
     .accordion__item-content {
       padding: 28px 100px 45px; } }
-  /* line 158, src/components/C-FMT-1-accordions-module/_styles.scss */
+  /* line 157, src/components/C-FMT-1-accordions-module/_styles.scss */
   .accordion__item-content * + video,
   .accordion__item-content * + picture,
   .accordion__item-content * + img,
@@ -2551,22 +2550,22 @@ body {
   .accordion__item-content * + .buttons-row {
     margin-top: 20px; }
     @media (min-width: 80em) {
-      /* line 158, src/components/C-FMT-1-accordions-module/_styles.scss */
+      /* line 157, src/components/C-FMT-1-accordions-module/_styles.scss */
       .accordion__item-content * + video,
       .accordion__item-content * + picture,
       .accordion__item-content * + img,
       .accordion__item-content * + iframe,
       .accordion__item-content * + .buttons-row {
         margin-top: 60px; } }
-  /* line 171, src/components/C-FMT-1-accordions-module/_styles.scss */
+  /* line 170, src/components/C-FMT-1-accordions-module/_styles.scss */
   .accordion__item-content .buttons-row {
     margin-left: -10px;
     margin-right: -10px; }
-    /* line 175, src/components/C-FMT-1-accordions-module/_styles.scss */
+    /* line 174, src/components/C-FMT-1-accordions-module/_styles.scss */
     .accordion__item-content .buttons-row .btn {
       margin: 10px; }
 
-/* line 182, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 181, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__item-description h4 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 21px;
@@ -2574,16 +2573,16 @@ body {
   line-height: 1.19;
   margin: 0 0 10px; }
   @media (min-width: 80em) {
-    /* line 182, src/components/C-FMT-1-accordions-module/_styles.scss */
+    /* line 181, src/components/C-FMT-1-accordions-module/_styles.scss */
     .accordion__item-description h4 {
       font-size: 19px;
       line-height: 1.33; } }
   @media (min-width: 100em) {
-    /* line 182, src/components/C-FMT-1-accordions-module/_styles.scss */
+    /* line 181, src/components/C-FMT-1-accordions-module/_styles.scss */
     .accordion__item-description h4 {
       font-size: 24px; } }
 
-/* line 201, src/components/C-FMT-1-accordions-module/_styles.scss */
+/* line 200, src/components/C-FMT-1-accordions-module/_styles.scss */
 .accordion__video iframe {
   margin-top: 10px; }
 
