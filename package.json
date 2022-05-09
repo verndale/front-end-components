@@ -90,7 +90,7 @@
     "gulp-util": "3.0.8",
     "husky": "^7.0.1",
     "merge-stream": "2.0.0",
-    "node-sass": "6.0.1",
+    "node-sass": "7.0.0",
     "prettier": "2.3.2",
     "rimraf": "3.0.2",
     "semantic-release": "17.4.4",
