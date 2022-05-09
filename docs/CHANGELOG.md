@@ -1,3 +1,17 @@
+# [1.17.0](https://github.com/verndale/front-end-components/compare/v1.16.7...v1.17.0) (2022-05-09)
+
+
+### Bug Fixes
+
+* delete package ([fc7de66](https://github.com/verndale/front-end-components/commit/fc7de66ac7f77ea30e85eee8c57e15dc8a55bf7f))
+
+
+### Features
+
+* change node version ([baa897c](https://github.com/verndale/front-end-components/commit/baa897c919c64dbfaafaf8b05fcb53df3d44cf81))
+* change node version ([ac0d8ee](https://github.com/verndale/front-end-components/commit/ac0d8ee4f4571112c0d1ed47ddd340a58495b57e))
+* fix accordion accessibility ([74395e9](https://github.com/verndale/front-end-components/commit/74395e92ee3a8f313dbfafaadaf651a62abbd69e))
+
 ## [1.16.7](https://github.com/verndale/front-end-components/compare/v1.16.6...v1.16.7) (2022-04-12)
 
 
