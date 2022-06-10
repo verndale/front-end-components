@@ -66,7 +66,7 @@
     "react-dom": "^17.0.2",
     "react-lines-ellipsis": "^0.15.0",
     "sass-mq": "5.0.1",
-    "semantic-release": "17.4.4",
+    "semantic-release": "19.0.3",
     "swiper": "6.7.0",
     "tiny-slider": "^2.9.3"
   },
@@ -93,7 +93,7 @@
     "node-sass": "6.0.1",
     "prettier": "2.3.2",
     "rimraf": "3.0.2",
-    "semantic-release": "17.4.4",
+    "semantic-release": "19.0.3",
     "svg-sprite-generator": "0.0.7",
     "svgo": "2.3.1",
     "webpack": "4.43.0",
